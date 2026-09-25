@@ -1,0 +1,297 @@
+{
+  "verifiedAt": "2026-09-25T16:09:44.739Z",
+  "sourceSha256": "1c1bcaa94b9589ef950463def587c39dea5cc6aa1deea6fc246059068eff5f3a",
+  "indexSha256": "238a5f788489b004c36dec0af5f39dcf59ada7eb479aaa74f6c6738c0e4d45b4",
+  "cases": [
+    {
+      "id": "dust-day",
+      "time": 0.12,
+      "near": [
+        -199,
+        70
+      ],
+      "offset": 0,
+      "speed": 25,
+      "frames": 160,
+      "kind": "dust",
+      "speedKmh": 22.84402004527223,
+      "position": {
+        "x": -198.30030822753906,
+        "y": 6.922712326049805,
+        "z": 61.362831115722656
+      },
+      "activeParticles": 56,
+      "material": {
+        "useSkybox": true,
+        "useLighting": true,
+        "depthWrite": false,
+        "specularityFactor": 0,
+        "emissive": [
+          0,
+          0,
+          0
+        ]
+      },
+      "wheels": [
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0
+        }
+      ],
+      "captures": {
+        "before": {
+          "sha256": "27677fed704bdb2865a933fffd22c69ecf5ca992992eaea35c229f1be6ab0e4f"
+        },
+        "after": {
+          "sha256": "2adb0469ad426022f43a06c53bfedc773879889db77f35361a071f7270074e93"
+        }
+      },
+      "glError": 0
+    },
+    {
+      "id": "dust-night",
+      "time": 1,
+      "near": [
+        -199,
+        70
+      ],
+      "offset": 0,
+      "speed": 25,
+      "frames": 160,
+      "kind": "dust",
+      "speedKmh": 22.843532982315462,
+      "position": {
+        "x": -198.30093383789062,
+        "y": 6.922544956207275,
+        "z": 61.362831115722656
+      },
+      "activeParticles": 60,
+      "material": {
+        "useSkybox": true,
+        "useLighting": true,
+        "depthWrite": false,
+        "specularityFactor": 0,
+        "emissive": [
+          0,
+          0,
+          0
+        ]
+      },
+      "wheels": [
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0
+        }
+      ],
+      "captures": {
+        "before": {
+          "sha256": "a9041fe4cc3f35600885159d6d718e77ff5d5ebcdd5e20d1d943dddeb44e4e8c"
+        },
+        "after": {
+          "sha256": "fb266047234ea7f90c4ca62b87517c47118e3b71efe70ecfb320128871017536"
+        }
+      },
+      "glError": 0
+    },
+    {
+      "id": "mud-day",
+      "time": 0.12,
+      "near": [
+        64,
+        -8
+      ],
+      "offset": -4,
+      "speed": 12,
+      "frames": 100,
+      "kind": "mud",
+      "speedKmh": 8.62384176061849,
+      "position": {
+        "x": 62.16367721557617,
+        "y": 4.307870388031006,
+        "z": -8.103357315063477
+      },
+      "activeParticles": 24,
+      "material": {
+        "useSkybox": true,
+        "useLighting": true,
+        "depthWrite": false,
+        "specularityFactor": 0,
+        "emissive": [
+          0,
+          0,
+          0
+        ]
+      },
+      "wheels": [
+        {
+          "grounded": true,
+          "surface": "mud",
+          "mud": 1,
+          "water": 0
+        },
+        {
+          "grounded": true,
+          "surface": "mud",
+          "mud": 1,
+          "water": 0
+        },
+        {
+          "grounded": true,
+          "surface": "mud",
+          "mud": 1.0000000000000002,
+          "water": 0
+        },
+        {
+          "grounded": true,
+          "surface": "mud",
+          "mud": 1,
+          "water": 0
+        }
+      ],
+      "captures": {
+        "before": {
+          "sha256": "1d21661e4c01abaf458c65cbeabf17e478c02f7e4558a6437d6f2d1a94479af0"
+        },
+        "after": {
+          "sha256": "e88a4ae3f031244bbe31ffef19e0d10604918b147d1c1d6d7a945fc8b4035cee"
+        }
+      },
+      "glError": 0
+    },
+    {
+      "id": "water-day",
+      "time": 0.12,
+      "near": [
+        -18,
+        -18
+      ],
+      "offset": -10,
+      "speed": 10,
+      "frames": 0,
+      "kind": "water",
+      "speedKmh": 9.236721782045977,
+      "position": {
+        "x": -21.874238967895508,
+        "y": 2.037863254547119,
+        "z": -19.698436737060547
+      },
+      "activeParticles": 32,
+      "material": {
+        "useSkybox": true,
+        "useLighting": true,
+        "depthWrite": false,
+        "specularityFactor": 0,
+        "emissive": [
+          0,
+          0,
+          0
+        ]
+      },
+      "wheels": [
+        {
+          "grounded": true,
+          "surface": "gravel",
+          "mud": 0,
+          "water": 0.26813305592870695
+        },
+        {
+          "grounded": true,
+          "surface": "gravel",
+          "mud": 0,
+          "water": 0.23731121659973975
+        },
+        {
+          "grounded": true,
+          "surface": "gravel",
+          "mud": 0,
+          "water": 0.1600704300930771
+        },
+        {
+          "grounded": true,
+          "surface": "gravel",
+          "mud": 0,
+          "water": 0.0952911143299795
+        }
+      ],
+      "captures": {
+        "before": {
+          "sha256": "1b5311156e552d4ec381e209a1ca507ca1e87fba06abd25daea3f62ee57edfbc"
+        },
+        "after": {
+          "sha256": "dd70d3593f609063f3277dfeb87cd5428b1ae8a528281c09fa62cca2c42e0187"
+        }
+      },
+      "glError": 0
+    }
+  ],
+  "errors": [],
+  "environment": {
+    "renderer": "ANGLE (NVIDIA, Vulkan 1.3.242 (NVIDIA NVIDIA L4 (0x000027B8)), NVIDIA)",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+    "ambient": [
+      0,
+      0,
+      0
+    ],
+    "environmentAtlas": true,
+    "ssao": {
+      "type": "combine",
+      "blurEnabled": true,
+      "randomize": false,
+      "intensity": 0.45,
+      "radius": 1.2,
+      "samples": 24,
+      "power": 3,
+      "minAngle": 10,
+      "scale": 1
+    }
+  },
+  "sourceFile": "src/game/render/effects.ts",
+  "buildCommand": "npm run build",
+  "buildPassed": true,
+  "method": "Production build. Drive on actual dirt, mud and ford surfaces and verify grounded wheel surface/water data plus active particles. Freeze the scene, then compare the same particle geometry with useSkybox false/true. No changes to particle color, opacity, lights, SSAO or exposure between images.",
+  "comparisonImage": {
+    "file": "comparison.png",
+    "sha256": "1a5f0e6432d69993dc70e0eca04afb52704ef4a4c31f18d81194b408de4bdf88"
+  }
+}

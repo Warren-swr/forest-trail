@@ -65,7 +65,8 @@ export class Effects {
     mat.blendType = pc.BLEND_NORMAL;
     mat.depthWrite = false;
     mat.cull = pc.CULLFACE_NONE;
-    mat.useSkybox = false;
+    // Match the world's environment lighting; the scene has no constant ambient.
+    mat.useSkybox = true;
     mat.specularityFactor = 0;
     applyFog(mat);
     mat.update();
