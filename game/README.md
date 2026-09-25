@@ -12,6 +12,12 @@
 
 演示视频：[docs/demo.mp4](docs/demo.mp4)（126 秒，1080p，由游戏内“录制演示视频”按钮录制）。
 
+## 横版实景图
+
+[查看 5 张原图](docs/screenshots/landscape/README.md)（2560×1440，16:9）：松林小径、湖畔船屋、赤岩峡谷、秋林木屋与星夜营地，均由当前游戏实机取景。
+
+[![横版实景图预览](docs/screenshots/landscape/preview.jpg)](docs/screenshots/landscape/README.md)
+
 ## 主要内容
 
 - **三辆车：**

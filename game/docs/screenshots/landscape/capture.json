@@ -1,0 +1,352 @@
+{
+  "source": "Current Forest Trail game, live PlayCanvas WebGL2 canvas capture",
+  "sourceCommit": "e46c9de4453d0c981cebc4b3e8b8936f9f70a075",
+  "resolution": [
+    2560,
+    1440
+  ],
+  "aspectRatio": "16:9",
+  "quality": "high",
+  "hud": false,
+  "renderer": "ANGLE (NVIDIA, Vulkan 1.3.242 (NVIDIA NVIDIA L4 (0x000027B8)), NVIDIA)",
+  "runtimeErrors": [],
+  "captureMethod": "In-game camera via window.__ft; canvas exported at frameend; PNG converted to JPEG quality 96 with no resizing or color changes",
+  "shots": [
+    {
+      "id": "01-forest-drive",
+      "title": "松林小径",
+      "vehicle": "scout",
+      "time": 0.12,
+      "beam": 0,
+      "size": [
+        2560,
+        1440
+      ],
+      "quality": "high",
+      "vehiclePosition": [
+        -199.11199951171875,
+        6.709704875946045,
+        69.94784545898438
+      ],
+      "vehicleYaw": -0.06623564547003825,
+      "cameraPosition": [
+        -195.49842834472656,
+        8.624373435974121,
+        79.14002227783203
+      ],
+      "cameraEuler": [
+        -2.6952181446681127,
+        16.902161398804868,
+        1.9752655052040405e-08
+      ],
+      "fov": 48,
+      "groundedWheels": 4,
+      "stats": {
+        "fps": 60,
+        "draws": 2075,
+        "tris": 10451986,
+        "frameMs": 16.699999999999818
+      },
+      "preset": {
+        "id": "01-forest-drive",
+        "title": "松林小径",
+        "vehicle": "scout",
+        "time": 0.12,
+        "place": {
+          "kind": "road",
+          "road": "loop",
+          "near": [
+            -199,
+            70
+          ]
+        },
+        "camera": {
+          "kind": "relative",
+          "position": [
+            4.3,
+            2.3,
+            8.8
+          ],
+          "target": [
+            -0.8,
+            1,
+            -4.5
+          ],
+          "fov": 48
+        }
+      },
+      "file": "01-forest-drive.jpg",
+      "sha256": "05e5dc0b6ef693e41ce77d899d8cdac6136c343a5db84244dfb97f99aec05d49",
+      "bytes": 1591413,
+      "capturedAt": "2026-09-25T13:22:43.755Z"
+    },
+    {
+      "id": "02-lakeside",
+      "title": "湖畔船屋",
+      "vehicle": "ranger",
+      "time": 0.1,
+      "beam": 0,
+      "size": [
+        2560,
+        1440
+      ],
+      "quality": "high",
+      "vehiclePosition": [
+        -58.000282287597656,
+        2.7580296993255615,
+        174.0104522705078
+      ],
+      "vehicleYaw": 0.5015439419170138,
+      "cameraPosition": [
+        -43,
+        5.860724449157715,
+        181
+      ],
+      "cameraEuler": [
+        -4.766189249253479,
+        41.98721401886857,
+        7.938304522251218e-08
+      ],
+      "fov": 50,
+      "groundedWheels": 4,
+      "stats": {
+        "fps": 60,
+        "draws": 2343,
+        "tris": 9241464,
+        "frameMs": 16.700000000000728
+      },
+      "preset": {
+        "id": "02-lakeside",
+        "title": "湖畔船屋",
+        "vehicle": "ranger",
+        "time": 0.1,
+        "place": {
+          "kind": "world",
+          "position": [
+            -58,
+            174,
+            0.5
+          ]
+        },
+        "camera": {
+          "kind": "world",
+          "position": [
+            -43,
+            3.3,
+            181
+          ],
+          "target": [
+            -70,
+            2,
+            151
+          ],
+          "groundRelative": true,
+          "fov": 50
+        }
+      },
+      "file": "02-lakeside.jpg",
+      "sha256": "8aa9473a3a6dffec4cf95e51d8fa04513e6c9bf4ad7f24ec7336780992e26da5",
+      "bytes": 1745755,
+      "capturedAt": "2026-09-25T13:23:51.406Z"
+    },
+    {
+      "id": "03-canyon-bridge",
+      "title": "赤岩峡谷",
+      "vehicle": "toyota",
+      "time": 0.22,
+      "beam": 0,
+      "size": [
+        2560,
+        1440
+      ],
+      "quality": "high",
+      "vehiclePosition": [
+        -236.95278930664062,
+        26.295082092285156,
+        -214.8552703857422
+      ],
+      "vehicleYaw": 0.3169513176704024,
+      "cameraPosition": [
+        -221.74964904785156,
+        22.745214462280273,
+        -219.84268188476562
+      ],
+      "cameraEuler": [
+        -164.62374611074068,
+        71.84002961101396,
+        -179.9999999459729
+      ],
+      "fov": 52,
+      "groundedWheels": 4,
+      "stats": {
+        "fps": 60,
+        "draws": 1671,
+        "tris": 10197872,
+        "frameMs": 16.600000000000364
+      },
+      "preset": {
+        "id": "03-canyon-bridge",
+        "title": "赤岩峡谷",
+        "vehicle": "toyota",
+        "time": 0.22,
+        "place": {
+          "kind": "bridge",
+          "offset": 0
+        },
+        "camera": {
+          "kind": "bridge",
+          "offset": [
+            0,
+            -3.4,
+            16
+          ],
+          "lookHeight": 1,
+          "fov": 52
+        }
+      },
+      "file": "03-canyon-bridge.jpg",
+      "sha256": "638a1e490acfd9252b534eaa72973393638c53d1883bae6caf9dc9f35cf6b737",
+      "bytes": 1884621,
+      "capturedAt": "2026-09-25T13:23:51.406Z"
+    },
+    {
+      "id": "04-autumn-cabin",
+      "title": "秋林木屋",
+      "vehicle": "scout",
+      "time": 0.33,
+      "beam": 0,
+      "size": [
+        2560,
+        1440
+      ],
+      "quality": "high",
+      "vehiclePosition": [
+        196.27703857421875,
+        7.486927032470703,
+        76.38273620605469
+      ],
+      "vehicleYaw": 2.693830765110265,
+      "cameraPosition": [
+        207,
+        16.235307693481445,
+        96
+      ],
+      "cameraEuler": [
+        -11.952617928501954,
+        50.194428033218685,
+        -2.2760405101879482e-07
+      ],
+      "fov": 44,
+      "groundedWheels": 4,
+      "stats": {
+        "fps": 58,
+        "draws": 2222,
+        "tris": 10661535,
+        "frameMs": 16.600000000000364
+      },
+      "preset": {
+        "id": "04-autumn-cabin",
+        "title": "秋林木屋",
+        "vehicle": "scout",
+        "time": 0.33,
+        "place": {
+          "kind": "road",
+          "road": "loop",
+          "near": [
+            198,
+            77
+          ]
+        },
+        "camera": {
+          "kind": "world",
+          "position": [
+            207,
+            3,
+            96
+          ],
+          "target": [
+            183,
+            2.5,
+            76
+          ],
+          "groundRelative": true,
+          "fov": 44
+        }
+      },
+      "file": "04-autumn-cabin.jpg",
+      "sha256": "2a4cbc36a72d1523d32dcf06e952c39a73c1e7d7723770a2dd534e8058509d60",
+      "bytes": 2278272,
+      "capturedAt": "2026-09-25T13:23:51.406Z"
+    },
+    {
+      "id": "05-night-camp",
+      "title": "星夜营地",
+      "vehicle": "scout",
+      "time": 1,
+      "beam": 1,
+      "size": [
+        2560,
+        1440
+      ],
+      "quality": "high",
+      "vehiclePosition": [
+        -174.47947692871094,
+        5.382917404174805,
+        184.0027618408203
+      ],
+      "vehicleYaw": 0.49493103372044445,
+      "cameraPosition": [
+        -163,
+        10.182323455810547,
+        200
+      ],
+      "cameraEuler": [
+        -8.09344013882706,
+        46.39717937863001,
+        1.6892376550236244e-07
+      ],
+      "fov": 48,
+      "groundedWheels": 4,
+      "stats": {
+        "fps": 55,
+        "draws": 2148,
+        "tris": 9930424,
+        "frameMs": 16.599999999998545
+      },
+      "preset": {
+        "id": "05-night-camp",
+        "title": "星夜营地",
+        "vehicle": "scout",
+        "time": 1,
+        "beam": 1,
+        "place": {
+          "kind": "world",
+          "position": [
+            -174.5,
+            184,
+            0.5
+          ]
+        },
+        "camera": {
+          "kind": "world",
+          "position": [
+            -163,
+            4.2,
+            200
+          ],
+          "target": [
+            -184,
+            1.3,
+            180
+          ],
+          "groundRelative": true,
+          "fov": 48
+        }
+      },
+      "file": "05-night-camp.jpg",
+      "sha256": "1497e1f9abba42df700b3d1ee20e8f6bcd16e3db0ed9ee2ec383979efdd51f84",
+      "bytes": 1528340,
+      "capturedAt": "2026-09-25T13:23:51.406Z"
+    }
+  ]
+}

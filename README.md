@@ -1,6 +1,6 @@
 # Forest Trail · 松溪环线
 
-**[在线试玩](https://warren-swr.github.io/forest-trail/)** · [游戏说明与操作](game/README.md) · [演示视频](game/docs/demo.mp4)
+**[在线试玩](https://warren-swr.github.io/forest-trail/)** · [游戏说明与操作](game/README.md) · [演示视频](game/docs/demo.mp4) · [横版实景图](game/docs/screenshots/landscape/README.md)
 
 单人第三人称 3D 森林越野网页游戏。挑选一辆老式四驱车，穿过森林、浅溪与山脊，记录风景；也可以挑战越野训练场、探索峡谷吊桥，或在夜里打开大灯自由驾驶。
 
