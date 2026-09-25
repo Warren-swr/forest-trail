@@ -1,0 +1,347 @@
+{
+  "verifiedAt": "2026-09-25T15:32:47.132Z",
+  "sourceSha256": "c052ba6408ce5778c3478d43afab2b2fc4acca27e4022c0ae8737b2d5090b5e1",
+  "indexSha256": "505c3b8096a9e810773eb5a754d3e9e54036fd764a9eccfe1bbe45eea84d0749",
+  "buildCommand": "npm run build",
+  "buildPassed": true,
+  "environment": {
+    "renderer": "ANGLE (NVIDIA, Vulkan 1.3.242 (NVIDIA NVIDIA L4 (0x000027B8)), NVIDIA)",
+    "gpuTimer": true,
+    "profilerEnabled": false,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+    "ssao": {
+      "type": "combine",
+      "blurEnabled": true,
+      "randomize": false,
+      "intensity": 0.45,
+      "radius": 1.2,
+      "samples": 24,
+      "power": 3,
+      "minAngle": 10,
+      "scale": 1
+    }
+  },
+  "comparisonMethod": "Same frozen production scene with original (23f86e1), regressed (31686b4), and corrected SSAO settings. Sunlight, exposure, geometry, camera and material colors are unchanged. Car crops are native pixels; wheel crops use 3x nearest-neighbor scaling.",
+  "baseline": {
+    "type": "combine",
+    "samples": 10,
+    "scale": 0.5,
+    "intensity": 0.45,
+    "radius": 1.2,
+    "power": 6
+  },
+  "regressed": {
+    "type": "combine",
+    "samples": 24,
+    "scale": 1,
+    "intensity": 0.4,
+    "radius": 1,
+    "power": 2
+  },
+  "corrected": {
+    "type": "combine",
+    "blurEnabled": true,
+    "randomize": false,
+    "intensity": 0.45,
+    "radius": 1.2,
+    "samples": 24,
+    "power": 3,
+    "minAngle": 10,
+    "scale": 1
+  },
+  "brightnessMethod": "1440x900 fixed-camera PNGs; PIL grayscale conversion followed by Gaussian blur radius 4; compare means over the darkest 35 percent of baseline pixels in each fixed ROI. Display-brightness regression aid, not a physical lighting or general image-quality score.",
+  "brightnessChecks": [
+    {
+      "region": "vehicle",
+      "box": [
+        490,
+        275,
+        1010,
+        675
+      ],
+      "baselineDarkMean": 47.44139426929347,
+      "regressed": {
+        "darkMean": 56.71179298720676,
+        "darkBrightnessChangePercent": 19.54073833768748,
+        "lowFrequencyMeanAbsoluteError": 6.145557692307692
+      },
+      "after": {
+        "darkMean": 49.77376972175403,
+        "darkBrightnessChangePercent": 4.91632990215507,
+        "lowFrequencyMeanAbsoluteError": 2.6040528846153848
+      }
+    },
+    {
+      "region": "front-wheel",
+      "box": [
+        675,
+        490,
+        790,
+        675
+      ],
+      "baselineDarkMean": 24.961366409109395,
+      "regressed": {
+        "darkMean": 35.07930052867019,
+        "darkBrightnessChangePercent": 40.53437601824697,
+        "lowFrequencyMeanAbsoluteError": 11.330998824911868
+      },
+      "after": {
+        "darkMean": 25.798563101531787,
+        "darkBrightnessChangePercent": 3.3539698055826905,
+        "lowFrequencyMeanAbsoluteError": 4.316944770857814
+      }
+    },
+    {
+      "region": "body-side",
+      "box": [
+        520,
+        435,
+        675,
+        548
+      ],
+      "baselineDarkMean": 41.42433185768159,
+      "regressed": {
+        "darkMean": 50.31529758976882,
+        "darkBrightnessChangePercent": 21.463148186996108,
+        "lowFrequencyMeanAbsoluteError": 6.965800742220954
+      },
+      "after": {
+        "darkMean": 43.41547794720446,
+        "darkBrightnessChangePercent": 4.806706590618526,
+        "lowFrequencyMeanAbsoluteError": 2.727833285755067
+      }
+    },
+    {
+      "region": "grass-contact",
+      "box": [
+        0,
+        530,
+        165,
+        810
+      ],
+      "baselineDarkMean": 65.46226593531303,
+      "regressed": {
+        "darkMean": 79.41434966269466,
+        "darkBrightnessChangePercent": 21.313169545900656,
+        "lowFrequencyMeanAbsoluteError": 8.471125541125542
+      },
+      "after": {
+        "darkMean": 66.59844902591261,
+        "darkBrightnessChangePercent": 1.735630556574863,
+        "lowFrequencyMeanAbsoluteError": 3.5708658008658007
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "id": "contact-day",
+      "time": 0.12,
+      "viewport": [
+        1440,
+        900
+      ],
+      "settings": {
+        "type": "combine",
+        "blurEnabled": true,
+        "randomize": false,
+        "intensity": 0.45,
+        "radius": 1.2,
+        "samples": 24,
+        "power": 3,
+        "minAngle": 10,
+        "scale": 1
+      },
+      "captures": {
+        "before": {
+          "sha256": "bf3774ad05e78d9e574f2b51349be1c8d53fb2527105cac33fea368a25a5bc90",
+          "bytes": 2425776
+        },
+        "regressed": {
+          "sha256": "583656edb8ef08b541b865258d1975773fdbfa80acb3294e81db88281ab02db5",
+          "bytes": 2423188
+        },
+        "after": {
+          "sha256": "1dbda41938dabb3a10da40ab01041c411739b5ecdabf4c0c5bf8dca95abf493b",
+          "bytes": 2434044
+        }
+      }
+    },
+    {
+      "id": "01-forest-drive",
+      "time": 0.12,
+      "viewport": [
+        2560,
+        1440
+      ],
+      "settings": {
+        "type": "combine",
+        "blurEnabled": true,
+        "randomize": false,
+        "intensity": 0.45,
+        "radius": 1.2,
+        "samples": 24,
+        "power": 3,
+        "minAngle": 10,
+        "scale": 1
+      },
+      "captures": {
+        "before": {
+          "sha256": "29841b12d04ee4c833948ba1a46cf9a3883f6fdf6e8688562ca6e614ccd3e61a",
+          "bytes": 6075526
+        },
+        "regressed": {
+          "sha256": "b01574c5faf670abe0c22be1c0d3ed719c65ad1f3e772c676c715ae83ca74b47",
+          "bytes": 6061915
+        },
+        "after": {
+          "sha256": "71ab6985f945fbe9649494d14cccd2cdea2df71782714282b7213b9d8b62f8eb",
+          "bytes": 6118087
+        }
+      }
+    },
+    {
+      "id": "04-autumn-cabin",
+      "time": 0.33,
+      "viewport": [
+        2560,
+        1440
+      ],
+      "settings": {
+        "type": "combine",
+        "blurEnabled": true,
+        "randomize": false,
+        "intensity": 0.45,
+        "radius": 1.2,
+        "samples": 24,
+        "power": 3,
+        "minAngle": 10,
+        "scale": 1
+      },
+      "captures": {
+        "before": {
+          "sha256": "1574721c3c5491e113d5ba453d6522bea25513f6604fe55170f892456da66cc0",
+          "bytes": 7491400
+        },
+        "regressed": {
+          "sha256": "02ddc4d7881268cac2451c885db72bf3f09720a939ea147d0532c8f430c59ac6",
+          "bytes": 7473714
+        },
+        "after": {
+          "sha256": "4d71a9497a7d4a003e8dc66d1631ae0b38bce63b70b0dbc6bf58027995634155",
+          "bytes": 7499353
+        }
+      }
+    },
+    {
+      "id": "05-night-camp",
+      "time": 1,
+      "viewport": [
+        2560,
+        1440
+      ],
+      "settings": {
+        "type": "combine",
+        "blurEnabled": true,
+        "randomize": false,
+        "intensity": 0.45,
+        "radius": 1.2,
+        "samples": 24,
+        "power": 3,
+        "minAngle": 10,
+        "scale": 1
+      },
+      "captures": {
+        "before": {
+          "sha256": "d36b1d19ec2323f1fa379a82c313c8b5bbe29cd77613a7172060b3a3ed8ee444",
+          "bytes": 5311865
+        },
+        "regressed": {
+          "sha256": "77031490a828180df51f915bca1f6b81fc5e23fda62b20115aa56e789f96e44e",
+          "bytes": 5562185
+        },
+        "after": {
+          "sha256": "3d7cfa753b59d1233a42acb1b286e222a1ebbca202854b6ebaedcae2eb5d61fa",
+          "bytes": 5467205
+        }
+      }
+    }
+  ],
+  "qualitySwitches": [
+    {
+      "quality": "medium",
+      "ssao": {
+        "type": "combine",
+        "blurEnabled": true,
+        "randomize": false,
+        "intensity": 0.45,
+        "radius": 1.2,
+        "samples": 16,
+        "power": 3,
+        "minAngle": 10,
+        "scale": 1
+      },
+      "canvas": [
+        1440,
+        900
+      ],
+      "aoTexture": [
+        1440,
+        900
+      ],
+      "taa": false,
+      "glError": 0
+    },
+    {
+      "quality": "low",
+      "ssao": {
+        "type": "none",
+        "blurEnabled": true,
+        "randomize": false,
+        "intensity": 0.45,
+        "radius": 1.2,
+        "samples": 16,
+        "power": 3,
+        "minAngle": 10,
+        "scale": 1
+      },
+      "canvas": [
+        1152,
+        720
+      ],
+      "aoTexture": null,
+      "taa": false,
+      "glError": 0
+    },
+    {
+      "quality": "high",
+      "ssao": {
+        "type": "combine",
+        "blurEnabled": true,
+        "randomize": false,
+        "intensity": 0.45,
+        "radius": 1.2,
+        "samples": 24,
+        "power": 3,
+        "minAngle": 10,
+        "scale": 1
+      },
+      "canvas": [
+        1440,
+        900
+      ],
+      "aoTexture": [
+        1440,
+        900
+      ],
+      "taa": false,
+      "glError": 0
+    }
+  ],
+  "qualityRestoredIdentical": true,
+  "runtimeErrors": [],
+  "comparisonImage": {
+    "file": "comparison.png",
+    "sha256": "8efa0cc9ccdcbf95b8bb8adab4b23f6538886a4810519350e5b5def2752721fe"
+  },
+  "performance": "No new performance claim. This change retains the previous render resolution and sample budgets; earlier timing data is tied to commit 31686b4."
+}
