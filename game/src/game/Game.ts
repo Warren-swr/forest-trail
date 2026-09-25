@@ -191,11 +191,14 @@ export class Game {
     cf.vignette.outer = 1.25;
     // MSAA keeps foliage edges crisp while driving; TAA smeared the foreground
     cf.taa.enabled = false;
+    // Full-resolution AO avoids magnifying the sampling grid. More taps need
+    // a gentler falloff than CameraFrame's default power of 6.
     cf.ssao.type = pc.SSAOTYPE_COMBINE;
-    cf.ssao.intensity = 0.45;
-    cf.ssao.radius = 1.2;
-    cf.ssao.samples = 10;
-    cf.ssao.scale = 0.5;
+    cf.ssao.intensity = 0.4;
+    cf.ssao.radius = 1;
+    cf.ssao.power = 2;
+    cf.ssao.samples = 24;
+    cf.ssao.scale = 1;
     cf.update();
     this.cameraFrame = cf;
   }
@@ -208,6 +211,7 @@ export class Game {
     this.app.resizeCanvas();
     if (cf) {
       cf.ssao.type = q === 'low' ? pc.SSAOTYPE_NONE : pc.SSAOTYPE_COMBINE;
+      cf.ssao.samples = q === 'high' ? 24 : 16;
       cf.rendering.samples = q === 'low' ? 1 : 4;
       cf.bloom.intensity = q === 'low' ? 0 : 0.012;
       cf.update();

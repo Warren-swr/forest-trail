@@ -1,0 +1,380 @@
+{
+  "verifiedAt": "2026-09-25T14:41:25.460Z",
+  "sourceFile": "src/game/Game.ts",
+  "sourceSha256": "a63ac644388ab81a1aa0996cf4346b523c1f1185bf17b8b0005087a9f4f4a5e5",
+  "build": {
+    "command": "npm run build",
+    "passed": true,
+    "indexSha256": "728f275110f8e94b5d02a3096344e4c8956d89b329b307f7b13df3094224b6a9"
+  },
+  "browser": {
+    "renderer": "ANGLE (NVIDIA, Vulkan 1.3.242 (NVIDIA NVIDIA L4 (0x000027B8)), NVIDIA)",
+    "gpuTimer": true,
+    "profilerEnabled": false,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+    "ssao": {
+      "type": "combine",
+      "blurEnabled": true,
+      "randomize": false,
+      "intensity": 0.4,
+      "radius": 1,
+      "samples": 24,
+      "power": 2,
+      "minAngle": 10,
+      "scale": 1
+    }
+  },
+  "method": "Production build served locally. Paired images reuse the same frozen camera, world, sunlight and exposure; only SSAO settings differ. Source images are 1440 x 900 PNG captures at frameend. Comparison overview is resized; detail crops use 3x nearest-neighbor scaling.",
+  "originalSsao": {
+    "type": "combine",
+    "samples": 10,
+    "scale": 0.5,
+    "intensity": 0.45,
+    "radius": 1.2,
+    "power": 6
+  },
+  "qualitySwitches": [
+    {
+      "quality": "medium",
+      "ssao": {
+        "type": "combine",
+        "blurEnabled": true,
+        "randomize": false,
+        "intensity": 0.4,
+        "radius": 1,
+        "samples": 16,
+        "power": 2,
+        "minAngle": 10,
+        "scale": 1
+      },
+      "canvas": [
+        1440,
+        900
+      ],
+      "aoTexture": [
+        1440,
+        900
+      ],
+      "taa": false,
+      "glError": 0
+    },
+    {
+      "quality": "low",
+      "ssao": {
+        "type": "none",
+        "blurEnabled": true,
+        "randomize": false,
+        "intensity": 0.4,
+        "radius": 1,
+        "samples": 16,
+        "power": 2,
+        "minAngle": 10,
+        "scale": 1
+      },
+      "canvas": [
+        1152,
+        720
+      ],
+      "aoTexture": null,
+      "taa": false,
+      "glError": 0
+    },
+    {
+      "quality": "high",
+      "ssao": {
+        "type": "combine",
+        "blurEnabled": true,
+        "randomize": false,
+        "intensity": 0.4,
+        "radius": 1,
+        "samples": 24,
+        "power": 2,
+        "minAngle": 10,
+        "scale": 1
+      },
+      "canvas": [
+        1440,
+        900
+      ],
+      "aoTexture": [
+        1440,
+        900
+      ],
+      "taa": false,
+      "glError": 0
+    }
+  ],
+  "qualityRestoredIdentical": true,
+  "visualChecks": [
+    {
+      "scene": "contact-day",
+      "time": 0.12,
+      "viewport": [
+        1440,
+        900
+      ],
+      "settings": {
+        "type": "combine",
+        "blurEnabled": true,
+        "randomize": false,
+        "intensity": 0.4,
+        "radius": 1,
+        "samples": 24,
+        "power": 2,
+        "minAngle": 10,
+        "scale": 1
+      },
+      "beforeSha256": "2b6ff4a2e800f5d5a16bf9a92fdb7f6163c527dedac6ffa50f09d182c5f25302",
+      "afterSha256": "1076c99142c5a905305bd90592210f2dd7235fac11180f7b36fe5fee45df8541"
+    },
+    {
+      "scene": "01-forest-drive",
+      "time": 0.12,
+      "viewport": [
+        2560,
+        1440
+      ],
+      "settings": {
+        "type": "combine",
+        "blurEnabled": true,
+        "randomize": false,
+        "intensity": 0.4,
+        "radius": 1,
+        "samples": 24,
+        "power": 2,
+        "minAngle": 10,
+        "scale": 1
+      },
+      "beforeSha256": "705764d1b14799992faed8b0f8cea1d7b51e129441985d52cd79b8c10660048e",
+      "afterSha256": "40087b37ac632d8bb1c9b80bfbe592c2052c29bfb5bfa17bfe6e849643691b1d"
+    },
+    {
+      "scene": "04-autumn-cabin",
+      "time": 0.33,
+      "viewport": [
+        2560,
+        1440
+      ],
+      "settings": {
+        "type": "combine",
+        "blurEnabled": true,
+        "randomize": false,
+        "intensity": 0.4,
+        "radius": 1,
+        "samples": 24,
+        "power": 2,
+        "minAngle": 10,
+        "scale": 1
+      },
+      "beforeSha256": "07bdb0c52eb72f28380899b0f5c5363e276e87e3592000858e0eac81e55ad7e7",
+      "afterSha256": "23fb97077e8d34728022f7519da86fdba88815646c397683f783cb2001340171"
+    },
+    {
+      "scene": "05-night-camp",
+      "time": 1,
+      "viewport": [
+        2560,
+        1440
+      ],
+      "settings": {
+        "type": "combine",
+        "blurEnabled": true,
+        "randomize": false,
+        "intensity": 0.4,
+        "radius": 1,
+        "samples": 24,
+        "power": 2,
+        "minAngle": 10,
+        "scale": 1
+      },
+      "beforeSha256": "d2314419016fb4a7f23be93134ada51c5957b5e7bc0120ba253bb13e680fa1d8",
+      "afterSha256": "147773f6584324541ac537658809c4570b78605e17f7811e588677b4d7a5be8f"
+    }
+  ],
+  "staticPerformance": [
+    {
+      "scene": "01-forest-drive",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "measurements": {
+        "before": {
+          "frames": 180,
+          "fps": 60.00200006666889,
+          "frameMs": {
+            "mean": 16.66611111111111,
+            "p95": 16.799999999999272
+          },
+          "gpuMs": null,
+          "ssaoMs": null,
+          "draws": 2075
+        },
+        "after": {
+          "frames": 180,
+          "fps": 60.00200006666889,
+          "frameMs": {
+            "mean": 16.66611111111111,
+            "p95": 16.700000000000728
+          },
+          "gpuMs": null,
+          "ssaoMs": null,
+          "draws": 2075
+        }
+      }
+    },
+    {
+      "scene": "05-night-camp",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "measurements": {
+        "before": {
+          "frames": 180,
+          "fps": 59.99999999999999,
+          "frameMs": {
+            "mean": 16.666666666666668,
+            "p95": 16.700000000000728
+          },
+          "gpuMs": null,
+          "ssaoMs": null,
+          "draws": 1916
+        },
+        "after": {
+          "frames": 180,
+          "fps": 60.00400026668446,
+          "frameMs": {
+            "mean": 16.665555555555553,
+            "p95": 16.799999999999272
+          },
+          "gpuMs": null,
+          "ssaoMs": null,
+          "draws": 1916
+        }
+      }
+    }
+  ],
+  "drivingPerformance": [
+    {
+      "time": 0.12,
+      "variant": "before",
+      "beam": 0,
+      "frames": 180,
+      "fps": 60.00000000000007,
+      "frameMs": {
+        "mean": 16.666666666666647,
+        "p95": 16.799999999999272
+      },
+      "gpuMs": null,
+      "ssaoMs": null,
+      "draws": 2081,
+      "distance": 12.988606281753931,
+      "state": {
+        "position": {
+          "x": -197.87294006347656,
+          "y": 7.012823104858398,
+          "z": 57.036624908447266
+        },
+        "speedKmh": 12.730909390757496,
+        "groundedWheels": 4,
+        "telemetry": "v 12.7 km/h thr 0.32 brk 0.00 dir 1 gear high\nsteer -0.4° grounded 4 up 1.000\nlen 0.26 0.33 0.30 0.24\nload 5.9 4.3 2.5 5.3 kN\nsurf dirt dirt dirt dirt spin ----\nwater 0.00 pos -197.9 7.0 57.0\nsafe 3 stuck 0.0 winch off 0.0 kN\ndraws 2081 tris 0.00M"
+      }
+    },
+    {
+      "time": 0.12,
+      "variant": "after",
+      "beam": 0,
+      "frames": 180,
+      "fps": 59.018328469786006,
+      "frameMs": {
+        "mean": 16.943888888888857,
+        "p95": 16.799999999995634
+      },
+      "gpuMs": null,
+      "ssaoMs": null,
+      "draws": 2084,
+      "distance": 13.1072672245389,
+      "state": {
+        "position": {
+          "x": -197.85821533203125,
+          "y": 7.019017696380615,
+          "z": 56.91883087158203
+        },
+        "speedKmh": 12.713731102493515,
+        "groundedWheels": 4,
+        "telemetry": "v 12.7 km/h thr 0.32 brk 0.00 dir 1 gear high\nsteer -0.5° grounded 4 up 1.000\nlen 0.26 0.31 0.30 0.25\nload 5.4 4.2 2.4 4.9 kN\nsurf dirt dirt dirt dirt spin ----\nwater 0.00 pos -197.9 7.0 56.9\nsafe 3 stuck 0.0 winch off 0.0 kN\ndraws 2084 tris 0.00M"
+      }
+    },
+    {
+      "time": 1,
+      "variant": "before",
+      "beam": 2,
+      "frames": 180,
+      "fps": 58.698842328387414,
+      "frameMs": {
+        "mean": 17.03611111111111,
+        "p95": 16.799999999995634
+      },
+      "gpuMs": null,
+      "ssaoMs": null,
+      "draws": 2365,
+      "distance": 13.573019978215056,
+      "state": {
+        "position": {
+          "x": -197.80963134765625,
+          "y": 7.053646564483643,
+          "z": 56.45560073852539
+        },
+        "speedKmh": 12.640062658707267,
+        "groundedWheels": 4,
+        "telemetry": "v 12.6 km/h thr 0.34 brk 0.00 dir 1 gear high\nsteer -0.6° grounded 4 up 1.000\nlen 0.27 0.29 0.31 0.26\nload 4.3 3.6 2.9 4.3 kN\nsurf dirt dirt dirt dirt spin ----\nwater 0.00 pos -197.8 7.1 56.5\nsafe 3 stuck 0.0 winch off 0.0 kN\ndraws 2365 tris 0.00M"
+      }
+    },
+    {
+      "time": 1,
+      "variant": "after",
+      "beam": 2,
+      "frames": 180,
+      "fps": 54.82289160296039,
+      "frameMs": {
+        "mean": 18.24055555555557,
+        "p95": 33.30000000000291
+      },
+      "gpuMs": null,
+      "ssaoMs": null,
+      "draws": 2360,
+      "distance": 14.333886408288024,
+      "state": {
+        "position": {
+          "x": -197.7440948486328,
+          "y": 7.115617752075195,
+          "z": 55.69752883911133
+        },
+        "speedKmh": 12.559370105562923,
+        "groundedWheels": 4,
+        "telemetry": "v 12.6 km/h thr 0.36 brk 0.00 dir 1 gear high\nsteer -0.7° grounded 4 up 1.000\nlen 0.28 0.30 0.31 0.28\nload 4.2 3.5 2.0 4.0 kN\nsurf dirt dirt dirt dirt spin ----\nwater 0.00 pos -197.7 7.1 55.7\nsafe 3 stuck 0.0 winch off 0.0 kN\ndraws 2360 tris 0.00M"
+      }
+    }
+  ],
+  "runtimeErrors": [],
+  "images": {
+    "contact-before.png": {
+      "sha256": "2b6ff4a2e800f5d5a16bf9a92fdb7f6163c527dedac6ffa50f09d182c5f25302",
+      "bytes": 2425630
+    },
+    "contact-after.png": {
+      "sha256": "1076c99142c5a905305bd90592210f2dd7235fac11180f7b36fe5fee45df8541",
+      "bytes": 2422781
+    },
+    "comparison.png": {
+      "sha256": "5b21d367d719bd9f48e460adf58b8fc80e27c7c2e2a47aa853f1f018cf46a708",
+      "bytes": 616099
+    }
+  },
+  "limitations": [
+    "Frame rates use 180 requestAnimationFrame intervals after warmup; vertical sync caps results near 60 fps.",
+    "This shared host had another browser GPU workload. Dedicated graphics-device isolation was not independently established, so timings are environment-specific and do not establish zero performance overhead.",
+    "Integrated GPU and mobile-device performance were not measured."
+  ]
+}
