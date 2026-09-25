@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Forest Trail：松溪环线策划示意</title>
+  <desc id="desc">原创拓扑图。由营地经林窗小屋、浅溪、泥地岔口到山脊望台，再沿湖岸返回。两条可选近路与主线汇合；不是原作地图，不按比例。</desc>
+  <defs>
+    <pattern id="paper" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="0.7" fill="#d8ded0"/></pattern>
+    <g id="pine"><path d="M0 -20L-10 -2H-6L-13 11H13L6 -2H10Z" fill="#5f7c5b"/><path d="M0 9V18" stroke="#6b6650" stroke-width="3"/></g>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#ac653f"/></marker>
+    <style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#263e33}.small{font-size:14px;fill:#5c6b60}.label{font-size:18px;font-weight:700}.node{fill:#f6f2e5;stroke:#365446;stroke-width:3}.letter{font-size:17px;font-weight:700;text-anchor:middle;dominant-baseline:central}.route{fill:none;stroke:#ac653f;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.shortcut{fill:none;stroke:#647356;stroke-width:4;stroke-dasharray:8 8}.contour{fill:none;stroke:#9db296;stroke-width:1.4;opacity:.45}</style>
+  </defs>
+  <rect width="1200" height="760" rx="20" fill="#f3f0e4"/>
+  <text x="38" y="48" font-size="25" font-weight="700">Forest Trail / 松溪环线</text>
+  <text x="38" y="76" class="small">原创关卡拓扑 · 640 × 640 m 地图提案 · 非比例示意 · 非原作地图</text>
+  <rect x="28" y="99" width="802" height="616" rx="18" fill="#e6eadb"/>
+  <rect x="28" y="99" width="802" height="616" rx="18" fill="url(#paper)"/>
+  <path d="M46 312Q74 112 359 118T810 248L806 378Q696 309 554 307T286 389Q115 439 46 312Z" fill="#d5dfca"/>
+  <path class="contour" d="M45 237Q203 118 400 144T801 244M53 270Q199 154 405 176T805 278M59 301Q216 187 409 211T799 310M73 326Q207 225 404 249T786 338"/>
+  <path d="M328 464Q392 410 481 451T516 570Q465 635 326 595T328 464Z" fill="#b3cfca" stroke="#8daea6" stroke-width="2"/>
+  <path d="M368 274Q387 310 349 346T344 410Q355 436 396 459" fill="none" stroke="#b3cfca" stroke-width="20"/>
+  <text x="374" y="519" font-size="21" fill="#5b7b79">松溪湖</text>
+  <g opacity=".77">
+    <use href="#pine" x="106" y="345"/><use href="#pine" x="144" y="378"/><use href="#pine" x="113" y="413"/><use href="#pine" x="171" y="427"/>
+    <use href="#pine" x="95" y="488"/><use href="#pine" x="236" y="211"/><use href="#pine" x="286" y="191"/><use href="#pine" x="324" y="223"/>
+    <use href="#pine" x="271" y="360"/><use href="#pine" x="301" y="326"/><use href="#pine" x="437" y="297"/><use href="#pine" x="483" y="307"/>
+    <use href="#pine" x="719" y="396"/><use href="#pine" x="749" y="448"/><use href="#pine" x="702" y="470"/><use href="#pine" x="693" y="524"/>
+    <use href="#pine" x="230" y="565"/><use href="#pine" x="273" y="606"/><use href="#pine" x="553" y="620"/><use href="#pine" x="597" y="606"/>
+  </g>
+  <path class="route" d="M150 563C84 540 74 424 182 291"/>
+  <path class="route" d="M182 291C225 267 286 275 323 339S345 388 382 393"/>
+  <path class="route" d="M382 393C412 447 475 452 581 400"/>
+  <path class="route" d="M581 400C710 375 740 287 685 262S532 324 510 277S540 203 588 191"/>
+  <path class="route" d="M588 191C660 149 740 166 776 217S798 381 774 464S656 603 445 607"/>
+  <path class="route" d="M445 607C368 659 207 673 150 563"/>
+  <path class="shortcut" d="M581 400C586 354 602 294 622 271"/>
+  <path class="shortcut" d="M510 277L564 250L588 191"/>
+  <path d="M270 302L292 322M452 441L477 435M316 646L286 643" stroke="#ac653f" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="94" y="217" class="small">暖光林窗</text>
+  <text x="530" y="119" class="small">山脊与远景山体</text>
+  <text x="600" y="336" class="small">泥坡近路</text>
+  <text x="451" y="252" class="small">岩阶近路</text>
+  <text x="653" y="567" class="small">疏林湖岸</text>
+  <g><circle class="node" cx="150" cy="563" r="19"/><text class="letter" x="150" y="563">A</text><text class="label" x="78" y="609">出发／营地</text></g>
+  <g><circle class="node" cx="182" cy="291" r="19"/><text class="letter" x="182" y="291">B</text><text class="label" x="112" y="256">林窗小屋 ①</text></g>
+  <g><circle class="node" cx="382" cy="393" r="19"/><text class="letter" x="382" y="393">C</text><text class="label" x="305" y="365">浅溪石滩 ②</text></g>
+  <g><circle class="node" cx="581" cy="400" r="19"/><text class="letter" x="581" y="400">D</text><text class="label" x="607" y="432">泥地岔口</text></g>
+  <g><circle class="node" cx="588" cy="191" r="19"/><text class="letter" x="588" y="191">E</text><text class="label" x="610" y="145">山脊望台 ③</text></g>
+  <g><circle class="node" cx="445" cy="607" r="19"/><text class="letter" x="445" y="607">F</text><text class="label" x="371" y="571">湖岸回程</text></g>
+  <g transform="translate(865 126)">
+    <text font-size="20" font-weight="700">一段完整的短途旅程</text>
+    <text y="35" class="small">约 1.4 km 主线 / 首次 15–25 分钟</text>
+    <path d="M0 70H47" class="route"/><text x="65" y="75" font-size="16">常规环线：原厂车可通行</text>
+    <path d="M0 103H47" class="shortcut"/><text x="65" y="108" font-size="16">可选近路：更短、更难</text>
+    <path d="M0 143H292" stroke="#c7cdbd"/>
+    <text y="181" class="label">节奏编排</text>
+    <text y="215" font-size="16">起步 → 读地形 → 过浅溪</text>
+    <text y="245" font-size="16">选线 → 爬坡 → 看见整片山林</text>
+    <text y="275" font-size="16">轻松回程 → 留下旅途记录</text>
+    <path d="M0 309H292" stroke="#c7cdbd"/>
+    <text y="348" class="label">制作约束</text>
+    <text y="382" font-size="16">三处景点独立构图</text>
+    <text y="412" font-size="16">挑战前后均有安全停车位置</text>
+    <text y="442" font-size="16">泥坑附近手工布置绞盘锚点</text>
+    <text y="472" font-size="16">不设倒计时与强制升级门槛</text>
+    <text y="524" class="small">尺寸与道路长度是策划目标，</text>
+    <text y="547" class="small">须通过驾驶灰盒调整。</text>
+  </g>
+  <text x="39" y="741" class="small">策划版本 0.1 · 2026-09-25 · 本图用于空间关系与体验节奏讨论，不是可玩关卡截图。</text>
+</svg>

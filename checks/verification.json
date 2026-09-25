@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-09-24T17:08:44.456305+00:00",
+  "status": "pass",
+  "errors": [],
+  "manifest_files_sha256_verified": 17,
+  "official_screenshots": 14,
+  "packs": [
+    {
+      "path": "assets/reusable/kenney_car-kit.zip",
+      "crc_ok": true,
+      "license_files": [
+        "License.txt"
+      ]
+    },
+    {
+      "path": "assets/reusable/kenney_nature-kit.zip",
+      "crc_ok": true,
+      "license_files": [
+        "License.txt"
+      ]
+    },
+    {
+      "path": "assets/reusable/kenney_survival-kit.zip",
+      "crc_ok": true,
+      "license_files": [
+        "License.txt"
+      ]
+    }
+  ],
+  "local_document_links_checked": 111,
+  "svg_xml_valid": true,
+  "board_images_decoded": 19,
+  "desktop_and_mobile_no_horizontal_overflow": true,
+  "scope": "Research file integrity, licenses, document links and offline board rendering only.",
+  "not_tested": [
+    "Original game",
+    "Referenced videos or audio",
+    "Playable web game",
+    "Game physics or performance"
+  ]
+}

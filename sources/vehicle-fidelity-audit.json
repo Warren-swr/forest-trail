@@ -1,0 +1,370 @@
+{
+  "checked_at": "2026-09-24T17:08:44.117158+00:00",
+  "scope": "Static inspection of the downloaded Kenney Car Kit GLB files, not vehicle simulation validation",
+  "archive_extensions": {
+    ".txt": 1,
+    ".fbx": 50,
+    ".png": 54,
+    ".glb": 50,
+    ".mtl": 50,
+    ".obj": 50,
+    ".html": 1,
+    ".url": 3
+  },
+  "models": [
+    {
+      "name": "suv",
+      "archive_path": "Models/GLB format/suv.glb",
+      "sha256": "9df31f6e89e927a8176fc792aa125f0b19dc1ba29d2025bfef7c4f4d6ab1778a",
+      "triangles_by_mesh": {
+        "body": 814,
+        "wheel-back": 332,
+        "wheel-back-left": 332,
+        "wheel-back-right": 332,
+        "wheel-front-left": 332,
+        "wheel-front-right": 332
+      },
+      "node_mesh_triangle_sum": 2474,
+      "nodes": [
+        {
+          "children": [
+            1
+          ],
+          "mesh": 0,
+          "translation": [
+            0.0,
+            0.2,
+            -2.88764564e-15
+          ],
+          "name": "body"
+        },
+        {
+          "mesh": 1,
+          "translation": [
+            0.0,
+            0.5,
+            -1.04999971
+          ],
+          "name": "wheel-back"
+        },
+        {
+          "mesh": 2,
+          "translation": [
+            0.3,
+            0.3,
+            -0.56
+          ],
+          "name": "wheel-back-left"
+        },
+        {
+          "mesh": 3,
+          "translation": [
+            -0.3,
+            0.3,
+            -0.56
+          ],
+          "name": "wheel-back-right"
+        },
+        {
+          "mesh": 4,
+          "translation": [
+            0.3,
+            0.3,
+            0.76
+          ],
+          "name": "wheel-front-left"
+        },
+        {
+          "mesh": 5,
+          "translation": [
+            -0.3,
+            0.3,
+            0.76
+          ],
+          "name": "wheel-front-right"
+        }
+      ],
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0,
+              "extensions": {
+                "KHR_texture_transform": {
+                  "texCoord": 0
+                }
+              }
+            },
+            "metallicFactor": 0.0
+          },
+          "doubleSided": true,
+          "name": "colormap"
+        }
+      ],
+      "animations": 0,
+      "skins": 0,
+      "extensions_used": [
+        "KHR_texture_transform"
+      ],
+      "external_textures": [
+        {
+          "uri": "Textures/colormap.png",
+          "archive_path": "Models/GLB format/Textures/colormap.png",
+          "exists": true,
+          "dimensions": [
+            512,
+            512
+          ]
+        }
+      ]
+    },
+    {
+      "name": "suv-luxury",
+      "archive_path": "Models/GLB format/suv-luxury.glb",
+      "sha256": "9e2a79dc050189d4555a88d2e9da0f30ff946ba74f1d43b5b3bda3c193d1f7d7",
+      "triangles_by_mesh": {
+        "wheel-back-right": 332,
+        "wheel-front-right": 332,
+        "wheel-front-left": 332,
+        "body": 758,
+        "wheel-back-left": 332
+      },
+      "node_mesh_triangle_sum": 2086,
+      "nodes": [
+        {
+          "mesh": 0,
+          "translation": [
+            -0.3,
+            0.3,
+            -0.71
+          ],
+          "name": "wheel-back-right"
+        },
+        {
+          "mesh": 1,
+          "translation": [
+            -0.3,
+            0.3,
+            0.809999943
+          ],
+          "name": "wheel-front-right"
+        },
+        {
+          "mesh": 2,
+          "translation": [
+            0.3,
+            0.3,
+            0.809999943
+          ],
+          "name": "wheel-front-left"
+        },
+        {
+          "mesh": 3,
+          "translation": [
+            0.0,
+            0.125,
+            0.025
+          ],
+          "name": "body"
+        },
+        {
+          "mesh": 4,
+          "translation": [
+            0.3,
+            0.3,
+            -0.71
+          ],
+          "name": "wheel-back-left"
+        }
+      ],
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0,
+              "extensions": {
+                "KHR_texture_transform": {
+                  "texCoord": 0
+                }
+              }
+            },
+            "metallicFactor": 0.0
+          },
+          "doubleSided": true,
+          "name": "colormap"
+        }
+      ],
+      "animations": 0,
+      "skins": 0,
+      "extensions_used": [
+        "KHR_texture_transform"
+      ],
+      "external_textures": [
+        {
+          "uri": "Textures/colormap.png",
+          "archive_path": "Models/GLB format/Textures/colormap.png",
+          "exists": true,
+          "dimensions": [
+            512,
+            512
+          ]
+        }
+      ]
+    },
+    {
+      "name": "truck",
+      "archive_path": "Models/GLB format/truck.glb",
+      "sha256": "5e1bc66c343501dd7d5734b57e672dd949bf95d7abdce680c6508cef99d374f8",
+      "triangles_by_mesh": {
+        "body": 754,
+        "wheel-front-right": 332,
+        "wheel-front-left": 332,
+        "wheel-back-right": 332,
+        "wheel-back-left": 332
+      },
+      "node_mesh_triangle_sum": 2082,
+      "nodes": [
+        {
+          "mesh": 0,
+          "translation": [
+            0.0,
+            0.15,
+            -0.025
+          ],
+          "name": "body"
+        },
+        {
+          "mesh": 1,
+          "translation": [
+            -0.3,
+            0.3,
+            0.86
+          ],
+          "name": "wheel-front-right"
+        },
+        {
+          "mesh": 2,
+          "translation": [
+            0.3,
+            0.3,
+            0.86
+          ],
+          "name": "wheel-front-left"
+        },
+        {
+          "mesh": 3,
+          "translation": [
+            -0.3,
+            0.3,
+            -0.76
+          ],
+          "name": "wheel-back-right"
+        },
+        {
+          "mesh": 4,
+          "translation": [
+            0.3,
+            0.3,
+            -0.76
+          ],
+          "name": "wheel-back-left"
+        }
+      ],
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0,
+              "extensions": {
+                "KHR_texture_transform": {
+                  "texCoord": 0
+                }
+              }
+            },
+            "metallicFactor": 0.0
+          },
+          "doubleSided": true,
+          "name": "colormap"
+        }
+      ],
+      "animations": 0,
+      "skins": 0,
+      "extensions_used": [
+        "KHR_texture_transform"
+      ],
+      "external_textures": [
+        {
+          "uri": "Textures/colormap.png",
+          "archive_path": "Models/GLB format/Textures/colormap.png",
+          "exists": true,
+          "dimensions": [
+            512,
+            512
+          ]
+        }
+      ]
+    },
+    {
+      "name": "wheel-default",
+      "archive_path": "Models/GLB format/wheel-default.glb",
+      "sha256": "7d61941bc27bcc3b235e2e26c598cbcb4166bd66eb8f9920e26842a11015c62b",
+      "triangles_by_mesh": {
+        "wheel-default": 332
+      },
+      "node_mesh_triangle_sum": 332,
+      "nodes": [
+        {
+          "mesh": 0,
+          "name": "wheel-default"
+        }
+      ],
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0,
+              "extensions": {
+                "KHR_texture_transform": {
+                  "texCoord": 0
+                }
+              }
+            },
+            "metallicFactor": 0.0
+          },
+          "doubleSided": true,
+          "name": "colormap"
+        }
+      ],
+      "animations": 0,
+      "skins": 0,
+      "extensions_used": [
+        "KHR_texture_transform"
+      ],
+      "external_textures": [
+        {
+          "uri": "Textures/colormap.png",
+          "archive_path": "Models/GLB format/Textures/colormap.png",
+          "exists": true,
+          "dimensions": [
+            512,
+            512
+          ]
+        }
+      ]
+    }
+  ],
+  "suv_proportions": {
+    "raw_front_rear_wheel_node_separation_z": 1.32,
+    "raw_wheel_radius_yz": 0.3,
+    "wheelbase_to_radius_ratio": 4.4,
+    "proposed_vehicle_wheelbase_to_radius_ratio": 6.578947368421052,
+    "interpretation": "A single uniform scale cannot simultaneously match the proposed wheelbase and wheel radius. Raw values are model coordinates, not measured real vehicle dimensions."
+  },
+  "unverified": [
+    "Runtime steering and suspension",
+    "Collision geometry",
+    "Real-world vehicle calibration",
+    "Tyre contact on obstacles",
+    "Off-road driving quality"
+  ]
+}

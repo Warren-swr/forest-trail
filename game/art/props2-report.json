@@ -1,0 +1,594 @@
+{
+ "note": "bbox in Blender coords (+Y front, +Z up); collider centre/half as [x, y_up, z_game] where z_game = -y_blender unless given as named deck ranges (Blender x/y)",
+ "assets": {
+  "aframe_cabin": {
+   "tris": 2752,
+   "glow": true,
+   "bbox_blender": {
+    "min": [
+     -3.8,
+     -5.1,
+     -0.01
+    ],
+    "max": [
+     3.8,
+     4.9,
+     8.18
+    ]
+   },
+   "size_m": [
+    7.6,
+    10.0,
+    8.19
+   ],
+   "collider": {
+    "half": [
+     3.4,
+     3.6,
+     3.3
+    ],
+    "center": [
+     0,
+     3.6,
+     -1.3499999999999999
+    ],
+    "note": "box over the enclosed body; porch deck (y 1.9..4.0, top z 0.55) is walkable"
+   }
+  },
+  "boathouse": {
+   "tris": 2780,
+   "glow": true,
+   "bbox_blender": {
+    "min": [
+     -3.5,
+     0.0,
+     -4.0
+    ],
+    "max": [
+     3.5,
+     22.995,
+     3.95
+    ]
+   },
+   "size_m": [
+    7.0,
+    23.0,
+    7.95
+   ],
+   "collider": {
+    "deck_pier": {
+     "x": [
+      -1.5,
+      1.5
+     ],
+     "y": [
+      0.0,
+      16.0
+     ],
+     "top": 0.0
+    },
+    "deck_platform": {
+     "x": [
+      -3.5,
+      3.5
+     ],
+     "y": [
+      16.0,
+      23.0
+     ],
+     "top": 0.0
+    },
+    "hut": {
+     "half": [
+      2.0,
+      1.85,
+      2.5
+     ],
+     "center": [
+      0,
+      1.85,
+      19.8
+     ]
+    }
+   }
+  },
+  "plank_bridge": {
+   "tris": 3288,
+   "glow": false,
+   "bbox_blender": {
+    "min": [
+     -2.893,
+     -14.433,
+     -6.306
+    ],
+    "max": [
+     2.841,
+     14.451,
+     1.089
+    ]
+   },
+   "size_m": [
+    5.73,
+    28.88,
+    7.4
+   ],
+   "collider": {
+    "deck": {
+     "x": [
+      -1.8,
+      1.8
+     ],
+     "y": [
+      -13.0,
+      13.0
+     ],
+     "top": "z(y) = -0.25 * (1 - (y/13)^2)"
+    },
+    "rails": {
+     "x": [
+      -1.8800000000000001,
+      1.8800000000000001
+     ],
+     "height": 1.1
+    }
+   }
+  },
+  "camper": {
+   "tris": 984,
+   "glow": true,
+   "bbox_blender": {
+    "min": [
+     -1.19,
+     -1.95,
+     -0.009
+    ],
+    "max": [
+     1.27,
+     3.0,
+     2.9
+    ]
+   },
+   "size_m": [
+    2.46,
+    4.95,
+    2.91
+   ],
+   "collider": {
+    "half": [
+     1.1,
+     1.25,
+     2.1
+    ],
+    "center": [
+     0,
+     1.25,
+     -0.1
+    ]
+   }
+  },
+  "lantern": {
+   "tris": 172,
+   "glow": true,
+   "bbox_blender": {
+    "min": [
+     -0.105,
+     -0.11,
+     0.0
+    ],
+    "max": [
+     0.105,
+     0.11,
+     0.353
+    ]
+   },
+   "size_m": [
+    0.21,
+    0.22,
+    0.35
+   ],
+   "collider": null
+  },
+  "lamp_post": {
+   "tris": 92,
+   "glow": true,
+   "bbox_blender": {
+    "min": [
+     -0.13,
+     -0.13,
+     0.0
+    ],
+    "max": [
+     0.13,
+     0.67,
+     3.0
+    ]
+   },
+   "size_m": [
+    0.26,
+    0.8,
+    3.0
+   ],
+   "collider": null
+  },
+  "string_pole": {
+   "tris": 114,
+   "glow": false,
+   "bbox_blender": {
+    "min": [
+     -0.668,
+     -0.859,
+     -0.2
+    ],
+    "max": [
+     0.864,
+     0.613,
+     2.6
+    ]
+   },
+   "size_m": [
+    1.53,
+    1.47,
+    2.8
+   ],
+   "collider": null
+  },
+  "cone": {
+   "tris": 144,
+   "glow": false,
+   "bbox_blender": {
+    "min": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "max": [
+     0.2,
+     0.2,
+     0.7
+    ]
+   },
+   "size_m": [
+    0.4,
+    0.4,
+    0.7
+   ],
+   "collider": null
+  },
+  "flag_marker": {
+   "tris": 48,
+   "glow": false,
+   "bbox_blender": {
+    "min": [
+     -0.029,
+     -0.03,
+     -0.2
+    ],
+    "max": [
+     0.62,
+     0.026,
+     1.83
+    ]
+   },
+   "size_m": [
+    0.65,
+    0.06,
+    2.03
+   ],
+   "collider": null
+  },
+  "tyre_stack": {
+   "tris": 672,
+   "glow": false,
+   "bbox_blender": {
+    "min": [
+     -0.478,
+     -0.473,
+     0.0
+    ],
+    "max": [
+     0.441,
+     0.489,
+     0.84
+    ]
+   },
+   "size_m": [
+    0.92,
+    0.96,
+    0.84
+   ],
+   "collider": {
+    "cylinder": {
+     "r": 0.45,
+     "h": 0.84
+    }
+   }
+  },
+  "tyre_wall": {
+   "tris": 908,
+   "glow": false,
+   "bbox_blender": {
+    "min": [
+     -1.8,
+     -0.45,
+     -0.319
+    ],
+    "max": [
+     1.8,
+     0.45,
+     0.559
+    ]
+   },
+   "size_m": [
+    3.6,
+    0.9,
+    0.88
+   ],
+   "collider": {
+    "half": [
+     1.8,
+     0.28,
+     0.15
+    ],
+    "center": [
+     0,
+     0.28,
+     0
+    ]
+   }
+  },
+  "gate_arch": {
+   "tris": 1286,
+   "glow": false,
+   "bbox_blender": {
+    "min": [
+     -4.5,
+     -0.382,
+     -0.4
+    ],
+    "max": [
+     4.5,
+     0.251,
+     5.029
+    ]
+   },
+   "size_m": [
+    9.0,
+    0.63,
+    5.43
+   ],
+   "collider": {
+    "cylinders": [
+     {
+      "x": -4.0,
+      "r": 0.25,
+      "h": 5.0
+     },
+     {
+      "x": 4.0,
+      "r": 0.25,
+      "h": 5.0
+     }
+    ]
+   }
+  },
+  "log_step": {
+   "tris": 248,
+   "glow": false,
+   "bbox_blender": {
+    "min": [
+     -3.008,
+     -0.394,
+     0.009
+    ],
+    "max": [
+     3.008,
+     0.571,
+     0.864
+    ]
+   },
+   "size_m": [
+    6.02,
+    0.96,
+    0.86
+   ],
+   "collider": {
+    "capsule_x": {
+     "half_len": 3.0,
+     "r": 0.35,
+     "center": [
+      0,
+      0.35,
+      0
+     ]
+    }
+   }
+  },
+  "sign_board": {
+   "tris": 44,
+   "glow": false,
+   "bbox_blender": {
+    "min": [
+     -0.85,
+     -0.06,
+     -0.3
+    ],
+    "max": [
+     0.9,
+     0.115,
+     1.9
+    ]
+   },
+   "size_m": [
+    1.75,
+    0.18,
+    2.2
+   ],
+   "collider": null
+  },
+  "barrier": {
+   "tris": 144,
+   "glow": false,
+   "bbox_blender": {
+    "min": [
+     -1.5,
+     -0.333,
+     -0.011
+    ],
+    "max": [
+     1.5,
+     0.333,
+     1.02
+    ]
+   },
+   "size_m": [
+    3.0,
+    0.67,
+    1.03
+   ],
+   "collider": {
+    "half": [
+     1.5,
+     0.5,
+     0.3
+    ],
+    "center": [
+     0,
+     0.5,
+     0
+    ]
+   }
+  },
+  "rowboat": {
+   "tris": 792,
+   "glow": false,
+   "bbox_blender": {
+    "min": [
+     -0.685,
+     -1.82,
+     -0.32
+    ],
+    "max": [
+     0.687,
+     1.822,
+     0.345
+    ]
+   },
+   "size_m": [
+    1.37,
+    3.64,
+    0.66
+   ],
+   "collider": {
+    "half": [
+     0.68,
+     0.35,
+     1.8
+    ],
+    "center": [
+     0,
+     0.1,
+     0
+    ]
+   }
+  },
+  "crate_stack": {
+   "tris": 336,
+   "glow": false,
+   "bbox_blender": {
+    "min": [
+     -0.665,
+     -0.84,
+     0.0
+    ],
+    "max": [
+     0.99,
+     0.365,
+     1.15
+    ]
+   },
+   "size_m": [
+    1.65,
+    1.21,
+    1.15
+   ],
+   "collider": {
+    "half": [
+     0.8,
+     0.6,
+     0.8
+    ],
+    "center": [
+     0.15,
+     0.6,
+     -0.15
+    ]
+   }
+  },
+  "firewood": {
+   "tris": 1092,
+   "glow": false,
+   "bbox_blender": {
+    "min": [
+     -0.95,
+     -0.4,
+     0.0
+    ],
+    "max": [
+     0.95,
+     0.4,
+     1.05
+    ]
+   },
+   "size_m": [
+    1.9,
+    0.8,
+    1.05
+   ],
+   "collider": {
+    "half": [
+     0.9,
+     0.5,
+     0.35
+    ],
+    "center": [
+     0,
+     0.5,
+     0
+    ]
+   }
+  },
+  "canoe_rack": {
+   "tris": 456,
+   "glow": false,
+   "bbox_blender": {
+    "min": [
+     -0.837,
+     -2.1,
+     -0.016
+    ],
+    "max": [
+     0.837,
+     2.1,
+     1.516
+    ]
+   },
+   "size_m": [
+    1.67,
+    4.2,
+    1.53
+   ],
+   "collider": {
+    "half": [
+     0.9,
+     0.8,
+     2.1
+    ],
+    "center": [
+     0,
+     0.8,
+     0
+    ]
+   }
+  }
+ }
+}

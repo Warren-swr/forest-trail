@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-25",
+  "packs": [
+    {
+      "path": "assets/reusable/kenney_car-kit.zip",
+      "zip_crc_ok": true,
+      "glb_files": 50,
+      "glb_headers_ok": true
+    },
+    {
+      "path": "assets/reusable/kenney_nature-kit.zip",
+      "zip_crc_ok": true,
+      "glb_files": 329,
+      "glb_headers_ok": true
+    },
+    {
+      "path": "assets/reusable/kenney_survival-kit.zip",
+      "zip_crc_ok": true,
+      "glb_files": 80,
+      "glb_headers_ok": true
+    }
+  ],
+  "previews": [
+    {
+      "path": "assets/reusable/previews/car-kit-preview.png",
+      "origin": "Unmodified preview extracted from corresponding Kenney ZIP",
+      "sha256": "a6241f3f50ce9f93cfe833091748877b94df552532255efb5f061c4aeee6dfc8"
+    },
+    {
+      "path": "assets/reusable/previews/nature-kit-preview.png",
+      "origin": "Unmodified preview extracted from corresponding Kenney ZIP",
+      "sha256": "9b1fd1f754493d6b32b461b0a0fd885831632c44754885e343ff01ade48b636e"
+    },
+    {
+      "path": "assets/reusable/previews/nature-kit-sample.png",
+      "origin": "Unmodified preview extracted from corresponding Kenney ZIP",
+      "sha256": "ec44c42bdbfbdfbe84f4337f6f30af6c208bfa993e61e3c60270474284cc597a"
+    },
+    {
+      "path": "assets/reusable/previews/survival-kit-preview.png",
+      "origin": "Unmodified preview extracted from corresponding Kenney ZIP",
+      "sha256": "31c7a8031e7d800d8b8e0d33734e7e10c8aa02917144d399a2e8095895aa4b96"
+    },
+    {
+      "path": "assets/reusable/previews/survival-kit-sample.png",
+      "origin": "Unmodified preview extracted from corresponding Kenney ZIP",
+      "sha256": "701745dfb5e19516ffd4431f1802cd2a85f2da3dd2aafcd06e66aba1a13c5429"
+    },
+    {
+      "path": "assets/reusable/previews/suv.png",
+      "origin": "Unmodified preview extracted from corresponding Kenney ZIP",
+      "sha256": "9443e1731abc4cafa3ffcf7ccf1abdea24e879ac490c205b60a21e53dbe2c454"
+    }
+  ],
+  "suv_nodes": [
+    "body",
+    "wheel-back",
+    "wheel-back-left",
+    "wheel-back-right",
+    "wheel-front-left",
+    "wheel-front-right"
+  ],
+  "not_validated": [
+    "Runtime import and materials",
+    "Collision meshes",
+    "Game performance",
+    "Original game driving dynamics"
+  ]
+}

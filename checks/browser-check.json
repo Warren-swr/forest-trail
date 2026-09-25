@@ -1,0 +1,110 @@
+{
+  "date": "2026-09-25",
+  "browser": "151.0.7922.34",
+  "title": "Forest Trail · 研究与策划参考板",
+  "desktop": {
+    "images": [
+      {
+        "src": "assets/reference/steam-01.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "design/forest-loop.svg",
+        "width": 1200,
+        "height": 760
+      },
+      {
+        "src": "assets/reference/steam-01.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "assets/reference/steam-02.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "assets/reference/steam-03.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "assets/reference/steam-04.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "assets/reference/steam-05.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "assets/reference/steam-06.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "assets/reference/steam-07.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "assets/reference/steam-08.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "assets/reference/steam-09.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "assets/reference/steam-10.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "assets/reference/steam-11.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "assets/reference/steam-12.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "assets/reference/steam-13.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "assets/reference/steam-14.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "assets/reusable/previews/car-kit-preview.png",
+        "width": 918,
+        "height": 515
+      },
+      {
+        "src": "assets/reusable/previews/nature-kit-sample.png",
+        "width": 918,
+        "height": 515
+      },
+      {
+        "src": "assets/reusable/previews/survival-kit-sample.png",
+        "width": 918,
+        "height": 515
+      }
+    ],
+    "overflow": false
+  },
+  "mobile": {
+    "overflow": false
+  },
+  "script_errors": [],
+  "scope": "Offline documentation board only; no game runtime test"
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "REF-01",
+    "title": "森林里的道路与目的地",
+    "visual_observation_and_design_note": "树群与金色草坡围出一条石土路，木屋成为明确目的地。借鉴道路、地标和森林疏密的关系。",
+    "category": "森林 / 导航",
+    "reviewed": true,
+    "local_path": "assets/reference/steam-01.jpg"
+  },
+  {
+    "id": "REF-02",
+    "title": "停下来，也是一段体验",
+    "visual_observation_and_design_note": "篝火和帐篷形成暖色中心，树林与远山留在冷色暗部。借鉴休憩氛围；首版仍固定为下午。",
+    "category": "营地 / 光照",
+    "reviewed": true,
+    "local_path": "assets/reference/steam-02.jpg"
+  },
+  {
+    "id": "REF-03",
+    "title": "自然点缀的分寸",
+    "visual_observation_and_design_note": "鹿、草和树冠形成近中远层次。动物和强景深不进入首版驾驶的必要范围。",
+    "category": "生态 / 摄影",
+    "reviewed": true,
+    "local_path": "assets/reference/steam-03.jpg"
+  },
+  {
+    "id": "REF-04",
+    "title": "车辆需要看得见的重量",
+    "visual_observation_and_design_note": "厚轮胎、底盘、车身侧倾和泥污强化越野印象。静态图只证明可见造型，不证明悬挂响应。",
+    "category": "车辆 / 姿态",
+    "reviewed": true,
+    "local_path": "assets/reference/steam-04.jpg"
+  },
+  {
+    "id": "REF-05",
+    "title": "窄通道，开阔背景",
+    "visual_observation_and_design_note": "木桥的狭窄与岩谷的开阔形成对比。借鉴空间节奏，沙漠与长桥不属于首版。",
+    "category": "空间 / 对照",
+    "reviewed": true,
+    "local_path": "assets/reference/steam-05.jpg"
+  },
+  {
+    "id": "REF-06",
+    "title": "车轮与地形的关系",
+    "visual_observation_and_design_note": "车身在不均匀岩石上形成不同姿态。原型要验证接地、行程和底盘，而不能只旋转整辆车贴地。",
+    "category": "驾驶 / 接触",
+    "reviewed": true,
+    "local_path": "assets/reference/steam-06.jpg"
+  },
+  {
+    "id": "REF-07",
+    "title": "青色雾林与暖色车灯",
+    "visual_observation_and_design_note": "天气氛围靠大范围色调与少量亮点建立。首版先做固定光照与薄雾，动态雷雨后置。",
+    "category": "森林 / 天气",
+    "reviewed": true,
+    "local_path": "assets/reference/steam-07.jpg"
+  },
+  {
+    "id": "REF-08",
+    "title": "用远山建立尺度",
+    "visual_observation_and_design_note": "雪谷中车辆很小，地形占据画面。借鉴空间尺度；正常驾驶镜头应保留足够的近地信息。",
+    "category": "远景 / 对照",
+    "reviewed": true,
+    "local_path": "assets/reference/steam-08.jpg"
+  },
+  {
+    "id": "REF-09",
+    "title": "湖岸是旅程的停顿",
+    "visual_observation_and_design_note": "雾将林坡分层，小屋与水面形成安静的横向构图。适合作为密林之后的视觉释放。",
+    "category": "森林 / 水面",
+    "reviewed": true,
+    "local_path": "assets/reference/steam-09.jpg"
+  },
+  {
+    "id": "REF-10",
+    "title": "树林要成片变化",
+    "visual_observation_and_design_note": "秋色阔叶树与深色针叶树交替，地形和树高仍有层次。不要把相同模型均匀铺满地图。",
+    "category": "森林 / 树群",
+    "reviewed": true,
+    "local_path": "assets/reference/steam-10.jpg"
+  },
+  {
+    "id": "REF-11",
+    "title": "生态范围的取舍",
+    "visual_observation_and_design_note": "沙岩、棕榈与车辆展示了另一种生态。此图仅供形体与配色对照，不意味着新增沙漠地图。",
+    "category": "形体 / 对照",
+    "reviewed": true,
+    "local_path": "assets/reference/steam-11.jpg"
+  },
+  {
+    "id": "REF-12",
+    "title": "让风景成为抵达的奖励",
+    "visual_observation_and_design_note": "水面、码头、瀑布、车队和山体构成完整风景。终点应该能回望走过的道路。",
+    "category": "风景 / 回报",
+    "reviewed": true,
+    "local_path": "assets/reference/steam-12.jpg"
+  },
+  {
+    "id": "REF-13",
+    "title": "行驶留痕",
+    "visual_observation_and_design_note": "沙地上可以看到轮迹。参考其视觉反馈，但不能从截图推断形变算法或车辙永久保存。",
+    "category": "地表 / 反馈",
+    "reviewed": true,
+    "local_path": "assets/reference/steam-13.jpg"
+  },
+  {
+    "id": "REF-14",
+    "title": "坡路要看得懂",
+    "visual_observation_and_design_note": "岩石、轮胎、车身倾斜与山谷同时可见。道路与背景分离，玩家才能提前判断风险。",
+    "category": "驾驶 / 选线",
+    "reviewed": true,
+    "local_path": "assets/reference/steam-14.jpg"
+  }
+]

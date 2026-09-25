@@ -1,0 +1,224 @@
+{
+  "accessed_at": "2026-09-24T16:40:41.956355+00:00",
+  "items": [
+    {
+      "id": "REF-01",
+      "kind": "official_screenshot",
+      "source_page": "https://store.steampowered.com/app/2929250/over_the_hill/",
+      "download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/6015a28c504bf0c90c293e6e02bb7909e25a5db7/ss_6015a28c504bf0c90c293e6e02bb7909e25a5db7.1920x1080.jpg?t=1790155284",
+      "local_path": "assets/reference/steam-01.jpg",
+      "rights": "Copyright Funselektor / Strelka Games; research reference only, not a game asset license.",
+      "resolved_download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/6015a28c504bf0c90c293e6e02bb7909e25a5db7/ss_6015a28c504bf0c90c293e6e02bb7909e25a5db7.1920x1080.jpg?t=1790155284",
+      "bytes": 605832,
+      "sha256": "4bb78e55296de67f2d35c6c5bd1831fe9a158bea84f3f5f37527e067cf63b70a",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00"
+    },
+    {
+      "id": "REF-02",
+      "kind": "official_screenshot",
+      "source_page": "https://store.steampowered.com/app/2929250/over_the_hill/",
+      "download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/95306c51913d336b5ac997e55f3b74d5ca122d28/ss_95306c51913d336b5ac997e55f3b74d5ca122d28.1920x1080.jpg?t=1790155284",
+      "local_path": "assets/reference/steam-02.jpg",
+      "rights": "Copyright Funselektor / Strelka Games; research reference only, not a game asset license.",
+      "resolved_download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/95306c51913d336b5ac997e55f3b74d5ca122d28/ss_95306c51913d336b5ac997e55f3b74d5ca122d28.1920x1080.jpg?t=1790155284",
+      "bytes": 274434,
+      "sha256": "6964eac4b8eb4263ad5acaea3981f0cceb50615c89512b78978e774e700745aa",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00"
+    },
+    {
+      "id": "REF-03",
+      "kind": "official_screenshot",
+      "source_page": "https://store.steampowered.com/app/2929250/over_the_hill/",
+      "download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/40b010e7eab0efc48c789ee918293f914babade4/ss_40b010e7eab0efc48c789ee918293f914babade4.1920x1080.jpg?t=1790155284",
+      "local_path": "assets/reference/steam-03.jpg",
+      "rights": "Copyright Funselektor / Strelka Games; research reference only, not a game asset license.",
+      "resolved_download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/40b010e7eab0efc48c789ee918293f914babade4/ss_40b010e7eab0efc48c789ee918293f914babade4.1920x1080.jpg?t=1790155284",
+      "bytes": 193898,
+      "sha256": "f64d8da5809ab0d7ce2601af33e3f68c3979b01c9596c16857f72450bc39dcd8",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00"
+    },
+    {
+      "id": "REF-04",
+      "kind": "official_screenshot",
+      "source_page": "https://store.steampowered.com/app/2929250/over_the_hill/",
+      "download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/09155a08afcb404179d7ffec4fc04d31fb88e4c3/ss_09155a08afcb404179d7ffec4fc04d31fb88e4c3.1920x1080.jpg?t=1790155284",
+      "local_path": "assets/reference/steam-04.jpg",
+      "rights": "Copyright Funselektor / Strelka Games; research reference only, not a game asset license.",
+      "resolved_download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/09155a08afcb404179d7ffec4fc04d31fb88e4c3/ss_09155a08afcb404179d7ffec4fc04d31fb88e4c3.1920x1080.jpg?t=1790155284",
+      "bytes": 474838,
+      "sha256": "16e6fc35c405991653a1d11c0fc7c33205f92e1147dbdf409035ce4e1f50258d",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00"
+    },
+    {
+      "id": "REF-05",
+      "kind": "official_screenshot",
+      "source_page": "https://store.steampowered.com/app/2929250/over_the_hill/",
+      "download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/957728ae0b810a570c88e72cecd3f38ba1a90490/ss_957728ae0b810a570c88e72cecd3f38ba1a90490.1920x1080.jpg?t=1790155284",
+      "local_path": "assets/reference/steam-05.jpg",
+      "rights": "Copyright Funselektor / Strelka Games; research reference only, not a game asset license.",
+      "resolved_download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/957728ae0b810a570c88e72cecd3f38ba1a90490/ss_957728ae0b810a570c88e72cecd3f38ba1a90490.1920x1080.jpg?t=1790155284",
+      "bytes": 203293,
+      "sha256": "61a9eee332bf5e18bb7ba4d98b43a50ee052d88bb3ce1147040b7d22267c42d9",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00"
+    },
+    {
+      "id": "REF-06",
+      "kind": "official_screenshot",
+      "source_page": "https://store.steampowered.com/app/2929250/over_the_hill/",
+      "download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/a2e13f746b0b12f611af1c14033959aade0ca720/ss_a2e13f746b0b12f611af1c14033959aade0ca720.1920x1080.jpg?t=1790155284",
+      "local_path": "assets/reference/steam-06.jpg",
+      "rights": "Copyright Funselektor / Strelka Games; research reference only, not a game asset license.",
+      "resolved_download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/a2e13f746b0b12f611af1c14033959aade0ca720/ss_a2e13f746b0b12f611af1c14033959aade0ca720.1920x1080.jpg?t=1790155284",
+      "bytes": 615566,
+      "sha256": "7ba46d97d8ad7937bbd3956abccbdbd99f41208b36de49f50da521401ed4d5fb",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00"
+    },
+    {
+      "id": "REF-07",
+      "kind": "official_screenshot",
+      "source_page": "https://store.steampowered.com/app/2929250/over_the_hill/",
+      "download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/ae15e376ea14b9242e2102466dd1a808bfa9ebbc/ss_ae15e376ea14b9242e2102466dd1a808bfa9ebbc.1920x1080.jpg?t=1790155284",
+      "local_path": "assets/reference/steam-07.jpg",
+      "rights": "Copyright Funselektor / Strelka Games; research reference only, not a game asset license.",
+      "resolved_download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/ae15e376ea14b9242e2102466dd1a808bfa9ebbc/ss_ae15e376ea14b9242e2102466dd1a808bfa9ebbc.1920x1080.jpg?t=1790155284",
+      "bytes": 395816,
+      "sha256": "ccc9f546354530d3ae10c54509994d18e16f5f26de44535639243e65b45b0d2c",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00"
+    },
+    {
+      "id": "REF-08",
+      "kind": "official_screenshot",
+      "source_page": "https://store.steampowered.com/app/2929250/over_the_hill/",
+      "download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/78c6868d07f87a49fba4f863f3418b40d1304fcf/ss_78c6868d07f87a49fba4f863f3418b40d1304fcf.1920x1080.jpg?t=1790155284",
+      "local_path": "assets/reference/steam-08.jpg",
+      "rights": "Copyright Funselektor / Strelka Games; research reference only, not a game asset license.",
+      "resolved_download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/78c6868d07f87a49fba4f863f3418b40d1304fcf/ss_78c6868d07f87a49fba4f863f3418b40d1304fcf.1920x1080.jpg?t=1790155284",
+      "bytes": 365564,
+      "sha256": "4df21914f6f3a52e39f32da2b35c4094590b8beed3592dbff257dec8d508496a",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00"
+    },
+    {
+      "id": "REF-09",
+      "kind": "official_screenshot",
+      "source_page": "https://store.steampowered.com/app/2929250/over_the_hill/",
+      "download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/a12764e509baf79134499b2477ee6cbe8c33a563/ss_a12764e509baf79134499b2477ee6cbe8c33a563.1920x1080.jpg?t=1790155284",
+      "local_path": "assets/reference/steam-09.jpg",
+      "rights": "Copyright Funselektor / Strelka Games; research reference only, not a game asset license.",
+      "resolved_download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/a12764e509baf79134499b2477ee6cbe8c33a563/ss_a12764e509baf79134499b2477ee6cbe8c33a563.1920x1080.jpg?t=1790155284",
+      "bytes": 238850,
+      "sha256": "ad570486c529bccb8958ac140d22ff5931802e2a0709fc291b186a1387707342",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00"
+    },
+    {
+      "id": "REF-10",
+      "kind": "official_screenshot",
+      "source_page": "https://store.steampowered.com/app/2929250/over_the_hill/",
+      "download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/dcccf01581bad5a176e3c6d22646e84ac076ec74/ss_dcccf01581bad5a176e3c6d22646e84ac076ec74.1920x1080.jpg?t=1790155284",
+      "local_path": "assets/reference/steam-10.jpg",
+      "rights": "Copyright Funselektor / Strelka Games; research reference only, not a game asset license.",
+      "resolved_download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/dcccf01581bad5a176e3c6d22646e84ac076ec74/ss_dcccf01581bad5a176e3c6d22646e84ac076ec74.1920x1080.jpg?t=1790155284",
+      "bytes": 373279,
+      "sha256": "76adad384e04ce56ca94d7d5eb4c416c46e9726505846ee45e2b3167b4ef24c2",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00"
+    },
+    {
+      "id": "REF-11",
+      "kind": "official_screenshot",
+      "source_page": "https://store.steampowered.com/app/2929250/over_the_hill/",
+      "download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/b02732095e20a714cb6c20b6559e418093fcd7ca/ss_b02732095e20a714cb6c20b6559e418093fcd7ca.1920x1080.jpg?t=1790155284",
+      "local_path": "assets/reference/steam-11.jpg",
+      "rights": "Copyright Funselektor / Strelka Games; research reference only, not a game asset license.",
+      "resolved_download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/b02732095e20a714cb6c20b6559e418093fcd7ca/ss_b02732095e20a714cb6c20b6559e418093fcd7ca.1920x1080.jpg?t=1790155284",
+      "bytes": 510181,
+      "sha256": "de00aa36575ef9c890da5f754e3ff5a32602edea9c60ad1c29f3fd9f91c10a8f",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00"
+    },
+    {
+      "id": "REF-12",
+      "kind": "official_screenshot",
+      "source_page": "https://store.steampowered.com/app/2929250/over_the_hill/",
+      "download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/9cb6409edcc33267a909cf02b758dd0466484bdc/ss_9cb6409edcc33267a909cf02b758dd0466484bdc.1920x1080.jpg?t=1790155284",
+      "local_path": "assets/reference/steam-12.jpg",
+      "rights": "Copyright Funselektor / Strelka Games; research reference only, not a game asset license.",
+      "resolved_download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/9cb6409edcc33267a909cf02b758dd0466484bdc/ss_9cb6409edcc33267a909cf02b758dd0466484bdc.1920x1080.jpg?t=1790155284",
+      "bytes": 349051,
+      "sha256": "d2c35077455563c3a730f1aa3ddf8de0ffcd16de37f12433bb1a9cf05ad1dcd8",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00"
+    },
+    {
+      "id": "REF-13",
+      "kind": "official_screenshot",
+      "source_page": "https://store.steampowered.com/app/2929250/over_the_hill/",
+      "download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/f92b0ea82bf4e49feeb451db9a03b3845817617b/ss_f92b0ea82bf4e49feeb451db9a03b3845817617b.1920x1080.jpg?t=1790155284",
+      "local_path": "assets/reference/steam-13.jpg",
+      "rights": "Copyright Funselektor / Strelka Games; research reference only, not a game asset license.",
+      "resolved_download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/f92b0ea82bf4e49feeb451db9a03b3845817617b/ss_f92b0ea82bf4e49feeb451db9a03b3845817617b.1920x1080.jpg?t=1790155284",
+      "bytes": 284168,
+      "sha256": "9c96c0d68c4080262e4b69a3159aae17d0670136677dd76441e2e18fb32de27e",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00"
+    },
+    {
+      "id": "REF-14",
+      "kind": "official_screenshot",
+      "source_page": "https://store.steampowered.com/app/2929250/over_the_hill/",
+      "download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/510015bd4ace2fbfb5a269226f919f359366e206/ss_510015bd4ace2fbfb5a269226f919f359366e206.1920x1080.jpg?t=1790155284",
+      "local_path": "assets/reference/steam-14.jpg",
+      "rights": "Copyright Funselektor / Strelka Games; research reference only, not a game asset license.",
+      "resolved_download_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/510015bd4ace2fbfb5a269226f919f359366e206/ss_510015bd4ace2fbfb5a269226f919f359366e206.1920x1080.jpg?t=1790155284",
+      "bytes": 429565,
+      "sha256": "4d10e0d5a746e2cbecaa57f36a2d7ea05bcd37102a575cb9f3fd0e581fb7a844",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00"
+    },
+    {
+      "id": "PACK-NATURE-KIT",
+      "kind": "prototype_asset_pack",
+      "source_page": "https://kenney.nl/assets/nature-kit",
+      "download_url": "https://kenney.nl/media/pages/assets/nature-kit/37ac38a37b-1677698939/kenney_nature-kit.zip",
+      "local_path": "assets/reusable/kenney_nature-kit.zip",
+      "creator": "Kenney",
+      "rights": "CC0 1.0; see bundled license",
+      "resolved_download_url": "https://kenney.nl/media/pages/assets/nature-kit/37ac38a37b-1677698939/kenney_nature-kit.zip",
+      "bytes": 10537521,
+      "sha256": "fa7974a0d342bfe63c38664ba9f8ec1a4aab8ea25f099bdc56870e33588c4d9d",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00",
+      "archive_entries": 3626,
+      "license_files": [
+        "assets/reusable/licenses/kenney_nature-kit-License.txt"
+      ]
+    },
+    {
+      "id": "PACK-CAR-KIT",
+      "kind": "prototype_asset_pack",
+      "source_page": "https://kenney.nl/assets/car-kit",
+      "download_url": "https://kenney.nl/media/pages/assets/car-kit/1a312ec241-1775131960/kenney_car-kit.zip",
+      "local_path": "assets/reusable/kenney_car-kit.zip",
+      "creator": "Kenney",
+      "rights": "CC0 1.0; see bundled license",
+      "resolved_download_url": "https://kenney.nl/media/pages/assets/car-kit/1a312ec241-1775131960/kenney_car-kit.zip",
+      "bytes": 4814237,
+      "sha256": "fac7dacac5c7874348cf19729af3ef205f3d366493edaf0a827d93f4fdf3d0c4",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00",
+      "archive_entries": 268,
+      "license_files": [
+        "assets/reusable/licenses/kenney_car-kit-License.txt"
+      ]
+    },
+    {
+      "id": "PACK-SURVIVAL-KIT",
+      "kind": "prototype_asset_pack",
+      "source_page": "https://kenney.nl/assets/survival-kit",
+      "download_url": "https://kenney.nl/media/pages/assets/survival-kit/4065a8185b-1712149243/kenney_survival-kit.zip",
+      "local_path": "assets/reusable/kenney_survival-kit.zip",
+      "creator": "Kenney",
+      "rights": "CC0 1.0; see bundled license",
+      "resolved_download_url": "https://kenney.nl/media/pages/assets/survival-kit/4065a8185b-1712149243/kenney_survival-kit.zip",
+      "bytes": 1948174,
+      "sha256": "c3586341b5932c87eb43d75d915434f47daed168b17ed36a03e8ca9977c7443e",
+      "accessed_at": "2026-09-24T16:40:41.956355+00:00",
+      "archive_entries": 421,
+      "license_files": [
+        "assets/reusable/licenses/kenney_survival-kit-License.txt"
+      ]
+    }
+  ]
+}

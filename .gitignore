@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.claude/
+.codex/
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+*.log
+*.tsbuildinfo
+*.blend[0-9]
+.DS_Store
