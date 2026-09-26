@@ -1,0 +1,914 @@
+{
+  "verifiedAt": "2026-09-26T03:01:42.528Z",
+  "method": "Separate production builds, identical routes and fixed 1/60 s simulation steps. Seeded random generator; same camera relative to the vehicle. Particle positions and counts are expected to change with the dust parameters.",
+  "sourceSha256": "5f98b5c24e099883ca5bddc68dbd1e2d620ff9de5993ba3db995d67b5ced1cfb",
+  "indexSha256": "26fbc3a6ad12ef64061ebcf30509c4535d29dc80ef5057af17b8f30cea5e3c2b",
+  "cases": [
+    {
+      "version": "before",
+      "id": "dirt-day",
+      "time": 0.12,
+      "near": [
+        -199,
+        85
+      ],
+      "kmh": 25,
+      "ticks": 360,
+      "position": {
+        "x": -197.5785369873047,
+        "y": 7.14567232131958,
+        "z": 53.5621337890625
+      },
+      "renderPosition": [
+        -197.58641052246094,
+        7.141448020935059,
+        53.66987609863281
+      ],
+      "cameraPosition": [
+        -192.07237243652344,
+        8.779027938842773,
+        62.194759368896484
+      ],
+      "speedKmh": 23.42816612215693,
+      "activeParticles": 153,
+      "maxAlphaByte": 76,
+      "meanAlphaByte": 32.98039215686274,
+      "maxCenterHeight": 2.2790877135148424,
+      "firstColor": [
+        158,
+        140,
+        112
+      ],
+      "wheels": [
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        }
+      ],
+      "glError": 0,
+      "capture": {
+        "file": "before-dirt-day.png",
+        "sha256": "be6f6eaaa43aa865dbe9589e897f4414e6341bf21cea4589152dda74189739f3"
+      },
+      "stopped": {
+        "speedKmh": 0.44343082152565433,
+        "particlesAfterTwoMoreSeconds": 0
+      }
+    },
+    {
+      "version": "before",
+      "id": "dirt-night",
+      "time": 1,
+      "near": [
+        -199,
+        85
+      ],
+      "kmh": 25,
+      "ticks": 360,
+      "position": {
+        "x": -197.5785369873047,
+        "y": 7.14567232131958,
+        "z": 53.5621337890625
+      },
+      "renderPosition": [
+        -197.58641052246094,
+        7.141448020935059,
+        53.66987609863281
+      ],
+      "cameraPosition": [
+        -192.07237243652344,
+        8.779027938842773,
+        62.194759368896484
+      ],
+      "speedKmh": 23.42816612215693,
+      "activeParticles": 146,
+      "maxAlphaByte": 77,
+      "meanAlphaByte": 34.76712328767123,
+      "maxCenterHeight": 2.391445491837044,
+      "firstColor": [
+        158,
+        140,
+        112
+      ],
+      "wheels": [
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        }
+      ],
+      "glError": 0,
+      "capture": {
+        "file": "before-dirt-night.png",
+        "sha256": "15e60fe92bdc2b787a288615a0b92cfaaeee7e6ad8beec3ef402d0a56832b2e3"
+      }
+    },
+    {
+      "version": "before",
+      "id": "slow-dirt",
+      "time": 0.12,
+      "near": [
+        -199,
+        85
+      ],
+      "kmh": 8,
+      "ticks": 360,
+      "position": {
+        "x": -199.0742950439453,
+        "y": 6.402350902557373,
+        "z": 73.9995346069336
+      },
+      "renderPosition": [
+        -199.07489013671875,
+        6.400511741638184,
+        74.0303726196289
+      ],
+      "cameraPosition": [
+        -193.1461639404297,
+        8.438987731933594,
+        82.1823501586914
+      ],
+      "speedKmh": 6.62746767695316,
+      "activeParticles": 0,
+      "maxAlphaByte": 0,
+      "meanAlphaByte": 0,
+      "maxCenterHeight": 0,
+      "firstColor": null,
+      "wheels": [
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        }
+      ],
+      "glError": 0,
+      "capture": {
+        "file": "before-slow-dirt.png",
+        "sha256": "e5e491e2cf1cac905efb2eb99f9d5fd73b6b043538d9995d1a5c23c8ee20c17b"
+      }
+    },
+    {
+      "version": "before",
+      "id": "fast-dirt",
+      "time": 0.12,
+      "near": [
+        -199,
+        95
+      ],
+      "kmh": 40,
+      "ticks": 360,
+      "position": {
+        "x": -198.00576782226562,
+        "y": 6.941490173339844,
+        "z": 59.7130126953125
+      },
+      "renderPosition": [
+        -198.01333618164062,
+        6.9329986572265625,
+        59.8435173034668
+      ],
+      "cameraPosition": [
+        -192.77926635742188,
+        9.401278495788574,
+        68.34481811523438
+      ],
+      "speedKmh": 28.459678287018427,
+      "activeParticles": 196,
+      "maxAlphaByte": 81,
+      "meanAlphaByte": 34.63265306122449,
+      "maxCenterHeight": 2.406908041365848,
+      "firstColor": [
+        158,
+        140,
+        112
+      ],
+      "wheels": [
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        }
+      ],
+      "glError": 0,
+      "capture": {
+        "file": "before-fast-dirt.png",
+        "sha256": "c65f9508eb2dbbd449506f3946e23808ac88a58e5885d77092ddb8e7daecf851"
+      }
+    },
+    {
+      "version": "before",
+      "id": "gravel-day",
+      "time": 0.12,
+      "near": [
+        106,
+        -39
+      ],
+      "kmh": 25,
+      "ticks": 360,
+      "position": {
+        "x": 87.69837188720703,
+        "y": 10.62580394744873,
+        "z": -62.08650207519531
+      },
+      "renderPosition": [
+        87.7462387084961,
+        10.61547565460205,
+        -62.00251388549805
+      ],
+      "cameraPosition": [
+        97.16093444824219,
+        11.885355949401855,
+        -58.06412887573242
+      ],
+      "speedKmh": 20.867391150067306,
+      "activeParticles": 137,
+      "maxAlphaByte": 66,
+      "meanAlphaByte": 27.26277372262774,
+      "maxCenterHeight": 2.3984466874232844,
+      "firstColor": [
+        163,
+        155,
+        140
+      ],
+      "wheels": [
+        {
+          "grounded": true,
+          "surface": "gravel",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "gravel",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "gravel",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "gravel",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        }
+      ],
+      "glError": 0,
+      "capture": {
+        "file": "before-gravel-day.png",
+        "sha256": "ae2d16a00609937e8175fc70f7a5e6f95993e6031e268b19e190f986d27c88fc"
+      }
+    },
+    {
+      "version": "after",
+      "id": "dirt-day",
+      "time": 0.12,
+      "near": [
+        -199,
+        85
+      ],
+      "kmh": 25,
+      "ticks": 360,
+      "position": {
+        "x": -197.5785369873047,
+        "y": 7.14567232131958,
+        "z": 53.5621337890625
+      },
+      "renderPosition": [
+        -197.58641052246094,
+        7.141448020935059,
+        53.66987609863281
+      ],
+      "cameraPosition": [
+        -192.07237243652344,
+        8.779027938842773,
+        62.194759368896484
+      ],
+      "speedKmh": 23.42816612215693,
+      "activeParticles": 59,
+      "maxAlphaByte": 43,
+      "meanAlphaByte": 18.661016949152543,
+      "maxCenterHeight": 0.6109774123186131,
+      "firstColor": [
+        76,
+        56,
+        35
+      ],
+      "wheels": [
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        }
+      ],
+      "glError": 0,
+      "capture": {
+        "file": "after-dirt-day.png",
+        "sha256": "03614119dfc300b731e7005292407175b7e5636edcc1c21ed013139e0a621434"
+      },
+      "stopped": {
+        "speedKmh": 0.44343082152565433,
+        "particlesAfterTwoMoreSeconds": 0
+      }
+    },
+    {
+      "version": "after",
+      "id": "dirt-night",
+      "time": 1,
+      "near": [
+        -199,
+        85
+      ],
+      "kmh": 25,
+      "ticks": 360,
+      "position": {
+        "x": -197.5785369873047,
+        "y": 7.14567232131958,
+        "z": 53.5621337890625
+      },
+      "renderPosition": [
+        -197.58641052246094,
+        7.141448020935059,
+        53.66987609863281
+      ],
+      "cameraPosition": [
+        -192.07237243652344,
+        8.779027938842773,
+        62.194759368896484
+      ],
+      "speedKmh": 23.42816612215693,
+      "activeParticles": 55,
+      "maxAlphaByte": 41,
+      "meanAlphaByte": 20.69090909090909,
+      "maxCenterHeight": 0.5057680363451356,
+      "firstColor": [
+        76,
+        56,
+        35
+      ],
+      "wheels": [
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        }
+      ],
+      "glError": 0,
+      "capture": {
+        "file": "after-dirt-night.png",
+        "sha256": "71a30944a163dc9bd82841a42900da8c648d84cefbe46a68e5e1e11734571b14"
+      }
+    },
+    {
+      "version": "after",
+      "id": "slow-dirt",
+      "time": 0.12,
+      "near": [
+        -199,
+        85
+      ],
+      "kmh": 8,
+      "ticks": 360,
+      "position": {
+        "x": -199.0742950439453,
+        "y": 6.402350902557373,
+        "z": 73.9995346069336
+      },
+      "renderPosition": [
+        -199.07489013671875,
+        6.400511741638184,
+        74.0303726196289
+      ],
+      "cameraPosition": [
+        -193.1461639404297,
+        8.438987731933594,
+        82.1823501586914
+      ],
+      "speedKmh": 6.62746767695316,
+      "activeParticles": 0,
+      "maxAlphaByte": 0,
+      "meanAlphaByte": 0,
+      "maxCenterHeight": 0,
+      "firstColor": null,
+      "wheels": [
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        }
+      ],
+      "glError": 0,
+      "capture": {
+        "file": "after-slow-dirt.png",
+        "sha256": "e5e491e2cf1cac905efb2eb99f9d5fd73b6b043538d9995d1a5c23c8ee20c17b"
+      }
+    },
+    {
+      "version": "after",
+      "id": "fast-dirt",
+      "time": 0.12,
+      "near": [
+        -199,
+        95
+      ],
+      "kmh": 40,
+      "ticks": 360,
+      "position": {
+        "x": -198.00576782226562,
+        "y": 6.941490173339844,
+        "z": 59.7130126953125
+      },
+      "renderPosition": [
+        -198.01333618164062,
+        6.9329986572265625,
+        59.8435173034668
+      ],
+      "cameraPosition": [
+        -192.77926635742188,
+        9.401278495788574,
+        68.34481811523438
+      ],
+      "speedKmh": 28.459678287018427,
+      "activeParticles": 78,
+      "maxAlphaByte": 44,
+      "meanAlphaByte": 19.141025641025642,
+      "maxCenterHeight": 0.6940002443680102,
+      "firstColor": [
+        76,
+        56,
+        35
+      ],
+      "wheels": [
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "dirt",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        }
+      ],
+      "glError": 0,
+      "capture": {
+        "file": "after-fast-dirt.png",
+        "sha256": "bc4a17f680ff7e2fee1f15515c71ab2afed4bfe2b2669e1a16ff5f99def859af"
+      }
+    },
+    {
+      "version": "after",
+      "id": "gravel-day",
+      "time": 0.12,
+      "near": [
+        106,
+        -39
+      ],
+      "kmh": 25,
+      "ticks": 360,
+      "position": {
+        "x": 87.69837188720703,
+        "y": 10.62580394744873,
+        "z": -62.08650207519531
+      },
+      "renderPosition": [
+        87.7462387084961,
+        10.61547565460205,
+        -62.00251388549805
+      ],
+      "cameraPosition": [
+        97.16093444824219,
+        11.885355949401855,
+        -58.06412887573242
+      ],
+      "speedKmh": 20.867391150067306,
+      "activeParticles": 53,
+      "maxAlphaByte": 35,
+      "meanAlphaByte": 13.452830188679245,
+      "maxCenterHeight": 0.6536357202613665,
+      "firstColor": [
+        86,
+        76,
+        61
+      ],
+      "wheels": [
+        {
+          "grounded": true,
+          "surface": "gravel",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "gravel",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "gravel",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        },
+        {
+          "grounded": true,
+          "surface": "gravel",
+          "mud": 0,
+          "water": 0,
+          "spinning": false,
+          "sliding": false
+        }
+      ],
+      "glError": 0,
+      "capture": {
+        "file": "after-gravel-day.png",
+        "sha256": "6d0ec9872739a99ffa0f5d93c0400bb8dd698041b66b5a9b803f1d12cb7d316d"
+      }
+    }
+  ],
+  "errors": [],
+  "beforeEnvironment": {
+    "renderer": "ANGLE (NVIDIA, Vulkan 1.3.242 (NVIDIA NVIDIA L4 (0x000027B8)), NVIDIA)",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+    "ssao": {
+      "type": "combine",
+      "blurEnabled": true,
+      "randomize": false,
+      "intensity": 0.45,
+      "radius": 1.2,
+      "samples": 24,
+      "power": 3,
+      "minAngle": 10,
+      "scale": 1
+    },
+    "particleEnvironmentLight": true
+  },
+  "afterEnvironment": {
+    "renderer": "ANGLE (NVIDIA, Vulkan 1.3.242 (NVIDIA NVIDIA L4 (0x000027B8)), NVIDIA)",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+    "ssao": {
+      "type": "combine",
+      "blurEnabled": true,
+      "randomize": false,
+      "intensity": 0.45,
+      "radius": 1.2,
+      "samples": 24,
+      "power": 3,
+      "minAngle": 10,
+      "scale": 1
+    },
+    "particleEnvironmentLight": true
+  },
+  "comparisons": [
+    {
+      "id": "dirt-day",
+      "vehiclePositionDifference": 0,
+      "particleCountBefore": 153,
+      "particleCountAfter": 59,
+      "meanAlphaBefore": 32.98039215686274,
+      "meanAlphaAfter": 18.661016949152543,
+      "maxCenterHeightBefore": 2.2790877135148424,
+      "maxCenterHeightAfter": 0.6109774123186131
+    },
+    {
+      "id": "dirt-night",
+      "vehiclePositionDifference": 0,
+      "particleCountBefore": 146,
+      "particleCountAfter": 55,
+      "meanAlphaBefore": 34.76712328767123,
+      "meanAlphaAfter": 20.69090909090909,
+      "maxCenterHeightBefore": 2.391445491837044,
+      "maxCenterHeightAfter": 0.5057680363451356
+    },
+    {
+      "id": "slow-dirt",
+      "vehiclePositionDifference": 0,
+      "particleCountBefore": 0,
+      "particleCountAfter": 0,
+      "meanAlphaBefore": 0,
+      "meanAlphaAfter": 0,
+      "maxCenterHeightBefore": 0,
+      "maxCenterHeightAfter": 0
+    },
+    {
+      "id": "fast-dirt",
+      "vehiclePositionDifference": 0,
+      "particleCountBefore": 196,
+      "particleCountAfter": 78,
+      "meanAlphaBefore": 34.63265306122449,
+      "meanAlphaAfter": 19.141025641025642,
+      "maxCenterHeightBefore": 2.406908041365848,
+      "maxCenterHeightAfter": 0.6940002443680102
+    },
+    {
+      "id": "gravel-day",
+      "vehiclePositionDifference": 0,
+      "particleCountBefore": 137,
+      "particleCountAfter": 53,
+      "meanAlphaBefore": 27.26277372262774,
+      "meanAlphaAfter": 13.452830188679245,
+      "maxCenterHeightBefore": 2.3984466874232844,
+      "maxCenterHeightAfter": 0.6536357202613665
+    }
+  ],
+  "baseline": {
+    "sourceCommit": "0a9e85aca30029aa64f13feb705de3e411520862",
+    "sourceSha256": "1c1bcaa94b9589ef950463def587c39dea5cc6aa1deea6fc246059068eff5f3a",
+    "indexSha256": "238a5f788489b004c36dec0af5f39dcf59ada7eb479aaa74f6c6738c0e4d45b4"
+  },
+  "build": {
+    "command": "npm --prefix game run build",
+    "passed": true,
+    "entryAssets": [
+      {
+        "file": "./assets/index-DCji47fR.js",
+        "size": 5377360,
+        "sha256": "c4d005d31a91dd25b85f91a572412e16f29fdf19f7f004d19561ea810f7cc98a"
+      },
+      {
+        "file": "./assets/index-DweeZaEa.css",
+        "size": 18556,
+        "sha256": "8fc88129a4f73e16f685d7dcf499d39c59ee10aa4d1b81f1984b3b87cd4bfcb5"
+      }
+    ]
+  },
+  "setup": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "deviceScaleFactor": 1,
+    "simulationStepSeconds": 0.016666666666666666,
+    "settleTicks": 240,
+    "randomSeed": 71403,
+    "cameraRelativePosition": [
+      6,
+      2.4,
+      8
+    ],
+    "cameraRelativeTarget": [
+      0,
+      0.7,
+      0
+    ],
+    "cameraFov": 52
+  },
+  "measurements": {
+    "activeParticles": "Billboard quads with uploaded alpha greater than zero, before radial sprite alpha multiplication.",
+    "maxCenterHeight": "Maximum billboard center height above the terrain, in meters.",
+    "stopped": "Brake for 90 fixed steps, read speed, then advance 120 more steps and count remaining visible particles.",
+    "captures": "Original full-frame capture names and SHA-256 hashes are retained as provenance; the repository stores the two-case comparison crop."
+  },
+  "comparisonImage": {
+    "file": "comparison.png",
+    "sha256": "0a34c33bf97c132f6368a5b7b675f85f83747d6875c4c9b11fcf2e30cd4b3085",
+    "dimensions": [
+      1872,
+      1132
+    ],
+    "sourceCases": [
+      "dirt-day",
+      "dirt-night"
+    ],
+    "cropBox": [
+      40,
+      280,
+      1060,
+      760
+    ],
+    "tileDimensions": [
+      900,
+      424
+    ],
+    "processing": "Crop and Lanczos resize only; no brightness or color adjustment."
+  }
+}

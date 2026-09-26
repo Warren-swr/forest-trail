@@ -129,11 +129,12 @@ export class Effects {
       const intensity = speed + slipV;
       // --- particles
       let rate = 0;
-      let col: [number, number, number, number] = [0.62, 0.55, 0.44, 0.35];
+      // Linear earth colors keep the lit dust close to the road palette.
+      let col: [number, number, number, number] = [0.3, 0.22, 0.14, 0.2];
       let kind: 'dust' | 'mud' | 'water' = 'dust';
       if (water > 0.04) { kind = 'water'; rate = speed > 0.8 ? speed * 9 * Math.min(1, water * 4) : 0; col = [0.82, 0.88, 0.88, 0.55]; }
       else if (w.mud > 0.4) { kind = 'mud'; rate = (w.spinning ? 30 : 0) + speed * 3; col = [0.26, 0.21, 0.16, 0.9]; }
-      else if (w.surface === 'dirt' || w.surface === 'gravel') { rate = speed > 2.5 ? (speed - 2.5) * 4.5 + slipV * 3 : 0; if (w.surface === 'gravel') col = [0.64, 0.61, 0.55, 0.3]; }
+      else if (w.surface === 'dirt' || w.surface === 'gravel') { rate = speed > 3 ? Math.min(20, (speed - 3) * 2.8 + slipV * 1.5) : 0; if (w.surface === 'gravel') col = [0.34, 0.3, 0.24, 0.16]; }
       else if (w.surface === 'grass') rate = w.spinning ? 6 : 0;
       this.emitAcc[i] += rate * dt;
       while (this.emitAcc[i] >= 1) {
@@ -145,7 +146,8 @@ export class Effects {
         const base = { x: cx + back.x, y: w.contact.y + 0.08, z: cz + back.z };
         rotateVec(rv, q, (this.rnd() - 0.5) * 1.2, 0, dirSign * (0.8 + intensity * 0.15));
         if (kind === 'dust') {
-          this.spawn({ ...base, vx: rv.x * 0.6, vy: 0.4 + this.rnd() * 0.5, vz: rv.z * 0.6, max: 1.6 + this.rnd(), size: 0.35, grow: 1.4, r: col[0], g: col[1], b: col[2], a: col[3] * (0.6 + this.rnd() * 0.4), grav: -0.1 });
+          // Small, short-lived puffs stay near the tyre contact patch.
+          this.spawn({ ...base, vx: rv.x * 0.6, vy: 0.2 + this.rnd() * 0.25, vz: rv.z * 0.6, max: 1.2 + this.rnd() * 0.6, size: 0.3, grow: 1, r: col[0], g: col[1], b: col[2], a: col[3] * (0.6 + this.rnd() * 0.4), grav: 0.15 });
         } else if (kind === 'mud') {
           this.spawn({ ...base, vx: rv.x * (1 + this.rnd()), vy: 1.2 + this.rnd() * 2.2 * (w.spinning ? 1.4 : 0.6), vz: rv.z * (1 + this.rnd()), max: 0.9, size: 0.09 + this.rnd() * 0.07, grow: 0, r: col[0], g: col[1], b: col[2], a: col[3], grav: 9 });
         } else {
