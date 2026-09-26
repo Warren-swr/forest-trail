@@ -1,5 +1,9 @@
 # Forest Trail 验证报告（第二版）
 
+> 2026-09-26 当前车辆精修：Scout / Kestrel 已以正式发布版本 33439c3 重做，保留完整可见装备，并参考实拍对齐 Toyota 样车。最新实现、开销与独立验证见 [正式版精修记录](VEHICLE-TRAIL-COMPANIONS.md)；下文保留历史记录。
+
+车辆后续验证：[当前 Scout / Kestrel 精修](VEHICLE-TRAIL-COMPANIONS.md) · [当前 FJ60 样车](TOYOTA-ARCH-BALANCE.md)。本文其余内容保留第二版发布时的验证结果。
+
 **结论：**第二版的全部新增内容都在真实浏览器里实测过：
 - 三辆可选车辆；
 - 车灯（近光 / 远光）与昼夜；

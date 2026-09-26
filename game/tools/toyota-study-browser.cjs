@@ -264,7 +264,7 @@ for (const [id, file] of Object.entries({ legacy: path.join(study, 'before.glb')
     });
     assert(report.drive.maxAxleDifference > .1); assert(report.drive.peakMorph > .1);
     assert(report.drive.minUprightness > .5);
-    // Shared glass handling still respects the two previously authored transparent cars.
+    // The companion refinements now use the same opaque trail glazing.
     report.otherCars = [];
     for (const id of ['scout', 'ranger']) {
       await page.evaluate(id => window.__ft.setVehicle(id), id); await frames(10);
@@ -273,7 +273,7 @@ for (const [id, file] of Object.entries({ legacy: path.join(study, 'before.glb')
         return { id: g.vehicleId, fallback: g.lib.models.get(g.vehicle.spec.model).fallback,
           glassOpacity: g.view.mats.get('Glass')[0].opacity };
       });
-      assert.equal(check.fallback, false); assert(check.glassOpacity < .4);
+      assert.equal(check.fallback, false); assert.equal(check.glassOpacity, 1);
       report.otherCars.push(check);
     }
     assert.equal(report.errors.length, 0, report.errors.join('\n'));

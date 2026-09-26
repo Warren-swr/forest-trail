@@ -1,0 +1,994 @@
+{
+  "capturedAt": "2026-09-26T11:19:07.744Z",
+  "viewport": {
+    "width": 1600,
+    "height": 1000
+  },
+  "method": "Previous published models and their original specifications versus current models/specifications in the same current WebGL scene and compatibility renderer. Each pair shares fixed world cameras, paint and environment; each variant creates a fresh rigid body and settles for 3 seconds with the current physics. Historical physics is compared separately in the suspension study. Driving videos use the real current 60 Hz simulation.",
+  "baseline": {
+    "kind": "published-release",
+    "releaseCommit": "33439c37d453c87279797d7365d8874cff5b747a",
+    "capturedAt": "2026-09-26T09:48:45.317798+00:00",
+    "deployment": {
+      "id": 36213839010,
+      "head_sha": "33439c37d453c87279797d7365d8874cff5b747a",
+      "name": "Deploy to GitHub Pages",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-26T03:07:45Z",
+      "html_url": "https://github.com/Warren-swr/forest-trail/actions/runs/36213839010"
+    },
+    "publishedAssets": [
+      {
+        "id": "scout",
+        "path": "assets/models/vehicle_scout.glb",
+        "url": "https://warren-swr.github.io/forest-trail/assets/models/vehicle_scout.glb",
+        "status": 200,
+        "lastModified": "Sat, 26 Sep 2026 03:08:19 GMT",
+        "bytes": 981704,
+        "sha256": "3137b8597ae69e53b3f563bb162596d98dbbbaccb83952079c7029aa4e96d15c",
+        "gitCommit": "33439c37d453c87279797d7365d8874cff5b747a"
+      },
+      {
+        "id": "scout",
+        "path": "assets/models/vehicle_scout.json",
+        "url": "https://warren-swr.github.io/forest-trail/assets/models/vehicle_scout.json",
+        "status": 200,
+        "lastModified": "Sat, 26 Sep 2026 03:08:19 GMT",
+        "bytes": 1512,
+        "sha256": "0bd184379dd70b0cecaf79e76b631f17cc0123d245ffed270a72fb000773cb1b",
+        "gitCommit": "33439c37d453c87279797d7365d8874cff5b747a"
+      },
+      {
+        "id": "ranger",
+        "path": "assets/models/vehicle_ranger.glb",
+        "url": "https://warren-swr.github.io/forest-trail/assets/models/vehicle_ranger.glb",
+        "status": 200,
+        "lastModified": "Sat, 26 Sep 2026 03:08:19 GMT",
+        "bytes": 706148,
+        "sha256": "206cfaba3bc8d9fb21b95e2c4d8d53dbb02177355e298b49ff37d18c2a9f900d",
+        "gitCommit": "33439c37d453c87279797d7365d8874cff5b747a"
+      },
+      {
+        "id": "ranger",
+        "path": "assets/models/vehicle_ranger.json",
+        "url": "https://warren-swr.github.io/forest-trail/assets/models/vehicle_ranger.json",
+        "status": 200,
+        "lastModified": "Sat, 26 Sep 2026 03:08:19 GMT",
+        "bytes": 1306,
+        "sha256": "da07721af781a595b4d844975cb674b4afc7bed1fe0276e45af1fd367ec9b4f8",
+        "gitCommit": "33439c37d453c87279797d7365d8874cff5b747a"
+      }
+    ],
+    "source": "Exact files from the last successful GitHub Pages deployment, byte-verified against the live site.",
+    "rawRun": "/mnt/runs/forest-trail/release-comparison-20260926-094841",
+    "toyotaReference": {
+      "public/assets/models/vehicle_toyota_trail.glb": "5c9cdfa0e213cc7f0579ea8b2fcf6e0ea00489fc360ccfe510fab31a17e3caad",
+      "public/assets/models/vehicle_toyota_trail.json": "7749973b21605480705965d7cd07ef8a9bc4e0a75a628d7049776d2333b515cf",
+      "art/blender/vehicle_toyota_trail.py": "59cd46d43326d3b211189c8f12f2c0aa1bca2109d7c7cbbf2565be6bcacc096f"
+    },
+    "currentAssets": {
+      "public/assets/models/vehicle_scout.glb": "6f5e093c76024dd9b1088d3c2f4c48e3b54aeb14a8a2cd9a40bb1a693d6bd4e5",
+      "public/assets/models/vehicle_ranger.glb": "d94b0f9eb876e892f1ca1cc4e7c8832021bdd88d2c77ba3cc921d9e944512b5b",
+      "public/assets/models/vehicle_scout.json": "12c77758cfb8efc9a37cc9f1dd5e9036d776306a4e15561ab8a89b1e9702ae61",
+      "public/assets/models/vehicle_ranger.json": "2ccb15104fe6bc72d393327fc2a76260668fa26463082c81952e8dcc50e9d562",
+      "src/game/config.ts": "9fea4cb00cf5de625b7d7d090b17ca8c66cd579ddbc3390f7f5583610c908e50",
+      "src/game/physics/vehicle.ts": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539",
+      "src/game/render/vehicleView.ts": "ad98b3a3045134cdafd5fadb7046e0ed74e71a1cea03344a6ff4f22d3f369cc6",
+      "art/blender/vehicle_trail.py": "a5b040126e616c6a5ef2e0017c495f76bddf520570fc950d27822dbbe1cd7803"
+    },
+    "supersedes": "01-balanced-trail comparison used the unpublished 5066e72 fidelity models as its baseline."
+  },
+  "assets": {
+    "scout": {
+      "before": {
+        "file": "art/studies/trail-companions/02-release-baseline/scout/before.glb",
+        "sha256": "3137b8597ae69e53b3f563bb162596d98dbbbaccb83952079c7029aa4e96d15c"
+      },
+      "after": {
+        "file": "dist/assets/models/vehicle_scout.glb",
+        "sha256": "2e40d5d115bc92a19be30425cdef2e7421c2ba012c4506978a7ea3cd3dcf3d94"
+      }
+    },
+    "ranger": {
+      "before": {
+        "file": "art/studies/trail-companions/02-release-baseline/ranger/before.glb",
+        "sha256": "206cfaba3bc8d9fb21b95e2c4d8d53dbb02177355e298b49ff37d18c2a9f900d"
+      },
+      "after": {
+        "file": "dist/assets/models/vehicle_ranger.glb",
+        "sha256": "5c253563c20ea1e017573f0dacad7d55afd304e6590bab479cb59456ecd65828"
+      }
+    }
+  },
+  "vehicles": [
+    {
+      "id": "scout",
+      "views": [
+        {
+          "id": "front",
+          "offset": [
+            4.2,
+            2.05,
+            -5.4
+          ],
+          "look": [
+            0,
+            0.68,
+            0
+          ],
+          "fov": 44
+        },
+        {
+          "id": "side",
+          "offset": [
+            7.2,
+            1.1,
+            0.1
+          ],
+          "look": [
+            0,
+            0.65,
+            0.1
+          ],
+          "fov": 44
+        },
+        {
+          "id": "rear",
+          "offset": [
+            -4.1,
+            1.8,
+            5.4
+          ],
+          "look": [
+            0,
+            0.66,
+            0.2
+          ],
+          "fov": 45
+        },
+        {
+          "id": "front-flat",
+          "offset": [
+            0,
+            1.04,
+            -6.5
+          ],
+          "look": [
+            0,
+            0.65,
+            -1.15
+          ],
+          "fov": 43
+        },
+        {
+          "id": "rear-flat",
+          "offset": [
+            0,
+            1.1,
+            6.5
+          ],
+          "look": [
+            0,
+            0.66,
+            1.65
+          ],
+          "fov": 43
+        },
+        {
+          "id": "hood",
+          "offset": [
+            2.3,
+            2.3,
+            -3.1
+          ],
+          "look": [
+            0,
+            0.93,
+            -1.12
+          ],
+          "fov": 43
+        },
+        {
+          "id": "wheel",
+          "offset": [
+            2.4,
+            0.64,
+            -2.5
+          ],
+          "look": [
+            0.7,
+            0.12,
+            -1.2
+          ],
+          "fov": 42
+        },
+        {
+          "id": "detail",
+          "offset": [
+            2.4,
+            1.55,
+            -0.6
+          ],
+          "look": [
+            0.5,
+            1.04,
+            -0.25
+          ],
+          "fov": 43
+        },
+        {
+          "id": "load",
+          "offset": [
+            -2.7,
+            2.25,
+            3.8
+          ],
+          "look": [
+            0,
+            1,
+            1
+          ],
+          "fov": 44
+        },
+        {
+          "id": "night",
+          "offset": [
+            4.2,
+            1.8,
+            -5.4
+          ],
+          "look": [
+            0,
+            0.66,
+            0
+          ],
+          "fov": 44,
+          "night": true
+        }
+      ],
+      "variants": {
+        "before": {
+          "model": "vehicle_scout_before",
+          "fallback": false,
+          "position": {
+            "x": -173.5478515625,
+            "y": 4.563955783843994,
+            "z": 155.16555786132812
+          },
+          "wheelLengths": [
+            0.3085156250000002,
+            0.30195312500000016,
+            0.2888281250000001,
+            0.294296875
+          ],
+          "grounded": 4,
+          "radius": 0.38
+        },
+        "after": {
+          "model": "vehicle_scout",
+          "fallback": false,
+          "position": {
+            "x": -173.54652404785156,
+            "y": 4.586933612823486,
+            "z": 155.1687469482422
+          },
+          "wheelLengths": [
+            0.2858593750000002,
+            0.2814843750000002,
+            0.2563281250000002,
+            0.2639843750000001
+          ],
+          "grounded": 4,
+          "radius": 0.43
+        }
+      },
+      "rig": {
+        "model": "vehicle_scout",
+        "independentSprings": 4,
+        "shocks": 4,
+        "opaqueGlass": true,
+        "brakes": true,
+        "barrelScales": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "lod": "near → far → near passed",
+      "lamps": {
+        "off": {
+          "Lamp": [
+            0
+          ],
+          "LampAux": [
+            0
+          ],
+          "LampRear": [
+            0
+          ],
+          "LampReverse": [
+            0
+          ],
+          "LampPlate": [
+            0
+          ]
+        },
+        "low": {
+          "Lamp": [
+            6
+          ],
+          "LampAux": [
+            0
+          ],
+          "LampRear": [
+            3
+          ],
+          "LampReverse": [
+            0
+          ],
+          "LampPlate": [
+            2.8
+          ]
+        },
+        "high": {
+          "Lamp": [
+            9
+          ],
+          "LampAux": [
+            8
+          ],
+          "LampRear": [
+            3
+          ],
+          "LampReverse": [
+            0
+          ],
+          "LampPlate": [
+            2.8
+          ]
+        },
+        "brake": {
+          "Lamp": [
+            6
+          ],
+          "LampAux": [
+            0
+          ],
+          "LampRear": [
+            9
+          ],
+          "LampReverse": [
+            0
+          ],
+          "LampPlate": [
+            2.8
+          ]
+        },
+        "reverse": {
+          "Lamp": [
+            6
+          ],
+          "LampAux": [
+            0
+          ],
+          "LampRear": [
+            3
+          ],
+          "LampReverse": [
+            5
+          ],
+          "LampPlate": [
+            2.8
+          ]
+        }
+      },
+      "drive": {
+        "samples": 747,
+        "maxAxleDifference": 0.38367187499999994,
+        "minUprightness": 0.9753592689864277,
+        "maxSpeedKmh": 4.036982442312644,
+        "peakMorph": 0.6122940308988768,
+        "barrelScaleError": 0,
+        "maxFrameMs": 100
+      }
+    },
+    {
+      "id": "ranger",
+      "views": [
+        {
+          "id": "front",
+          "offset": [
+            4.2,
+            2.05,
+            -5.4
+          ],
+          "look": [
+            0,
+            0.68,
+            0
+          ],
+          "fov": 44
+        },
+        {
+          "id": "side",
+          "offset": [
+            7.2,
+            1.1,
+            0.1
+          ],
+          "look": [
+            0,
+            0.65,
+            0.1
+          ],
+          "fov": 44
+        },
+        {
+          "id": "rear",
+          "offset": [
+            -4.1,
+            1.8,
+            5.4
+          ],
+          "look": [
+            0,
+            0.66,
+            0.2
+          ],
+          "fov": 45
+        },
+        {
+          "id": "front-flat",
+          "offset": [
+            0,
+            1.04,
+            -6.5
+          ],
+          "look": [
+            0,
+            0.65,
+            -1.15
+          ],
+          "fov": 43
+        },
+        {
+          "id": "rear-flat",
+          "offset": [
+            0,
+            1.1,
+            6.5
+          ],
+          "look": [
+            0,
+            0.66,
+            1.65
+          ],
+          "fov": 43
+        },
+        {
+          "id": "hood",
+          "offset": [
+            2.3,
+            2.3,
+            -3.1
+          ],
+          "look": [
+            0,
+            0.93,
+            -1.12
+          ],
+          "fov": 43
+        },
+        {
+          "id": "wheel",
+          "offset": [
+            2.4,
+            0.64,
+            -2.5
+          ],
+          "look": [
+            0.7,
+            0.12,
+            -1.2
+          ],
+          "fov": 42
+        },
+        {
+          "id": "detail",
+          "offset": [
+            2.4,
+            1.55,
+            -0.6
+          ],
+          "look": [
+            0.5,
+            1.04,
+            -0.25
+          ],
+          "fov": 43
+        },
+        {
+          "id": "load",
+          "offset": [
+            -2.7,
+            2.25,
+            3.8
+          ],
+          "look": [
+            0,
+            1,
+            1
+          ],
+          "fov": 44
+        },
+        {
+          "id": "night",
+          "offset": [
+            4.2,
+            1.8,
+            -5.4
+          ],
+          "look": [
+            0,
+            0.66,
+            0
+          ],
+          "fov": 44,
+          "night": true
+        }
+      ],
+      "variants": {
+        "before": {
+          "model": "vehicle_ranger_before",
+          "fallback": false,
+          "position": {
+            "x": -173.5487518310547,
+            "y": 4.548884868621826,
+            "z": 155.16441345214844
+          },
+          "wheelLengths": [
+            0.2967968750000002,
+            0.29132812500000027,
+            0.3055468750000002,
+            0.31101562500000013
+          ],
+          "grounded": 4,
+          "radius": 0.36
+        },
+        "after": {
+          "model": "vehicle_ranger",
+          "fallback": false,
+          "position": {
+            "x": -173.54908752441406,
+            "y": 4.579479217529297,
+            "z": 155.16505432128906
+          },
+          "wheelLengths": [
+            0.2652343750000001,
+            0.25867187500000005,
+            0.28054687500000014,
+            0.2860156250000003
+          ],
+          "grounded": 4,
+          "radius": 0.42
+        }
+      },
+      "rig": {
+        "model": "vehicle_ranger",
+        "independentSprings": 4,
+        "shocks": 4,
+        "opaqueGlass": true,
+        "brakes": true,
+        "barrelScales": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "lod": "near → far → near passed",
+      "lamps": {
+        "off": {
+          "Lamp": [
+            0
+          ],
+          "LampAux": [
+            0
+          ],
+          "LampRear": [
+            0
+          ],
+          "LampReverse": [
+            0
+          ],
+          "LampPlate": [
+            0
+          ]
+        },
+        "low": {
+          "Lamp": [
+            6
+          ],
+          "LampAux": [
+            0
+          ],
+          "LampRear": [
+            3
+          ],
+          "LampReverse": [
+            0
+          ],
+          "LampPlate": [
+            2.8
+          ]
+        },
+        "high": {
+          "Lamp": [
+            9
+          ],
+          "LampAux": [
+            8
+          ],
+          "LampRear": [
+            3
+          ],
+          "LampReverse": [
+            0
+          ],
+          "LampPlate": [
+            2.8
+          ]
+        },
+        "brake": {
+          "Lamp": [
+            6
+          ],
+          "LampAux": [
+            0
+          ],
+          "LampRear": [
+            9
+          ],
+          "LampReverse": [
+            0
+          ],
+          "LampPlate": [
+            2.8
+          ]
+        },
+        "reverse": {
+          "Lamp": [
+            6
+          ],
+          "LampAux": [
+            0
+          ],
+          "LampRear": [
+            3
+          ],
+          "LampReverse": [
+            5
+          ],
+          "LampPlate": [
+            2.8
+          ]
+        }
+      },
+      "drive": {
+        "samples": 755,
+        "maxAxleDifference": 0.35804687499999993,
+        "minUprightness": 0.9817053475830174,
+        "maxSpeedKmh": 4.131620912297366,
+        "peakMorph": 0.5155398124999989,
+        "barrelScaleError": 0,
+        "maxFrameMs": 100
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "scout-before-front.png",
+      "sha256": "618397f5b593c8606a07b28ddb7f9ed5a673d4b70807da520854c13ae72ab67a"
+    },
+    {
+      "file": "scout-after-front.png",
+      "sha256": "0844e5811b148fcbab1dd191df60a3fbcf8354bfe45a2f59c43a08036b3775a7"
+    },
+    {
+      "file": "scout-before-side.png",
+      "sha256": "d0516a64371eca275b4416a7b49827ed1c3fefbf12aa98930c4a62da6187afbd"
+    },
+    {
+      "file": "scout-after-side.png",
+      "sha256": "46e0113b41f86db53a74977b5ee4e6444b1d61269d26431bb58547b300750beb"
+    },
+    {
+      "file": "scout-before-rear.png",
+      "sha256": "0ab4a9c4b1a941f66ecf295fdf4649c5fad54b8988d86cc9694f460f481a7b1b"
+    },
+    {
+      "file": "scout-after-rear.png",
+      "sha256": "e599a7e9c13933a07ae25dba011a750a47f36d11e740a3057b65c870d6e31fb2"
+    },
+    {
+      "file": "scout-before-front-flat.png",
+      "sha256": "17692a76e7ec367744c4c2ee52ee4500612e0c506beee2e858dd12996a9bb143"
+    },
+    {
+      "file": "scout-after-front-flat.png",
+      "sha256": "490f84b02cdeb1d007c706e5606b0406a546efcfa266d22e67926354004ff6b1"
+    },
+    {
+      "file": "scout-before-rear-flat.png",
+      "sha256": "46907e1c979cd11c0bdf89dc034209c6189f981a6a03ece40305356263368f60"
+    },
+    {
+      "file": "scout-after-rear-flat.png",
+      "sha256": "49e9004a8296b206db267dd9b2cccd5cba572bc00755d91ae17839b3ccbcb19b"
+    },
+    {
+      "file": "scout-before-hood.png",
+      "sha256": "468646bff8cb6fbf13dd799d171d1046f1efea558e692043a3c89bebd0ea05f4"
+    },
+    {
+      "file": "scout-after-hood.png",
+      "sha256": "ba5d2a377e2410b8f25da0b52551491ec443dbed5f4799ffcd0e738560e9caa5"
+    },
+    {
+      "file": "scout-before-wheel.png",
+      "sha256": "415e9b5c94423f2e8341ea61cbfe04efb3369f2442e37f2c8036cfc14b6796ec"
+    },
+    {
+      "file": "scout-after-wheel.png",
+      "sha256": "40137395061f771f992b0d82d26fefe976344b3214d2c2817ed63df10a0f822d"
+    },
+    {
+      "file": "scout-before-detail.png",
+      "sha256": "0f5f9cc40a0a0bf4f7b354929be79417c7658b33dc0340bfc2a09ff7e333ccc7"
+    },
+    {
+      "file": "scout-after-detail.png",
+      "sha256": "26132c888d51fffb51ac8686f11c7a25d2f6224d74b55a9ef81806b0a264d00d"
+    },
+    {
+      "file": "scout-before-load.png",
+      "sha256": "2d6413fc7260570b581b11229d30b5c0492ab1cdc264856c2e5843ab7907bf8b"
+    },
+    {
+      "file": "scout-after-load.png",
+      "sha256": "549ce6fbbc9852ae233d9f9fbc560985c4e9ebd6b13e3d244036d6cc00ce68b9"
+    },
+    {
+      "file": "scout-before-night.png",
+      "sha256": "9d5eba582c606ad9453147959403c0f33816ffeb05b0e31130285a80c86834d1"
+    },
+    {
+      "file": "scout-after-night.png",
+      "sha256": "821694b9ddd339c2ad5003b86ad195ddb084de5fa050f7a60e8c8078fe6cb08f"
+    },
+    {
+      "file": "scout-after-distant.png",
+      "sha256": "904712ab9dd1e332e9a04ff186625593ed700d2fb86a6fbd9ea6451d3dcd1243"
+    },
+    {
+      "file": "scout-after-articulation.png",
+      "sha256": "8d8f6ee4ac5e7dbd4fa40bd218dbea21ad6ea800ef9161dbef16fbc799b1628c"
+    },
+    {
+      "file": "ranger-before-front.png",
+      "sha256": "3f037df778e9749fe9bbf744a0f8de31296de31ef9b10bbc4851ffc18dc7f807"
+    },
+    {
+      "file": "ranger-after-front.png",
+      "sha256": "78f25bf4603cb9d720436267948c0a33abbfb29329e2f886430bb86534781dd4"
+    },
+    {
+      "file": "ranger-before-side.png",
+      "sha256": "46335ff4a22ad44a89d6a4d84986b3689c64a53606525f7ca31597c5c254b170"
+    },
+    {
+      "file": "ranger-after-side.png",
+      "sha256": "b8bb50d0bc4e1908ceae05627c281e747f8dc188ba352b2c9fb1e4cbda1e29cc"
+    },
+    {
+      "file": "ranger-before-rear.png",
+      "sha256": "ee35078ebac01e711e4062359d3289e1edcd2ab124c17c4a369018f7b56cfe51"
+    },
+    {
+      "file": "ranger-after-rear.png",
+      "sha256": "bb1d07c4c0886c55a8f9b26d8100a4b206966af5a72817550eff44f587d0a823"
+    },
+    {
+      "file": "ranger-before-front-flat.png",
+      "sha256": "b25e020af51e298ea68e1d11a76fe7f3d2844e8b3b35b2a10d901f7ba2158216"
+    },
+    {
+      "file": "ranger-after-front-flat.png",
+      "sha256": "4ae592ad3e71e49b0ba7ed9d6693fcc2771edaf870111d8ab33786fa8f6fe09d"
+    },
+    {
+      "file": "ranger-before-rear-flat.png",
+      "sha256": "80953c4fc06b458db6a3b88cab8901750f8bed7dbae7a9c7e13613bbdb90cd40"
+    },
+    {
+      "file": "ranger-after-rear-flat.png",
+      "sha256": "4c73ea0d3c7b35527fe934968c96aa42b6690d7fa920741b03f70c4771c0fcba"
+    },
+    {
+      "file": "ranger-before-hood.png",
+      "sha256": "d38051164fff9ed57bbc8f60a6f51a303c6e10a4155731d32cd04c22ce8404aa"
+    },
+    {
+      "file": "ranger-after-hood.png",
+      "sha256": "6f871ee1ac02373af6ba45714f5078fa7c6076e05254335853b5f2b1c27a790c"
+    },
+    {
+      "file": "ranger-before-wheel.png",
+      "sha256": "c3ae5f0d32a419225ad35eafb89248719091bb9a0b675656a51f41c485ba1c68"
+    },
+    {
+      "file": "ranger-after-wheel.png",
+      "sha256": "7d6906758f6d6103a16a33728c8a27b1c9b2d87d1ec2add0f5508eeb88d8500f"
+    },
+    {
+      "file": "ranger-before-detail.png",
+      "sha256": "5c30bd01574f3e1ae9861a23726b9cc35ad14551ca7bf46e2fd66cb27170bc12"
+    },
+    {
+      "file": "ranger-after-detail.png",
+      "sha256": "189cc9c12b1bf28b239827ef8b3193e1ab58e985899e48c15270d50f6e3d23db"
+    },
+    {
+      "file": "ranger-before-load.png",
+      "sha256": "477dae78fef7aa03235625e0bf6b97f03dfa88b04a51c2a05fc43575932887c4"
+    },
+    {
+      "file": "ranger-after-load.png",
+      "sha256": "a4be57655b2565ec7d6746ebbb4292b9d09722f36e3f134eb9dbd5d1ce87973b"
+    },
+    {
+      "file": "ranger-before-night.png",
+      "sha256": "d14edc5972b28bb938ec8e4a826b93274a7e683c1410aebb56f83fb1bf878356"
+    },
+    {
+      "file": "ranger-after-night.png",
+      "sha256": "c468e128d719ec9e74e3bac3717d6075e5c411cc5d7e777457973daa06b61af6"
+    },
+    {
+      "file": "ranger-after-distant.png",
+      "sha256": "a04d8a9b3c325782b5372597943410db9f5cd14febe3ffc5a5076da0076e94c9"
+    },
+    {
+      "file": "ranger-after-articulation.png",
+      "sha256": "b02fba8f08dc3f730b9b270fa7f6a71fbf95d1fa28c70ad0356924680078b14f"
+    },
+    {
+      "file": "toyota-reference-front.png",
+      "sha256": "95b814718985ba7d65daea9bb14597a17b06ce68d7c1d4de785e8a320c623a4f"
+    },
+    {
+      "file": "toyota-reference-side.png",
+      "sha256": "786ee2245058a6490d2d811931999835c5a5d52551b996454d258a89db428f07"
+    },
+    {
+      "file": "toyota-reference-load.png",
+      "sha256": "c91985024b12981c1fdbe78869bb14b4677d787a292b20463e822cfada41e1e5"
+    }
+  ],
+  "errors": [],
+  "renderer": "ANGLE (NVIDIA, Vulkan 1.3.242 (NVIDIA NVIDIA L4 (0x000027B8)), NVIDIA)",
+  "toyotaReference": {
+    "sha256": "5c9cdfa0e213cc7f0579ea8b2fcf6e0ea00489fc360ccfe510fab31a17e3caad",
+    "views": [
+      {
+        "id": "front",
+        "offset": [
+          4.2,
+          2.05,
+          -5.4
+        ],
+        "look": [
+          0,
+          0.68,
+          0
+        ],
+        "fov": 44
+      },
+      {
+        "id": "side",
+        "offset": [
+          7.2,
+          1.1,
+          0.1
+        ],
+        "look": [
+          0,
+          0.65,
+          0.1
+        ],
+        "fov": 44
+      },
+      {
+        "id": "load",
+        "offset": [
+          -2.7,
+          2.25,
+          3.8
+        ],
+        "look": [
+          0,
+          1,
+          1
+        ],
+        "fov": 44
+      }
+    ]
+  },
+  "switching": [
+    {
+      "id": "toyota",
+      "model": "vehicle_toyota_trail",
+      "fallback": false,
+      "opaqueGlass": true
+    },
+    {
+      "id": "scout",
+      "model": "vehicle_scout",
+      "fallback": false,
+      "opaqueGlass": true
+    },
+    {
+      "id": "ranger",
+      "model": "vehicle_ranger",
+      "fallback": false,
+      "opaqueGlass": true
+    },
+    {
+      "id": "toyota",
+      "model": "vehicle_toyota_trail",
+      "fallback": false,
+      "opaqueGlass": true
+    }
+  ],
+  "compactUI": {
+    "width": 860,
+    "scrollWidth": 860,
+    "canvasWidth": 860,
+    "canvasHeight": 640
+  },
+  "passed": true
+}

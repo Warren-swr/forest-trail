@@ -1,0 +1,1027 @@
+{
+  "revision": "03-release-refinement",
+  "createdAt": "2026-09-26T11:29:03.427690+00:00",
+  "status": "implemented-and-verified-local",
+  "releaseCommit": "33439c37d453c87279797d7365d8874cff5b747a",
+  "method": "Rebuild from the actual published Scout/Kestrel source and equipment; refine against real prototype photographs and the approved Toyota style. All before captures use the published release, never the superseded fidelity or first companion remake.",
+  "rawRun": "/mnt/runs/forest-trail/release-refinement-20260926-102050",
+  "proofDirectory": "docs/trail-companions/20260926-proof-03-release-refinement",
+  "originalRelease": {
+    "kind": "published-release",
+    "releaseCommit": "33439c37d453c87279797d7365d8874cff5b747a",
+    "capturedAt": "2026-09-26T09:48:45.317798+00:00",
+    "deployment": {
+      "id": 36213839010,
+      "head_sha": "33439c37d453c87279797d7365d8874cff5b747a",
+      "name": "Deploy to GitHub Pages",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-26T03:07:45Z",
+      "html_url": "https://github.com/Warren-swr/forest-trail/actions/runs/36213839010"
+    },
+    "publishedAssets": [
+      {
+        "id": "scout",
+        "path": "assets/models/vehicle_scout.glb",
+        "url": "https://warren-swr.github.io/forest-trail/assets/models/vehicle_scout.glb",
+        "status": 200,
+        "lastModified": "Sat, 26 Sep 2026 03:08:19 GMT",
+        "bytes": 981704,
+        "sha256": "3137b8597ae69e53b3f563bb162596d98dbbbaccb83952079c7029aa4e96d15c",
+        "gitCommit": "33439c37d453c87279797d7365d8874cff5b747a"
+      },
+      {
+        "id": "scout",
+        "path": "assets/models/vehicle_scout.json",
+        "url": "https://warren-swr.github.io/forest-trail/assets/models/vehicle_scout.json",
+        "status": 200,
+        "lastModified": "Sat, 26 Sep 2026 03:08:19 GMT",
+        "bytes": 1512,
+        "sha256": "0bd184379dd70b0cecaf79e76b631f17cc0123d245ffed270a72fb000773cb1b",
+        "gitCommit": "33439c37d453c87279797d7365d8874cff5b747a"
+      },
+      {
+        "id": "ranger",
+        "path": "assets/models/vehicle_ranger.glb",
+        "url": "https://warren-swr.github.io/forest-trail/assets/models/vehicle_ranger.glb",
+        "status": 200,
+        "lastModified": "Sat, 26 Sep 2026 03:08:19 GMT",
+        "bytes": 706148,
+        "sha256": "206cfaba3bc8d9fb21b95e2c4d8d53dbb02177355e298b49ff37d18c2a9f900d",
+        "gitCommit": "33439c37d453c87279797d7365d8874cff5b747a"
+      },
+      {
+        "id": "ranger",
+        "path": "assets/models/vehicle_ranger.json",
+        "url": "https://warren-swr.github.io/forest-trail/assets/models/vehicle_ranger.json",
+        "status": 200,
+        "lastModified": "Sat, 26 Sep 2026 03:08:19 GMT",
+        "bytes": 1306,
+        "sha256": "da07721af781a595b4d844975cb674b4afc7bed1fe0276e45af1fd367ec9b4f8",
+        "gitCommit": "33439c37d453c87279797d7365d8874cff5b747a"
+      }
+    ],
+    "source": "Exact files from the last successful GitHub Pages deployment, byte-verified against the live site.",
+    "rawRun": "/mnt/runs/forest-trail/release-comparison-20260926-094841",
+    "toyotaReference": {
+      "public/assets/models/vehicle_toyota_trail.glb": "5c9cdfa0e213cc7f0579ea8b2fcf6e0ea00489fc360ccfe510fab31a17e3caad",
+      "public/assets/models/vehicle_toyota_trail.json": "7749973b21605480705965d7cd07ef8a9bc4e0a75a628d7049776d2333b515cf",
+      "art/blender/vehicle_toyota_trail.py": "59cd46d43326d3b211189c8f12f2c0aa1bca2109d7c7cbbf2565be6bcacc096f"
+    },
+    "currentAssets": {
+      "public/assets/models/vehicle_scout.glb": "6f5e093c76024dd9b1088d3c2f4c48e3b54aeb14a8a2cd9a40bb1a693d6bd4e5",
+      "public/assets/models/vehicle_ranger.glb": "d94b0f9eb876e892f1ca1cc4e7c8832021bdd88d2c77ba3cc921d9e944512b5b",
+      "public/assets/models/vehicle_scout.json": "12c77758cfb8efc9a37cc9f1dd5e9036d776306a4e15561ab8a89b1e9702ae61",
+      "public/assets/models/vehicle_ranger.json": "2ccb15104fe6bc72d393327fc2a76260668fa26463082c81952e8dcc50e9d562",
+      "src/game/config.ts": "9fea4cb00cf5de625b7d7d090b17ca8c66cd579ddbc3390f7f5583610c908e50",
+      "src/game/physics/vehicle.ts": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539",
+      "src/game/render/vehicleView.ts": "ad98b3a3045134cdafd5fadb7046e0ed74e71a1cea03344a6ff4f22d3f369cc6",
+      "art/blender/vehicle_trail.py": "a5b040126e616c6a5ef2e0017c495f76bddf520570fc950d27822dbbe1cd7803"
+    },
+    "supersedes": "01-balanced-trail comparison used the unpublished 5066e72 fidelity models as its baseline."
+  },
+  "toyotaIntegrity": {
+    "toyotaUnchanged": true,
+    "toyotaFullSpecUnchanged": true,
+    "releaseSourcesUnmodified": true,
+    "files": [
+      {
+        "path": "public/assets/models/vehicle_toyota_trail.glb",
+        "sha256": "5c9cdfa0e213cc7f0579ea8b2fcf6e0ea00489fc360ccfe510fab31a17e3caad"
+      },
+      {
+        "path": "public/assets/models/vehicle_toyota_trail.json",
+        "sha256": "7749973b21605480705965d7cd07ef8a9bc4e0a75a628d7049776d2333b515cf"
+      },
+      {
+        "path": "art/blender/vehicle_toyota_trail.py",
+        "sha256": "59cd46d43326d3b211189c8f12f2c0aa1bca2109d7c7cbbf2565be6bcacc096f"
+      },
+      {
+        "path": "art/blender/reference/vehicle_scout_release.py",
+        "sha256": "a053e575b646f48ebe031c746ec4e7ad9b32ae51725055f9a2b29becee4cd139"
+      },
+      {
+        "path": "art/blender/reference/vehicle_ranger_release.py",
+        "sha256": "a0f876141f31996bce73cfddde8f4fe84f476fe11b09754661c75d1b7549abd2"
+      }
+    ]
+  },
+  "prototypePhotos": {
+    "date": "2026-09-26T10:22:59.164773+00:00",
+    "photos": [
+      {
+        "car": "hilux",
+        "file": "1979-Hilux-4WD-03.jpg",
+        "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-03.jpg",
+        "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+        "bytes": 89098,
+        "sha256": "008993e99abf1ccdbc86c96858094d550fc0c63c84276a31b1ce425969137767",
+        "usage": "Reference photographs only; not runtime assets"
+      },
+      {
+        "car": "hilux",
+        "file": "1979-Hilux-4WD-01.jpg",
+        "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-01.jpg",
+        "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+        "bytes": 93630,
+        "sha256": "c1221ae0c374680a45ca8649e451c53234201408f63a17c1132beaffcbfe0b88",
+        "usage": "Reference photographs only; not runtime assets"
+      },
+      {
+        "car": "hilux",
+        "file": "1979-Hilux-4WD-02.jpg",
+        "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-02.jpg",
+        "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+        "bytes": 74089,
+        "sha256": "281f4c14b4d4c8f807ff03d19fbdabce207f0bc219a062b28c8971eb46d69e20",
+        "usage": "Reference photographs only; not runtime assets"
+      },
+      {
+        "car": "hilux",
+        "file": "1979-Hilux-4WD-04.jpg",
+        "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-04.jpg",
+        "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+        "bytes": 81083,
+        "sha256": "bca3f7d628d7b0df60d3618ff4c35042d1336cd1f52805e09fb17d32ddc401c3",
+        "usage": "Reference photographs only; not runtime assets"
+      },
+      {
+        "car": "hilux",
+        "file": "1979-Hilux-4WD-09.jpg",
+        "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-09.jpg",
+        "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+        "bytes": 77859,
+        "sha256": "07d2692a5283025a846879cc970dbf7165b821e6c478f6f2efe953e8f7544c96",
+        "usage": "Reference photographs only; not runtime assets"
+      },
+      {
+        "car": "hilux",
+        "file": "1979-Hilux-4WD-06.jpg",
+        "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-06.jpg",
+        "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+        "bytes": 96226,
+        "sha256": "3c8e31dd05393c9a04e5ee07826f796dddbb4dd212510ed66e2ce370433ce864",
+        "usage": "Reference photographs only; not runtime assets"
+      },
+      {
+        "car": "hilux",
+        "file": "1979-Hilux-4WD-08.jpg",
+        "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-08.jpg",
+        "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+        "bytes": 77158,
+        "sha256": "478d114295bd5e8e16199fb89400dbbac111b1185dd66310b8e5aa3ee77d8ad5",
+        "usage": "Reference photographs only; not runtime assets"
+      },
+      {
+        "car": "hilux",
+        "file": "1979-Hilux-4WD-05.jpg",
+        "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-05.jpg",
+        "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+        "bytes": 82392,
+        "sha256": "c514e8dd110c3e6892179218f71a9d110f3e4ea4cf221db8615a86d56631ccca",
+        "usage": "Reference photographs only; not runtime assets"
+      },
+      {
+        "car": "hilux",
+        "file": "1979-Hilux-4WD-07.jpg",
+        "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-07.jpg",
+        "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+        "bytes": 102174,
+        "sha256": "c3490001ef2019a470542df6f2ae7216bcebf8e8c4a3ac3d933446ba1ca238d8",
+        "usage": "Reference photographs only; not runtime assets"
+      },
+      {
+        "car": "defender",
+        "file": "defender-9.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/2015_Land_Rover_Defender_%28L316_MY15%29_90_3-door_wagon_%282015-10-24%29_01.jpg",
+        "source": "https://en.wikipedia.org/wiki/File:2015_Land_Rover_Defender_(L316_MY15)_90_3-door_wagon_(2015-10-24)_01.jpg",
+        "bytes": 7080464,
+        "sha256": "997e076dc67da19ac1f9148a7119a42a26b74b31bfbfd5996fd8ded2a720c5c2",
+        "usage": "Reference photographs only; not runtime assets"
+      },
+      {
+        "car": "defender",
+        "file": "defender-10.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Defender90.JPG",
+        "source": "https://en.wikipedia.org/wiki/File:Defender90.JPG",
+        "bytes": 368452,
+        "sha256": "4f3722f7b5052235a3174b304fe6282ff0e1e324dd240de7061f1096b01163f7",
+        "usage": "Reference photographs only; not runtime assets"
+      },
+      {
+        "car": "defender",
+        "file": "defender-11.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/NAS_Land_Rover_Defender_90.jpg",
+        "source": "https://en.wikipedia.org/wiki/File:NAS_Land_Rover_Defender_90.jpg",
+        "bytes": 1366620,
+        "sha256": "4fe7cee4f2a3f44de01cafbc5d66f684ca3d31137532efd24687a7bdf08ebcb0",
+        "usage": "Reference photographs only; not runtime assets"
+      },
+      {
+        "car": "defender",
+        "file": "defender-12.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Land_Rover_Defender_-_Flickr_-_Alan_D.jpg",
+        "source": "https://en.wikipedia.org/wiki/File:Land_Rover_Defender_-_Flickr_-_Alan_D.jpg",
+        "bytes": 1535284,
+        "sha256": "d3a577a8200fc706acef29a43c4251976c0626b83b255ce1f33052fe7aea93a7",
+        "usage": "Reference photographs only; not runtime assets"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "path": "README.md",
+      "sha256": "e4d1b8f629173626696c7d7deef158d1c24c77d313d272fe9b1b4b38697ce708",
+      "bytes": 10033
+    },
+    {
+      "path": "package.json",
+      "sha256": "a50ec3e56fb331f059f41cfe5bef96ea663bd153a6a87bfa59c1d318491f6d9f",
+      "bytes": 1415
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "af1dec53c3b170e2718986b3eae6acecad59317bd514cc82ac8456751a9b4211",
+      "bytes": 44932
+    },
+    {
+      "path": "src/game/config.ts",
+      "sha256": "fae4b9c7408ad36188ee5d11fe0f5e8150091e10087c039ad3d5bcfb063da1fd",
+      "bytes": 10512
+    },
+    {
+      "path": "src/game/physics/vehicle.ts",
+      "sha256": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539",
+      "bytes": 25011
+    },
+    {
+      "path": "src/game/render/vehicleView.ts",
+      "sha256": "ad98b3a3045134cdafd5fadb7046e0ed74e71a1cea03344a6ff4f22d3f369cc6",
+      "bytes": 18620
+    },
+    {
+      "path": "art/blender/common.py",
+      "sha256": "2ebdbcae2758fd5f8a6d66e0a63d93def0cae5d172980e4aa0c8df0cc0e1ae70",
+      "bytes": 18765
+    },
+    {
+      "path": "art/blender/vehicle_parts.py",
+      "sha256": "c9a11f755c21d96cd1c793413fa540be2427e83592461451e1ac8b00b98808ec",
+      "bytes": 22761
+    },
+    {
+      "path": "art/blender/vehicle_fidelity.py",
+      "sha256": "0e8bcccfe6ab9522d12c03e86fc414a2b8431b5b71426937a8871240eb921e72",
+      "bytes": 61948
+    },
+    {
+      "path": "art/blender/vehicle_check.py",
+      "sha256": "4f4660328e228f9e88575b0e890728c9c9556edffa2f663251bb0b9be73e47a5",
+      "bytes": 5520
+    },
+    {
+      "path": "art/blender/vehicle_release_refinement.py",
+      "sha256": "8530771066ef628af8adb1dcde3834232a70b2d4deb6757055285c3b7aa6fae5",
+      "bytes": 53860
+    },
+    {
+      "path": "art/blender/vehicle_scout.py",
+      "sha256": "cdf72e283347910dc8943319401e1eabfc4368ec8f0858d0537d274724459c64",
+      "bytes": 307
+    },
+    {
+      "path": "art/blender/vehicle_ranger.py",
+      "sha256": "52aa32d889fb7e9ba6c84363da7d9f0afe9d5059fe94ff2b4d6f8e0724c5fd80",
+      "bytes": 310
+    },
+    {
+      "path": "art/blender/reference/vehicle_scout_release.py",
+      "sha256": "a053e575b646f48ebe031c746ec4e7ad9b32ae51725055f9a2b29becee4cd139",
+      "bytes": 40533
+    },
+    {
+      "path": "art/blender/reference/vehicle_ranger_release.py",
+      "sha256": "a0f876141f31996bce73cfddde8f4fe84f476fe11b09754661c75d1b7549abd2",
+      "bytes": 35075
+    },
+    {
+      "path": "art/blender/verify_vehicles.py",
+      "sha256": "5d6e246d27cab430ed489851d1ffbf4d186b6b40a98c914ec420ccf54c6fdb4e",
+      "bytes": 1583
+    },
+    {
+      "path": "tools/trail-companions-browser.cjs",
+      "sha256": "3e44e6246d855ca7623bdec3a6eb5369395331b88f9a4cb39a16c1262f272af3",
+      "bytes": 17169
+    },
+    {
+      "path": "tools/trail-geometry-check.py",
+      "sha256": "ada952d24a4752bf8d73cd20a08dd109d96056e7f564617355b64bb47748dab1",
+      "bytes": 7697
+    },
+    {
+      "path": "tools/trail-suspension-study.ts",
+      "sha256": "cd7d1cdcb845083819f5e407d04083145067e3c11af00582c4f6ea1fe2e945b0",
+      "bytes": 5771
+    },
+    {
+      "path": "tools/vehicle-rig-test.ts",
+      "sha256": "55a7b7d0c62e8ca2023a69114430f8303a54b5164867f3f9224cde760efedb2b",
+      "bytes": 7274
+    },
+    {
+      "path": "tools/proving.ts",
+      "sha256": "6403056a3bfce12e4b936bb0eecca0805f034823017de258f1ee199a9aff0117",
+      "bytes": 17124
+    },
+    {
+      "path": "tools/toyota-surface-check.py",
+      "sha256": "abdb12f18b647c131e994645732eae0e6e8b7a3d1abd847ca977e4887d909eac",
+      "bytes": 6836
+    },
+    {
+      "path": "docs/VEHICLE-TRAIL-COMPANIONS.md",
+      "sha256": "ef996c8de5dc545ca051df58272e16e0dc5d69fc2b44826a5db44d9243bb8f86",
+      "bytes": 9800
+    },
+    {
+      "path": "docs/trail-companions/index.html",
+      "sha256": "6c72928c14a40364f8e858b0e6494250929355037245b7451d1bebb3cb8bed40",
+      "bytes": 11274
+    }
+  ],
+  "assets": [
+    {
+      "path": "public/assets/models/vehicle_scout.glb",
+      "bytes": 5156820,
+      "sha256": "2e40d5d115bc92a19be30425cdef2e7421c2ba012c4506978a7ea3cd3dcf3d94"
+    },
+    {
+      "path": "public/assets/models/vehicle_scout.json",
+      "bytes": 2747,
+      "sha256": "aa21c67e732db4dfacd3d71ce937fc53e5650c57d63de0000d9ce548e8084bde"
+    },
+    {
+      "path": "public/assets/models/vehicle_ranger.glb",
+      "bytes": 5330588,
+      "sha256": "5c253563c20ea1e017573f0dacad7d55afd304e6590bab479cb59456ecd65828"
+    },
+    {
+      "path": "public/assets/models/vehicle_ranger.json",
+      "bytes": 2477,
+      "sha256": "109d29f2e3838f357507c8294999f1551023b6cd3b80552bc746862c55b4490f"
+    }
+  ],
+  "rigs": [
+    {
+      "path": "art/vehicle-scout-rig.json",
+      "bytes": 453,
+      "sha256": "5cbee0f4f42ee8e57b5c622799fbcd5ec5190077a8137c89a3ad2d31b84a6988"
+    },
+    {
+      "path": "art/vehicle-ranger-rig.json",
+      "bytes": 456,
+      "sha256": "c6ff39b8ab24b1e967a718a38aeebd05e3fce10f63258d8a516f46431a8b6341"
+    }
+  ],
+  "editableModels": [
+    {
+      "path": "art/blender/vehicle_scout.blend",
+      "bytes": 3833632,
+      "sha256": "1b271f2cb9f27c7954ac3c2d8dcdd098ced87b8c01d36eed56e6ae9faaed6a07"
+    },
+    {
+      "path": "art/blender/vehicle_ranger.blend",
+      "bytes": 3589200,
+      "sha256": "2d7af7f8466dc6c87c4b1c6c2d339a596b7cf9949b110bd8997a36020de37cac"
+    }
+  ],
+  "assembledGeometry": [
+    {
+      "id": "scout",
+      "windows": {
+        "Body": [
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 7.731345392581131e-08
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 0.0
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 2.7451665460429252e-08
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 1.2398679870690338e-07
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 5.238873156012094e-09
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 9.816308137693365e-08
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 3.878911530684716e-08
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 3.469446951953614e-18
+          }
+        ],
+        "Body_LOD1": [
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 3.193655130941471e-08
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 0.0
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 2.7463920466860593e-08
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 5.23887263593853e-09
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 5.238872630867898e-09
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 2.058586193838341e-08
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 3.878911530684716e-08
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 3.469446951953614e-18
+          }
+        ]
+      },
+      "tyreRadius": {
+        "Wheel": 0.42967494815348994,
+        "Wheel_LOD1": 0.4300000307742896
+      },
+      "rimRadius": {
+        "Wheel": 0.23900000967793558,
+        "Wheel_LOD1": 0.23900000967793558
+      },
+      "assembledTriangles": {
+        "before": {
+          "near": 30353,
+          "far": 30353
+        },
+        "after": {
+          "near": 235196,
+          "far": 84778
+        }
+      },
+      "damperLimits": [
+        {
+          "axleHeight": 0.24,
+          "eyeDistance": 0.47720540650751225,
+          "exposedRod": 0.06220540650751227
+        },
+        {
+          "axleHeight": -0.2,
+          "eyeDistance": 0.8144476655992086,
+          "exposedRod": 0.3994476655992086
+        }
+      ],
+      "coilWire": {
+        "rings": 257,
+        "diameterMin": 0.017999997237760027,
+        "diameterMax": 0.018000032695527735
+      },
+      "bytes": 5156820,
+      "releasedBytes": 981704
+    },
+    {
+      "id": "ranger",
+      "windows": {
+        "Body": [
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 2.0504178501122304e-08
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 0.0
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 2.05041834195049e-08
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 1.4872142378719033e-08
+          }
+        ],
+        "Body_LOD1": [
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 2.0546767251990648e-08
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 2.7755575615628914e-17
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 2.0546772137339006e-08
+          },
+          {
+            "vertices": 4,
+            "maxPlaneDeviationM": 1.1415921959704623e-09
+          }
+        ]
+      },
+      "tyreRadius": {
+        "Wheel": 0.41969118311286824,
+        "Wheel_LOD1": 0.4200000289852859
+      },
+      "rimRadius": {
+        "Wheel": 0.23900000967793558,
+        "Wheel_LOD1": 0.23900000967793558
+      },
+      "assembledTriangles": {
+        "before": {
+          "near": 23320,
+          "far": 23320
+        },
+        "after": {
+          "near": 230803,
+          "far": 78211
+        }
+      },
+      "damperLimits": [
+        {
+          "axleHeight": 0.23,
+          "eyeDistance": 0.5112240213448503,
+          "exposedRod": 0.10122402134485037
+        },
+        {
+          "axleHeight": -0.18,
+          "eyeDistance": 0.7405065833603371,
+          "exposedRod": 0.33050658336033717
+        }
+      ],
+      "coilWire": null,
+      "bytes": 5330588,
+      "releasedBytes": 706148
+    }
+  ],
+  "validation": {
+    "build": true,
+    "drivingChecksPerVehicle": 15,
+    "rigChecks": 9,
+    "clearancePoses": 27,
+    "clearanceShrink": 1,
+    "loopWithAllColliders": {
+      "scout": {
+        "meters": 1667,
+        "finishThresholdOf": 1671,
+        "seconds": 325,
+        "resets": 0
+      },
+      "ranger": {
+        "meters": 1667,
+        "finishThresholdOf": 1671,
+        "seconds": 322,
+        "resets": 0
+      }
+    },
+    "browser": true,
+    "browserErrors": [],
+    "sameCameraComparisonPairs": 20,
+    "canvasCaptureCount": 47,
+    "gallery": true,
+    "galleryViewports": [
+      {
+        "width": 1280,
+        "scrollWidth": 1280
+      },
+      {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    ],
+    "videoDecode": true,
+    "activePublicDistAndCaptureHashesMatch": true,
+    "scope": "Driving configuration and physics remained identical through the final window-divider surface refinement; asset, geometry, unshrunk clearance, surface, WebGL and gallery checks use the final models."
+  },
+  "media": [
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/browser-report.json",
+      "bytes": 24496,
+      "sha256": "cbf7d1cad7eca2e336e957eec9ac33bd233d6251c62e14021dde19b0274af7a5"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/build.log",
+      "bytes": 1608,
+      "sha256": "5afd2ae327c929c5415b7663a17b7e8fac70e943775e5df96d95721d8c0ee080"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/clearance.json",
+      "bytes": 682,
+      "sha256": "25d7a1eda1a829580c19636308ff528f0f60461aa98af3212f79f1c013989212"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/compact-ui.png",
+      "bytes": 427895,
+      "sha256": "19d77f8d4f54caee0ede1765fcb102c8df10e40e933fc8f60f443e7e662262ca"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/desktop-ui.png",
+      "bytes": 1337276,
+      "sha256": "95eff1ef2fac2938f1ce5b9e7be19cbae01b27dd4f5a817248483e99aaedfbaa"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/gallery-desktop.png",
+      "bytes": 2935717,
+      "sha256": "104eefe0c5a142f265e9702704f189c8f9d54d5a17690148589840a556703c9c"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/gallery-mobile.png",
+      "bytes": 529735,
+      "sha256": "d45ce4c60b392e4ec882ab5e015fd9e010b10ad5cee55d0e34f14cd652775785"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/gallery-verification.json",
+      "bytes": 2142,
+      "sha256": "5276c9fc3e02fcba63a10c781448cb3d214668ff02b115563e3718442dc1fc88"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/geometry.json",
+      "bytes": 4932,
+      "sha256": "97a1fc1eb959e7e77185bf0b5073f9087f3f7cb69cdce4e3594085af1c5834a9"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/lap-ranger.log",
+      "bytes": 633,
+      "sha256": "fced97c3028c0f23514e0a6a9036c1736c18bc1b8890f0896d77cd250abdcefd"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/lap-scout.log",
+      "bytes": 633,
+      "sha256": "ff68097a815478a272a15a3cdf9d6ec0e8aa20edfba269720fcce718bfa6c970"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/proving-ranger.json",
+      "bytes": 2622,
+      "sha256": "569b15c09966979d861b6ae42cec86171483159d142e8534fbc17d02d23bae3c"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/proving-scout.json",
+      "bytes": 2624,
+      "sha256": "e67fe2f053c209c465973a5af46092ff22a617c14755c533d8561fe5866d1a39"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-after-articulation.png",
+      "bytes": 2748858,
+      "sha256": "b02fba8f08dc3f730b9b270fa7f6a71fbf95d1fa28c70ad0356924680078b14f"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-after-detail.png",
+      "bytes": 2399924,
+      "sha256": "189cc9c12b1bf28b239827ef8b3193e1ab58e985899e48c15270d50f6e3d23db"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-after-distant.png",
+      "bytes": 2838078,
+      "sha256": "a04d8a9b3c325782b5372597943410db9f5cd14febe3ffc5a5076da0076e94c9"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-after-front-flat.png",
+      "bytes": 2834373,
+      "sha256": "4ae592ad3e71e49b0ba7ed9d6693fcc2771edaf870111d8ab33786fa8f6fe09d"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-after-front.png",
+      "bytes": 3130933,
+      "sha256": "78f25bf4603cb9d720436267948c0a33abbfb29329e2f886430bb86534781dd4"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-after-hood.png",
+      "bytes": 2509022,
+      "sha256": "6f871ee1ac02373af6ba45714f5078fa7c6076e05254335853b5f2b1c27a790c"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-after-load.png",
+      "bytes": 2979242,
+      "sha256": "a4be57655b2565ec7d6746ebbb4292b9d09722f36e3f134eb9dbd5d1ce87973b"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-after-night.png",
+      "bytes": 2599811,
+      "sha256": "c468e128d719ec9e74e3bac3717d6075e5c411cc5d7e777457973daa06b61af6"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-after-rear-flat.png",
+      "bytes": 2865516,
+      "sha256": "4c73ea0d3c7b35527fe934968c96aa42b6690d7fa920741b03f70c4771c0fcba"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-after-rear.png",
+      "bytes": 2974938,
+      "sha256": "bb1d07c4c0886c55a8f9b26d8100a4b206966af5a72817550eff44f587d0a823"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-after-side.png",
+      "bytes": 3121972,
+      "sha256": "b8bb50d0bc4e1908ceae05627c281e747f8dc188ba352b2c9fb1e4cbda1e29cc"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-after-wheel.png",
+      "bytes": 2267395,
+      "sha256": "7d6906758f6d6103a16a33728c8a27b1c9b2d87d1ec2add0f5508eeb88d8500f"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-before-detail.png",
+      "bytes": 2373531,
+      "sha256": "5c30bd01574f3e1ae9861a23726b9cc35ad14551ca7bf46e2fd66cb27170bc12"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-before-front-flat.png",
+      "bytes": 2825373,
+      "sha256": "b25e020af51e298ea68e1d11a76fe7f3d2844e8b3b35b2a10d901f7ba2158216"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-before-front.png",
+      "bytes": 3115173,
+      "sha256": "3f037df778e9749fe9bbf744a0f8de31296de31ef9b10bbc4851ffc18dc7f807"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-before-hood.png",
+      "bytes": 2474174,
+      "sha256": "d38051164fff9ed57bbc8f60a6f51a303c6e10a4155731d32cd04c22ce8404aa"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-before-load.png",
+      "bytes": 2938202,
+      "sha256": "477dae78fef7aa03235625e0bf6b97f03dfa88b04a51c2a05fc43575932887c4"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-before-night.png",
+      "bytes": 2627742,
+      "sha256": "d14edc5972b28bb938ec8e4a826b93274a7e683c1410aebb56f83fb1bf878356"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-before-rear-flat.png",
+      "bytes": 2852344,
+      "sha256": "80953c4fc06b458db6a3b88cab8901750f8bed7dbae7a9c7e13613bbdb90cd40"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-before-rear.png",
+      "bytes": 2961717,
+      "sha256": "ee35078ebac01e711e4062359d3289e1edcd2ab124c17c4a369018f7b56cfe51"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-before-side.png",
+      "bytes": 3071480,
+      "sha256": "46335ff4a22ad44a89d6a4d84986b3689c64a53606525f7ca31597c5c254b170"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-before-wheel.png",
+      "bytes": 2119932,
+      "sha256": "c3ae5f0d32a419225ad35eafb89248719091bb9a0b675656a51f41c485ba1c68"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-motion-strip.jpg",
+      "bytes": 75265,
+      "sha256": "6afda3d65404360a89794a09c4238dac6a7e0a6f0da3a717a2b93ca56eebe878"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-suspension.mp4",
+      "bytes": 19513972,
+      "sha256": "3c17bb1879c72206bf24dad7747e7eb39e6b31d72a8e0d6a729436dbe4f20f0e"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/ranger-suspension.webm",
+      "bytes": 10768486,
+      "sha256": "a6828aebf51e63e763528f756604c86b0248780bab695ce65f7e62b33ab94e1c"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/release-baseline.json",
+      "bytes": 3752,
+      "sha256": "d4908586f8b42bbab513cf45545856dd3b4979ccfae806b9cb3e9cd58894ef82"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/release-refinement-comparison.jpg",
+      "bytes": 1369612,
+      "sha256": "f2433ee178de3db80f935028418b2831f0c3ff8ef8a6606e2624d1ec33dc3021"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/rig.json",
+      "bytes": 1825,
+      "sha256": "2babb7f900ce65ba7774add41c039836bcc6f9944b612586a48e54d4524111dd"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-after-articulation.png",
+      "bytes": 2705065,
+      "sha256": "8d8f6ee4ac5e7dbd4fa40bd218dbea21ad6ea800ef9161dbef16fbc799b1628c"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-after-detail.png",
+      "bytes": 2033476,
+      "sha256": "26132c888d51fffb51ac8686f11c7a25d2f6224d74b55a9ef81806b0a264d00d"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-after-distant.png",
+      "bytes": 2831586,
+      "sha256": "904712ab9dd1e332e9a04ff186625593ed700d2fb86a6fbd9ea6451d3dcd1243"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-after-front-flat.png",
+      "bytes": 2818059,
+      "sha256": "490f84b02cdeb1d007c706e5606b0406a546efcfa266d22e67926354004ff6b1"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-after-front.png",
+      "bytes": 3074489,
+      "sha256": "0844e5811b148fcbab1dd191df60a3fbcf8354bfe45a2f59c43a08036b3775a7"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-after-hood.png",
+      "bytes": 2416241,
+      "sha256": "ba5d2a377e2410b8f25da0b52551491ec443dbed5f4799ffcd0e738560e9caa5"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-after-load.png",
+      "bytes": 2739295,
+      "sha256": "549ce6fbbc9852ae233d9f9fbc560985c4e9ebd6b13e3d244036d6cc00ce68b9"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-after-night.png",
+      "bytes": 2483926,
+      "sha256": "821694b9ddd339c2ad5003b86ad195ddb084de5fa050f7a60e8c8078fe6cb08f"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-after-rear-flat.png",
+      "bytes": 2823369,
+      "sha256": "49e9004a8296b206db267dd9b2cccd5cba572bc00755d91ae17839b3ccbcb19b"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-after-rear.png",
+      "bytes": 2856008,
+      "sha256": "e599a7e9c13933a07ae25dba011a750a47f36d11e740a3057b65c870d6e31fb2"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-after-side.png",
+      "bytes": 3084093,
+      "sha256": "46e0113b41f86db53a74977b5ee4e6444b1d61269d26431bb58547b300750beb"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-after-wheel.png",
+      "bytes": 2187384,
+      "sha256": "40137395061f771f992b0d82d26fefe976344b3214d2c2817ed63df10a0f822d"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-before-detail.png",
+      "bytes": 2020468,
+      "sha256": "0f5f9cc40a0a0bf4f7b354929be79417c7658b33dc0340bfc2a09ff7e333ccc7"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-before-front-flat.png",
+      "bytes": 2822645,
+      "sha256": "17692a76e7ec367744c4c2ee52ee4500612e0c506beee2e858dd12996a9bb143"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-before-front.png",
+      "bytes": 3077068,
+      "sha256": "618397f5b593c8606a07b28ddb7f9ed5a673d4b70807da520854c13ae72ab67a"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-before-hood.png",
+      "bytes": 2404487,
+      "sha256": "468646bff8cb6fbf13dd799d171d1046f1efea558e692043a3c89bebd0ea05f4"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-before-load.png",
+      "bytes": 2715614,
+      "sha256": "2d6413fc7260570b581b11229d30b5c0492ab1cdc264856c2e5843ab7907bf8b"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-before-night.png",
+      "bytes": 2511173,
+      "sha256": "9d5eba582c606ad9453147959403c0f33816ffeb05b0e31130285a80c86834d1"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-before-rear-flat.png",
+      "bytes": 2810909,
+      "sha256": "46907e1c979cd11c0bdf89dc034209c6189f981a6a03ece40305356263368f60"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-before-rear.png",
+      "bytes": 2838493,
+      "sha256": "0ab4a9c4b1a941f66ecf295fdf4649c5fad54b8988d86cc9694f460f481a7b1b"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-before-side.png",
+      "bytes": 3071327,
+      "sha256": "d0516a64371eca275b4416a7b49827ed1c3fefbf12aa98930c4a62da6187afbd"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-before-wheel.png",
+      "bytes": 2124654,
+      "sha256": "415e9b5c94423f2e8341ea61cbfe04efb3369f2442e37f2c8036cfc14b6796ec"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-motion-strip.jpg",
+      "bytes": 70845,
+      "sha256": "8d00785fbd1a9027e171d1cdb44feae3d2088ef607fdfc83785124e888b7280a"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-suspension.mp4",
+      "bytes": 18622144,
+      "sha256": "396bc6b7c982443ea77141e9526c94c8271a53980c8adc7e912f09325ef0bfeb"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/scout-suspension.webm",
+      "bytes": 10568009,
+      "sha256": "1e4d088fe2370ad645bcb405750c6dabb1f77c8a71a68c92b7bd3255315733ad"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/source-integrity.json",
+      "bytes": 907,
+      "sha256": "09c3c20fee05426188d493580c64cc1d376a300dc0bf20131c53af86f02d259c"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/style-lineup.jpg",
+      "bytes": 983841,
+      "sha256": "d7cbe407a83d44d0f7864f07558cd32f4e958186665073c524d1eed898fdb910"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/surfaces-ranger.json",
+      "bytes": 6079,
+      "sha256": "ce84252c3e7c4ee069ab7d567036df347576027f53ec357f4e58f6d47d8db557"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/surfaces-scout.json",
+      "bytes": 6078,
+      "sha256": "8cb7f3ee5ff3f67f6b3d280006df05371850baf559d61a568373fdd872e8b586"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/suspension.json",
+      "bytes": 54474,
+      "sha256": "58fc2fedee26d135d1f2d06009f26e78acdb09c681c1e75594159a43333bb9e9"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/toyota-reference-front.png",
+      "bytes": 3069133,
+      "sha256": "95b814718985ba7d65daea9bb14597a17b06ce68d7c1d4de785e8a320c623a4f"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/toyota-reference-load.png",
+      "bytes": 2720654,
+      "sha256": "c91985024b12981c1fdbe78869bb14b4677d787a292b20463e822cfada41e1e5"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/toyota-reference-side.png",
+      "bytes": 3062146,
+      "sha256": "786ee2245058a6490d2d811931999835c5a5d52551b996454d258a89db428f07"
+    },
+    {
+      "path": "docs/trail-companions/20260926-proof-03-release-refinement/video-verification.json",
+      "bytes": 1098,
+      "sha256": "01d7decbe96cbdc11ccb92406f6ec8eb03c6b437a49c5f2fdfc2d73f33c1facf"
+    }
+  ],
+  "documents": [
+    {
+      "path": "README.md",
+      "bytes": 10033,
+      "sha256": "e4d1b8f629173626696c7d7deef158d1c24c77d313d272fe9b1b4b38697ce708"
+    },
+    {
+      "path": "docs/VEHICLE-TRAIL-COMPANIONS.md",
+      "bytes": 9800,
+      "sha256": "ef996c8de5dc545ca051df58272e16e0dc5d69fc2b44826a5db44d9243bb8f86"
+    },
+    {
+      "path": "docs/trail-companions/index.html",
+      "bytes": 11274,
+      "sha256": "6c72928c14a40364f8e858b0e6494250929355037245b7451d1bebb3cb8bed40"
+    }
+  ],
+  "history": {
+    "supersededRemake": "art/studies/trail-companions/03-release-refinement/superseded",
+    "supersededLocalPreview": "art/studies/trail-companions/03-release-refinement/preview-before-window-seal",
+    "earlierStudiesRetained": [
+      "01-balanced-trail",
+      "02-release-baseline"
+    ]
+  }
+}

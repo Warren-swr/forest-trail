@@ -1,0 +1,153 @@
+{
+  "id": "ranger",
+  "name": "Kestrel 小皮卡",
+  "short": "Kestrel",
+  "brand": "溪谷车坊",
+  "tagline": "轻、快、悬挂软：高档跑得最快，但低档扭矩和离地间隙最小",
+  "model": "vehicle_ranger",
+  "paint": "mint",
+  "paints": [
+    "mint",
+    "cream",
+    "red",
+    "sky"
+  ],
+  "mass": 1320,
+  "com": [
+    0,
+    0.22,
+    -0.08
+  ],
+  "inertia": [
+    2550,
+    2550,
+    600
+  ],
+  "wheelBase": 2.62,
+  "track": 1.58,
+  "wheelRadius": 0.36,
+  "wheelWidth": 0.27,
+  "wheelMass": 20,
+  "hardpointY": 0.3,
+  "restLength": 0.43,
+  "minLength": 0.13,
+  "springK": 25000,
+  "damperBump": 2900,
+  "damperRebound": 4200,
+  "bumpStopK": 240000,
+  "antiRollFront": 7000,
+  "antiRollRear": 4000,
+  "tyreLatK": 52000,
+  "tyreRelax": 0.65,
+  "tyreLatDamp": 1500,
+  "tyreLongK": 80000,
+  "rollResist": 0.022,
+  "highPeak": 4600,
+  "highMaxKmh": 38,
+  "lowPeak": 6700,
+  "lowMaxKmh": 10,
+  "reverseMaxKmh": 9,
+  "reversePeak": 5500,
+  "brakeMax": 4700,
+  "engineBrakeLow": 2600,
+  "engineBrakeHigh": 900,
+  "spinMu": 0.76,
+  "mudDrag": 600,
+  "steerMaxLow": 33,
+  "steerMaxHigh": 15,
+  "steerSpeedKmh": 30,
+  "steerRate": 105,
+  "steerReturnRate": 150,
+  "throttleRise": 0.35,
+  "throttleFall": 0.18,
+  "waterWarnDepth": 0.48,
+  "waterFailDepth": 0.7,
+  "waterFailTime": 3,
+  "colliders": [
+    {
+      "half": [
+        0.82,
+        0.33,
+        0.86
+      ],
+      "at": [
+        0,
+        0.45,
+        0
+      ]
+    },
+    {
+      "half": [
+        0.86,
+        0.31,
+        0.2
+      ],
+      "at": [
+        0,
+        0.48,
+        -1.955
+      ]
+    },
+    {
+      "half": [
+        0.84,
+        0.3,
+        0.33
+      ],
+      "at": [
+        0,
+        0.475,
+        2.09
+      ]
+    },
+    {
+      "half": [
+        0.8,
+        0.255,
+        0.595
+      ],
+      "at": [
+        0,
+        1.055,
+        -0.335
+      ],
+      "friction": 0.5
+    },
+    {
+      "half": [
+        0.82,
+        0.16,
+        0.96
+      ],
+      "at": [
+        0,
+        0.61,
+        1.32
+      ]
+    }
+  ],
+  "axleHalf": 0.48,
+  "winchFront": [
+    0,
+    0.22,
+    -2.15
+  ],
+  "hitchRear": [
+    0,
+    0.268,
+    2.505
+  ],
+  "engine": {
+    "idle": 850,
+    "max": 4600,
+    "cyl": 4,
+    "tone": 1.22
+  },
+  "ratings": {
+    "power": 0.45,
+    "speed": 0.9,
+    "grip": 0.5,
+    "comfort": 0.4,
+    "agility": 0.9
+  }
+}

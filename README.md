@@ -8,6 +8,8 @@
 
 游戏已实现三辆可选车辆、四轮悬挂与绞盘、昼夜与车灯、背景音乐、训练场计时、演示录制及本地存档。使用支持 WebGL2 的桌面浏览器，按 W/A/S/D 驾驶、M 打开地图、Esc 暂停；完整操作见 [game/README.md](game/README.md)。
 
+Scout 与 Kestrel 已基于上一版正式模型重新精修，保留整套探险装备，并对照实拍向 Toyota 样车对齐；建模、细节与悬挂调整见 [优化记录](game/docs/VEHICLE-TRAIL-COMPANIONS.md) 和 [实机前后对照](game/docs/trail-companions/index.html)。
+
 ## 本地运行
 
 需要 Node.js 22.12 或更新版本。

@@ -1,0 +1,74 @@
+{
+  "kind": "published-release",
+  "releaseCommit": "33439c37d453c87279797d7365d8874cff5b747a",
+  "capturedAt": "2026-09-26T09:48:45.317798+00:00",
+  "deployment": {
+    "id": 36213839010,
+    "head_sha": "33439c37d453c87279797d7365d8874cff5b747a",
+    "name": "Deploy to GitHub Pages",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-09-26T03:07:45Z",
+    "html_url": "https://github.com/Warren-swr/forest-trail/actions/runs/36213839010"
+  },
+  "publishedAssets": [
+    {
+      "id": "scout",
+      "path": "assets/models/vehicle_scout.glb",
+      "url": "https://warren-swr.github.io/forest-trail/assets/models/vehicle_scout.glb",
+      "status": 200,
+      "lastModified": "Sat, 26 Sep 2026 03:08:19 GMT",
+      "bytes": 981704,
+      "sha256": "3137b8597ae69e53b3f563bb162596d98dbbbaccb83952079c7029aa4e96d15c",
+      "gitCommit": "33439c37d453c87279797d7365d8874cff5b747a"
+    },
+    {
+      "id": "scout",
+      "path": "assets/models/vehicle_scout.json",
+      "url": "https://warren-swr.github.io/forest-trail/assets/models/vehicle_scout.json",
+      "status": 200,
+      "lastModified": "Sat, 26 Sep 2026 03:08:19 GMT",
+      "bytes": 1512,
+      "sha256": "0bd184379dd70b0cecaf79e76b631f17cc0123d245ffed270a72fb000773cb1b",
+      "gitCommit": "33439c37d453c87279797d7365d8874cff5b747a"
+    },
+    {
+      "id": "ranger",
+      "path": "assets/models/vehicle_ranger.glb",
+      "url": "https://warren-swr.github.io/forest-trail/assets/models/vehicle_ranger.glb",
+      "status": 200,
+      "lastModified": "Sat, 26 Sep 2026 03:08:19 GMT",
+      "bytes": 706148,
+      "sha256": "206cfaba3bc8d9fb21b95e2c4d8d53dbb02177355e298b49ff37d18c2a9f900d",
+      "gitCommit": "33439c37d453c87279797d7365d8874cff5b747a"
+    },
+    {
+      "id": "ranger",
+      "path": "assets/models/vehicle_ranger.json",
+      "url": "https://warren-swr.github.io/forest-trail/assets/models/vehicle_ranger.json",
+      "status": 200,
+      "lastModified": "Sat, 26 Sep 2026 03:08:19 GMT",
+      "bytes": 1306,
+      "sha256": "da07721af781a595b4d844975cb674b4afc7bed1fe0276e45af1fd367ec9b4f8",
+      "gitCommit": "33439c37d453c87279797d7365d8874cff5b747a"
+    }
+  ],
+  "source": "Exact files from the last successful GitHub Pages deployment, byte-verified against the live site.",
+  "rawRun": "/mnt/runs/forest-trail/release-comparison-20260926-094841",
+  "toyotaReference": {
+    "public/assets/models/vehicle_toyota_trail.glb": "5c9cdfa0e213cc7f0579ea8b2fcf6e0ea00489fc360ccfe510fab31a17e3caad",
+    "public/assets/models/vehicle_toyota_trail.json": "7749973b21605480705965d7cd07ef8a9bc4e0a75a628d7049776d2333b515cf",
+    "art/blender/vehicle_toyota_trail.py": "59cd46d43326d3b211189c8f12f2c0aa1bca2109d7c7cbbf2565be6bcacc096f"
+  },
+  "currentAssets": {
+    "public/assets/models/vehicle_scout.glb": "6f5e093c76024dd9b1088d3c2f4c48e3b54aeb14a8a2cd9a40bb1a693d6bd4e5",
+    "public/assets/models/vehicle_ranger.glb": "d94b0f9eb876e892f1ca1cc4e7c8832021bdd88d2c77ba3cc921d9e944512b5b",
+    "public/assets/models/vehicle_scout.json": "12c77758cfb8efc9a37cc9f1dd5e9036d776306a4e15561ab8a89b1e9702ae61",
+    "public/assets/models/vehicle_ranger.json": "2ccb15104fe6bc72d393327fc2a76260668fa26463082c81952e8dcc50e9d562",
+    "src/game/config.ts": "9fea4cb00cf5de625b7d7d090b17ca8c66cd579ddbc3390f7f5583610c908e50",
+    "src/game/physics/vehicle.ts": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539",
+    "src/game/render/vehicleView.ts": "ad98b3a3045134cdafd5fadb7046e0ed74e71a1cea03344a6ff4f22d3f369cc6",
+    "art/blender/vehicle_trail.py": "a5b040126e616c6a5ef2e0017c495f76bddf520570fc950d27822dbbe1cd7803"
+  },
+  "supersedes": "01-balanced-trail comparison used the unpublished 5066e72 fidelity models as its baseline."
+}

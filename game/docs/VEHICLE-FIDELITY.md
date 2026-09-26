@@ -1,6 +1,8 @@
 # Forest Trail · 经典越野车与近景模型升级
 
-> 历史记录：本文与 `vehicle-fidelity/` 中的截图、测试和哈希对应上一轮三车精细版本。当前 Toyota 已切换为[旧版风格精修样车](TOYOTA-TRAIL-STUDY.md)，使用独立的 `vehicle_toyota_trail` 资产；本文的 Toyota 图片、面数和哈希不代表当前样车。
+> 2026-09-26 当前车辆精修：Scout / Kestrel 已以正式发布版本 33439c3 重做，保留完整可见装备，并参考实拍对齐 Toyota 样车。最新实现、开销与独立验证见 [正式版精修记录](VEHICLE-TRAIL-COMPANIONS.md)；下文保留历史记录。
+
+> 历史记录：本文与 `vehicle-fidelity/` 中的截图、测试和哈希对应上一轮三车精细版本。当前 Toyota 使用[第六轮精修样车](TOYOTA-ARCH-BALANCE.md)，Scout 与 Kestrel 使用[正式版精修版本](VEHICLE-TRAIL-COMPANIONS.md)。本文的三车图片、面数和哈希均属于历史版本。
 
 本次把三辆车重建为不同经典车型的探险改装版本，并同步更新底盘运动、碰撞挂点、近景环境资产和距离 LOD。实际游戏使用这些 GLB；可编辑源模型保存在 `art/blender/vehicle_*.blend`，生成源为 `art/blender/vehicle_fidelity.py`。
 

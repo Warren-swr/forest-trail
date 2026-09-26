@@ -1,0 +1,27 @@
+{
+  "toyotaUnchanged": true,
+  "toyotaFullSpecUnchanged": true,
+  "releaseSourcesUnmodified": true,
+  "files": [
+    {
+      "path": "public/assets/models/vehicle_toyota_trail.glb",
+      "sha256": "5c9cdfa0e213cc7f0579ea8b2fcf6e0ea00489fc360ccfe510fab31a17e3caad"
+    },
+    {
+      "path": "public/assets/models/vehicle_toyota_trail.json",
+      "sha256": "7749973b21605480705965d7cd07ef8a9bc4e0a75a628d7049776d2333b515cf"
+    },
+    {
+      "path": "art/blender/vehicle_toyota_trail.py",
+      "sha256": "59cd46d43326d3b211189c8f12f2c0aa1bca2109d7c7cbbf2565be6bcacc096f"
+    },
+    {
+      "path": "art/blender/reference/vehicle_scout_release.py",
+      "sha256": "a053e575b646f48ebe031c746ec4e7ad9b32ae51725055f9a2b29becee4cd139"
+    },
+    {
+      "path": "art/blender/reference/vehicle_ranger_release.py",
+      "sha256": "a0f876141f31996bce73cfddde8f4fe84f476fe11b09754661c75d1b7549abd2"
+    }
+  ]
+}

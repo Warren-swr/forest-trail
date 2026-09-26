@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Forest Trail · 基于正式版的车辆精修</title>
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,-apple-system,"Noto Sans SC",sans-serif;color:#e8eddf;background:#16231d}
+    *{box-sizing:border-box}body{margin:0}main{max-width:1220px;margin:auto;padding:42px 24px 64px}
+    a{color:#cddda6;text-underline-offset:4px}header{max-width:860px}small{color:#aabda8;letter-spacing:.12em}
+    h1{font-size:clamp(28px,4vw,46px);line-height:1.2;letter-spacing:-.03em;margin:12px 0 18px}
+    p{line-height:1.75;color:#becbbe}nav{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 18px}
+    button,select{font:inherit;color:inherit;background:#26382b;border:1px solid #52624b;border-radius:8px;padding:11px 18px}
+    button{cursor:pointer}button[aria-pressed=true]{background:#d6dfb6;color:#1b2e20;border-color:#d6dfb6}
+    button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #e6c175;outline-offset:4px}
+    .toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    h2{font-size:23px;margin:0}.toolbar label{display:flex;align-items:center;gap:12px;color:#becbbe}
+    .compare{position:relative;aspect-ratio:8/5;overflow:hidden;border-radius:12px;background:#0e1912;margin-top:16px}
+    .compare img{position:absolute;width:100%;height:100%;object-fit:contain;inset:0}
+    #beforeImage{clip-path:inset(0 50% 0 0)}.divider{position:absolute;left:50%;height:100%;border-left:2px solid #fff8;pointer-events:none}
+    .tag{position:absolute;top:16px;padding:6px 12px;border-radius:5px;background:#132419d9;font-size:13px}
+    .tag.before{left:16px}.tag.after{right:16px}.scrub{display:flex;align-items:center;gap:16px;margin:14px 0}
+    .scrub span{color:#b8c7b4;font-size:14px;white-space:nowrap}input[type=range]{width:100%;accent-color:#d6dfb6;cursor:ew-resize}
+    .links{display:flex;gap:20px;flex-wrap:wrap;font-size:14px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0}
+    .metric{padding:18px 20px;background:#213429;border:1px solid #3c5040;border-radius:10px}
+    .metric dt{color:#b7c7b3;font-size:13px}.metric dd{margin:7px 0 0;font-size:23px;letter-spacing:-.025em}
+    .note{font-size:14px}.video-head{margin-top:36px}video{display:block;width:100%;aspect-ratio:8/5;background:#101b13;border-radius:12px;margin:16px 0}
+    footer{border-top:1px solid #3d5040;margin-top:32px;padding-top:20px;font-size:14px}
+    @media(max-width:680px){main{padding:28px 14px 40px}.metrics{grid-template-columns:repeat(2,1fr)}.metric{padding:14px}.metric dd{font-size:21px}.toolbar{align-items:flex-start}.tag{top:9px;padding:4px 8px}.tag.before{left:9px}.tag.after{right:9px}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <small>FOREST TRAIL / 正式发布基线 33439c3</small>
+    <h1>从正式版继续精修。</h1>
+    <p>直接以正式发布版本 33439c3 的 Scout 与 Kestrel 为基础，保留原有探险装备和造型细节。
+      对照老 Defender 与 1979 Hilux 的真实照片精修，向已完成的 Toyota 样车对齐材质、表面和装配细节。</p>
+    <p>拖动滑块查看正式版与本次重做的差异。两侧使用同一场景、光照、涂装与机位；各自使用对应车辆参数静置落地。</p>
+    <a href="../VEHICLE-TRAIL-COMPANIONS.md">完整优化说明与验证数据 ↗</a>
+  </header>
+  <nav aria-label="选择车辆">
+    <button type="button" data-car="scout" aria-pressed="true">Scout 短轴四驱</button>
+    <button type="button" data-car="ranger" aria-pressed="false">Kestrel 小皮卡</button>
+  </nav>
+  <section aria-labelledby="carTitle">
+    <div class="toolbar">
+      <h2 id="carTitle">Scout 短轴四驱</h2>
+      <label for="view">观察角度
+        <select id="view">
+          <option value="front">前侧整体</option><option value="side">侧面比例</option>
+          <option value="rear">后侧整体</option><option value="front-flat">正前方</option>
+          <option value="rear-flat">正后方</option><option value="hood">机盖曲面</option>
+          <option value="wheel">轮胎与轮拱</option><option value="detail">车窗与车门</option>
+          <option value="load">行李与货斗</option><option value="night">夜间灯光</option>
+        </select>
+      </label>
+    </div>
+    <div class="compare">
+      <img id="afterImage" src="20260926-proof-03-release-refinement/scout-after-front.png" alt="当前精修的 Scout 短轴四驱">
+      <img id="beforeImage" src="20260926-proof-03-release-refinement/scout-before-front.png" alt="正式版的 Scout 短轴四驱">
+      <div class="divider" id="divider"></div>
+      <span class="tag before">正式版</span><span class="tag after">当前精修</span>
+    </div>
+    <div class="scrub"><span>当前精修</span><input id="split" type="range" min="0" max="100" value="50" aria-label="正式版画面占比"><span>正式版</span></div>
+    <div class="links"><a id="beforeLink" href="20260926-proof-03-release-refinement/scout-before-front.png" target="_blank" rel="noopener">打开正式版原图</a>
+      <a id="afterLink" href="20260926-proof-03-release-refinement/scout-after-front.png" target="_blank" rel="noopener">打开当前精修原图</a></div>
+    <p id="description"></p>
+    <dl class="metrics" id="metrics"></dl>
+    <p class="note">承重平台数据分别运行正式版原始物理与当前物理，在相同平地缓慢抬升单轮；四轮均接地且每轮载荷超过 100 N。
+      正常悬挂行程不含 6 cm 限位缓冲区；完整近景面数包含四轮与活动底盘。面数表示精修的几何开销，质量以原有装备的保留、近景实拍对照和实机装配为准。两车远景使用独立 LOD。</p>
+  </section>
+  <section aria-labelledby="styleTitle">
+    <h2 class="video-head" id="styleTitle">与 Toyota 样车对齐风格</h2>
+    <p>同一光照和镜头：保留各车的身份与装备，统一哑光车漆、深色平窗、厚胎壁、窄轮眉，以及有实体支撑的附件。</p>
+    <a href="20260926-proof-03-release-refinement/style-lineup.jpg"><img src="20260926-proof-03-release-refinement/style-lineup.jpg" alt="同机位的 Scout、Toyota FJ60 和 Kestrel" style="display:block;width:100%;height:auto;border-radius:12px"></a>
+    <div class="links" style="margin-top:14px"><a href="20260926-proof-03-release-refinement/toyota-reference-front.png">Toyota 样车原图</a>
+      <a href="https://en.wikipedia.org/wiki/File:Defender90.JPG" target="_blank" rel="noopener">Defender 实拍来源</a>
+      <a href="https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/" target="_blank" rel="noopener">1979 Hilux 官方实拍</a>
+      <a href="../../art/studies/trail-companions/03-release-refinement/reference/NOTES.md">逐图观察与装备清单</a></div>
+  </section>
+  <section aria-labelledby="motionTitle">
+    <h2 class="video-head" id="motionTitle">悬挂在真实路面上的运动</h2>
+    <p>低档驶过训练场交叉轴。弹簧、减振器、车桥和传动轴跟随实际物理状态。</p>
+    <video id="motion" controls preload="metadata" playsinline
+      poster="20260926-proof-03-release-refinement/scout-after-articulation.png"
+      src="20260926-proof-03-release-refinement/scout-suspension.mp4"></video>
+  </section>
+  <footer>
+    <p>两车各 15 项驾驶测试通过；当前三车 27 种极限装配姿态通过。含场景碰撞的环线均抵达终点阈值，零复位。
+      图片为未经改绘的游戏画布，视频由原始 WebM 转为 MP4。</p>
+    <div class="links"><a href="20260926-proof-03-release-refinement/browser-report.json">实机记录</a>
+      <a href="20260926-proof-03-release-refinement/geometry.json">最终模型检查</a><a href="20260926-proof-03-release-refinement/suspension.json">悬挂对照数据</a>
+      <a href="20260926-proof-03-release-refinement/release-baseline.json">正式发布来源</a><a href="manifest.json">文件与来源清单</a></div>
+  </footer>
+</main>
+<script>
+  const cars = {
+  "scout": {
+    "title": "Scout 短轴四驱",
+    "short": "Scout",
+    "description": "以正式版完整车身和装备为底：保留三段侧窗、双腰线、四盏顶灯、双油桶、脱困板、千斤顶、铁锹、行李、绞盘、备胎和后梯。精修连续机盖/车顶、开孔钢轮圈、窄轮眉、夹具和备胎架连接。",
+    "metrics": [
+      [
+        "轮胎直径",
+        "76 → 86 cm"
+      ],
+      [
+        "正常悬挂行程",
+        "30 → 38 cm"
+      ],
+      [
+        "四轮承重平台",
+        "30.4 → 46.2 cm"
+      ],
+      [
+        "近景完整面数",
+        "3.04 → 23.52 万"
+      ]
+    ]
+  },
+  "ranger": {
+    "title": "Kestrel 小皮卡",
+    "short": "Kestrel",
+    "description": "保留正式版短驾驶室、独立货斗、双色腰线、双灯护架、冰箱、帐篷、双行李袋、备胎、盘绳和油桶。对照 1979 Hilux 实拍，精修轮罩、压筋、尾门合页、货架弯管、三角窗与绑扎结构。",
+    "metrics": [
+      [
+        "轮胎直径",
+        "72 → 84 cm"
+      ],
+      [
+        "正常悬挂行程",
+        "30 → 35 cm"
+      ],
+      [
+        "四轮承重平台",
+        "31.8 → 47.9 cm"
+      ],
+      [
+        "近景完整面数",
+        "2.33 → 23.08 万"
+      ]
+    ]
+  }
+};
+  const base = '20260926-proof-03-release-refinement/';
+  const byId = id => document.getElementById(id);
+  let selected = 'scout';
+  function pictures() {
+    const view = byId('view').value;
+    for (const kind of ['before','after']) {
+      const file = base + selected + '-' + kind + '-' + view + '.png';
+      byId(kind + 'Image').src = file;
+      byId(kind + 'Image').alt = cars[selected].short + (kind === 'before' ? ' 正式版，' : ' 当前精修，') + byId('view').selectedOptions[0].text;
+      byId(kind + 'Link').href = file;
+    }
+  }
+  function selectCar(id) {
+    selected = id;
+    for (const button of document.querySelectorAll('[data-car]')) button.setAttribute('aria-pressed', String(button.dataset.car === id));
+    byId('carTitle').textContent = cars[id].title;
+    byId('description').textContent = cars[id].description;
+    byId('metrics').replaceChildren(...cars[id].metrics.map(([label,value]) => {
+      const card = document.createElement('div'); card.className = 'metric';
+      const dt = document.createElement('dt'), dd = document.createElement('dd');
+      dt.textContent = label; dd.textContent = value; card.append(dt,dd); return card;
+    }));
+    byId('motion').pause();
+    byId('motion').src = base + id + '-suspension.mp4';
+    byId('motion').poster = base + id + '-after-articulation.png';
+    pictures();
+  }
+  byId('split').addEventListener('input', event => {
+    byId('beforeImage').style.clipPath = 'inset(0 ' + (100 - Number(event.target.value)) + '% 0 0)';
+    byId('divider').style.left = event.target.value + '%';
+  });
+  byId('view').addEventListener('change', pictures);
+  for (const button of document.querySelectorAll('[data-car]')) button.addEventListener('click', () => selectCar(button.dataset.car));
+  selectCar('scout');
+</script>
+</body>
+</html>

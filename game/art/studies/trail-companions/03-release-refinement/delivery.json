@@ -1,0 +1,32 @@
+{
+  "status": "implemented-and-verified-local",
+  "revision": "03-release-refinement",
+  "rawRun": "/mnt/runs/forest-trail/release-refinement-20260926-102050",
+  "manifest": {
+    "path": "docs/trail-companions/manifest.json",
+    "bytes": 39498,
+    "sha256": "783300e2b28e3e7a5804e1bc78ae75d2c129d84d196efbc4acfffa261ab52af2"
+  },
+  "assets": [
+    {
+      "path": "public/assets/models/vehicle_scout.glb",
+      "bytes": 5156820,
+      "sha256": "2e40d5d115bc92a19be30425cdef2e7421c2ba012c4506978a7ea3cd3dcf3d94"
+    },
+    {
+      "path": "public/assets/models/vehicle_scout.json",
+      "bytes": 2747,
+      "sha256": "aa21c67e732db4dfacd3d71ce937fc53e5650c57d63de0000d9ce548e8084bde"
+    },
+    {
+      "path": "public/assets/models/vehicle_ranger.glb",
+      "bytes": 5330588,
+      "sha256": "5c253563c20ea1e017573f0dacad7d55afd304e6590bab479cb59456ecd65828"
+    },
+    {
+      "path": "public/assets/models/vehicle_ranger.json",
+      "bytes": 2477,
+      "sha256": "109d29f2e3838f357507c8294999f1551023b6cd3b80552bc746862c55b4490f"
+    }
+  ]
+}

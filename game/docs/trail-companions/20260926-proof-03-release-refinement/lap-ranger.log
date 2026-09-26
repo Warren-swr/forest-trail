@@ -1,0 +1,15 @@
+
+> forest-trail@1.0.0 test:lap
+> tsx tools/sim-test.ts lap
+
+t=30 s=146 travelled=136 kmh=19.5 pos=(-200,20)
+t=60 s=320 travelled=310 kmh=21.3 pos=(-121,-94)
+t=90 s=498 travelled=488 kmh=20.7 pos=(30,-13)
+t=120 s=639 travelled=629 kmh=14.4 pos=(95,-51)
+t=150 s=775 travelled=765 kmh=19.6 pos=(156,-122)
+t=180 s=893 travelled=883 kmh=7.8 pos=(143,-217)
+t=210 s=1071 travelled=1061 kmh=22.2 pos=(239,-105)
+t=240 s=1253 travelled=1243 kmh=21.7 pos=(198,72)
+t=270 s=1414 travelled=1404 kmh=9.2 pos=(77,167)
+t=300 s=1551 travelled=1541 kmh=21.2 pos=(-59,181)
+lap: 1667/1671 m in 322 s, resets 0, maxStuck 0.20 s, minUp 0.96, max 22.3 km/h

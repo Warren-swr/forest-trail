@@ -1,0 +1,122 @@
+{
+  "date": "2026-09-26T10:22:59.164773+00:00",
+  "photos": [
+    {
+      "car": "hilux",
+      "file": "1979-Hilux-4WD-03.jpg",
+      "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-03.jpg",
+      "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+      "bytes": 89098,
+      "sha256": "008993e99abf1ccdbc86c96858094d550fc0c63c84276a31b1ce425969137767",
+      "usage": "Reference photographs only; not runtime assets"
+    },
+    {
+      "car": "hilux",
+      "file": "1979-Hilux-4WD-01.jpg",
+      "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-01.jpg",
+      "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+      "bytes": 93630,
+      "sha256": "c1221ae0c374680a45ca8649e451c53234201408f63a17c1132beaffcbfe0b88",
+      "usage": "Reference photographs only; not runtime assets"
+    },
+    {
+      "car": "hilux",
+      "file": "1979-Hilux-4WD-02.jpg",
+      "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-02.jpg",
+      "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+      "bytes": 74089,
+      "sha256": "281f4c14b4d4c8f807ff03d19fbdabce207f0bc219a062b28c8971eb46d69e20",
+      "usage": "Reference photographs only; not runtime assets"
+    },
+    {
+      "car": "hilux",
+      "file": "1979-Hilux-4WD-04.jpg",
+      "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-04.jpg",
+      "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+      "bytes": 81083,
+      "sha256": "bca3f7d628d7b0df60d3618ff4c35042d1336cd1f52805e09fb17d32ddc401c3",
+      "usage": "Reference photographs only; not runtime assets"
+    },
+    {
+      "car": "hilux",
+      "file": "1979-Hilux-4WD-09.jpg",
+      "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-09.jpg",
+      "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+      "bytes": 77859,
+      "sha256": "07d2692a5283025a846879cc970dbf7165b821e6c478f6f2efe953e8f7544c96",
+      "usage": "Reference photographs only; not runtime assets"
+    },
+    {
+      "car": "hilux",
+      "file": "1979-Hilux-4WD-06.jpg",
+      "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-06.jpg",
+      "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+      "bytes": 96226,
+      "sha256": "3c8e31dd05393c9a04e5ee07826f796dddbb4dd212510ed66e2ce370433ce864",
+      "usage": "Reference photographs only; not runtime assets"
+    },
+    {
+      "car": "hilux",
+      "file": "1979-Hilux-4WD-08.jpg",
+      "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-08.jpg",
+      "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+      "bytes": 77158,
+      "sha256": "478d114295bd5e8e16199fb89400dbbac111b1185dd66310b8e5aa3ee77d8ad5",
+      "usage": "Reference photographs only; not runtime assets"
+    },
+    {
+      "car": "hilux",
+      "file": "1979-Hilux-4WD-05.jpg",
+      "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-05.jpg",
+      "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+      "bytes": 82392,
+      "sha256": "c514e8dd110c3e6892179218f71a9d110f3e4ea4cf221db8615a86d56631ccca",
+      "usage": "Reference photographs only; not runtime assets"
+    },
+    {
+      "car": "hilux",
+      "file": "1979-Hilux-4WD-07.jpg",
+      "url": "https://mag.toyota.co.uk/wp-content/uploads/sites/2/2018/05/1979-Hilux-4WD-07.jpg",
+      "source": "https://mag.toyota.co.uk/in-focus-1979-toyota-hilux-4wd/",
+      "bytes": 102174,
+      "sha256": "c3490001ef2019a470542df6f2ae7216bcebf8e8c4a3ac3d933446ba1ca238d8",
+      "usage": "Reference photographs only; not runtime assets"
+    },
+    {
+      "car": "defender",
+      "file": "defender-9.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/2015_Land_Rover_Defender_%28L316_MY15%29_90_3-door_wagon_%282015-10-24%29_01.jpg",
+      "source": "https://en.wikipedia.org/wiki/File:2015_Land_Rover_Defender_(L316_MY15)_90_3-door_wagon_(2015-10-24)_01.jpg",
+      "bytes": 7080464,
+      "sha256": "997e076dc67da19ac1f9148a7119a42a26b74b31bfbfd5996fd8ded2a720c5c2",
+      "usage": "Reference photographs only; not runtime assets"
+    },
+    {
+      "car": "defender",
+      "file": "defender-10.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Defender90.JPG",
+      "source": "https://en.wikipedia.org/wiki/File:Defender90.JPG",
+      "bytes": 368452,
+      "sha256": "4f3722f7b5052235a3174b304fe6282ff0e1e324dd240de7061f1096b01163f7",
+      "usage": "Reference photographs only; not runtime assets"
+    },
+    {
+      "car": "defender",
+      "file": "defender-11.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/NAS_Land_Rover_Defender_90.jpg",
+      "source": "https://en.wikipedia.org/wiki/File:NAS_Land_Rover_Defender_90.jpg",
+      "bytes": 1366620,
+      "sha256": "4fe7cee4f2a3f44de01cafbc5d66f684ca3d31137532efd24687a7bdf08ebcb0",
+      "usage": "Reference photographs only; not runtime assets"
+    },
+    {
+      "car": "defender",
+      "file": "defender-12.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Land_Rover_Defender_-_Flickr_-_Alan_D.jpg",
+      "source": "https://en.wikipedia.org/wiki/File:Land_Rover_Defender_-_Flickr_-_Alan_D.jpg",
+      "bytes": 1535284,
+      "sha256": "d3a577a8200fc706acef29a43c4251976c0626b83b255ce1f33052fe7aea93a7",
+      "usage": "Reference photographs only; not runtime assets"
+    }
+  ]
+}

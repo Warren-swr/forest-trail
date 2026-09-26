@@ -1,0 +1,122 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "e4d1b8f629173626696c7d7deef158d1c24c77d313d272fe9b1b4b38697ce708",
+    "bytes": 10033
+  },
+  {
+    "path": "package.json",
+    "sha256": "a50ec3e56fb331f059f41cfe5bef96ea663bd153a6a87bfa59c1d318491f6d9f",
+    "bytes": 1415
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "af1dec53c3b170e2718986b3eae6acecad59317bd514cc82ac8456751a9b4211",
+    "bytes": 44932
+  },
+  {
+    "path": "src/game/config.ts",
+    "sha256": "fae4b9c7408ad36188ee5d11fe0f5e8150091e10087c039ad3d5bcfb063da1fd",
+    "bytes": 10512
+  },
+  {
+    "path": "src/game/physics/vehicle.ts",
+    "sha256": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539",
+    "bytes": 25011
+  },
+  {
+    "path": "src/game/render/vehicleView.ts",
+    "sha256": "ad98b3a3045134cdafd5fadb7046e0ed74e71a1cea03344a6ff4f22d3f369cc6",
+    "bytes": 18620
+  },
+  {
+    "path": "art/blender/common.py",
+    "sha256": "2ebdbcae2758fd5f8a6d66e0a63d93def0cae5d172980e4aa0c8df0cc0e1ae70",
+    "bytes": 18765
+  },
+  {
+    "path": "art/blender/vehicle_parts.py",
+    "sha256": "c9a11f755c21d96cd1c793413fa540be2427e83592461451e1ac8b00b98808ec",
+    "bytes": 22761
+  },
+  {
+    "path": "art/blender/vehicle_fidelity.py",
+    "sha256": "0e8bcccfe6ab9522d12c03e86fc414a2b8431b5b71426937a8871240eb921e72",
+    "bytes": 61948
+  },
+  {
+    "path": "art/blender/vehicle_check.py",
+    "sha256": "4f4660328e228f9e88575b0e890728c9c9556edffa2f663251bb0b9be73e47a5",
+    "bytes": 5520
+  },
+  {
+    "path": "art/blender/vehicle_release_refinement.py",
+    "sha256": "8530771066ef628af8adb1dcde3834232a70b2d4deb6757055285c3b7aa6fae5",
+    "bytes": 53860
+  },
+  {
+    "path": "art/blender/vehicle_scout.py",
+    "sha256": "cdf72e283347910dc8943319401e1eabfc4368ec8f0858d0537d274724459c64",
+    "bytes": 307
+  },
+  {
+    "path": "art/blender/vehicle_ranger.py",
+    "sha256": "52aa32d889fb7e9ba6c84363da7d9f0afe9d5059fe94ff2b4d6f8e0724c5fd80",
+    "bytes": 310
+  },
+  {
+    "path": "art/blender/reference/vehicle_scout_release.py",
+    "sha256": "a053e575b646f48ebe031c746ec4e7ad9b32ae51725055f9a2b29becee4cd139",
+    "bytes": 40533
+  },
+  {
+    "path": "art/blender/reference/vehicle_ranger_release.py",
+    "sha256": "a0f876141f31996bce73cfddde8f4fe84f476fe11b09754661c75d1b7549abd2",
+    "bytes": 35075
+  },
+  {
+    "path": "art/blender/verify_vehicles.py",
+    "sha256": "5d6e246d27cab430ed489851d1ffbf4d186b6b40a98c914ec420ccf54c6fdb4e",
+    "bytes": 1583
+  },
+  {
+    "path": "tools/trail-companions-browser.cjs",
+    "sha256": "3e44e6246d855ca7623bdec3a6eb5369395331b88f9a4cb39a16c1262f272af3",
+    "bytes": 17169
+  },
+  {
+    "path": "tools/trail-geometry-check.py",
+    "sha256": "ada952d24a4752bf8d73cd20a08dd109d96056e7f564617355b64bb47748dab1",
+    "bytes": 7697
+  },
+  {
+    "path": "tools/trail-suspension-study.ts",
+    "sha256": "cd7d1cdcb845083819f5e407d04083145067e3c11af00582c4f6ea1fe2e945b0",
+    "bytes": 5771
+  },
+  {
+    "path": "tools/vehicle-rig-test.ts",
+    "sha256": "55a7b7d0c62e8ca2023a69114430f8303a54b5164867f3f9224cde760efedb2b",
+    "bytes": 7274
+  },
+  {
+    "path": "tools/proving.ts",
+    "sha256": "6403056a3bfce12e4b936bb0eecca0805f034823017de258f1ee199a9aff0117",
+    "bytes": 17124
+  },
+  {
+    "path": "tools/toyota-surface-check.py",
+    "sha256": "abdb12f18b647c131e994645732eae0e6e8b7a3d1abd847ca977e4887d909eac",
+    "bytes": 6836
+  },
+  {
+    "path": "docs/VEHICLE-TRAIL-COMPANIONS.md",
+    "sha256": "ef996c8de5dc545ca051df58272e16e0dc5d69fc2b44826a5db44d9243bb8f86",
+    "bytes": 9800
+  },
+  {
+    "path": "docs/trail-companions/index.html",
+    "sha256": "6c72928c14a40364f8e858b0e6494250929355037245b7451d1bebb3cb8bed40",
+    "bytes": 11274
+  }
+]

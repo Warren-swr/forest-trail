@@ -1,21 +1,22 @@
 {
   "id": "ranger",
   "fidelity": 3,
+  "style": "published-release-refinement/1",
+  "sourceRelease": "33439c37d453c87279797d7365d8874cff5b747a",
+  "revision": "03-release-refinement",
   "reference": "Toyota Hilux RN46 · 1979–1983",
-  "note": "Original reference-led expedition model; game coordinates +Y up, front -Z. See docs/VEHICLE-FIDELITY.md.",
-  "wheelBase": 2.8,
-  "trackX": 0.79,
-  "wheelRadius": 0.36,
-  "wheelWidth": 0.27,
+  "rigFile": "art/vehicle-ranger-rig.json",
+  "wheelBase": 2.62,
+  "trackX": 0.875,
+  "wheelRadius": 0.42,
+  "wheelWidth": 0.29,
   "spring": {
     "x": 0.44,
     "top": 0.46,
     "seat": 0.055,
     "kind": "leaf",
     "morphBump": 0.25,
-    "morphDroop": 0.2,
-    "leafHalf": 0.53,
-    "leafEyeY": 0.16
+    "morphDroop": 0.2
   },
   "shock": {
     "bottom": [
@@ -25,15 +26,11 @@
     ],
     "top": [
       0.265,
-      0.515,
-      -0.1
-    ]
+      0.41,
+      -0.4
+    ],
+    "barrelLength": 0.41
   },
-  "steeringWheel": [
-    -0.43,
-    0.96,
-    -0.28
-  ],
   "driveshaft": {
     "tcaseZ": 0.3,
     "tcaseY": 0.05,
@@ -43,71 +40,120 @@
   "lamps": {
     "head": [
       [
-        -0.605,
-        0.643,
-        -2.16
+        -0.62,
+        0.52,
+        -2.102
       ],
       [
-        0.605,
-        0.643,
-        -2.16
+        0.62,
+        0.52,
+        -2.102
+      ]
+    ],
+    "indicator": [
+      [
+        -0.62,
+        0.33,
+        -2.081
+      ],
+      [
+        0.62,
+        0.33,
+        -2.081
+      ]
+    ],
+    "bar": [
+      [
+        -0.32,
+        1.48,
+        0.413
+      ],
+      [
+        0.32,
+        1.48,
+        0.413
       ]
     ],
     "tail": [
       [
-        -0.78,
-        0.615,
-        2.56
+        -0.785,
+        0.65,
+        2.338
       ],
       [
-        0.78,
-        0.615,
-        2.56
+        0.785,
+        0.65,
+        2.338
       ]
     ],
     "brake": [
       [
-        -0.78,
-        0.615,
-        2.56
+        -0.785,
+        0.65,
+        2.338
       ],
       [
-        0.78,
-        0.615,
-        2.56
+        0.785,
+        0.65,
+        2.338
       ]
     ],
     "reverse": [
       [
-        -0.78,
-        0.49,
-        2.56
+        -0.785,
+        0.455,
+        2.338
       ],
       [
-        0.78,
-        0.49,
-        2.56
+        0.785,
+        0.455,
+        2.338
       ]
     ],
     "winch": [
       [
-        0,
-        0.324,
-        -2.295
+        0.0,
+        0.22,
+        -2.15
       ]
     ],
     "hitch": [
       [
-        0,
-        0.17,
-        2.7
+        0.0,
+        0.268,
+        2.505
       ]
     ]
   },
+  "lampSample": {
+    "tail": [
+      0.018,
+      0.018
+    ],
+    "reverse": [
+      0.018,
+      0.016
+    ]
+  },
+  "bodyBox": {
+    "min": [
+      -1.0099,
+      -0.13,
+      -2.179
+    ],
+    "max": [
+      1.0099,
+      1.8601,
+      2.533
+    ]
+  },
+  "lod": {
+    "near": 18,
+    "far": 23
+  },
   "tris": {
-    "Body": 152636,
-    "Glazing": 432,
-    "Wheel": 69132,
+    "Body": 116931,
+    "Wheel": 22957,
     "AxleFront": 2228,
     "AxleRear": 1960,
     "Spring": 1920,
@@ -116,24 +162,8 @@
     "BrakeFront": 1736,
     "BrakeRear": 2016,
     "Driveshaft": 160,
-    "SteeringWheel": 2160,
-    "Body_LOD1": 54947,
-    "Wheel_LOD1": 19355
+    "Wheel_LOD1": 2349,
+    "Body_LOD1": 46771
   },
-  "bodyBox": {
-    "min": [
-      -1.09,
-      0.002,
-      -2.2598
-    ],
-    "max": [
-      1.09,
-      1.465,
-      2.74
-    ]
-  },
-  "lod": {
-    "near": 18,
-    "far": 23
-  }
+  "build": "art/studies/trail-companions/03-release-refinement/ranger/build-20260926-111618-061926"
 }
