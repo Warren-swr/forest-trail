@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "views": 12,
+  "keyboardSlider": true,
+  "mobileWidth": 390,
+  "noHorizontalOverflow": true,
+  "videoDurations": [
+    8.016667,
+    8.111,
+    12.148
+  ],
+  "syncPlaybackDifference": 0.001658999999999966,
+  "errors": []
+}

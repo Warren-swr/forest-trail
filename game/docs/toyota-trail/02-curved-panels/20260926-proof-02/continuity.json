@@ -1,0 +1,13 @@
+{
+  "sameDrivingCode": [
+    "src/game/Game.ts",
+    "src/game/boot.ts",
+    "src/game/camera.ts",
+    "src/game/config.ts",
+    "src/game/physics/vehicle.ts",
+    "src/game/render/vehicleView.ts"
+  ],
+  "sameMountsAndDimensions": true,
+  "nearTriangles": 172252,
+  "farTriangles": 72110
+}

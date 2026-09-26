@@ -1,0 +1,554 @@
+{
+  "schema": "toyota-wheel-arch-balance/1",
+  "createdAt": "2026-09-26T08:14:04.119083+00:00",
+  "revision": "06-wheel-arch-balance",
+  "selectedBuild": "art/studies/toyota-trail/06-wheel-arch-balance/build-20260926-080506",
+  "selectedBrowserProof": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02",
+  "assetSha256": "5c9cdfa0e213cc7f0579ea8b2fcf6e0ea00489fc360ccfe510fab31a17e3caad",
+  "measurements": {
+    "flareWidthBefore": 0.1,
+    "flareWidthAfter": 0.055,
+    "bodyHeightChange": -0.05878180265426636,
+    "tyreDiameter": 0.88,
+    "normalSuspensionTravel": 0.38
+  },
+  "validation": {
+    "clearancePoses": 9,
+    "rigChecks": 9,
+    "provingChecks": 15,
+    "fullLapResets": 0,
+    "fullLapMetres": 1667,
+    "routeMetres": 1671,
+    "coplanarAndLampVisibility": true,
+    "browser": true,
+    "comparisonPage": true,
+    "preservedPreviousFiles": 105
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 9021,
+      "sha256": "aecff4a6ae6b0f8ae0d896720b29e6e2dfaa1b4374ef2798ace58b1b6aabd107"
+    },
+    {
+      "path": "art/ASSET_SPEC.md",
+      "bytes": 7239,
+      "sha256": "dde7f2024a4c4b4e44d73ecd61329695fcade447fcb6b756b45d457628684827"
+    },
+    {
+      "path": "art/asset-report.json",
+      "bytes": 81187,
+      "sha256": "89526c06f98b9afb05ad49e04f30fbd265cb375b1beb8a1695e67c942729289c"
+    },
+    {
+      "path": "art/blender/vehicle_toyota_trail.blend",
+      "bytes": 2975216,
+      "sha256": "5e5404b5920a63436de05a97b7b561b0a546d8929af09e9336afe57c846baf76"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/after.blend",
+      "bytes": 2975216,
+      "sha256": "5e5404b5920a63436de05a97b7b561b0a546d8929af09e9336afe57c846baf76"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/after.glb",
+      "bytes": 4286568,
+      "sha256": "5c9cdfa0e213cc7f0579ea8b2fcf6e0ea00489fc360ccfe510fab31a17e3caad"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/after.json",
+      "bytes": 2365,
+      "sha256": "7749973b21605480705965d7cd07ef8a9bc4e0a75a628d7049776d2333b515cf"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/baseline.json",
+      "bytes": 2020,
+      "sha256": "db0e75af79ba3b30a0558425e91c85035e20a8ab43664d78540723a7626f4e38"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/before-browser.cjs",
+      "bytes": 16760,
+      "sha256": "36801b80d9629a09b7ed5d912ef4fef1a9198e89d3355e7ec4684fc5b26c1fd4"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/before-config.ts",
+      "bytes": 10264,
+      "sha256": "99dfbf9c9ac6ad0a1cfc7f4a2c3e46315fc45b9b46ab3afb94b984fa22021a19"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/before-physics.ts",
+      "bytes": 25011,
+      "sha256": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/before-proving.json",
+      "bytes": 2623,
+      "sha256": "c26625c85554b6fef91e72fda541c03561bfac5cd6b235a407065e3e2ad27185"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/before-rig.json",
+      "bytes": 1824,
+      "sha256": "854d61fe6f9ff6b8aa3673a8af064d7901d02f20e6695fea4198d34fa2da5bcc"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/before-spec.json",
+      "bytes": 2575,
+      "sha256": "c500f5753c1a56dcf82d1afa134e72e844c4b47513430a6323417b20392b04ca"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/before-suspension-study.ts",
+      "bytes": 3292,
+      "sha256": "271928dcfcdc0fae3c7604b7ebe121217fa767b02b5afda581bc07ecc1f059a9"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/before.blend",
+      "bytes": 2972306,
+      "sha256": "dbe73b0875e3552d8f2c773fffc8a72b70c863e45961bf080d4a8f715cced22b"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/before.glb",
+      "bytes": 4278356,
+      "sha256": "62c4540f71709c816b6a9b7611b3b5865bb6a2da7274236b3d5a8ea1192a8a1a"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/before.json",
+      "bytes": 2359,
+      "sha256": "58f42ded93fe1c824b71359c0d123573a8f00af85bdb710ae24cb052ad10247a"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/before.py",
+      "bytes": 34234,
+      "sha256": "18821c4cad75a440914dda46be7de2854bbeec1d394fe41502e0a4e94631153e"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/browser-01.log",
+      "bytes": 614,
+      "sha256": "02c2c14a6318afc435563793eb137dad6171a252fcd350b87b2ef91e134813e9"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/browser-02.log",
+      "bytes": 614,
+      "sha256": "7036f3e02ed0dc3c5d2797c63c5e5fdb581df99618e44e5f347fda7909f623e1"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/build-01.log",
+      "bytes": 4006,
+      "sha256": "20d1a0dffa09e14b311f44b13e988245095857a40d9270ae0d8475186e77c4bd"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/build-02.log",
+      "bytes": 4006,
+      "sha256": "a1065b508287c1f32fb86166da670fd837c70dbcd122a1a92032d4ec85e6a7bc"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/build-20260926-080506/clearance.json",
+      "bytes": 193,
+      "sha256": "18167900d316321139c760c1da69dba53de2d35ae01f16c37dff5acf91c3236d"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/build-20260926-080506/generator.py",
+      "bytes": 35151,
+      "sha256": "59cd46d43326d3b211189c8f12f2c0aa1bca2109d7c7cbbf2565be6bcacc096f"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/build-20260926-080506/rig.json",
+      "bytes": 456,
+      "sha256": "e95c1d0e1b75ddd6d8f452b1262641460d56af83602a4054263a014c847793e6"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/build-20260926-080506/study-front.png",
+      "bytes": 1429776,
+      "sha256": "ad7588973b913a8d954db313599f899d7d3a43138946a3cf9e1b6e4ab7b5f5a8"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/build-20260926-080506/study-rear.png",
+      "bytes": 1422626,
+      "sha256": "c0efecacad011040a05040fc31e17dc2337fdf27d8fefe1aa27363110e7e14bc"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/build-20260926-080506/study-side.png",
+      "bytes": 1387367,
+      "sha256": "2ff45f23374efe4e0969339df97b75f2d8fa47c02f4791750183491a6d0fa490"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/build-20260926-080506/study-under.png",
+      "bytes": 1446024,
+      "sha256": "5307cead820175e9c2edc36ef424afd50724c9e86a460e03f449332cea2caadc"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/geometry-01.json",
+      "bytes": 1431,
+      "sha256": "b84a39830c7c53b78dd72813a08c1f2107d07b52f83f254af00f47687aa34d8c"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/geometry-02.json",
+      "bytes": 1431,
+      "sha256": "b84a39830c7c53b78dd72813a08c1f2107d07b52f83f254af00f47687aa34d8c"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/lap-01.log",
+      "bytes": 574,
+      "sha256": "78444777997852938964246e18590922a60ab1cddb0d50a89ec4773c133da6fb"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/production-build-01.log",
+      "bytes": 1608,
+      "sha256": "73b9bbe6e30832497c407e45ed98ab75ec252aec6c07496887127ea8519403f3"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/production-build-02.log",
+      "bytes": 1608,
+      "sha256": "13cc17996027bb5ff14eccc8cc7a566458b065547b4d8f5d6cd7f94b27fb95d1"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/proving-01.log",
+      "bytes": 1943,
+      "sha256": "79e3dbf17b5758dee43a9913826e5a9f05c0d50ad931fdb540839ec3472634fd"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/rig-01.log",
+      "bytes": 108,
+      "sha256": "03fc988a77045f85e3bf6761f79451c6c3aa58f645441f59a9ec4c75446870c3"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/rig-02.log",
+      "bytes": 108,
+      "sha256": "03fc988a77045f85e3bf6761f79451c6c3aa58f645441f59a9ec4c75446870c3"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/sources/art/blender/common.py",
+      "bytes": 18765,
+      "sha256": "2ebdbcae2758fd5f8a6d66e0a63d93def0cae5d172980e4aa0c8df0cc0e1ae70"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/sources/art/blender/reference/vehicle_toyota_v2.py",
+      "bytes": 37803,
+      "sha256": "a7cf4742af572ab567abcdae0b7bb2a0e209d680beccdd2dc4b096fe0b1edb4b"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/sources/art/blender/vehicle_check.py",
+      "bytes": 5520,
+      "sha256": "4f4660328e228f9e88575b0e890728c9c9556edffa2f663251bb0b9be73e47a5"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/sources/art/blender/vehicle_fidelity.py",
+      "bytes": 61681,
+      "sha256": "da1f2f29d690284acba33b120c98b2eae998af003aa04dff9b235ce1803ac97a"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/sources/art/blender/vehicle_parts.py",
+      "bytes": 22761,
+      "sha256": "c9a11f755c21d96cd1c793413fa540be2427e83592461451e1ac8b00b98808ec"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/sources/art/blender/vehicle_toyota_trail.py",
+      "bytes": 35151,
+      "sha256": "59cd46d43326d3b211189c8f12f2c0aa1bca2109d7c7cbbf2565be6bcacc096f"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/sources/src/game/config.ts",
+      "bytes": 10261,
+      "sha256": "dfdc2a3fe39a0c9041b18dbaf74f2c94fe23755ee5ae9a214390767e6bfa4cca"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/sources/src/game/physics/vehicle.ts",
+      "bytes": 25011,
+      "sha256": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/sources/src/game/render/vehicleView.ts",
+      "bytes": 18620,
+      "sha256": "ad98b3a3045134cdafd5fadb7046e0ed74e71a1cea03344a6ff4f22d3f369cc6"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/sources/tools/toyota-geometry-check.py",
+      "bytes": 5031,
+      "sha256": "0a7ca8213e932d805d811ca6a95829ce746253b74594838e3ab9018d8e43d563"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/sources/tools/toyota-study-browser.cjs",
+      "bytes": 16846,
+      "sha256": "668898cc7d33a8e64d5fd2ef81bf8228ded7c9bda968465f5465c6af0e734552"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/sources/tools/toyota-surface-check.py",
+      "bytes": 6744,
+      "sha256": "3b4b34f276cc2bdb71457d559a13594cbbeb1b6e6ec8ec851e3c658a64fece96"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/sources/tools/toyota-suspension-study.ts",
+      "bytes": 3391,
+      "sha256": "de5f9246ddd740a088ed0611ce2f66682ac41275876d595cf07e0f23b003947b"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/sources/tools/vehicle-rig-test.ts",
+      "bytes": 7125,
+      "sha256": "56b9002b37353611221202a40452e4cb61d88de22bd41890ac19e8b1d5694f19"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/surfaces-01.json",
+      "bytes": 6085,
+      "sha256": "daf7c76720e7813aba44746a7a9d7faa578a9ee131a3689cb59a18a73faca4a9"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/surfaces-01.log",
+      "bytes": 274,
+      "sha256": "03a5b242615bb73acdf0ad873948a6a3ef8fa05f9c1f8b41252b627cd54f8915"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/surfaces-02.json",
+      "bytes": 6085,
+      "sha256": "daf7c76720e7813aba44746a7a9d7faa578a9ee131a3689cb59a18a73faca4a9"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/surfaces-02.log",
+      "bytes": 274,
+      "sha256": "03a5b242615bb73acdf0ad873948a6a3ef8fa05f9c1f8b41252b627cd54f8915"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/suspension-01.json",
+      "bytes": 22668,
+      "sha256": "3bd19432d9afc3d03b5b8c0706f20ddc3dc2c08bf881e74f9d8904c619d459dc"
+    },
+    {
+      "path": "art/studies/toyota-trail/06-wheel-arch-balance/suspension-01.log",
+      "bytes": 965,
+      "sha256": "dec6fd322fef8536f90d393e2c82339373a332cfb65a697fab1536f57d982dcc"
+    },
+    {
+      "path": "docs/TOYOTA-ARCH-BALANCE.md",
+      "bytes": 3846,
+      "sha256": "3f6fc8e936f2dfb40bef11b2f441ac79b68261482be1ed5562982f145d1a5179"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/browser-report.json",
+      "bytes": 12334,
+      "sha256": "672bc228d75c5a33d753e85918231d51b06da33b2a6d87c01a8bcc5a8275bbcf"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/clearance.json",
+      "bytes": 193,
+      "sha256": "18167900d316321139c760c1da69dba53de2d35ae01f16c37dff5acf91c3236d"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/comparison-mobile.png",
+      "bytes": 366457,
+      "sha256": "ecbef32f37242e2515ed89901aac17e595c77df3fc56a18f34caec9f8dcbdd1c"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/geometry-check.json",
+      "bytes": 1431,
+      "sha256": "b84a39830c7c53b78dd72813a08c1f2107d07b52f83f254af00f47687aa34d8c"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/lap.log",
+      "bytes": 574,
+      "sha256": "78444777997852938964246e18590922a60ab1cddb0d50a89ec4773c133da6fb"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-detail.png",
+      "bytes": 2755023,
+      "sha256": "681a3362b266fd4cad3257253f25be436243e8aa8429440217344620abe8ddca"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-driving.png",
+      "bytes": 3082171,
+      "sha256": "76d1fcfad2cfad4996292773a173ee92d7ee1e0db616aa219b424bbe893fcb2b"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-front-flat.png",
+      "bytes": 2769794,
+      "sha256": "2253300d4d14b629847c13acccaf51f23304ea08b360bce9b967ba4cd3c2ca2d"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-front.png",
+      "bytes": 3058698,
+      "sha256": "b5ef95ca3b3547f12e217861f1e20833c137afab1d86019f6429c2f6d6a0930b"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-hood.png",
+      "bytes": 2323109,
+      "sha256": "9ff544095e4bfc4c9f2b5fa56d3804293f472ce6d36e2d5c6e8ea58ff565412d"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-night.png",
+      "bytes": 2432818,
+      "sha256": "af16630c4006a210889f8456407cd4a255550114844b22aaea97f815cbabe771"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-pillar.png",
+      "bytes": 1975369,
+      "sha256": "71b298342096108ae7b9245775d82adc1a4ef9829cb12b4b2c3e33e142cd1606"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-rear-flat.png",
+      "bytes": 2821353,
+      "sha256": "4959fbf9ad06dfbb51929c4f571e959081822613e958eaa6072d2a9568cb67eb"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-rear-night.png",
+      "bytes": 2202879,
+      "sha256": "22395097f0b7b44c3bb6d0860c32c00b280563ba1c1c2d29b5c263d78012ee7d"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-rear.png",
+      "bytes": 2831413,
+      "sha256": "7fb2ddb55dc6a8d257dfac3dda5f360817c739423f8e898408eb6855a98d6298"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-side.png",
+      "bytes": 3072094,
+      "sha256": "1b98ac59bb6226fc614789d6e9b15faed5239b9f5b5583f27bcdc07270afa147"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-tail-detail.png",
+      "bytes": 1983587,
+      "sha256": "cabb7dc54c00baf731fa5a762ebb7b54584a5cfa46101269b1b5f924064e8a67"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-tail-orbit.png",
+      "bytes": 2236351,
+      "sha256": "35fc9d38c8d0b5a258aa82cb42adfaef3c3c41b5ba3a165e804ffbbd4492f540"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-tail-orbit.webm",
+      "bytes": 7262160,
+      "sha256": "bf76516e9c23f082cd71c9c53c33b58ba5738110141f0ff735a3741f66ef48e6"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/legacy-wheel.png",
+      "bytes": 1978188,
+      "sha256": "1f6c09cc43080ab7b825565714dc8ff60df364843ff96f0f89e82c506c030993"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/page-check.json",
+      "bytes": 157,
+      "sha256": "a8730327f26a2cacef03a21f086d7f24a932aaf1da963302c0532d37cfd019e9"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/proving.log",
+      "bytes": 1943,
+      "sha256": "79e3dbf17b5758dee43a9913826e5a9f05c0d50ad931fdb540839ec3472634fd"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/rig-results.json",
+      "bytes": 1822,
+      "sha256": "d3bbef0fba7c65e029a1722d3a411bbfb1780ae649b67e1db8210e1db85a8d7e"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-articulation.png",
+      "bytes": 2646275,
+      "sha256": "d64cc6ed9ab87b28a607857f9363bc3825cf6cf60bb2fb702bf50f5bdf4016d8"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-detail.png",
+      "bytes": 2767167,
+      "sha256": "79ecbee430dbbc5e7d8f3fb7262cef7888dd5cb270f24e3786d0488bb6e54e10"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-driving.png",
+      "bytes": 3084483,
+      "sha256": "ec8a059854b000cf2d2ce4f87afc111f4c11269d1c3659477bc2dcb7d9527ea4"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-front-flat.png",
+      "bytes": 2784088,
+      "sha256": "848f7477f0d9d454e58c738dd581eefca6ea859a906fa9a78e032297dc205847"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-front.png",
+      "bytes": 3059153,
+      "sha256": "3446342b877fc3a4946c303c55950d6b3ea4618408e76004c48e9950e7c97e14"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-hood.png",
+      "bytes": 2349187,
+      "sha256": "e87e04614da358a4467338bded628c5181631fd457f0f7c6b2a9c1aa85fc4cd9"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-night.png",
+      "bytes": 2447866,
+      "sha256": "c4a6d493dd039a70583608eed35b1ab6533475b633c2d60d8ec5449859ac43b8"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-pillar.png",
+      "bytes": 1998800,
+      "sha256": "cb401037bb4a8a6b4b18051a319215cf58d10e5400889f671d2f2d3887715b29"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-rear-flat.png",
+      "bytes": 2830354,
+      "sha256": "23e156fcb6a086b90b20c800dbce1a0551f887c368d41a9f2fd89685d2cc4e40"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-rear-night.png",
+      "bytes": 2208558,
+      "sha256": "ddb6fefe92ea8e0c78b54c3089fa9ea2cadf25fa428399b981d14ba2f60caaf7"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-rear.png",
+      "bytes": 2837446,
+      "sha256": "bc285734c4f0b84aa93fa03d04911b1d4bb9d9e9991da5a959bf09ee2680441c"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-side.png",
+      "bytes": 3066719,
+      "sha256": "37578e28f851dbbe5f6c3025f531cf773e8bb1010b1d3f8d2db7c731ff2c6d50"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-tail-detail.png",
+      "bytes": 2010464,
+      "sha256": "04b025cc8198333ba42c303454a8bb4e02d8ba10478db6ba74b16def41505375"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-tail-orbit.png",
+      "bytes": 2234171,
+      "sha256": "0582c1f2235579ae7cdd15ebecdd74948c4cb4edc661468c78df9064330c8c52"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-tail-orbit.webm",
+      "bytes": 7306314,
+      "sha256": "3c5cee30d7430796e88eb264dd507a00ec6e088c21c6f2c19951516d73394e55"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/sample-wheel.png",
+      "bytes": 1968065,
+      "sha256": "515f29b482455a233abd243296fc6b37f9f52a12fe79f26ab45e1cd90042e911"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/surfaces-after.json",
+      "bytes": 6085,
+      "sha256": "daf7c76720e7813aba44746a7a9d7faa578a9ee131a3689cb59a18a73faca4a9"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/suspension-study.json",
+      "bytes": 22668,
+      "sha256": "3bd19432d9afc3d03b5b8c0706f20ddc3dc2c08bf881e74f9d8904c619d459dc"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/suspension.mp4",
+      "bytes": 15383264,
+      "sha256": "dbbcce073a220022428a3fa2af571085f6d2c61d34349519f6fe5a6f35d95b7d"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/suspension.webm",
+      "bytes": 10512823,
+      "sha256": "a51739076a69851aee7be6fa93c90d0000c88286a124f2ce610a9b88115be88a"
+    },
+    {
+      "path": "docs/toyota-trail/06-wheel-arch-balance/index.html",
+      "bytes": 7985,
+      "sha256": "b26316e259f7f58b90e5422de1456bab2b84667e48e136400359812b58fb6d8e"
+    },
+    {
+      "path": "public/assets/models/vehicle_toyota_trail.glb",
+      "bytes": 4286568,
+      "sha256": "5c9cdfa0e213cc7f0579ea8b2fcf6e0ea00489fc360ccfe510fab31a17e3caad"
+    },
+    {
+      "path": "public/assets/models/vehicle_toyota_trail.json",
+      "bytes": 2365,
+      "sha256": "7749973b21605480705965d7cd07ef8a9bc4e0a75a628d7049776d2333b515cf"
+    }
+  ]
+}

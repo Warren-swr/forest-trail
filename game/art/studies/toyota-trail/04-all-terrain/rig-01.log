@@ -1,0 +1,5 @@
+
+> forest-trail@1.0.0 test:rig
+> tsx tools/vehicle-rig-test.ts
+
+9/9 vehicle asset and physics checks passed

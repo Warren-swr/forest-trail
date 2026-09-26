@@ -1,0 +1,18 @@
+{
+  "id": "toyota",
+  "fidelity": 3,
+  "R": 0.4,
+  "W": 0.3,
+  "wheelbase": 2.73,
+  "track_x": 0.86,
+  "spring_x": 0.47,
+  "spring_top": 0.48,
+  "spring_seat": 0.055,
+  "pinion_y": 0.235,
+  "pinion_z": 0.025,
+  "tcase_y": 0.3,
+  "tcase_z": 0.05,
+  "bump": 0.25,
+  "droop": 0.13,
+  "lock": 35.3
+}

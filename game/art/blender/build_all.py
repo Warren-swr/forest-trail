@@ -13,7 +13,7 @@ sys.path.insert(0, HERE)
 import common as C
 
 # start clean: remove the GLBs and previews this pipeline owns
-OWNED = ['vehicle_scout', 'vehicle_toyota', 'vehicle_ranger', 'pine_tall_a', 'pine_tall_b', 'pine_mid', 'pine_young', 'aspen_gold', 'snag', 'bush_a',
+OWNED = ['vehicle_scout', 'vehicle_toyota', 'vehicle_toyota_trail', 'vehicle_ranger', 'pine_tall_a', 'pine_tall_b', 'pine_mid', 'pine_young', 'aspen_gold', 'snag', 'bush_a',
          'bush_b', 'fern', 'grass_tuft', 'rock_a', 'rock_b', 'rock_c', 'rock_slab', 'rock_post', 'pebbles', 'log',
          'stump', 'cabin', 'lookout', 'tent', 'campfire', 'bench_log', 'picnic_table', 'signpost', 'toolbox',
          'shed', 'dock', 'fence', 'bridge_plank',
@@ -33,11 +33,11 @@ for name in OWNED:
 for p in glob.glob(os.path.join(C.PREVIEWS, '*.png')):
     os.remove(p)
 
-import vehicle_scout, vehicle_toyota, vehicle_ranger, vegetation, rocks, props, nature2, props2, report
+import vehicle_scout, vehicle_toyota, vehicle_toyota_trail, vehicle_ranger, vegetation, rocks, props, nature2, props2, report
 
 t0 = time.time()
 summary = {}
-for mod in (vehicle_scout, vehicle_toyota, vehicle_ranger, vegetation, rocks, props, nature2, props2):
+for mod in (vehicle_scout, vehicle_toyota, vehicle_toyota_trail, vehicle_ranger, vegetation, rocks, props, nature2, props2):
     t = time.time()
     summary[mod.__name__] = mod.main()
     print('BUILD %-10s done in %.1fs' % (mod.__name__, time.time() - t))

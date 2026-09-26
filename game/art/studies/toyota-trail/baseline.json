@@ -1,0 +1,6 @@
+{
+  "commit": "33439c37d453c87279797d7365d8874cff5b747a",
+  "generatorSha256": "a7cf4742af572ab567abcdae0b7bb2a0e209d680beccdd2dc4b096fe0b1edb4b",
+  "source": "game/art/blender/vehicle_toyota.py",
+  "scope": "Toyota only; old model and source retained without editing"
+}

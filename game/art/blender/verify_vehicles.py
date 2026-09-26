@@ -1,0 +1,26 @@
+"""Validate the actual saved meshes in nine steering/suspension poses per car.
+
+    blender --background --python art/blender/verify_vehicles.py
+
+Uses evaluated shape keys, not the undeformed leaf-spring base mesh.
+"""
+import bpy, os, sys, json
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import common as C
+import vehicle_check
+
+results = {}
+for vid in ('scout', 'toyota', 'ranger'):
+    bpy.ops.wm.open_mainfile(filepath=os.path.join(C.HERE, 'vehicle_' + vid + '.blend'))
+    with open(os.path.join(C.ART, 'vehicle-' + vid + '-rig.json')) as f:
+        dims = json.load(f)
+    names = ('Body', 'Wheel', 'Spring', 'Glazing', 'SteeringWheel', 'AxleFront', 'AxleRear',
+             'BrakeFront', 'BrakeRear', 'ShockBody', 'ShockRod', 'Driveshaft')
+    parts = {n: bpy.data.objects[n] for n in names}
+    results[vid] = vehicle_check.run(parts, dims, shrink=1.0)
+with open(os.path.join(C.ART, 'vehicle-clearance.json'), 'w') as f:
+    json.dump(results, f, indent=2)
+failed = sum(bool(pairs) for poses in results.values() for pairs in poses.values())
+print('CLEARANCE SUMMARY:', failed, 'of 27 poses have intersections', flush=True)
+if failed:
+    raise RuntimeError('Vehicle clearance needs attention; see art/vehicle-clearance.json')

@@ -1,0 +1,66 @@
+
+> forest-trail@1.0.0 assets:toyota
+> blender --background --threads 6 --python-exit-code 1 --python art/blender/vehicle_toyota_trail.py
+
+INFO Draco mesh compression is available, use library at /data00/blender-4.5.12/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+14:15:19 | INFO: Starting glTF 2.0 export
+14:15:19 | INFO: Extracting primitive: Body
+14:15:19 | INFO: Primitives created: 20
+14:15:19 | INFO: Extracting primitive: Wheel
+14:15:19 | INFO: Primitives created: 4
+14:15:19 | INFO: Extracting primitive: AxleFront
+14:15:19 | INFO: Primitives created: 4
+14:15:19 | INFO: Extracting primitive: AxleRear
+14:15:19 | INFO: Primitives created: 2
+14:15:19 | INFO: Extracting primitive: Spring
+14:15:19 | INFO: Primitives created: 1
+14:15:19 | INFO: Extracting primitive: ShockBody
+14:15:19 | INFO: Primitives created: 3
+14:15:19 | INFO: Extracting primitive: ShockRod
+14:15:19 | INFO: Primitives created: 1
+14:15:19 | INFO: Extracting primitive: BrakeFront
+14:15:19 | INFO: Primitives created: 2
+14:15:19 | INFO: Extracting primitive: BrakeRear
+14:15:19 | INFO: Primitives created: 2
+14:15:19 | INFO: Extracting primitive: Driveshaft
+14:15:19 | INFO: Primitives created: 2
+14:15:19 | INFO: Extracting primitive: Body.001
+14:15:19 | INFO: Primitives created: 20
+14:15:19 | INFO: Extracting primitive: Wheel_LOD1
+14:15:19 | INFO: Primitives created: 3
+14:15:19 | INFO: Finished glTF 2.0 export in 0.1756744384765625 s
+
+CLEARANCE toyota {'rest': 'ok', 'bump_all': 'ok', 'droop_all': 'ok', 'cross_axle': 'ok', 'cross_axle_2': 'ok', 'lock_left_bump': 'ok', 'lock_right_bump': 'ok', 'lock_left_flex': 'ok', 'lock_right_flex': 'ok'}
+TRAIL STUDY {"Body": 81416, "Wheel": 20512, "AxleFront": 2228, "AxleRear": 1960, "Spring": 1920, "ShockBody": 512, "ShockRod": 76, "BrakeFront": 1736, "BrakeRear": 2016, "Driveshaft": 160, "Body_LOD1": 35822, "Wheel_LOD1": 1598}
+Blender 4.5.12 LTS (hash 84afd5f785f7 built 2026-07-21 01:31:22)
+Fra:1 Mem:90.10M (Peak 94.96M) | Time:00:00.73 | Rendering 1 / 64 samples
+Fra:1 Mem:90.10M (Peak 94.96M) | Time:00:01.00 | Rendering 25 / 64 samples
+Fra:1 Mem:90.10M (Peak 94.96M) | Time:00:01.20 | Rendering 50 / 64 samples
+Fra:1 Mem:90.10M (Peak 94.96M) | Time:00:01.32 | Rendering 64 / 64 samples
+Saved: '/home/tiger/projects/coding-agent-evals/research/game-dev/forest-trail/game/art/studies/toyota-trail/04-all-terrain/build-20260926-061517/study-front.png'
+Time: 00:01.58 (Saving: 00:00.22)
+
+Fra:1 Mem:90.10M (Peak 94.98M) | Time:00:00.03 | Rendering 1 / 64 samples
+Fra:1 Mem:90.10M (Peak 94.98M) | Time:00:00.21 | Rendering 25 / 64 samples
+Fra:1 Mem:90.10M (Peak 94.98M) | Time:00:00.43 | Rendering 50 / 64 samples
+Fra:1 Mem:90.10M (Peak 94.98M) | Time:00:00.53 | Rendering 64 / 64 samples
+Saved: '/home/tiger/projects/coding-agent-evals/research/game-dev/forest-trail/game/art/studies/toyota-trail/04-all-terrain/build-20260926-061517/study-side.png'
+Time: 00:00.69 (Saving: 00:00.12)
+
+Fra:1 Mem:90.10M (Peak 94.98M) | Time:00:00.03 | Rendering 1 / 64 samples
+Fra:1 Mem:90.10M (Peak 94.98M) | Time:00:00.24 | Rendering 25 / 64 samples
+Fra:1 Mem:90.10M (Peak 94.98M) | Time:00:00.44 | Rendering 50 / 64 samples
+Fra:1 Mem:90.10M (Peak 94.98M) | Time:00:00.55 | Rendering 64 / 64 samples
+Saved: '/home/tiger/projects/coding-agent-evals/research/game-dev/forest-trail/game/art/studies/toyota-trail/04-all-terrain/build-20260926-061517/study-rear.png'
+Time: 00:00.72 (Saving: 00:00.12)
+
+Fra:1 Mem:90.02M (Peak 94.90M) | Time:00:00.02 | Rendering 1 / 64 samples
+Fra:1 Mem:90.02M (Peak 94.90M) | Time:00:00.16 | Rendering 25 / 64 samples
+Fra:1 Mem:90.02M (Peak 94.90M) | Time:00:00.30 | Rendering 50 / 64 samples
+Fra:1 Mem:90.02M (Peak 94.90M) | Time:00:00.37 | Rendering 64 / 64 samples
+Saved: '/home/tiger/projects/coding-agent-evals/research/game-dev/forest-trail/game/art/studies/toyota-trail/04-all-terrain/build-20260926-061517/study-under.png'
+Time: 00:00.54 (Saving: 00:00.13)
+
+Info: Saved as "vehicle_toyota_trail.blend"
+
+Blender quit

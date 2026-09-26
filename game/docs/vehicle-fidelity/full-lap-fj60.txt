@@ -1,0 +1,11 @@
+t=30 s=144 travelled=134 kmh=19.8 pos=(-200,22)
+t=60 s=317 travelled=307 kmh=21.5 pos=(-124,-96)
+t=90 s=495 travelled=485 kmh=20.6 pos=(27,-13)
+t=120 s=632 travelled=622 kmh=14.3 pos=(100,-46)
+t=150 s=762 travelled=752 kmh=19.1 pos=(148,-112)
+t=180 s=886 travelled=876 kmh=7.4 pos=(139,-212)
+t=210 s=1049 travelled=1039 kmh=21.8 pos=(241,-126)
+t=240 s=1231 travelled=1221 kmh=21.7 pos=(206,52)
+t=270 s=1404 travelled=1394 kmh=9.2 pos=(87,166)
+t=300 s=1528 travelled=1518 kmh=21.1 pos=(-36,179)
+lap: 1667/1671 m in 326 s, resets 0, maxStuck 0.22 s, minUp 0.96, max 22.3 km/h

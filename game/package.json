@@ -9,10 +9,13 @@
     "preview": "vite preview",
     "typecheck": "tsc -b",
     "test:proving": "tsx tools/proving.ts scout && tsx tools/proving.ts toyota && tsx tools/proving.ts ranger",
+    "test:rig": "tsx tools/vehicle-rig-test.ts",
+    "test:toyota:browser": "node tools/toyota-study-browser.cjs",
     "test:lap": "tsx tools/sim-test.ts lap",
     "test:drive": "tsx tools/sim-test.ts basic && tsx tools/sim-test.ts mud && tsx tools/sim-test.ts rock",
     "map": "tsx tools/map-preview.ts docs/map-preview.png",
-    "assets": "blender --background --python art/blender/build_all.py"
+    "assets": "blender --background --python art/blender/build_all.py",
+    "assets:toyota": "blender --background --threads 6 --python-exit-code 1 --python art/blender/vehicle_toyota_trail.py"
   },
   "dependencies": {
     "@dimforge/rapier3d-compat": "^0.20.0",

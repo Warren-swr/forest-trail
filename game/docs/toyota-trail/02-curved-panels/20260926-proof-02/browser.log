@@ -1,0 +1,13 @@
+
+> forest-trail@1.0.0 test:toyota:browser
+> node tools/toyota-study-browser.cjs
+
+Captured pair: front
+Captured pair: side
+Captured pair: rear
+Captured pair: detail
+Captured pair: hood
+Captured pair: pillar
+Captured pair: driving
+Captured pair: night
+PASS Toyota sample browser acceptance: /home/tiger/projects/coding-agent-evals/research/game-dev/forest-trail/game/docs/toyota-trail/02-curved-panels/20260926-proof-02

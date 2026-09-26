@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "views": 6,
+  "slider": "keyboard endpoints passed",
+  "mobile": {
+    "width": 390,
+    "overflow": false
+  },
+  "video": {
+    "time": 0.541053,
+    "width": 1600,
+    "height": 1000,
+    "duration": 12.1
+  },
+  "errors": [],
+  "capturedAt": "2026-09-26T04:42:06.394Z"
+}

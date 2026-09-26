@@ -1,0 +1,337 @@
+{
+  "model": "art/studies/toyota-trail/05-tailgate-finish/before.glb",
+  "method": "Cross-material, same-facing axis-aligned triangles, <=10 micrometre plane gap, >0.1 mm2 overlapping area, outward BVH visibility ray.",
+  "meshes": [
+    {
+      "node": "Body",
+      "exposedOverlaps": 7,
+      "totalAreaM2": 0.0017364811466223928,
+      "overlaps": [
+        {
+          "materials": [
+            "LampRear",
+            "Trim"
+          ],
+          "position": [
+            -0.7930119037628174,
+            0.44466665387153625,
+            2.1500000953674316
+          ],
+          "axis": 2,
+          "areaM2": 3.9232190516325094e-05
+        },
+        {
+          "materials": [
+            "LampRear",
+            "Trim"
+          ],
+          "position": [
+            -0.8063192963600159,
+            0.4424999952316284,
+            2.1500000953674316
+          ],
+          "axis": 2,
+          "areaM2": 0.0003198369962280623
+        },
+        {
+          "materials": [
+            "LampRear",
+            "Trim"
+          ],
+          "position": [
+            -0.8204137682914734,
+            0.4403333365917206,
+            2.1500000953674316
+          ],
+          "axis": 2,
+          "areaM2": 6.993109172842571e-05
+        },
+        {
+          "materials": [
+            "LampReverse",
+            "Trim"
+          ],
+          "position": [
+            -0.792344868183136,
+            0.41237500309944153,
+            2.1500000953674316
+          ],
+          "axis": 2,
+          "areaM2": 9.83417124431063e-06
+        },
+        {
+          "materials": [
+            "LampReverse",
+            "Trim"
+          ],
+          "position": [
+            -0.8050069212913513,
+            0.40382498502731323,
+            2.1500000953674316
+          ],
+          "axis": 2,
+          "areaM2": 0.0007491666996985169
+        },
+        {
+          "materials": [
+            "LampReverse",
+            "Trim"
+          ],
+          "position": [
+            0.8176551461219788,
+            0.406333327293396,
+            2.1500000953674316
+          ],
+          "axis": 2,
+          "areaM2": 0.0002188969490947157
+        },
+        {
+          "materials": [
+            "LampReverse",
+            "Trim"
+          ],
+          "position": [
+            0.8073179125785828,
+            0.4024999737739563,
+            2.1500000953674316
+          ],
+          "axis": 2,
+          "areaM2": 0.00032958304811203654
+        }
+      ],
+      "rearLampVisibility": [
+        {
+          "kind": "tail",
+          "side": 0,
+          "expected": "LampRear",
+          "hitMaterials": [
+            "LampRear",
+            "LampRear",
+            "LampRear",
+            "LampRear",
+            "LampRear",
+            "LampRear",
+            "LampRear",
+            "LampRear",
+            "LampRear"
+          ],
+          "visible": true
+        },
+        {
+          "kind": "tail",
+          "side": 1,
+          "expected": "LampRear",
+          "hitMaterials": [
+            "Tire",
+            "Tire",
+            "Tire",
+            "Tire",
+            "Tire",
+            "Tire",
+            "LampRear",
+            "LampRear",
+            "LampRear"
+          ],
+          "visible": false
+        },
+        {
+          "kind": "reverse",
+          "side": 0,
+          "expected": "LampReverse",
+          "hitMaterials": [
+            "Trim",
+            "Trim",
+            "LampReverse",
+            "Trim",
+            "Trim",
+            "LampReverse",
+            "Trim",
+            "Trim",
+            "Trim"
+          ],
+          "visible": false
+        },
+        {
+          "kind": "reverse",
+          "side": 1,
+          "expected": "LampReverse",
+          "hitMaterials": [
+            "Trim",
+            "Trim",
+            "Tire",
+            "Trim",
+            "Trim",
+            "LampReverse",
+            "Trim",
+            "Trim",
+            "LampReverse"
+          ],
+          "visible": false
+        }
+      ]
+    },
+    {
+      "node": "Body_LOD1",
+      "exposedOverlaps": 6,
+      "totalAreaM2": 0.0020070989408425555,
+      "overlaps": [
+        {
+          "materials": [
+            "LampRear",
+            "Trim"
+          ],
+          "position": [
+            -0.8075000047683716,
+            0.4424999952316284,
+            2.1500000953674316
+          ],
+          "axis": 2,
+          "areaM2": 0.0004290002784728131
+        },
+        {
+          "materials": [
+            "LampRear",
+            "Trim"
+          ],
+          "position": [
+            0.8204137682914734,
+            0.4403333365917206,
+            2.1500000953674316
+          ],
+          "axis": 2,
+          "areaM2": 6.993109172842571e-05
+        },
+        {
+          "materials": [
+            "LampReverse",
+            "Trim"
+          ],
+          "position": [
+            -0.7971020340919495,
+            0.398666650056839,
+            2.1500000953674316
+          ],
+          "axis": 2,
+          "areaM2": 0.0002105208737360753
+        },
+        {
+          "materials": [
+            "LampReverse",
+            "Trim"
+          ],
+          "position": [
+            -0.8073179125785828,
+            0.4024999737739563,
+            2.1500000953674316
+          ],
+          "axis": 2,
+          "areaM2": 0.00032958304811203654
+        },
+        {
+          "materials": [
+            "LampReverse",
+            "Trim"
+          ],
+          "position": [
+            -0.8176551461219788,
+            0.406333327293396,
+            2.1500000953674316
+          ],
+          "axis": 2,
+          "areaM2": 0.0002188969490947157
+        },
+        {
+          "materials": [
+            "LampReverse",
+            "Trim"
+          ],
+          "position": [
+            0.8050069212913513,
+            0.40382498502731323,
+            2.1500000953674316
+          ],
+          "axis": 2,
+          "areaM2": 0.0007491666996984891
+        }
+      ],
+      "rearLampVisibility": [
+        {
+          "kind": "tail",
+          "side": 0,
+          "expected": "LampRear",
+          "hitMaterials": [
+            "LampRear",
+            "LampRear",
+            "LampRear",
+            "LampRear",
+            "LampRear",
+            "LampRear",
+            "LampRear",
+            "LampRear",
+            "LampRear"
+          ],
+          "visible": true
+        },
+        {
+          "kind": "tail",
+          "side": 1,
+          "expected": "LampRear",
+          "hitMaterials": [
+            "Tire",
+            "Tire",
+            "Tire",
+            "Tire",
+            "Tire",
+            "Tire",
+            "LampRear",
+            "LampRear",
+            "LampRear"
+          ],
+          "visible": false
+        },
+        {
+          "kind": "reverse",
+          "side": 0,
+          "expected": "LampReverse",
+          "hitMaterials": [
+            "Trim",
+            "Trim",
+            "LampReverse",
+            "Trim",
+            "Trim",
+            "LampReverse",
+            "Trim",
+            "Trim",
+            "Trim"
+          ],
+          "visible": false
+        },
+        {
+          "kind": "reverse",
+          "side": 1,
+          "expected": "LampReverse",
+          "hitMaterials": [
+            "Trim",
+            "Trim",
+            "Tire",
+            "Trim",
+            "Trim",
+            "LampReverse",
+            "Trim",
+            "Trim",
+            "LampReverse"
+          ],
+          "visible": false
+        }
+      ]
+    },
+    {
+      "node": "Wheel",
+      "exposedOverlaps": 0,
+      "totalAreaM2": 0,
+      "overlaps": [],
+      "rearLampVisibility": []
+    }
+  ],
+  "passed": false
+}

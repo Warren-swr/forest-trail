@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forest Trail · 尾灯闪烁修复与细节打磨</title>
+<base href="./20260926-proof-02/">
+<style>
+  :root { color-scheme: dark; font-family: system-ui, -apple-system, "PingFang SC", sans-serif; color: #ececdf; background: #17221d; }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  main { max-width: 1320px; margin: auto; padding: 32px 24px 56px; }
+  .eyebrow { color: #b1c69c; font-size: 12px; letter-spacing: .16em; }
+  h1 { font-size: clamp(23px, 3vw, 36px); font-weight: 560; margin: 10px 0; }
+  p { color: #bfc7b8; line-height: 1.75; margin: 10px 0; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 14px; }
+  button, a { color: inherit; }
+  button { border: 1px solid #435044; border-radius: 24px; padding: 9px 18px; background: transparent; font: inherit; cursor: pointer; }
+  button[aria-pressed="true"] { background: #d2dbb8; border-color: #d2dbb8; color: #233023; }
+  button:hover { border-color: #e4e6d1; }
+  button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid #e0c787; outline-offset: 4px; }
+  .compare { position: relative; aspect-ratio: 8 / 5; overflow: hidden; border-radius: 12px; background: #273529; --split: 50%; }
+  .compare img { display: block; width: 100%; height: 100%; object-fit: contain; }
+  .compare .sample { position: absolute; inset: 0; clip-path: inset(0 0 0 var(--split)); }
+  .divider { position: absolute; top: 0; bottom: 0; left: var(--split); width: 2px; background: #f0efda; transform: translateX(-1px); pointer-events: none; }
+  .divider:after { content: '↔'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; color: #20301f; background: #f0efda; font-size: 23px; }
+  .label { position: absolute; top: 16px; padding: 6px 12px; font-size: 12px; background: #18241fdf; border-radius: 5px; pointer-events: none; }
+  .label.old { left: 16px; }
+  .label.new { right: 16px; }
+  .compare input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+  .compare:focus-within { outline: 2px solid #e0c787; outline-offset: 4px; }
+  .caption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 13px; margin: 14px 0 0; }
+  .caption p { margin: 0; }
+  .caption a { text-underline-offset: 4px; }
+  .notes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; border-top: 1px solid #3b483d; margin-top: 32px; padding-top: 26px; }
+  .notes strong { color: #e7e9d9; font-weight: 500; }
+  .notes p { font-size: 14px; }
+  .drive { margin-top: 34px; }
+  .orbits { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .orbits video { width: 100%; border-radius: 10px; background: #101913; }
+  .orbits p { font-size: 14px; }
+  .drive video { width: 100%; max-height: 680px; background: #101913; border-radius: 12px; }
+  footer { margin-top: 28px; font-size: 13px; color: #a8b49f; }
+  footer a { margin-right: 18px; text-underline-offset: 4px; }
+  @media (max-width: 620px) {
+    main { padding: 24px 14px 40px; }
+    nav { gap: 6px; }
+    button { padding: 8px 12px; font-size: 13px; }
+    .label { top: 8px; padding: 4px 8px; font-size: 11px; }
+    .label.old { left: 8px; } .label.new { right: 8px; }
+    .notes { grid-template-columns: 1fr; gap: 8px; }
+    .orbits { grid-template-columns: 1fr; }
+    .notes p { margin: 4px 0 10px; }
+  }
+</style>
+<main>
+  <div class="eyebrow">FOREST TRAIL / TOYOTA STUDY 05</div>
+  <h1>理顺尾部连接，消除尾灯闪烁</h1>
+  <p>尾灯、倒车灯与旧尾门铰链的共面重叠已修正。尾灯、尾门和支架重新分层，备胎避开右尾灯，补齐爬梯和脚踏的连接。以下为相同世界机位、光照与涂装的实机对照。</p>
+  <nav aria-label="对照视角">
+    <button data-view="hood" aria-pressed="false">引擎盖曲面</button>
+    <button data-view="pillar" aria-pressed="false">车柱与窗角</button>
+    <button data-view="front" aria-pressed="false">车头全貌</button>
+    <button data-view="side" aria-pressed="false">侧面比例</button>
+    <button data-view="wheel" aria-pressed="false">轮胎与轮圈</button>
+    <button data-view="detail" aria-pressed="false">近看车身</button>
+    <button data-view="rear" aria-pressed="true">车尾与装备</button>
+    <button data-view="rear-flat" aria-pressed="false">正后方灯组</button>
+    <button data-view="tail-detail" aria-pressed="false">尾灯与连接</button>
+    <button data-view="rear-night" aria-pressed="false">车尾夜景</button>
+    <button data-view="driving" aria-pressed="false">驾驶视角</button>
+    <button data-view="night" aria-pressed="false">夜间灯光</button>
+  </nav>
+  <div class="compare" id="compare">
+    <img id="legacy" src="legacy-rear.png" alt="修改前的游戏实景">
+    <img id="sample" class="sample" src="sample-rear.png" alt="尾灯修复后的同机位游戏实景">
+    <div class="divider" aria-hidden="true"></div>
+    <span class="label old">修改前</span><span class="label new">本轮打磨</span>
+    <input id="slider" type="range" min="0" max="100" value="50" aria-label="新旧版对照分界线" aria-valuetext="左侧 50% 修改前，右侧 50% 修正后">
+  </div>
+  <div class="caption">
+    <p>左右拖动对照，也可用方向键调整。</p>
+    <div><a id="old-link" href="legacy-rear.png" target="_blank" rel="noopener">上一版原图</a> · <a id="new-link" href="sample-rear.png" target="_blank" rel="noopener">本轮原图</a></div>
+  </div>
+  <div class="notes">
+    <div><strong>尾灯和铰链各就其位</strong><p>移除重叠的旧铰链，灯座、密封垫和分色灯罩各有厚度与间距。补充浅灯纹与固定螺钉，近景和远景模型一起修正。</p></div>
+    <div><strong>让附件有完整的连接</strong><p>备胎支架增加转轴、锁扣与三角支撑，向内上移以露出右尾灯。爬梯上端夹住行李架，脚踏支架接到车架；重复挡泥板收为一层。</p></div>
+    <div><strong>细节丰富，轮廓继续保持</strong><p>补充后雨刷、牌照与牌照灯、空心拖车口和排气尾管。沿用 88 cm 轮胎与 38 cm 正常悬挂行程，直柱、平窗和机盖形状延续上一版。</p></div>
+  </div>
+  <div class="drive">
+    <p>尾灯近景 · 同一路径移动镜头，灯光状态固定</p>
+    <button id="play-orbits" type="button">同步播放对照</button>
+    <div class="orbits">
+      <div><p>修改前：铰链与灯罩重叠</p><video controls playsinline preload="metadata" poster="legacy-tail-orbit.png"><source src="legacy-tail-orbit.mp4" type="video/mp4"></video></div>
+      <div><p>本轮：灯罩、灯座与尾门分开</p><video controls playsinline preload="metadata" poster="sample-tail-orbit.png"><source src="sample-tail-orbit.mp4" type="video/mp4"></video></div>
+    </div>
+  </div>
+  <div class="drive">
+    <p>样车通过训练场交叉轴 · 从车尾观察实际颠簸</p>
+    <video controls playsinline preload="metadata" poster="sample-articulation.png">
+      <source src="suspension.mp4" type="video/mp4">
+      <source src="suspension.webm" type="video/webm">
+    </video>
+  </div>
+  <footer><a href="../../../TOYOTA-TAILGATE-FINISH.md">建模与验证说明</a><a href="https://media.toyota.co.uk/vehicles/land-cruiser-series-60-archive-1985/" target="_blank" rel="noopener">Toyota 官方原型参考</a><a href="browser-report.json">实机对照记录</a></footer>
+</main>
+<script>
+  document.getElementById('play-orbits').addEventListener('click', async () => {
+    const videos = [...document.querySelectorAll('.orbits video')];
+    videos.forEach(v => { v.currentTime = 0; v.muted = true; });
+    await Promise.all(videos.map(v => v.play()));
+  });
+  const compare = document.getElementById('compare');
+  const slider = document.getElementById('slider');
+  slider.addEventListener('input', () => {
+    compare.style.setProperty('--split', slider.value + '%');
+    slider.setAttribute('aria-valuetext', `左侧 ${slider.value}% 修改前，右侧 ${100 - slider.value}% 修正后`);
+  });
+  for (const button of document.querySelectorAll('nav button')) {
+    button.addEventListener('click', () => {
+      for (const b of document.querySelectorAll('nav button')) b.setAttribute('aria-pressed', String(b === button));
+      const view = button.dataset.view;
+      document.getElementById('legacy').src = `legacy-${view}.png`;
+      document.getElementById('sample').src = `sample-${view}.png`;
+      document.getElementById('old-link').href = `legacy-${view}.png`;
+      document.getElementById('new-link').href = `sample-${view}.png`;
+      document.getElementById('legacy').alt = `修改前：${button.textContent}`;
+      document.getElementById('sample').alt = `修正后：${button.textContent}`;
+    });
+  }
+</script>
+</html>

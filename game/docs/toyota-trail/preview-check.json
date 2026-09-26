@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:5191/?play&vehicle=toyota",
+  "vehicle": "toyota",
+  "model": "vehicle_toyota_trail",
+  "paint": "sand",
+  "screen": "playing",
+  "paused": false,
+  "fallback": false,
+  "errors": []
+}

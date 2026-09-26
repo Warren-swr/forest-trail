@@ -1,0 +1,62 @@
+{
+  "revision": "04-all-terrain",
+  "previousRevision": "03-flat-glazing",
+  "createdAt": "2026-09-26T06:02:32.487240+00:00",
+  "files": [
+    {
+      "source": "public/assets/models/vehicle_toyota_trail.glb",
+      "snapshot": "before.glb",
+      "sha256": "244eaa00ebf6ce8129e70ebb9fc2660e295200ee663c5f7ed24485666082e844"
+    },
+    {
+      "source": "public/assets/models/vehicle_toyota_trail.json",
+      "snapshot": "before.json",
+      "sha256": "8f1c5ca51b5d6cc0cbee303eef1acad99369d1c4a97ce637da75b43db190de76"
+    },
+    {
+      "source": "art/blender/vehicle_toyota_trail.blend",
+      "snapshot": "before.blend",
+      "sha256": "2b46e37f1549f1cefe32d3e9454c67317288f53927969eecd4fbb48a78c70cdb"
+    },
+    {
+      "source": "art/blender/vehicle_toyota_trail.py",
+      "snapshot": "before.py",
+      "sha256": "d4d6cbdfbc7cae1c3ec5d853b178b559164c16c98d08812ff601105c923cf669"
+    },
+    {
+      "source": "art/blender/vehicle_fidelity.py",
+      "snapshot": "before-fidelity.py",
+      "sha256": "a2d12645c685fb51e9d64e2e4e62a94cd3d57e09c73ed1fdfc9e5a440136cbcd"
+    },
+    {
+      "source": "art/blender/vehicle_check.py",
+      "snapshot": "before-check.py",
+      "sha256": "dd5a6d471397110061f013f5153410646c67111dce92ceacbdb467ac4e52c9ba"
+    },
+    {
+      "source": "src/game/config.ts",
+      "snapshot": "before-config.ts",
+      "sha256": "066486439cb7e72496c01d9a01cc14ac70302648a3c04743aebbc96d7ccad591"
+    },
+    {
+      "source": "src/game/render/vehicleView.ts",
+      "snapshot": "before-view.ts",
+      "sha256": "fd574703cb4e16c148db38f9c6a0c05daa483d8b847e497bad99b8fc7ab5b4d7"
+    },
+    {
+      "source": "tools/toyota-study-browser.cjs",
+      "snapshot": "before-browser.cjs",
+      "sha256": "46f29614c2978890cf90b269fd4d7d4d9e245ef43540e9b460c0a535f1bf3e28"
+    },
+    {
+      "source": "tools/proving-results-toyota.json",
+      "snapshot": "before-proving.json",
+      "sha256": "d4dda649550fbbec48e01825927c3066fd5cfcc8b2b2f065c920b11a88089f06"
+    },
+    {
+      "source": "tools/vehicle-rig-results.json",
+      "snapshot": "before-rig.json",
+      "sha256": "3ab713a01a477cb302638012e00ce410aeb67a11985de87e5e075271b46aea9f"
+    }
+  ]
+}

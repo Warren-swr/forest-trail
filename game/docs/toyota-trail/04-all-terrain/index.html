@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forest Trail · 大轮胎与长行程样车</title>
+<base href="./20260926-proof-01/">
+<style>
+  :root { color-scheme: dark; font-family: system-ui, -apple-system, "PingFang SC", sans-serif; color: #ececdf; background: #17221d; }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  main { max-width: 1320px; margin: auto; padding: 32px 24px 56px; }
+  .eyebrow { color: #b1c69c; font-size: 12px; letter-spacing: .16em; }
+  h1 { font-size: clamp(23px, 3vw, 36px); font-weight: 560; margin: 10px 0; }
+  p { color: #bfc7b8; line-height: 1.75; margin: 10px 0; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 14px; }
+  button, a { color: inherit; }
+  button { border: 1px solid #435044; border-radius: 24px; padding: 9px 18px; background: transparent; font: inherit; cursor: pointer; }
+  button[aria-pressed="true"] { background: #d2dbb8; border-color: #d2dbb8; color: #233023; }
+  button:hover { border-color: #e4e6d1; }
+  button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid #e0c787; outline-offset: 4px; }
+  .compare { position: relative; aspect-ratio: 8 / 5; overflow: hidden; border-radius: 12px; background: #273529; --split: 50%; }
+  .compare img { display: block; width: 100%; height: 100%; object-fit: contain; }
+  .compare .sample { position: absolute; inset: 0; clip-path: inset(0 0 0 var(--split)); }
+  .divider { position: absolute; top: 0; bottom: 0; left: var(--split); width: 2px; background: #f0efda; transform: translateX(-1px); pointer-events: none; }
+  .divider:after { content: '↔'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; color: #20301f; background: #f0efda; font-size: 23px; }
+  .label { position: absolute; top: 16px; padding: 6px 12px; font-size: 12px; background: #18241fdf; border-radius: 5px; pointer-events: none; }
+  .label.old { left: 16px; }
+  .label.new { right: 16px; }
+  .compare input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+  .compare:focus-within { outline: 2px solid #e0c787; outline-offset: 4px; }
+  .caption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 13px; margin: 14px 0 0; }
+  .caption p { margin: 0; }
+  .caption a { text-underline-offset: 4px; }
+  .notes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; border-top: 1px solid #3b483d; margin-top: 32px; padding-top: 26px; }
+  .notes strong { color: #e7e9d9; font-weight: 500; }
+  .notes p { font-size: 14px; }
+  .drive { margin-top: 34px; }
+  .drive video { width: 100%; max-height: 680px; background: #101913; border-radius: 12px; }
+  footer { margin-top: 28px; font-size: 13px; color: #a8b49f; }
+  footer a { margin-right: 18px; text-underline-offset: 4px; }
+  @media (max-width: 620px) {
+    main { padding: 24px 14px 40px; }
+    nav { gap: 6px; }
+    button { padding: 8px 12px; font-size: 13px; }
+    .label { top: 8px; padding: 4px 8px; font-size: 11px; }
+    .label.old { left: 8px; } .label.new { right: 8px; }
+    .notes { grid-template-columns: 1fr; gap: 8px; }
+    .notes p { margin: 4px 0 10px; }
+  }
+</style>
+<main>
+  <div class="eyebrow">FOREST TRAIL / TOYOTA STUDY 04</div>
+  <h1>更厚实的轮胎，更从容的悬挂</h1>
+  <p>轮胎直径从 80 厘米增加到 88 厘米，保留原钢轮圈尺寸。悬挂正常行程从 32 厘米增加到 38 厘米，实测车身抬高约 5 厘米。两版分别按各自的轮胎与悬挂落地，再以相同世界机位、光照和涂装对照。</p>
+  <nav aria-label="对照视角">
+    <button data-view="hood" aria-pressed="false">引擎盖曲面</button>
+    <button data-view="pillar" aria-pressed="false">车柱与窗角</button>
+    <button data-view="front" aria-pressed="true">车头全貌</button>
+    <button data-view="side" aria-pressed="false">侧面比例</button>
+    <button data-view="wheel" aria-pressed="false">轮胎与轮圈</button>
+    <button data-view="detail" aria-pressed="false">近看车身</button>
+    <button data-view="rear" aria-pressed="false">车尾与装备</button>
+    <button data-view="driving" aria-pressed="false">驾驶视角</button>
+    <button data-view="night" aria-pressed="false">夜间灯光</button>
+  </nav>
+  <div class="compare" id="compare">
+    <img id="legacy" src="legacy-front.png" alt="修改前的游戏实景">
+    <img id="sample" class="sample" src="sample-front.png" alt="大轮胎样车的同机位游戏实景">
+    <div class="divider" aria-hidden="true"></div>
+    <span class="label old">80 cm · 上一版</span><span class="label new">88 cm · 本轮</span>
+    <input id="slider" type="range" min="0" max="100" value="50" aria-label="新旧版对照分界线" aria-valuetext="左侧 50% 修改前，右侧 50% 修正后">
+  </div>
+  <div class="caption">
+    <p>左右拖动对照，也可用方向键调整。</p>
+    <div><a id="old-link" href="legacy-front.png" target="_blank" rel="noopener">上一版原图</a> · <a id="new-link" href="sample-front.png" target="_blank" rel="noopener">本轮原图</a></div>
+  </div>
+  <div class="notes">
+    <div><strong>胎壁更厚，轮圈尺寸保留</strong><p>轮胎直径增加 10%，备胎同步调整。胎块边缘做细小倒角，侧壁与钢圈接合处保持连续；脚踏增加防滑垫和端部紧固件。</p></div>
+    <div><strong>38 cm 正常悬挂行程</strong><p>主要增加下垂空间，配套调整弹簧与回弹阻尼。更长的固定减振筒、倾斜安装角和车架支架一起更新，活塞杆随车轴实际运动伸缩。</p></div>
+    <div><strong>保留方正的旅行车姿态</strong><p>轮距增加 4 cm，轮拱同步留出满舵与压缩间隙。直柱、平窗、机盖弧度和车头轻微内收延续上一版；完整路线行驶无需复位。</p></div>
+  </div>
+  <div class="drive">
+    <p>样车通过训练场交叉轴 · 实机录制</p>
+    <video controls playsinline preload="metadata" poster="sample-articulation.png">
+      <source src="suspension.mp4" type="video/mp4">
+      <source src="suspension.webm" type="video/webm">
+    </video>
+  </div>
+  <footer><a href="../../../TOYOTA-ALL-TERRAIN.md">建模与验证说明</a><a href="https://media.toyota.co.uk/vehicles/land-cruiser-series-60-archive-1985/" target="_blank" rel="noopener">Toyota 官方原型参考</a><a href="browser-report.json">实机对照记录</a></footer>
+</main>
+<script>
+  const compare = document.getElementById('compare');
+  const slider = document.getElementById('slider');
+  slider.addEventListener('input', () => {
+    compare.style.setProperty('--split', slider.value + '%');
+    slider.setAttribute('aria-valuetext', `左侧 ${slider.value}% 修改前，右侧 ${100 - slider.value}% 修正后`);
+  });
+  for (const button of document.querySelectorAll('nav button')) {
+    button.addEventListener('click', () => {
+      for (const b of document.querySelectorAll('nav button')) b.setAttribute('aria-pressed', String(b === button));
+      const view = button.dataset.view;
+      document.getElementById('legacy').src = `legacy-${view}.png`;
+      document.getElementById('sample').src = `sample-${view}.png`;
+      document.getElementById('old-link').href = `legacy-${view}.png`;
+      document.getElementById('new-link').href = `sample-${view}.png`;
+      document.getElementById('legacy').alt = `修改前：${button.textContent}`;
+      document.getElementById('sample').alt = `修正后：${button.textContent}`;
+    });
+  }
+</script>
+</html>

@@ -1,0 +1,80 @@
+{
+  "passed": 9,
+  "results": [
+    {
+      "vehicle": "scout",
+      "check": "exported asset contract",
+      "detail": {
+        "bytes": 8235764,
+        "morphVertices": 353,
+        "fixedLeafEyeVertices": 0
+      }
+    },
+    {
+      "vehicle": "scout",
+      "check": "shoulder contact and moving axle collider",
+      "detail": {
+        "maxCompressionDifference": 0.1196799802780153,
+        "axleY": 0.01922360062599175
+      }
+    },
+    {
+      "vehicle": "scout",
+      "check": "wheel interpolation history",
+      "detail": {
+        "physicsHz": 60,
+        "spinDelta": 0.10984228832620824
+      }
+    },
+    {
+      "vehicle": "toyota",
+      "check": "exported asset contract",
+      "detail": {
+        "bytes": 4446336,
+        "morphVertices": 1224,
+        "fixedLeafEyeVertices": 16
+      }
+    },
+    {
+      "vehicle": "toyota",
+      "check": "shoulder contact and moving axle collider",
+      "detail": {
+        "maxCompressionDifference": 0.12025985717773469,
+        "axleY": 0.02126394629478449
+      }
+    },
+    {
+      "vehicle": "toyota",
+      "check": "wheel interpolation history",
+      "detail": {
+        "physicsHz": 60,
+        "spinDelta": 0.10164285691147823
+      }
+    },
+    {
+      "vehicle": "ranger",
+      "check": "exported asset contract",
+      "detail": {
+        "bytes": 7567300,
+        "morphVertices": 1224,
+        "fixedLeafEyeVertices": 16
+      }
+    },
+    {
+      "vehicle": "ranger",
+      "check": "shoulder contact and moving axle collider",
+      "detail": {
+        "maxCompressionDifference": 0.11956034421920791,
+        "axleY": 0.038733092546463
+      }
+    },
+    {
+      "vehicle": "ranger",
+      "check": "wheel interpolation history",
+      "detail": {
+        "physicsHz": 60,
+        "spinDelta": 0.12243885529550358
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "scout",
+  "fidelity": 3,
+  "R": 0.38,
+  "W": 0.3,
+  "wheelbase": 2.36,
+  "track_x": 0.825,
+  "spring_x": 0.45,
+  "spring_top": 0.53,
+  "spring_seat": 0.065,
+  "pinion_y": 0.235,
+  "pinion_z": 0.025,
+  "tcase_y": 0.3,
+  "tcase_z": 0.05,
+  "bump": 0.24,
+  "droop": 0.12,
+  "lock": 38.7
+}

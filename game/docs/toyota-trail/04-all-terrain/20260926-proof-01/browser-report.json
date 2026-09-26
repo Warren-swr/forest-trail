@@ -1,0 +1,400 @@
+{
+  "capturedAt": "2026-09-26T06:16:38.291Z",
+  "viewport": {
+    "width": 1600,
+    "height": 1000
+  },
+  "revision": "04-all-terrain",
+  "method": "Unmodified production WebGL canvas. Each variant settles for 3 seconds from the same spawn with its own tyre, track and suspension specification. Each pair shares fixed world cameras, environment time and sand paint. The subsequent candidate drive runs real physics.",
+  "baseline": {
+    "revision": "04-all-terrain",
+    "previousRevision": "03-flat-glazing",
+    "createdAt": "2026-09-26T06:02:32.487240+00:00",
+    "files": [
+      {
+        "source": "public/assets/models/vehicle_toyota_trail.glb",
+        "snapshot": "before.glb",
+        "sha256": "244eaa00ebf6ce8129e70ebb9fc2660e295200ee663c5f7ed24485666082e844"
+      },
+      {
+        "source": "public/assets/models/vehicle_toyota_trail.json",
+        "snapshot": "before.json",
+        "sha256": "8f1c5ca51b5d6cc0cbee303eef1acad99369d1c4a97ce637da75b43db190de76"
+      },
+      {
+        "source": "art/blender/vehicle_toyota_trail.blend",
+        "snapshot": "before.blend",
+        "sha256": "2b46e37f1549f1cefe32d3e9454c67317288f53927969eecd4fbb48a78c70cdb"
+      },
+      {
+        "source": "art/blender/vehicle_toyota_trail.py",
+        "snapshot": "before.py",
+        "sha256": "d4d6cbdfbc7cae1c3ec5d853b178b559164c16c98d08812ff601105c923cf669"
+      },
+      {
+        "source": "art/blender/vehicle_fidelity.py",
+        "snapshot": "before-fidelity.py",
+        "sha256": "a2d12645c685fb51e9d64e2e4e62a94cd3d57e09c73ed1fdfc9e5a440136cbcd"
+      },
+      {
+        "source": "art/blender/vehicle_check.py",
+        "snapshot": "before-check.py",
+        "sha256": "dd5a6d471397110061f013f5153410646c67111dce92ceacbdb467ac4e52c9ba"
+      },
+      {
+        "source": "src/game/config.ts",
+        "snapshot": "before-config.ts",
+        "sha256": "066486439cb7e72496c01d9a01cc14ac70302648a3c04743aebbc96d7ccad591"
+      },
+      {
+        "source": "src/game/render/vehicleView.ts",
+        "snapshot": "before-view.ts",
+        "sha256": "fd574703cb4e16c148db38f9c6a0c05daa483d8b847e497bad99b8fc7ab5b4d7"
+      },
+      {
+        "source": "tools/toyota-study-browser.cjs",
+        "snapshot": "before-browser.cjs",
+        "sha256": "46f29614c2978890cf90b269fd4d7d4d9e245ef43540e9b460c0a535f1bf3e28"
+      },
+      {
+        "source": "tools/proving-results-toyota.json",
+        "snapshot": "before-proving.json",
+        "sha256": "d4dda649550fbbec48e01825927c3066fd5cfcc8b2b2f065c920b11a88089f06"
+      },
+      {
+        "source": "tools/vehicle-rig-results.json",
+        "snapshot": "before-rig.json",
+        "sha256": "3ab713a01a477cb302638012e00ce410aeb67a11985de87e5e075271b46aea9f"
+      }
+    ]
+  },
+  "assets": {
+    "legacy": {
+      "file": "art/studies/toyota-trail/04-all-terrain/before.glb",
+      "sha256": "244eaa00ebf6ce8129e70ebb9fc2660e295200ee663c5f7ed24485666082e844"
+    },
+    "sample": {
+      "file": "dist/assets/models/vehicle_toyota_trail.glb",
+      "sha256": "eebd9d70d67dc1fa199c5769d8d647bab5a6d0759940bee34d9f3a3befcf2348"
+    }
+  },
+  "views": [
+    {
+      "id": "front",
+      "offset": [
+        4.2,
+        2.15,
+        -5.4
+      ],
+      "look": [
+        0,
+        0.68,
+        0
+      ],
+      "fov": 44
+    },
+    {
+      "id": "side",
+      "offset": [
+        7.2,
+        1.25,
+        0.1
+      ],
+      "look": [
+        0,
+        0.68,
+        0.1
+      ],
+      "fov": 44
+    },
+    {
+      "id": "rear",
+      "offset": [
+        -4.1,
+        1.8,
+        5.4
+      ],
+      "look": [
+        0,
+        0.68,
+        0.2
+      ],
+      "fov": 45
+    },
+    {
+      "id": "detail",
+      "offset": [
+        2.9,
+        1.32,
+        -3.6
+      ],
+      "look": [
+        0.23,
+        0.66,
+        -1.05
+      ],
+      "fov": 43
+    },
+    {
+      "id": "hood",
+      "offset": [
+        2.25,
+        2.32,
+        -3.25
+      ],
+      "look": [
+        0,
+        0.92,
+        -1.2
+      ],
+      "fov": 42
+    },
+    {
+      "id": "pillar",
+      "offset": [
+        2.3,
+        1.6,
+        -1.2
+      ],
+      "look": [
+        0.58,
+        1.1,
+        -0.54
+      ],
+      "fov": 44
+    },
+    {
+      "id": "wheel",
+      "offset": [
+        2.35,
+        0.67,
+        -2.55
+      ],
+      "look": [
+        0.7,
+        0.08,
+        -1.28
+      ],
+      "fov": 40
+    },
+    {
+      "id": "driving",
+      "position": [
+        -169.71824645996094,
+        7.8771843910217285,
+        160.9336700439453
+      ],
+      "target": [
+        -175.19458996786565,
+        5.537408929382867,
+        152.66240833572135
+      ],
+      "fov": 55
+    },
+    {
+      "id": "night",
+      "offset": [
+        4.2,
+        1.8,
+        -5.4
+      ],
+      "look": [
+        0,
+        0.68,
+        0
+      ],
+      "fov": 44,
+      "night": true
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "legacy-front.png",
+      "sha256": "66c0c7fc77f971a9bf7e2a945f366bd7233daeac86f88c8ccbdbdf470a8eb9ff"
+    },
+    {
+      "file": "sample-front.png",
+      "sha256": "93cd026801c7572b679593b6cbc608e99c6043700426a31fac4631becf65415d"
+    },
+    {
+      "file": "legacy-side.png",
+      "sha256": "d56762f5b6aed999d7098b203995911e4886a3d6705f36f1fd59d4861fdb1a81"
+    },
+    {
+      "file": "sample-side.png",
+      "sha256": "2a929d3dd68f3f7ae4d77955999882de5cb751143c1a3711185faa9e2716eab0"
+    },
+    {
+      "file": "legacy-rear.png",
+      "sha256": "1a2abc2dca8842b6d44d6f740fda383419a2bb156305b79dae27c3c89098062d"
+    },
+    {
+      "file": "sample-rear.png",
+      "sha256": "73b5486c797ada979d611c63946e02490cdbf830f8653df30f4447962cbd3869"
+    },
+    {
+      "file": "legacy-detail.png",
+      "sha256": "3b18304b319b45811b1d0fec109b94f6f679fe302d4c0174396939b7182dc118"
+    },
+    {
+      "file": "sample-detail.png",
+      "sha256": "41895f3317de5dd4f177b379857189e117c51ab74a998b4f5fb48cec1dd924cd"
+    },
+    {
+      "file": "legacy-hood.png",
+      "sha256": "f5da09f2a968bc58446002d1f052ac1c6b26f5b30ce64bed3954521260b901a6"
+    },
+    {
+      "file": "sample-hood.png",
+      "sha256": "e49f01a73cc122c8b467c727bb059b57f797718c2404076547ac653186c17aa5"
+    },
+    {
+      "file": "legacy-pillar.png",
+      "sha256": "42dc94a6d2fb3c6a75278c4d6bc3ce89b4c23b05274984475cce8f4f4a6e7651"
+    },
+    {
+      "file": "sample-pillar.png",
+      "sha256": "1c6ea8193ffbbd90d0990f8dd922a7f1a337f74660df5c809b9fb71e36f52293"
+    },
+    {
+      "file": "legacy-wheel.png",
+      "sha256": "aecbb0b1885d64884a9ff57c6cc8ed665c11a4506581a103d3a476130e9c89fc"
+    },
+    {
+      "file": "sample-wheel.png",
+      "sha256": "6cdbf25837c9ad8e7d48a0c6a170017a9aaee665f1cd607fbaadc0bb04b93c6c"
+    },
+    {
+      "file": "legacy-driving.png",
+      "sha256": "bad5fd2c382536c53f081a36a5e4236f25be18c72ec22152bc520ebc3498268e"
+    },
+    {
+      "file": "sample-driving.png",
+      "sha256": "9c743dd0f5624e981d5ba79e47b9c35abb1d68735f2f34e8551cbcd36f2e2642"
+    },
+    {
+      "file": "legacy-night.png",
+      "sha256": "ff4ae1de649e88afcfdadd7a9c595be763d8d791332a9fda4ea23d3a3d46d894"
+    },
+    {
+      "file": "sample-night.png",
+      "sha256": "b10293b1b85d66ccc951c4c872075a670b574c6f4ed7c8f2dabe2122b9cda535"
+    },
+    {
+      "file": "sample-articulation.png",
+      "sha256": "f84979c4c97b5ea34b3a6349db8e8becfe719068898ad5d5a8a82716fa45e88c"
+    }
+  ],
+  "errors": [],
+  "setup": {
+    "model": "vehicle_toyota_trail",
+    "position": {
+      "x": -173.53968811035156,
+      "y": 4.637454986572266,
+      "z": 155.16502380371094
+    },
+    "rotation": {
+      "x": 0.01416519470512867,
+      "y": 0.28790605068206787,
+      "z": -0.0006703865365125239,
+      "w": 0.9575536847114563
+    },
+    "environmentTime": 2.616599999999997,
+    "renderer": "ANGLE (NVIDIA, Vulkan 1.3.242 (NVIDIA NVIDIA L4 (0x000027B8)), NVIDIA)",
+    "drivingCamera": {
+      "position": [
+        -169.71824645996094,
+        7.8771843910217285,
+        160.9336700439453
+      ],
+      "target": [
+        -175.19458996786565,
+        5.537408929382867,
+        152.66240833572135
+      ],
+      "fov": 55
+    }
+  },
+  "variants": {
+    "legacy": {
+      "model": "vehicle_toyota_legacy",
+      "fallback": false,
+      "bodyPosition": {
+        "x": -173.54617309570312,
+        "y": 4.586167812347412,
+        "z": 155.17156982421875
+      },
+      "wheelLengths": [
+        0.3235156250000003,
+        0.3191406250000003,
+        0.31148437500000015,
+        0.3169531250000003
+      ],
+      "radius": 0.4,
+      "track": 1.72,
+      "travel": 0.32
+    },
+    "sample": {
+      "model": "vehicle_toyota_trail",
+      "fallback": false,
+      "bodyPosition": {
+        "x": -173.54296875,
+        "y": 4.63900899887085,
+        "z": 155.17393493652344
+      },
+      "wheelLengths": [
+        0.3392968750000002,
+        0.3349218750000002,
+        0.32289062500000026,
+        0.3283593750000002
+      ],
+      "radius": 0.44,
+      "track": 1.76,
+      "travel": 0.38
+    }
+  },
+  "rig": {
+    "independentSprings": 4,
+    "shocks": 4,
+    "brakes": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "glass": [
+      {
+        "opacity": 1,
+        "blendType": 3
+      }
+    ],
+    "paint": [
+      {
+        "gloss": 0.5600000023841858,
+        "clearCoat": 0
+      }
+    ],
+    "nearNodes": true
+  },
+  "lod": "near → far → near passed",
+  "drive": {
+    "samples": 531,
+    "maxAxleDifference": 0.3380468749999999,
+    "minUprightness": 0.9693858447589943,
+    "maxSpeedKmh": 4.219784067786373,
+    "peakMorph": 0.6519065321431367
+  },
+  "otherCars": [
+    {
+      "id": "scout",
+      "fallback": false,
+      "glassOpacity": 0.23999999463558197
+    },
+    {
+      "id": "ranger",
+      "fallback": false,
+      "glassOpacity": 0.23999999463558197
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,360 @@
+{
+  "schema": "toyota-flat-glazing/1",
+  "createdAt": "2026-09-26T05:49:52.619212+00:00",
+  "revision": "03-flat-glazing",
+  "selectedBuild": "art/studies/toyota-trail/03-flat-glazing/build-20260926-054117",
+  "selectedBrowserProof": "docs/toyota-trail/03-flat-glazing/20260926-proof-02",
+  "assetSha256": "244eaa00ebf6ce8129e70ebb9fc2660e295200ee663c5f7ed24485666082e844",
+  "validation": {
+    "planarWindowPanes": 8,
+    "rigChecks": 9,
+    "clearancePoses": 9,
+    "browser": true,
+    "previousMediaIntact": true,
+    "unchangedRuntimeCode": [
+      "src/game/Game.ts",
+      "src/game/boot.ts",
+      "src/game/camera.ts",
+      "src/game/config.ts",
+      "src/game/physics/vehicle.ts",
+      "src/game/render/vehicleView.ts"
+    ]
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 8702,
+      "sha256": "7c1028da154035a0aa1bdfd7b09eeb8765cba80b22b57192e2aa02180d615247"
+    },
+    {
+      "path": "art/ASSET_SPEC.md",
+      "bytes": 6798,
+      "sha256": "6bdd5a885a8784bad816f5eb9ce7912c2da9ec103f712a76b27323e3b11fa511"
+    },
+    {
+      "path": "art/asset-report.json",
+      "bytes": 81138,
+      "sha256": "bfb7c1d482ae77bf24ade23638145cbe32fdb2eb29f9d4aade78c94c1d94f522"
+    },
+    {
+      "path": "art/blender/build_all.py",
+      "bytes": 2438,
+      "sha256": "99259c5b5d088dac4087228d3006fe6c72c6f2448ad64cab1b52ce6fd2b2934a"
+    },
+    {
+      "path": "art/blender/common.py",
+      "bytes": 18765,
+      "sha256": "2ebdbcae2758fd5f8a6d66e0a63d93def0cae5d172980e4aa0c8df0cc0e1ae70"
+    },
+    {
+      "path": "art/blender/reference/vehicle_toyota_v2.py",
+      "bytes": 37803,
+      "sha256": "a7cf4742af572ab567abcdae0b7bb2a0e209d680beccdd2dc4b096fe0b1edb4b"
+    },
+    {
+      "path": "art/blender/vehicle_check.py",
+      "bytes": 5447,
+      "sha256": "dd5a6d471397110061f013f5153410646c67111dce92ceacbdb467ac4e52c9ba"
+    },
+    {
+      "path": "art/blender/vehicle_fidelity.py",
+      "bytes": 60456,
+      "sha256": "a2d12645c685fb51e9d64e2e4e62a94cd3d57e09c73ed1fdfc9e5a440136cbcd"
+    },
+    {
+      "path": "art/blender/vehicle_parts.py",
+      "bytes": 22600,
+      "sha256": "81148dcb70fb0433ba3a05c6638b68d72a0f235ba7171acf3c8ea2b60dedf6a6"
+    },
+    {
+      "path": "art/blender/vehicle_toyota_trail.blend",
+      "bytes": 2293368,
+      "sha256": "2b46e37f1549f1cefe32d3e9454c67317288f53927969eecd4fbb48a78c70cdb"
+    },
+    {
+      "path": "art/blender/vehicle_toyota_trail.py",
+      "bytes": 24639,
+      "sha256": "d4d6cbdfbc7cae1c3ec5d853b178b559164c16c98d08812ff601105c923cf669"
+    },
+    {
+      "path": "art/studies/toyota-trail/03-flat-glazing/baseline.json",
+      "bytes": 1090,
+      "sha256": "97a0726426dd98b4fc6b6b5d2418a3e12d8dbe85386ba4d16dc8d0624baae383"
+    },
+    {
+      "path": "art/studies/toyota-trail/03-flat-glazing/before-browser.cjs",
+      "bytes": 12093,
+      "sha256": "4e93ed4451994184241e2b696a3f7a3696ae86fefbcf40346749d8ea7e52a1fa"
+    },
+    {
+      "path": "art/studies/toyota-trail/03-flat-glazing/before.blend",
+      "bytes": 3412980,
+      "sha256": "ffb9c9525a6a270d5802450039b827ae93c6ba7160f029d32a662d9bbebf5da9"
+    },
+    {
+      "path": "art/studies/toyota-trail/03-flat-glazing/before.glb",
+      "bytes": 4446336,
+      "sha256": "5519c936dd4dd272fc7a244ca7ddb661d3a3da9cb59cfdf2b621dad73410b91d"
+    },
+    {
+      "path": "art/studies/toyota-trail/03-flat-glazing/before.json",
+      "bytes": 2305,
+      "sha256": "4e9b426670c621f71e6ce090d6722fd4af7f9bf5ed3d40c4d4a3b5391d93ff31"
+    },
+    {
+      "path": "art/studies/toyota-trail/03-flat-glazing/before.py",
+      "bytes": 28405,
+      "sha256": "25f18f65837cbe8ea1589d3f0473d7eacf81c6301d1dae47b631464cce6b06ff"
+    },
+    {
+      "path": "art/studies/toyota-trail/03-flat-glazing/build-20260926-054117/clearance.json",
+      "bytes": 193,
+      "sha256": "18167900d316321139c760c1da69dba53de2d35ae01f16c37dff5acf91c3236d"
+    },
+    {
+      "path": "art/studies/toyota-trail/03-flat-glazing/build-20260926-054117/generator.py",
+      "bytes": 24639,
+      "sha256": "d4d6cbdfbc7cae1c3ec5d853b178b559164c16c98d08812ff601105c923cf669"
+    },
+    {
+      "path": "art/studies/toyota-trail/03-flat-glazing/build-20260926-054117/rig.json",
+      "bytes": 295,
+      "sha256": "5cf2af53e6d7c83204e8816d0a5c388ac6e8f57039f3d33bae67c289b159172e"
+    },
+    {
+      "path": "art/studies/toyota-trail/03-flat-glazing/build-20260926-054117/study-front.png",
+      "bytes": 1429224,
+      "sha256": "8ecb0c9322e7adbffdca2e648173bdfc1cdeb51b3e6d63deb3a7b692d25d7784"
+    },
+    {
+      "path": "art/studies/toyota-trail/03-flat-glazing/build-20260926-054117/study-rear.png",
+      "bytes": 1422229,
+      "sha256": "a4d566cdee5e054d7d1ed78d66da5873f62304998137e72e1d3016fd038192bc"
+    },
+    {
+      "path": "art/studies/toyota-trail/03-flat-glazing/build-20260926-054117/study-side.png",
+      "bytes": 1385040,
+      "sha256": "11814e2ad8e34b5342c5b0bd98f990e4594a3d7fdd389f9e2c336ac8af2487a4"
+    },
+    {
+      "path": "art/studies/toyota-trail/03-flat-glazing/build-20260926-054117/study-under.png",
+      "bytes": 1442795,
+      "sha256": "e7f2918a1ace35320e9fb301a90001fac989e6c04cf7d1826cc7a1ebe6337864"
+    },
+    {
+      "path": "dist/assets/index-D0arffyz.js",
+      "bytes": 5381952,
+      "sha256": "a2bcd7ec491802b6d0dc8940e2a8ba98e12d5f472fad992b23940a7abb98e351"
+    },
+    {
+      "path": "dist/assets/index-DweeZaEa.css",
+      "bytes": 18556,
+      "sha256": "8fc88129a4f73e16f685d7dcf499d39c59ee10aa4d1b81f1984b3b87cd4bfcb5"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 642,
+      "sha256": "0c14dc5e03ea15a6f0ea3328bd16a16bfca36ce7f465c78572b4f9688af897c0"
+    },
+    {
+      "path": "docs/TOYOTA-FLAT-GLAZING.md",
+      "bytes": 2756,
+      "sha256": "844b62b77c5e8839839d3283d1f9b18e25677d4da6494af33619378b1f044bf3"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/browser-report.json",
+      "bytes": 7307,
+      "sha256": "3b03a0d8b7fffcc16f7ebfc5f6905f2d1c19deda4b8276357b3e309a31c180ed"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/browser.log",
+      "bytes": 417,
+      "sha256": "e0b912aafb76a40d8e5feb66f48769954c80a95dd99833763189cdbf593ad2df"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/build.log",
+      "bytes": 4058,
+      "sha256": "59d9e54f1bfdf797f9aace0faaabc30e70f8bd0468c14440c7c652280bbeb004"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/comparison-desktop.png",
+      "bytes": 886231,
+      "sha256": "817c369932def23e4bb6292d438a414b0ffcfa53994ffb089ab3256ce8bd1f4a"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/delivery-check.json",
+      "bytes": 306,
+      "sha256": "b8fcd6612ccb9aae70fd966c2af6e80b2df2b29685305853cc4b54a7dd5ac675"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/glazing-check.json",
+      "bytes": 1137,
+      "sha256": "023505674877e3ce5b3fb95d2b254c814cbee32aeade9b6df34622344797bd5b"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/legacy-detail.png",
+      "bytes": 2777485,
+      "sha256": "d7c4f5c9203101c3dff412da6d44b9032ceeffb9f1d86549607839639a77410d"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/legacy-driving.png",
+      "bytes": 3082247,
+      "sha256": "326f755917fbdb0164a2ebd76a7151d1b63539c5e4c0a6ea53ac7d5f9fd492d6"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/legacy-front.png",
+      "bytes": 3067998,
+      "sha256": "dc2adff9496ef8526abe4c5102b686b8ae082bd973e1e4cd4169c97dbc028753"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/legacy-hood.png",
+      "bytes": 2361953,
+      "sha256": "669db53d760fdcd83593f6586fb49d68658db32002c2d3fd6504e0a3a8b29632"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/legacy-night.png",
+      "bytes": 2454299,
+      "sha256": "81065b8e0b1f3b048263e969333211e245306bb239f571a1c54f30158ae8be37"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/legacy-pillar.png",
+      "bytes": 2033514,
+      "sha256": "782ff538623fb4e46fc8577de2b486dadf83216d84241709a2ca265446b3a861"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/legacy-rear.png",
+      "bytes": 2849353,
+      "sha256": "0dfbe08ac86bf59f1794489667a300eba6b3f2e86dd3e8285fd49143bd819df8"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/legacy-side.png",
+      "bytes": 3072249,
+      "sha256": "830b890053e19314d12c2cc52e89fae054396644c646c5e831142cdea33e905e"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/production.log",
+      "bytes": 1608,
+      "sha256": "b1be8ff89e2a6764965110f6520782710267718c177ba64f5e0fe159e1149f88"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/rig-results.json",
+      "bytes": 1823,
+      "sha256": "3ab713a01a477cb302638012e00ce410aeb67a11985de87e5e075271b46aea9f"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/rig.log",
+      "bytes": 108,
+      "sha256": "03fc988a77045f85e3bf6761f79451c6c3aa58f645441f59a9ec4c75446870c3"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/sample-articulation.png",
+      "bytes": 2650480,
+      "sha256": "6e4dd9dcc00147ff7837bbaeb16794fd4ed497eab6d2b1b8da8c02639d99362d"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/sample-detail.png",
+      "bytes": 2764943,
+      "sha256": "30308edfef21f1cf56dff05249a44ab8e4f79694ae8030dd0f0894c6dea1498d"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/sample-driving.png",
+      "bytes": 3080010,
+      "sha256": "4ee94094788ed6e2abb6cb7bfe9fdc391b4c09ec4d4fcae7c793d67ed440d176"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/sample-front.png",
+      "bytes": 3059470,
+      "sha256": "51c456ad3cb761ffef2cedcade9cb0abb9b2b9061abf2aea5e535276756c3ce4"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/sample-hood.png",
+      "bytes": 2336210,
+      "sha256": "c95f1201ff9db2a2d689ab3451b9c51fbeddf2ab02a9e0cffff61bd4d37f94ee"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/sample-night.png",
+      "bytes": 2451339,
+      "sha256": "6e9963adc9424a0f4138457cac03b13ed49d72f9ca1cdbcdde21608a5ad3eb7a"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/sample-pillar.png",
+      "bytes": 2008127,
+      "sha256": "9eac5d69fbda4bf286ae5fad2731da002c76b3f260b437e7e85f54026dfbdc70"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/sample-rear.png",
+      "bytes": 2842196,
+      "sha256": "8c7c9bb186493001d75bed2bba91db849ff267327ee3e582df1e78ecaa805b2d"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/sample-side.png",
+      "bytes": 3064752,
+      "sha256": "5d3a27be05f0480433953d752638c94dc77e8f9e8940ad8da70b0974f88f4fea"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/suspension.mp4",
+      "bytes": 16412622,
+      "sha256": "dca7e006c817056f90b7602b4748e5c995dec2d963d8e727b91df4ab781b02c3"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/20260926-proof-02/suspension.webm",
+      "bytes": 10034950,
+      "sha256": "73cdc153a330e5a28cbb2dda61ed7e3b9a4c13446e3aefc738019e79f97fa813"
+    },
+    {
+      "path": "docs/toyota-trail/03-flat-glazing/index.html",
+      "bytes": 7378,
+      "sha256": "d51a9f36d33258b537c2bbf36a73020f1e2d852d75c06513477a1f0e5b9c99f6"
+    },
+    {
+      "path": "public/assets/models/vehicle_toyota_trail.glb",
+      "bytes": 3540708,
+      "sha256": "244eaa00ebf6ce8129e70ebb9fc2660e295200ee663c5f7ed24485666082e844"
+    },
+    {
+      "path": "public/assets/models/vehicle_toyota_trail.json",
+      "bytes": 2307,
+      "sha256": "8f1c5ca51b5d6cc0cbee303eef1acad99369d1c4a97ce637da75b43db190de76"
+    },
+    {
+      "path": "src/game/Game.ts",
+      "bytes": 16451,
+      "sha256": "030b8b7bd8e603084f4e14e210f3cd3fa65cd3c63aa42bb9e8e3d47e9109305f"
+    },
+    {
+      "path": "src/game/boot.ts",
+      "bytes": 16433,
+      "sha256": "7ea5753d79d445cf1e7c89d77ea43cc1ea8b0da6d207ee6d1a216c47b4c12533"
+    },
+    {
+      "path": "src/game/camera.ts",
+      "bytes": 6537,
+      "sha256": "b50f1bab68f017dab971db070ce50d3679e807ce8df29d95c8eba4372acf1862"
+    },
+    {
+      "path": "src/game/config.ts",
+      "bytes": 10102,
+      "sha256": "066486439cb7e72496c01d9a01cc14ac70302648a3c04743aebbc96d7ccad591"
+    },
+    {
+      "path": "src/game/physics/vehicle.ts",
+      "bytes": 25011,
+      "sha256": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539"
+    },
+    {
+      "path": "src/game/render/vehicleView.ts",
+      "bytes": 18494,
+      "sha256": "fd574703cb4e16c148db38f9c6a0c05daa483d8b847e497bad99b8fc7ab5b4d7"
+    },
+    {
+      "path": "tools/toyota-study-browser.cjs",
+      "bytes": 12097,
+      "sha256": "46f29614c2978890cf90b269fd4d7d4d9e245ef43540e9b460c0a535f1bf3e28"
+    },
+    {
+      "path": "tools/vehicle-rig-test.ts",
+      "bytes": 7125,
+      "sha256": "56b9002b37353611221202a40452e4cb61d88de22bd41890ac19e8b1d5694f19"
+    }
+  ]
+}

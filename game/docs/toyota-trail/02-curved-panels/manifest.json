@@ -1,0 +1,382 @@
+{
+  "schema": "toyota-curved-panels/1",
+  "createdAt": "2026-09-26T05:26:52.859001+00:00",
+  "head": "33439c37d453c87279797d7365d8874cff5b747a",
+  "revision": "02-curved-panels",
+  "selectedBuild": "art/studies/toyota-trail/02-curved-panels/build-20260926-051716",
+  "selectedBrowserProof": "docs/toyota-trail/02-curved-panels/20260926-proof-02",
+  "productionAssetSha256": "5519c936dd4dd272fc7a244ca7ddb661d3a3da9cb59cfdf2b621dad73410b91d",
+  "previousSampleSha256": "f77be17786686c49ecebefdb2c78a254342ca0ce0c221a60541d29f321a7f018",
+  "validation": {
+    "rigChecks": 9,
+    "clearancePoses": 9,
+    "browser": true,
+    "comparisonViews": 8,
+    "geometryVisuallyReviewed": [
+      "hood",
+      "pillar",
+      "front",
+      "side",
+      "rear"
+    ],
+    "previousRawEvidencePreserved": 24,
+    "drivingCodeAndMountsUnchanged": true
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 8581,
+      "sha256": "06135775ef00033d0fea6a8209a16620a097b785574f80c54b7340951105f211"
+    },
+    {
+      "path": "art/ASSET_SPEC.md",
+      "bytes": 6758,
+      "sha256": "5d9fe98bc16854a6f9f3f3f1410306b51ebd230498524a6ab578262f70b432d6"
+    },
+    {
+      "path": "art/asset-report.json",
+      "bytes": 81138,
+      "sha256": "dce5017c5a39af172736968d0f9ad8a1db2f943832a974c0344bc61a5ad04e8b"
+    },
+    {
+      "path": "art/blender/build_all.py",
+      "bytes": 2438,
+      "sha256": "99259c5b5d088dac4087228d3006fe6c72c6f2448ad64cab1b52ce6fd2b2934a"
+    },
+    {
+      "path": "art/blender/common.py",
+      "bytes": 18765,
+      "sha256": "2ebdbcae2758fd5f8a6d66e0a63d93def0cae5d172980e4aa0c8df0cc0e1ae70"
+    },
+    {
+      "path": "art/blender/reference/vehicle_toyota_v2.py",
+      "bytes": 37803,
+      "sha256": "a7cf4742af572ab567abcdae0b7bb2a0e209d680beccdd2dc4b096fe0b1edb4b"
+    },
+    {
+      "path": "art/blender/vehicle_check.py",
+      "bytes": 5447,
+      "sha256": "dd5a6d471397110061f013f5153410646c67111dce92ceacbdb467ac4e52c9ba"
+    },
+    {
+      "path": "art/blender/vehicle_fidelity.py",
+      "bytes": 60456,
+      "sha256": "a2d12645c685fb51e9d64e2e4e62a94cd3d57e09c73ed1fdfc9e5a440136cbcd"
+    },
+    {
+      "path": "art/blender/vehicle_parts.py",
+      "bytes": 22600,
+      "sha256": "81148dcb70fb0433ba3a05c6638b68d72a0f235ba7171acf3c8ea2b60dedf6a6"
+    },
+    {
+      "path": "art/blender/vehicle_toyota_trail.blend",
+      "bytes": 3412980,
+      "sha256": "ffb9c9525a6a270d5802450039b827ae93c6ba7160f029d32a662d9bbebf5da9"
+    },
+    {
+      "path": "art/blender/vehicle_toyota_trail.py",
+      "bytes": 28405,
+      "sha256": "25f18f65837cbe8ea1589d3f0473d7eacf81c6301d1dae47b631464cce6b06ff"
+    },
+    {
+      "path": "art/studies/toyota-trail/02-curved-panels/baseline.json",
+      "bytes": 1284,
+      "sha256": "1afb7e56bb3b57b67f7adfa622b970537302415e472417cda7447c2df14367cc"
+    },
+    {
+      "path": "art/studies/toyota-trail/02-curved-panels/before-browser.cjs",
+      "bytes": 11500,
+      "sha256": "31e14785778f9385a99ff0015b5ef4125922a0f55af44a1e982c17f4c09b4e45"
+    },
+    {
+      "path": "art/studies/toyota-trail/02-curved-panels/before-rig-results.json",
+      "bytes": 1823,
+      "sha256": "66a26206f2b60df5852575896342e89a18904e7b13da43fb28f4b8999f2ed775"
+    },
+    {
+      "path": "art/studies/toyota-trail/02-curved-panels/before.blend",
+      "bytes": 1845169,
+      "sha256": "234ea30312e4fce277b3c38dfffc7db2cd007ebcbb9a555569fd9752bd37aa57"
+    },
+    {
+      "path": "art/studies/toyota-trail/02-curved-panels/before.glb",
+      "bytes": 3008764,
+      "sha256": "f77be17786686c49ecebefdb2c78a254342ca0ce0c221a60541d29f321a7f018"
+    },
+    {
+      "path": "art/studies/toyota-trail/02-curved-panels/before.json",
+      "bytes": 2232,
+      "sha256": "3db8e80ddccbda8169fdafb18fa79ec74f6285edee7df2d86cad19a217fc5762"
+    },
+    {
+      "path": "art/studies/toyota-trail/02-curved-panels/before.py",
+      "bytes": 21932,
+      "sha256": "92e452ae0d8e4d749f8cb4de94322179e481acc6df2f251f2807c662ac040799"
+    },
+    {
+      "path": "art/studies/toyota-trail/02-curved-panels/build-20260926-051716/clearance.json",
+      "bytes": 193,
+      "sha256": "18167900d316321139c760c1da69dba53de2d35ae01f16c37dff5acf91c3236d"
+    },
+    {
+      "path": "art/studies/toyota-trail/02-curved-panels/build-20260926-051716/generator.py",
+      "bytes": 28405,
+      "sha256": "25f18f65837cbe8ea1589d3f0473d7eacf81c6301d1dae47b631464cce6b06ff"
+    },
+    {
+      "path": "art/studies/toyota-trail/02-curved-panels/build-20260926-051716/rig.json",
+      "bytes": 295,
+      "sha256": "5cf2af53e6d7c83204e8816d0a5c388ac6e8f57039f3d33bae67c289b159172e"
+    },
+    {
+      "path": "art/studies/toyota-trail/02-curved-panels/build-20260926-051716/study-front.png",
+      "bytes": 1434158,
+      "sha256": "7bb9a2ade0b4cc577754efcb4bd20bed50bbbafde5fc63b68a300947c14ec31f"
+    },
+    {
+      "path": "art/studies/toyota-trail/02-curved-panels/build-20260926-051716/study-rear.png",
+      "bytes": 1421224,
+      "sha256": "c402dc1f827159ab08746ff3be1ff153e22a6d81f26c9fc6eb8ab6f9068eee06"
+    },
+    {
+      "path": "art/studies/toyota-trail/02-curved-panels/build-20260926-051716/study-side.png",
+      "bytes": 1383411,
+      "sha256": "dfb003586c7bb1fe92c5397f85ef1a9292437d714239015289818008230f1de6"
+    },
+    {
+      "path": "art/studies/toyota-trail/02-curved-panels/build-20260926-051716/study-under.png",
+      "bytes": 1443617,
+      "sha256": "fb8939b9eae44d16eb15de8d775269f798ca91c042585732a7c2f235d0618de7"
+    },
+    {
+      "path": "dist/assets/index-D0arffyz.js",
+      "bytes": 5381952,
+      "sha256": "a2bcd7ec491802b6d0dc8940e2a8ba98e12d5f472fad992b23940a7abb98e351"
+    },
+    {
+      "path": "dist/assets/index-DweeZaEa.css",
+      "bytes": 18556,
+      "sha256": "8fc88129a4f73e16f685d7dcf499d39c59ee10aa4d1b81f1984b3b87cd4bfcb5"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 642,
+      "sha256": "0c14dc5e03ea15a6f0ea3328bd16a16bfca36ce7f465c78572b4f9688af897c0"
+    },
+    {
+      "path": "docs/TOYOTA-CURVED-PANELS.md",
+      "bytes": 5292,
+      "sha256": "8264d0bf82e8d9cf2fe289a5db76d2d89ecd33b6637f8ee2d4e3dc86476d35a6"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/browser-report.json",
+      "bytes": 7509,
+      "sha256": "f38093cb8513e71caf6296c83e97251dbcb5f0cb9e5926292271bdbba819acfb"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/browser.log",
+      "bytes": 418,
+      "sha256": "16e8be5b757e68dc9836615b033b1bc07d2b4d72cf99a6fdb6f61675c9aa7bc5"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/build.log",
+      "bytes": 4003,
+      "sha256": "a7f4c9058367448104b5774f2b23376e58bb8c431cd7298444fa83f8dd008fde"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/comparison-check.json",
+      "bytes": 252,
+      "sha256": "6ff8d2028845928a951b699717bd546efa713bd6a9b66b72fa63666e3620d67d"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/comparison-desktop.png",
+      "bytes": 1067183,
+      "sha256": "a9a78b5bea51436c15ff36a81dc6396deeac340d6c802780da14da54234c8a33"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/comparison-mobile.png",
+      "bytes": 187987,
+      "sha256": "36a09e3fcf9b6729595f034b47d85d1a36e9b64e99ecde2779b277b20079b473"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/continuity.json",
+      "bytes": 290,
+      "sha256": "18c32ed1cae2637d90f4f7ff2018cef580871858706fd709b0f281a47356ae64"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/legacy-detail.png",
+      "bytes": 2764970,
+      "sha256": "97a4f038223507f8137d1d860c196f4fb2ace4254dd7890706d9e6d35f143515"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/legacy-driving.png",
+      "bytes": 3082706,
+      "sha256": "0f0464ef265f27b50bcdb5e2353640d3e4727454f786237c1d8e6297305b22d4"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/legacy-front.png",
+      "bytes": 3054457,
+      "sha256": "97979179a0b7aa192a4890738b3ca6c411fed4704cf308242870a6e864393cdf"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/legacy-hood.png",
+      "bytes": 2314855,
+      "sha256": "e63c77d2b2d84c6e4229b50865cf36818b4995315085e39068f18f9dd9daf037"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/legacy-night.png",
+      "bytes": 2454304,
+      "sha256": "47d8e1254a3e98f50295f150d6c252c68df8236e082056319dde6e69545b771c"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/legacy-pillar.png",
+      "bytes": 1974897,
+      "sha256": "6a952eb4bd072c1d2193db53815d465c50bcabbd97408a7be39564bbc93b348b"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/legacy-rear.png",
+      "bytes": 2846453,
+      "sha256": "c069067bc3515a4c111032b85ffc5743b00a3458cbc5683da7108f1cb3f17c77"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/legacy-side.png",
+      "bytes": 3063945,
+      "sha256": "604ffcdb880ea47b64f1f3f072e1a5253407b899c420256f069d3f5e777584c4"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/preview-check.json",
+      "bytes": 438,
+      "sha256": "fca10c401a1ae63ffd92e636d371602a21b358dd230c1c5d5366bf0feda7a2ee"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/production.log",
+      "bytes": 1608,
+      "sha256": "8b3ef67390b9692f779732b6c5473841d4f39493917a60f99b8cca7e689ad730"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/rig-results.json",
+      "bytes": 1823,
+      "sha256": "8a06cb95528d1a1c2adb5f17ffcd3096a6e0ac508d65cc24789e7ce857776a36"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/rig.log",
+      "bytes": 108,
+      "sha256": "03fc988a77045f85e3bf6761f79451c6c3aa58f645441f59a9ec4c75446870c3"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/sample-articulation.png",
+      "bytes": 2664493,
+      "sha256": "c60df01b09a9558ef03d3fd9d93ef7718492a50d6b5c51d9fa5fae1af37ac2d5"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/sample-detail.png",
+      "bytes": 2777355,
+      "sha256": "99685cc2a9249f1831fdd141ae399e730f111826a0b62501fb6885ad3dd96c40"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/sample-driving.png",
+      "bytes": 3082550,
+      "sha256": "90efb4b25658eb70e21fc4c99953b32cd35e164ce2326eb44353cb59c63c9f1d"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/sample-front.png",
+      "bytes": 3067849,
+      "sha256": "48b09599b0e5a254a6de69a5c7b2c9f5b360e7d4e6ef5cb1834972aaf38617cc"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/sample-hood.png",
+      "bytes": 2362445,
+      "sha256": "d20a6e7a178c09ff1a87afac2bc67a3c20ac3b3213bab49401856c6184b53692"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/sample-night.png",
+      "bytes": 2455442,
+      "sha256": "90db737aedce6a07b459018948c6122fc5a27e91010e731399b461427b42d3a6"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/sample-pillar.png",
+      "bytes": 2032816,
+      "sha256": "8cb51e556517f86a504a4395cb78ae36ab5f1c610bcb4d1ba483413ada39a205"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/sample-rear.png",
+      "bytes": 2848644,
+      "sha256": "166eb3d7429e1e99991990a5af0f6fb03291d6ce25ecc63c145abcba87834891"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/sample-side.png",
+      "bytes": 3071320,
+      "sha256": "a9ceef9d019342f11d8534d2bb097528281edeaee797ef3a148890c31a9f7816"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/suspension.mp4",
+      "bytes": 16306952,
+      "sha256": "dca453ce2dc68e1a76f96707ddc5c680bbed2307fbea66758448a44e27ace493"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/20260926-proof-02/suspension.webm",
+      "bytes": 9945613,
+      "sha256": "39f303d71841cf273f33ed6af25937b79569eb0e13171aedf1eeef207ad9ca91"
+    },
+    {
+      "path": "docs/toyota-trail/02-curved-panels/index.html",
+      "bytes": 7281,
+      "sha256": "8df23870b084877f63159ced4c323597cc051de3e182fc87c8c5930aefd00ebb"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1208,
+      "sha256": "7f213ca6cec15cb885ef8b45d9caaefe944801a781c8bc5ae623cac2325549a0"
+    },
+    {
+      "path": "public/assets/models/vehicle_toyota_trail.glb",
+      "bytes": 4446336,
+      "sha256": "5519c936dd4dd272fc7a244ca7ddb661d3a3da9cb59cfdf2b621dad73410b91d"
+    },
+    {
+      "path": "public/assets/models/vehicle_toyota_trail.json",
+      "bytes": 2305,
+      "sha256": "4e9b426670c621f71e6ce090d6722fd4af7f9bf5ed3d40c4d4a3b5391d93ff31"
+    },
+    {
+      "path": "src/game/Game.ts",
+      "bytes": 16451,
+      "sha256": "030b8b7bd8e603084f4e14e210f3cd3fa65cd3c63aa42bb9e8e3d47e9109305f"
+    },
+    {
+      "path": "src/game/boot.ts",
+      "bytes": 16433,
+      "sha256": "7ea5753d79d445cf1e7c89d77ea43cc1ea8b0da6d207ee6d1a216c47b4c12533"
+    },
+    {
+      "path": "src/game/camera.ts",
+      "bytes": 6537,
+      "sha256": "b50f1bab68f017dab971db070ce50d3679e807ce8df29d95c8eba4372acf1862"
+    },
+    {
+      "path": "src/game/config.ts",
+      "bytes": 10102,
+      "sha256": "066486439cb7e72496c01d9a01cc14ac70302648a3c04743aebbc96d7ccad591"
+    },
+    {
+      "path": "src/game/physics/vehicle.ts",
+      "bytes": 25011,
+      "sha256": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539"
+    },
+    {
+      "path": "src/game/render/vehicleView.ts",
+      "bytes": 18494,
+      "sha256": "fd574703cb4e16c148db38f9c6a0c05daa483d8b847e497bad99b8fc7ab5b4d7"
+    },
+    {
+      "path": "tools/toyota-study-browser.cjs",
+      "bytes": 12093,
+      "sha256": "4e93ed4451994184241e2b696a3f7a3696ae86fefbcf40346749d8ea7e52a1fa"
+    },
+    {
+      "path": "tools/vehicle-rig-test.ts",
+      "bytes": 7125,
+      "sha256": "56b9002b37353611221202a40452e4cb61d88de22bd41890ac19e8b1d5694f19"
+    }
+  ]
+}

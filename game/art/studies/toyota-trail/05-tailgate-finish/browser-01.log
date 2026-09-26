@@ -1,0 +1,18 @@
+
+> forest-trail@1.0.0 test:toyota:browser
+> node tools/toyota-study-browser.cjs
+
+Captured pair: front
+Captured pair: side
+Captured pair: rear
+Captured pair: tail-detail
+Captured pair: detail
+Captured pair: hood
+Captured pair: pillar
+Captured pair: wheel
+Captured pair: driving
+Captured pair: night
+Captured pair: rear-night
+Recorded rear-lamp orbit: legacy
+Recorded rear-lamp orbit: sample
+PASS Toyota sample browser acceptance: /home/tiger/projects/coding-agent-evals/research/game-dev/forest-trail/game/docs/toyota-trail/05-tailgate-finish/20260926-proof-01

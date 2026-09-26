@@ -21,11 +21,12 @@
 ## 主要内容
 
 - **三辆车：**
-  - **Scout 短轴四驱：**均衡，首版车，第二版升级了细节并修复了前悬挂穿模。
-  - **TOYOTA Land Cruiser 60 旅行车：**长轴、重、稳，扭矩大，带通气管，涉水更深。
-  - **Kestrel 小皮卡：**轻、快、软，低档扭矩最小。
+  - **Defender 90：**以传统 300Tdi 为参考的短轴探险车，前后整体桥螺旋弹簧。
+  - **TOYOTA Land Cruiser FJ60：**圆灯四门旅行车，前后钢板弹簧，长轴、重、稳，带通气管。
+  - **TOYOTA Hilux RN46：**早期四驱单排皮卡，独立冲压货斗和前后钢板弹簧，轻快灵活。
 
-  三辆车的物理参数和车型都不同，悬挂在极限姿态下都没有穿模，泥污会累积在车身上。
+  **当前 Toyota 为旧版风格精修样车**：保留方正车身、深色车窗与车顶装备，轮胎直径 88 cm，正常悬挂行程 38 cm。本轮将轮眉带宽从 10 收窄到 5.5 cm，增加弹簧静载下沉，使车身降低约 5.9 cm，胎顶留白更紧凑；轮距与悬挂端点保持原值。尾灯修正、直柱、平窗和机盖曲面继续保留。近景完整装配约 19.3 万三角面，远景约 6.7 万。见 [本轮比例调整](docs/TOYOTA-ARCH-BALANCE.md) 和 [同机位对照](docs/toyota-trail/06-wheel-arch-balance/index.html)。[第一版样车](docs/TOYOTA-TRAIL-STUDY.md)与[上一轮三车记录](docs/VEHICLE-FIDELITY.md)留作历史参考。
+- **近景环境与摄影：**风化岩石倒角、细分树皮、树桩年轮与裂纹，8 种环境模型增加距离 LOD。暂停菜单可近距离检视车辆，摄影焦点随镜头距离更新。
 - **昼夜与车灯：**
   - 天空是 GPU 程序化生成的，有太阳、云、星空和月亮；白天与夜晚之间平滑过渡。
   - 夜里有篝火、串灯、窗灯，营地和草甸上空有萤火虫。
@@ -55,6 +56,7 @@ npm run preview  # 本地预览 dist/
 
 URL 参数：
 - `?play`：跳过标题页；
+- `?play&vehicle=toyota`：直接进入 Toyota 样车（也支持 `scout` / `ranger`）；
 - `?debug`：显示驾驶遥测（速度、油门、悬挂长度、载荷、地表、安全点、绞盘张力、绘制调用数）。
 
 ## 操作
@@ -99,12 +101,15 @@ docs/               方案文档、验证报告、开发计划、素材来源、
 
 ```bash
 npm run test:proving                # 三辆车依次跑驾驶验收 D01–D12（结果写入 tools/proving-results*.json）
+npm run test:rig                    # 最终 GLB、弹簧形变、胎肩接地和车桥碰撞体回归检查
+npm run test:toyota:browser         # 当前 Toyota 与修改前版本对照、悬挂录制；写入新目录（需 Playwright）
 npm run test:lap                    # 自动驾驶跑完整条环线；VEH=toyota|ranger 选车，FULL=1 加载全部静态碰撞体
 npx tsx tools/sim-test.ts park      # 自动驾驶跑完越野训练场（同样支持 VEH=...）
 npx tsx tools/sim-test.ts canyon    # 自动驾驶穿过赤岩峡谷和吊桥
 npm run test:drive                  # 起步、制动、驻停、泥地与岩阶数据
 npm run map                         # 生成地图预览 docs/map-preview.png 并打印各路段坡度
 npm run assets                      # 用 Blender 重新生成全部模型、预览图、车辆 JSON 和 asset-report.json（需安装 Blender 4.x）
+npm run assets:toyota                # 只重新生成旧版风格 Toyota 样车及装配检查
 ```
 
 ## 文档
@@ -113,5 +118,13 @@ npm run assets                      # 用 Blender 重新生成全部模型、预
 - [docs/DESIGN.md](docs/DESIGN.md)：方案文档，记录所有实现取舍；第二版内容在第 13 节。
 - [docs/VERIFICATION.md](docs/VERIFICATION.md)：实际验证过程与结果、性能数据、剩余限制、截图索引。
 - [docs/CREDITS.md](docs/CREDITS.md)：背景音乐来源、许可证与署名。
+- [docs/TOYOTA-ARCH-BALANCE.md](docs/TOYOTA-ARCH-BALANCE.md)：当前 Toyota 的轮眉与车身姿态调整。
+- [docs/TOYOTA-TAILGATE-FINISH.md](docs/TOYOTA-TAILGATE-FINISH.md)：第五轮尾灯闪烁修复与附件连接打磨记录。
+- [docs/TOYOTA-ALL-TERRAIN.md](docs/TOYOTA-ALL-TERRAIN.md)：第四轮大轮胎与悬挂调整记录。
+- [docs/TOYOTA-FLAT-GLAZING.md](docs/TOYOTA-FLAT-GLAZING.md)：第三轮直柱平窗与车头前段修整记录。
+- [docs/TOYOTA-CURVED-PANELS.md](docs/TOYOTA-CURVED-PANELS.md)：第二轮曲面版本的历史记录。
+- [docs/TOYOTA-TRAIL-STUDY.md](docs/TOYOTA-TRAIL-STUDY.md)：第一版 Toyota 样车、旧版来源与当时的实测结果。
+- [docs/VEHICLE-FIDELITY.md](docs/VEHICLE-FIDELITY.md)：上一轮三车精细版本的历史记录。
+- [样车悬挂实机演示](docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/suspension.mp4)：当前 Toyota 低档通过训练场交叉轴，检查降低静态姿态后的车身与悬挂运动。
 
 除背景音乐外，所有模型、贴图和音效都是本项目原创（程序化生成）。

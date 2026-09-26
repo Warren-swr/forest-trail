@@ -1,0 +1,72 @@
+{
+  "revision": "05-tailgate-finish",
+  "previousRevision": "04-all-terrain",
+  "createdAt": "2026-09-26T06:35:58.984190+00:00",
+  "files": [
+    {
+      "source": "public/assets/models/vehicle_toyota_trail.glb",
+      "snapshot": "before.glb",
+      "sha256": "eebd9d70d67dc1fa199c5769d8d647bab5a6d0759940bee34d9f3a3befcf2348"
+    },
+    {
+      "source": "public/assets/models/vehicle_toyota_trail.json",
+      "snapshot": "before.json",
+      "sha256": "ccaec6309de0fe1f053d8e57576f86b78dea7dc94298079a05bb49332fab11ed"
+    },
+    {
+      "source": "art/blender/vehicle_toyota_trail.blend",
+      "snapshot": "before.blend",
+      "sha256": "bff2c569ca384cf2cd6f81ebbab932d7c7d90052a634d3fd88ac569d0adbae61"
+    },
+    {
+      "source": "art/blender/vehicle_toyota_trail.py",
+      "snapshot": "before.py",
+      "sha256": "06740da1da231e42d4de9e4af8fbbab447552d4a3639b1da4fa2bd6552506aa3"
+    },
+    {
+      "source": "art/blender/vehicle_fidelity.py",
+      "snapshot": "before-fidelity.py",
+      "sha256": "35a2e5670cbfb70cd612a409a7b30242b1366b6b57b8b69c62235664adc09620"
+    },
+    {
+      "source": "art/blender/vehicle_parts.py",
+      "snapshot": "before-parts.py",
+      "sha256": "c9a11f755c21d96cd1c793413fa540be2427e83592461451e1ac8b00b98808ec"
+    },
+    {
+      "source": "art/blender/vehicle_check.py",
+      "snapshot": "before-check.py",
+      "sha256": "4f4660328e228f9e88575b0e890728c9c9556edffa2f663251bb0b9be73e47a5"
+    },
+    {
+      "source": "src/game/config.ts",
+      "snapshot": "before-config.ts",
+      "sha256": "99dfbf9c9ac6ad0a1cfc7f4a2c3e46315fc45b9b46ab3afb94b984fa22021a19"
+    },
+    {
+      "source": "src/game/render/vehicleView.ts",
+      "snapshot": "before-view.ts",
+      "sha256": "fe347d9d82ab13176d8ada16e838209484d27ebd68ddbeea2c8ecbbf8087418c"
+    },
+    {
+      "source": "src/game/physics/vehicle.ts",
+      "snapshot": "before-physics.ts",
+      "sha256": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539"
+    },
+    {
+      "source": "tools/toyota-study-browser.cjs",
+      "snapshot": "before-browser.cjs",
+      "sha256": "6f4800c2949653769220b6e17741a43eb5803cb30071716dbd192c24d51c8342"
+    },
+    {
+      "source": "tools/toyota-geometry-check.py",
+      "snapshot": "before-geometry-check.py",
+      "sha256": "2a6348095b9996da02323b6a103b51b0725a9b7d9be028da7de3c2aa2d0b0970"
+    },
+    {
+      "source": "tools/vehicle-rig-results.json",
+      "snapshot": "before-rig.json",
+      "sha256": "94212a5a5fd708ebb4b77d736125d93ba47b56d0bd30806bb5b430318e197f0f"
+    }
+  ]
+}

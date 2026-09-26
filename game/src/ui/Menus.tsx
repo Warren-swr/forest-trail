@@ -111,7 +111,7 @@ export function Credits() {
       <div className="section-label">背景音乐</div>
       {tracks.map((t) => <div key={t.title} className="track"><span>“{t.title}”</span><span>Kevin MacLeod · incompetech.com</span></div>)}
       <p style={{ marginTop: 12 }}>音乐以 Creative Commons 署名 4.0 许可证发布：<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">creativecommons.org/licenses/by/4.0</a>。完整来源见 docs/CREDITS.md。</p>
-      <p>TOYOTA 与 Land Cruiser 为丰田汽车公司商标，此处仅作外观致敬。</p>
+      <p>车辆外观参考 Defender 90、Land Cruiser FJ60 与 Hilux RN46，模型由项目自行制作。车型名称与标识归各自品牌所有。</p>
     </div>
   );
 }

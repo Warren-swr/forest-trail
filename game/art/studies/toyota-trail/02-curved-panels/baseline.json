@@ -1,0 +1,37 @@
+{
+  "revision": "02-curved-panels",
+  "createdAt": "2026-09-26T04:55:54.362920+00:00",
+  "previousStyle": "trail-v2-refinement/1",
+  "files": [
+    {
+      "source": "public/assets/models/vehicle_toyota_trail.glb",
+      "snapshot": "before.glb",
+      "sha256": "f77be17786686c49ecebefdb2c78a254342ca0ce0c221a60541d29f321a7f018"
+    },
+    {
+      "source": "public/assets/models/vehicle_toyota_trail.json",
+      "snapshot": "before.json",
+      "sha256": "3db8e80ddccbda8169fdafb18fa79ec74f6285edee7df2d86cad19a217fc5762"
+    },
+    {
+      "source": "art/blender/vehicle_toyota_trail.blend",
+      "snapshot": "before.blend",
+      "sha256": "234ea30312e4fce277b3c38dfffc7db2cd007ebcbb9a555569fd9752bd37aa57"
+    },
+    {
+      "source": "art/blender/vehicle_toyota_trail.py",
+      "snapshot": "before.py",
+      "sha256": "92e452ae0d8e4d749f8cb4de94322179e481acc6df2f251f2807c662ac040799"
+    },
+    {
+      "source": "tools/toyota-study-browser.cjs",
+      "snapshot": "before-browser.cjs",
+      "sha256": "31e14785778f9385a99ff0015b5ef4125922a0f55af44a1e982c17f4c09b4e45"
+    },
+    {
+      "source": "tools/vehicle-rig-results.json",
+      "snapshot": "before-rig-results.json",
+      "sha256": "66a26206f2b60df5852575896342e89a18904e7b13da43fb28f4b8999f2ed775"
+    }
+  ]
+}

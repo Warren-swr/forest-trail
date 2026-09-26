@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "paneCount": 8,
+  "panes": [
+    {
+      "areaM2": 0.3152657093230199,
+      "vertices": 4,
+      "maxPlaneDeviationM": 1.5092391766659486e-08
+    },
+    {
+      "areaM2": 0.8110699304573129,
+      "vertices": 4,
+      "maxPlaneDeviationM": 5.4990045402477316e-08
+    },
+    {
+      "areaM2": 0.3152657093230199,
+      "vertices": 4,
+      "maxPlaneDeviationM": 1.5092391766659486e-08
+    },
+    {
+      "areaM2": 0.35496208170494264,
+      "vertices": 4,
+      "maxPlaneDeviationM": 7.431386662936458e-08
+    },
+    {
+      "areaM2": 0.35496207407431735,
+      "vertices": 4,
+      "maxPlaneDeviationM": 1.5146617078172386e-08
+    },
+    {
+      "areaM2": 0.43607546960988763,
+      "vertices": 4,
+      "maxPlaneDeviationM": 2.732275491499149e-08
+    },
+    {
+      "areaM2": 0.43607547292751914,
+      "vertices": 4,
+      "maxPlaneDeviationM": 3.1844494976198446e-08
+    },
+    {
+      "areaM2": 0.7405718655498645,
+      "vertices": 4,
+      "maxPlaneDeviationM": 6.938893903907228e-18
+    }
+  ],
+  "glassUnchanged": true,
+  "tyreRadiusM": {
+    "before": 0.4410132459207128,
+    "after": 0.4410132459207128,
+    "far": 0.4413285152165301
+  },
+  "steelRimRadiusM": {
+    "before": 0.26315790876096423,
+    "after": 0.26315790876096423
+  },
+  "shock": {
+    "compressedLength": 0.4804425043644661,
+    "extendedLength": 0.8027608610289866,
+    "stroke": 0.32231835666452047,
+    "barrelLength": 0.37
+  }
+}

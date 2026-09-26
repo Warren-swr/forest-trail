@@ -26,4 +26,6 @@
 - **贴图：**地形、天空、车灯光斑都在运行时由着色器或 Canvas 生成。
 - **音效：**发动机、轮胎、泥水、风、溪流、鸟、虫鸣、猫头鹰和绞盘都用 WebAudio 实时合成。
 
-车辆“TOYOTA Land Cruiser 60 旅行车”按用户提供的参考图建模。TOYOTA 与 Land Cruiser 是丰田汽车公司的商标，本项目只把它们用作非商业的外观致敬。
+车辆外观参考 Land Rover Defender 90、Toyota Land Cruiser FJ60 与 Toyota Hilux RN46，由项目自行创建模型与探险装备。参考来源、结构和游戏调校范围见 [VEHICLE-FIDELITY.md](VEHICLE-FIDELITY.md)。车型名称和标识归各自品牌所有。
+
+当前 Toyota 使用旧版风格精修样车，参考 Toyota 官方 FJ60 车型档案；模型由本项目在旧版基础上创建，未引入第三方车辆网格或贴图。见 [TOYOTA-TRAIL-STUDY.md](TOYOTA-TRAIL-STUDY.md)。

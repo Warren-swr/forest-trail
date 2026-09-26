@@ -16,7 +16,6 @@ export function VehicleSelect({ s, inline = false }: { s: HudState; inline?: boo
   const spec = VEHICLES[id];
   const idx = VEHICLE_ORDER.indexOf(id);
   const go = (d: number) => ui.setVehicle(VEHICLE_ORDER[(idx + d + VEHICLE_ORDER.length) % VEHICLE_ORDER.length] as VehicleId);
-  const lengthM = spec.wheelBase + 1.7;
   return (
     <div className={`vsel ${inline ? 'inline' : 'glass'} fade-in`}>
       <div className="eyebrow">选择车辆 · {idx + 1}/{VEHICLE_ORDER.length}</div>
@@ -36,6 +35,7 @@ export function VehicleSelect({ s, inline = false }: { s: HudState; inline?: boo
         </div>
       </div>
       <div className="vsel-tag">{spec.tagline}</div>
+      {inline && <button className="btn small" onClick={() => ui.openPhoto()}>近距离检视车辆</button>}
       {STAT_NAMES.map(([k, n]) => (
         <div key={k} className="stat">
           <span>{n}</span>
@@ -45,7 +45,8 @@ export function VehicleSelect({ s, inline = false }: { s: HudState; inline?: boo
       ))}
       <div className="specs">
         <div className="spec"><div className="k">整备质量</div><div className="v num">{spec.mass.toLocaleString()} kg</div></div>
-        <div className="spec"><div className="k">轴距 / 车长</div><div className="v num">{spec.wheelBase.toFixed(2)} / {lengthM.toFixed(1)} m</div></div>
+        <div className="spec"><div className="k">轴距 / 含装备车长</div><div className="v num">{spec.wheelBase.toFixed(2)} / {spec.bodyLength.toFixed(2)} m</div></div>
+        <div className="spec"><div className="k">悬挂结构</div><div className="v">整体桥 · {spec.suspension === 'coil' ? '螺旋弹簧' : '钢板弹簧'}</div></div>
         <div className="spec"><div className="k">轮胎直径</div><div className="v num">{(spec.wheelRadius * 2).toFixed(2)} m</div></div>
         <div className="spec"><div className="k">最高速 高 / 低档</div><div className="v num">{spec.highMaxKmh.toFixed(0)} / {spec.lowMaxKmh.toFixed(0)} km/h</div></div>
         <div className="spec"><div className="k">低档牵引力</div><div className="v num">{(spec.lowPeak / 1000).toFixed(1)} kN</div></div>

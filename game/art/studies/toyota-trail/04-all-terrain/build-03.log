@@ -1,0 +1,44 @@
+
+> forest-trail@1.0.0 assets:toyota
+> blender --background --threads 6 --python-exit-code 1 --python art/blender/vehicle_toyota_trail.py
+
+INFO Draco mesh compression is available, use library at /data00/blender-4.5.12/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+14:14:13 | INFO: Starting glTF 2.0 export
+14:14:13 | INFO: Extracting primitive: Body
+14:14:13 | INFO: Primitives created: 20
+14:14:13 | INFO: Extracting primitive: Wheel
+14:14:13 | INFO: Primitives created: 4
+14:14:13 | INFO: Extracting primitive: AxleFront
+14:14:13 | INFO: Primitives created: 4
+14:14:13 | INFO: Extracting primitive: AxleRear
+14:14:13 | INFO: Primitives created: 2
+14:14:13 | INFO: Extracting primitive: Spring
+14:14:13 | INFO: Primitives created: 1
+14:14:13 | INFO: Extracting primitive: ShockBody
+14:14:13 | INFO: Primitives created: 3
+14:14:13 | INFO: Extracting primitive: ShockRod
+14:14:13 | INFO: Primitives created: 1
+14:14:13 | INFO: Extracting primitive: BrakeFront
+14:14:13 | INFO: Primitives created: 2
+14:14:13 | INFO: Extracting primitive: BrakeRear
+14:14:13 | INFO: Primitives created: 2
+14:14:13 | INFO: Extracting primitive: Driveshaft
+14:14:13 | INFO: Primitives created: 2
+14:14:13 | INFO: Extracting primitive: Body.001
+14:14:13 | INFO: Primitives created: 20
+14:14:13 | INFO: Extracting primitive: Wheel_LOD1
+14:14:13 | INFO: Primitives created: 3
+14:14:13 | INFO: Finished glTF 2.0 export in 0.16188335418701172 s
+Blender 4.5.12 LTS (hash 84afd5f785f7 built 2026-07-21 01:31:22)
+Traceback (most recent call last):
+  File "/home/tiger/projects/coding-agent-evals/research/game-dev/forest-trail/game/art/blender/vehicle_toyota_trail.py", line 520, in <module>
+    main()
+  File "/home/tiger/projects/coding-agent-evals/research/game-dev/forest-trail/game/art/blender/vehicle_toyota_trail.py", line 492, in main
+    raise RuntimeError('Toyota Trail running-gear clearance failed; see ' + STUDY)
+RuntimeError: Toyota Trail running-gear clearance failed; see /home/tiger/projects/coding-agent-evals/research/game-dev/forest-trail/game/art/studies/toyota-trail/04-all-terrain/build-20260926-061411
+
+CLEARANCE toyota {'rest': {'ShockRod': 168}, 'bump_all': {'ShockRod': 148}, 'droop_all': {'ShockRod': 200}, 'cross_axle': {'ShockRod': 168}, 'cross_axle_2': {'ShockRod': 168}, 'lock_left_bump': {'ShockRod': 158}, 'lock_right_bump': {'ShockRod': 158}, 'lock_left_flex': {'ShockRod': 168}, 'lock_right_flex': {'ShockRod': 168}}
+
+Error: script failed, file: 'art/blender/vehicle_toyota_trail.py', exiting.
+
+Blender quit

@@ -1,0 +1,31 @@
+{
+  "id": "toyota",
+  "fidelity": 3,
+  "R": 0.44,
+  "W": 0.3,
+  "wheelbase": 2.73,
+  "track_x": 0.88,
+  "spring_x": 0.47,
+  "spring_top": 0.48,
+  "spring_seat": 0.055,
+  "pinion_y": 0.235,
+  "pinion_z": 0.025,
+  "tcase_y": 0.3,
+  "tcase_z": 0.05,
+  "bump": 0.25,
+  "droop": 0.19,
+  "lock": 35.6,
+  "shock": {
+    "bottom": [
+      0.28,
+      0.035,
+      0.09
+    ],
+    "top": [
+      0.265,
+      0.535,
+      -0.32
+    ],
+    "barrelLength": 0.37
+  }
+}

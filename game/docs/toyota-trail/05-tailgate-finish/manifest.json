@@ -1,0 +1,588 @@
+{
+  "schema": "toyota-tailgate-finish/1",
+  "createdAt": "2026-09-26T07:04:39.642232+00:00",
+  "revision": "05-tailgate-finish",
+  "selectedBuild": "art/studies/toyota-trail/05-tailgate-finish/build-20260926-065414",
+  "selectedBrowserProof": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02",
+  "assetSha256": "62c4540f71709c816b6a9b7611b3b5865bb6a2da7274236b3d5a8ea1192a8a1a",
+  "validation": {
+    "exposedCoplanarPairsBefore": {
+      "near": 7,
+      "far": 6
+    },
+    "exposedCoplanarPairsAfter": {
+      "near": 0,
+      "far": 0
+    },
+    "rearLampVisibilitySamples": 144,
+    "rigChecks": 9,
+    "clearancePoses": 9,
+    "planarWindowPanes": 8,
+    "unchangedPhysicsAndConfig": true,
+    "browser": true,
+    "comparisonPage": true,
+    "preservedPreviousFiles": 81
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 8987,
+      "sha256": "3c721cac5fce3947ac3c0d658cfd3e324e5dc7f9810eb4cb2fa04aa4c66c5407"
+    },
+    {
+      "path": "art/ASSET_SPEC.md",
+      "bytes": 7153,
+      "sha256": "bdf723c5f02e3f387cc75924ad892895e9bdc59b6843d2cf40de9e567261e271"
+    },
+    {
+      "path": "art/asset-report.json",
+      "bytes": 81187,
+      "sha256": "2b27bc21fe04df639c130b39456b04a4afc87377e497d2550c3b79592c5ae2b4"
+    },
+    {
+      "path": "art/blender/vehicle_toyota_trail.blend",
+      "bytes": 2972306,
+      "sha256": "dbe73b0875e3552d8f2c773fffc8a72b70c863e45961bf080d4a8f715cced22b"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/after.blend",
+      "bytes": 2972306,
+      "sha256": "dbe73b0875e3552d8f2c773fffc8a72b70c863e45961bf080d4a8f715cced22b"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/after.glb",
+      "bytes": 4278356,
+      "sha256": "62c4540f71709c816b6a9b7611b3b5865bb6a2da7274236b3d5a8ea1192a8a1a"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/after.json",
+      "bytes": 2359,
+      "sha256": "58f42ded93fe1c824b71359c0d123573a8f00af85bdb710ae24cb052ad10247a"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/baseline.json",
+      "bytes": 2550,
+      "sha256": "4d1212759ccb816689feed3c4add3d605882efd7fd1bb337e3b09124c0b352df"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/before-browser.cjs",
+      "bytes": 13457,
+      "sha256": "6f4800c2949653769220b6e17741a43eb5803cb30071716dbd192c24d51c8342"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/before-check.py",
+      "bytes": 5520,
+      "sha256": "4f4660328e228f9e88575b0e890728c9c9556edffa2f663251bb0b9be73e47a5"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/before-config.ts",
+      "bytes": 10264,
+      "sha256": "99dfbf9c9ac6ad0a1cfc7f4a2c3e46315fc45b9b46ab3afb94b984fa22021a19"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/before-fidelity.py",
+      "bytes": 61615,
+      "sha256": "35a2e5670cbfb70cd612a409a7b30242b1366b6b57b8b69c62235664adc09620"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/before-geometry-check.py",
+      "bytes": 4905,
+      "sha256": "2a6348095b9996da02323b6a103b51b0725a9b7d9be028da7de3c2aa2d0b0970"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/before-parts.py",
+      "bytes": 22761,
+      "sha256": "c9a11f755c21d96cd1c793413fa540be2427e83592461451e1ac8b00b98808ec"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/before-physics.ts",
+      "bytes": 25011,
+      "sha256": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/before-rig.json",
+      "bytes": 1824,
+      "sha256": "94212a5a5fd708ebb4b77d736125d93ba47b56d0bd30806bb5b430318e197f0f"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/before-spec.json",
+      "bytes": 2575,
+      "sha256": "c500f5753c1a56dcf82d1afa134e72e844c4b47513430a6323417b20392b04ca"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/before-view.ts",
+      "bytes": 18541,
+      "sha256": "fe347d9d82ab13176d8ada16e838209484d27ebd68ddbeea2c8ecbbf8087418c"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/before.blend",
+      "bytes": 2765150,
+      "sha256": "bff2c569ca384cf2cd6f81ebbab932d7c7d90052a634d3fd88ac569d0adbae61"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/before.glb",
+      "bytes": 4089772,
+      "sha256": "eebd9d70d67dc1fa199c5769d8d647bab5a6d0759940bee34d9f3a3befcf2348"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/before.json",
+      "bytes": 2334,
+      "sha256": "ccaec6309de0fe1f053d8e57576f86b78dea7dc94298079a05bb49332fab11ed"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/before.py",
+      "bytes": 26629,
+      "sha256": "06740da1da231e42d4de9e4af8fbbab447552d4a3639b1da4fa2bd6552506aa3"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/browser-01.log",
+      "bytes": 560,
+      "sha256": "b481c46776d71922b70f46778a514c74e2c5417b5a2f1e1cffb5e26307986104"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/browser-02.log",
+      "bytes": 585,
+      "sha256": "e13bf6823fab8be8b9af869eebc1aedb5f79d875eb849c68ffedbfa794ff26ab"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/build-01.log",
+      "bytes": 3995,
+      "sha256": "7eee2df4ed125c62ea09a2e141357b3b86f8c91380c189b5737e804c2c2b76d1"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/build-02.log",
+      "bytes": 3995,
+      "sha256": "7215fb5d65ab5752b9f04fa74f5448cdeaf4af0dc3cdc01a768a9f25360cdd1b"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/build-03.log",
+      "bytes": 3994,
+      "sha256": "fadb924e1f68c01c1b912cc320b45e8353a8cde374f4baae01e9166aec9ad304"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/build-04.log",
+      "bytes": 3994,
+      "sha256": "cf5f923098f673c1a30d3da95928cfc374456bec36606160091482139a9053ed"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/build-05.log",
+      "bytes": 3995,
+      "sha256": "3252658c5e6f5bc2bbc961e47f710ca9383cce3766d29cae80811f84424ec4f4"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/build-20260926-065414/clearance.json",
+      "bytes": 193,
+      "sha256": "18167900d316321139c760c1da69dba53de2d35ae01f16c37dff5acf91c3236d"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/build-20260926-065414/generator.py",
+      "bytes": 34234,
+      "sha256": "18821c4cad75a440914dda46be7de2854bbeec1d394fe41502e0a4e94631153e"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/build-20260926-065414/rig.json",
+      "bytes": 456,
+      "sha256": "e95c1d0e1b75ddd6d8f452b1262641460d56af83602a4054263a014c847793e6"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/build-20260926-065414/study-front.png",
+      "bytes": 1429962,
+      "sha256": "3ce85ab768cccc493f49cbb88f80de4543c44c199a00eb7d42bf2fd269355b47"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/build-20260926-065414/study-rear.png",
+      "bytes": 1420737,
+      "sha256": "f2ddaa24fad0144c91ed0f77c2e320bda2de5060f1895a85197ea6c583b12c01"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/build-20260926-065414/study-side.png",
+      "bytes": 1389051,
+      "sha256": "0962892231f9e604ff259fd6e4a34cd0e6fa5e5303962317d9f2763a2bd299da"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/build-20260926-065414/study-under.png",
+      "bytes": 1445228,
+      "sha256": "5667932844a2c7acf90edd47886afeb7084a7b586d7cb62816f1b14de01265c4"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/geometry-01.json",
+      "bytes": 1431,
+      "sha256": "b84a39830c7c53b78dd72813a08c1f2107d07b52f83f254af00f47687aa34d8c"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/geometry-02.json",
+      "bytes": 1431,
+      "sha256": "b84a39830c7c53b78dd72813a08c1f2107d07b52f83f254af00f47687aa34d8c"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/production-build-01.log",
+      "bytes": 1608,
+      "sha256": "d0230b70ced989616542ec121ea275cbd02ccaaa70cba916c7a6b1264b4cb4de"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/production-build-02.log",
+      "bytes": 1608,
+      "sha256": "d398fdc472a49d5f1424564d5f15d5c50e9f61f7f6dea40a515b5680098fafc7"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/rig-01.log",
+      "bytes": 108,
+      "sha256": "03fc988a77045f85e3bf6761f79451c6c3aa58f645441f59a9ec4c75446870c3"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/rig-02.log",
+      "bytes": 108,
+      "sha256": "03fc988a77045f85e3bf6761f79451c6c3aa58f645441f59a9ec4c75446870c3"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/sources/art/blender/common.py",
+      "bytes": 18765,
+      "sha256": "2ebdbcae2758fd5f8a6d66e0a63d93def0cae5d172980e4aa0c8df0cc0e1ae70"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/sources/art/blender/reference/vehicle_toyota_v2.py",
+      "bytes": 37803,
+      "sha256": "a7cf4742af572ab567abcdae0b7bb2a0e209d680beccdd2dc4b096fe0b1edb4b"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/sources/art/blender/vehicle_check.py",
+      "bytes": 5520,
+      "sha256": "4f4660328e228f9e88575b0e890728c9c9556edffa2f663251bb0b9be73e47a5"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/sources/art/blender/vehicle_fidelity.py",
+      "bytes": 61681,
+      "sha256": "da1f2f29d690284acba33b120c98b2eae998af003aa04dff9b235ce1803ac97a"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/sources/art/blender/vehicle_parts.py",
+      "bytes": 22761,
+      "sha256": "c9a11f755c21d96cd1c793413fa540be2427e83592461451e1ac8b00b98808ec"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/sources/art/blender/vehicle_toyota_trail.py",
+      "bytes": 34234,
+      "sha256": "18821c4cad75a440914dda46be7de2854bbeec1d394fe41502e0a4e94631153e"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/sources/src/game/config.ts",
+      "bytes": 10264,
+      "sha256": "99dfbf9c9ac6ad0a1cfc7f4a2c3e46315fc45b9b46ab3afb94b984fa22021a19"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/sources/src/game/physics/vehicle.ts",
+      "bytes": 25011,
+      "sha256": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/sources/src/game/render/vehicleView.ts",
+      "bytes": 18620,
+      "sha256": "ad98b3a3045134cdafd5fadb7046e0ed74e71a1cea03344a6ff4f22d3f369cc6"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/sources/tools/toyota-geometry-check.py",
+      "bytes": 5031,
+      "sha256": "0a7ca8213e932d805d811ca6a95829ce746253b74594838e3ab9018d8e43d563"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/sources/tools/toyota-study-browser.cjs",
+      "bytes": 16760,
+      "sha256": "36801b80d9629a09b7ed5d912ef4fef1a9198e89d3355e7ec4684fc5b26c1fd4"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/sources/tools/toyota-surface-check.py",
+      "bytes": 6744,
+      "sha256": "3b4b34f276cc2bdb71457d559a13594cbbeb1b6e6ec8ec851e3c658a64fece96"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/sources/tools/vehicle-rig-test.ts",
+      "bytes": 7125,
+      "sha256": "56b9002b37353611221202a40452e4cb61d88de22bd41890ac19e8b1d5694f19"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/surfaces-01.json",
+      "bytes": 559,
+      "sha256": "a0b5ca1bfa860c61458928f0ef14d29015635499678f481b9bda53a14aa3b899"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/surfaces-01.log",
+      "bytes": 274,
+      "sha256": "03a5b242615bb73acdf0ad873948a6a3ef8fa05f9c1f8b41252b627cd54f8915"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/surfaces-02.json",
+      "bytes": 577,
+      "sha256": "d2709f8a8cb85e91e786e0087e1ed40af233e3bc216fad4237be29695d3d3f81"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/surfaces-02.log",
+      "bytes": 274,
+      "sha256": "03a5b242615bb73acdf0ad873948a6a3ef8fa05f9c1f8b41252b627cd54f8915"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/surfaces-05.json",
+      "bytes": 6085,
+      "sha256": "daf7c76720e7813aba44746a7a9d7faa578a9ee131a3689cb59a18a73faca4a9"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/surfaces-05.log",
+      "bytes": 274,
+      "sha256": "03a5b242615bb73acdf0ad873948a6a3ef8fa05f9c1f8b41252b627cd54f8915"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/surfaces-before-final.json",
+      "bytes": 9523,
+      "sha256": "5bd5208d7de250a6f429091f5b7746c012f188f5d9c84060b9705c274bcd97d2"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/surfaces-before-final.log",
+      "bytes": 314,
+      "sha256": "049bfb76700c82dc74d434100fcbb7f5a94120b55dd9657a32067ce879f12cd2"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/surfaces-before-lamps.json",
+      "bytes": 7609,
+      "sha256": "1784dc6d77f01040f093a6484b17a6f1569364de4762ecdad266f63ad2485bbc"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/surfaces-before-lamps.log",
+      "bytes": 314,
+      "sha256": "049bfb76700c82dc74d434100fcbb7f5a94120b55dd9657a32067ce879f12cd2"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/surfaces-before.json",
+      "bytes": 4516,
+      "sha256": "4907670f932cb6eca345f184f4a1389c008bd30da0483c312551953a1255c290"
+    },
+    {
+      "path": "art/studies/toyota-trail/05-tailgate-finish/surfaces-before.log",
+      "bytes": 314,
+      "sha256": "049bfb76700c82dc74d434100fcbb7f5a94120b55dd9657a32067ce879f12cd2"
+    },
+    {
+      "path": "docs/TOYOTA-TAILGATE-FINISH.md",
+      "bytes": 5132,
+      "sha256": "b4350bbc44d438895f66a09e43ee32201c8f1df3a29be6dc7fd4dda556460403"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/browser-report.json",
+      "bytes": 12430,
+      "sha256": "5afd54595b56e137190bea6f83d4eaf45f589afa9f780888306cbb87068a0b26"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/clearance.json",
+      "bytes": 193,
+      "sha256": "18167900d316321139c760c1da69dba53de2d35ae01f16c37dff5acf91c3236d"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/comparison-mobile.png",
+      "bytes": 577285,
+      "sha256": "e6e27860f3ed0af1c7d90f79743c8262f20d32f1f831c8d84fe602537a926ff5"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/geometry-check.json",
+      "bytes": 1431,
+      "sha256": "b84a39830c7c53b78dd72813a08c1f2107d07b52f83f254af00f47687aa34d8c"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-detail.png",
+      "bytes": 2781277,
+      "sha256": "856f2f3cca400516efb9ffb7eca7af1042ea646f4549897c583c7babd4134d4f"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-driving.png",
+      "bytes": 3083550,
+      "sha256": "e4e20eb8f1caae11e0543e2d1816ff059d4199eeaa1dfa38ad94d3be7b8cebf6"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-front.png",
+      "bytes": 3074377,
+      "sha256": "353dc483b3e6941ef5957aa6d36f65fc64583e96bd4b97eecbee2634cd109771"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-hood.png",
+      "bytes": 2344492,
+      "sha256": "2c4a3d8ff06c6bc5f63ec88c3168eb56362db8d730eae64fd486df0c5722ee13"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-night.png",
+      "bytes": 2441576,
+      "sha256": "5aed2c2b1a4bb117af04c291b9ed83a2f705059d99c525cb38d4fca30af2fc55"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-pillar.png",
+      "bytes": 2018727,
+      "sha256": "5c86a97ecb5c7557a22b767b9fabb133d2f085149acc5dcdcb0ea13a1d85ad44"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-rear-flat.png",
+      "bytes": 2827068,
+      "sha256": "ea0140b3d1c2f7a7a6d711dc5ba137663aafdfc28874c08c0ebf78e88b190da7"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-rear-night.png",
+      "bytes": 2215503,
+      "sha256": "2d8e4fbdf14badf3b700ecad2aa96a148461d47d7121f42737d6888e1ed2f904"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-rear.png",
+      "bytes": 2850570,
+      "sha256": "5d1def1f7d3c0cda2a49adadb0511c2192c532f66a8d8dcc10c5948d94d4f77d"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-side.png",
+      "bytes": 3088542,
+      "sha256": "667de97665ecefaf6581a127b4ab1ef58b77a02d4e80909a69110f576c5b761c"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-tail-detail.png",
+      "bytes": 1999814,
+      "sha256": "b228397c75c5927beeff2c150ab659d939a7448a592ccb1e03ba5e8146eff78f"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-tail-orbit.mp4",
+      "bytes": 5397704,
+      "sha256": "2e6636abb9d73803be91ab3f8abc6c6949234dcd19acd150a37a902e61bdad04"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-tail-orbit.png",
+      "bytes": 2173521,
+      "sha256": "c9da33222d9ffc29563adeeef9ad99141baa65ec57dac864a6ec07f22a90bd86"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-tail-orbit.webm",
+      "bytes": 7186629,
+      "sha256": "997900362052bd50ba159814b633966e15e069ea2dbc5c3926cd07b184df2978"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/legacy-wheel.png",
+      "bytes": 1998021,
+      "sha256": "f75d0d26293e14c6a0c389715f61e6d8451bafa3cf1c855e953e25b9d337b7e6"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/page-check.json",
+      "bytes": 244,
+      "sha256": "1b9275be567e169328d096d5e105af0121089a3eaec89d1375c4b09da0ac5947"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/rig-results.json",
+      "bytes": 1824,
+      "sha256": "854d61fe6f9ff6b8aa3673a8af064d7901d02f20e6695fea4198d34fa2da5bcc"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-articulation.png",
+      "bytes": 3070098,
+      "sha256": "c57b928d7d582cc30fdccc183a363507da54ac6f0d359641f752bea633117fba"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-detail.png",
+      "bytes": 2780872,
+      "sha256": "ee358973e3e0705cee1f20230c3799f1363321879e6bedfdea34e51a3eddd93a"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-driving.png",
+      "bytes": 3086718,
+      "sha256": "f1d21d7c83834d54a77b9aa92f67a0d5410a34fc8f2199eda87dca2c1ea805d0"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-front.png",
+      "bytes": 3074551,
+      "sha256": "8594f6d973590c85a2f6543f2bdacc4de586a9d8bd026510d2954aeeabce9ae0"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-hood.png",
+      "bytes": 2344733,
+      "sha256": "5e1a5cb3378ba21bbf23503219a9ee08f693afdeec606c83a9e61fa68b81521c"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-night.png",
+      "bytes": 2442943,
+      "sha256": "e11dcc0f2d2ab68522e1c1a3cd84d2e893ce1750e2b7c88b8470e417b0314d74"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-pillar.png",
+      "bytes": 2018831,
+      "sha256": "3b0b9ed744d9b94b97aa644d9bdf2379691dee940bf605f017db984b771bbd1f"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-rear-flat.png",
+      "bytes": 2836342,
+      "sha256": "41c881b5c440c3ba618ccab7da9dab7b56ec6740fe06ff73a064c1ac1598a5df"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-rear-night.png",
+      "bytes": 2211895,
+      "sha256": "0ccb987af0254251dbf3ff0722060f64c87ec081888a11ab80a3bf0288589bb2"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-rear.png",
+      "bytes": 2850825,
+      "sha256": "263f6e0ca19e2dac9d31b90d36838f8b448311d17c78f751604833799b989858"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-side.png",
+      "bytes": 3090047,
+      "sha256": "ba54acde6703862a604cf95ed8b78a678da592d08e0bb55e2ab279934cb7663c"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-tail-detail.png",
+      "bytes": 2017523,
+      "sha256": "d5612576e593a0fae7321c3ad5a66429b9ae1b10f38054ab3976357522af4cf8"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-tail-orbit.mp4",
+      "bytes": 5681095,
+      "sha256": "ab1cd85a7c072e2961571f9ffe1e7f810461e5e6be4b6d57e9d188d76ab3fbe3"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-tail-orbit.png",
+      "bytes": 2237505,
+      "sha256": "00da838121ca6a2399aa57fc2fc49ab48771208ef10c51a640d1a876da2a878b"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-tail-orbit.webm",
+      "bytes": 7080011,
+      "sha256": "6ab9ba6d50ee5099803fda8931164edf50f4b6e669db1a73cd44c9d1ac1cf1f7"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/sample-wheel.png",
+      "bytes": 1998669,
+      "sha256": "78b66ec796323d50334e5b1d46c50ac1a9dde75a9423beaead534aa8730ce385"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/surfaces-after.json",
+      "bytes": 6085,
+      "sha256": "daf7c76720e7813aba44746a7a9d7faa578a9ee131a3689cb59a18a73faca4a9"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/surfaces-before.json",
+      "bytes": 9523,
+      "sha256": "5bd5208d7de250a6f429091f5b7746c012f188f5d9c84060b9705c274bcd97d2"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/suspension.mp4",
+      "bytes": 20465088,
+      "sha256": "1b388890c93ad6b1c966b50e208be51f7a7808ac1dd96f7b0e9b3f6864a1e1d6"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/20260926-proof-02/suspension.webm",
+      "bytes": 10803524,
+      "sha256": "95f0707dcd2329308778c5cb4492955f55cb5ab20257a18fb6960f374b2f5e34"
+    },
+    {
+      "path": "docs/toyota-trail/05-tailgate-finish/index.html",
+      "bytes": 9000,
+      "sha256": "471cf66e4df3b9e7ee420af18a6680eec0a3d22ba1ccd7fb87cc3b3b2259c813"
+    },
+    {
+      "path": "public/assets/models/vehicle_toyota_trail.glb",
+      "bytes": 4278356,
+      "sha256": "62c4540f71709c816b6a9b7611b3b5865bb6a2da7274236b3d5a8ea1192a8a1a"
+    },
+    {
+      "path": "public/assets/models/vehicle_toyota_trail.json",
+      "bytes": 2359,
+      "sha256": "58f42ded93fe1c824b71359c0d123573a8f00af85bdb710ae24cb052ad10247a"
+    }
+  ]
+}

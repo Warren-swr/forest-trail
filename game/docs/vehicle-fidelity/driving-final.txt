@@ -1,0 +1,55 @@
+
+> forest-trail@1.0.0 test:proving
+> tsx tools/proving.ts scout && tsx tools/proving.ts toyota && tsx tools/proving.ts ranger
+
+PASS D01: top 29.4 km/h after 5 s; reverse reached -8.1 km/h after stop; drift at rest 0.014 m in 4 s
+PASS D02: FL compression peak 0.144 m, body roll peak 2.2°, settled 0.22 s after the rear wheel left the bump
+PASS D03: max left/right suspension difference 0.081 m, roll peak 3.1°, peak roll/pitch rate 0.11 rad/s (no snap to terrain normal)
+PASS D04 10°: high: climbs, low: climbs; released throttle rolls back 2.87 m in 3 s; handbrake holds (0.036 m creep in 3 s)
+PASS D04 18°: high: climbs, low: climbs; released throttle rolls back 8.94 m in 3 s; handbrake holds (0.000 m creep in 3 s)
+PASS D04 25°: high: stalls at 18.6 m up, low: climbs; released throttle rolls back 11.75 m in 3 s; handbrake holds (0.000 m creep in 3 s)
+PASS D05: same input for 6 s from rest: dirt 36.2 m, mud 22.4 m (62% of dirt)
+PASS D06: left wheels in mud, right on dirt, straight input: heading change 7.7°, peak yaw rate 0.08 rad/s (pulls gently, no snap)
+PASS D07 12°: low speed traverse: max body tilt 12.5°, stays upright
+PASS D07 30°: 30° traverse tilt 31.4°; with a full-lock turn min uprightness -0.63 (rolls over) — rollover risk comes from physics, no scripted flip
+PASS D08: shallow ford depth 0.25 m crossed; deep pool 1.08 m triggers the warning (> 0.55 m) and the 3 s recovery rule (deep-water timer fired at 78 m)
+PASS D09: candidates [tree:ok, blocked:中间有阻挡]; reeled 8.6 m in 12 s, peak tension 10.9 kN (cap 11), peak vertical speed 0.31 m/s; detached cleanly (speed 0.07 m/s); rise 0.27 m
+PASS D10: upside-down car (up -1.00) reset to the safe point: up 1.000, speed 0.08 m/s after 1.5 s (in-game: hold R 1 s, fade, progress kept)
+PASS D12 flat with turns: 20 s input replay: 30 fps 135.61 m, 60 fps 135.48 m, 120 fps 135.40 m (spread 0.15%)
+PASS D12 18° ramp climb: 20 s input replay: 30 fps 23.18 m, 60 fps 23.18 m, 120 fps 23.18 m (spread 0.00%)
+
+15/15 checks passed (D11 camera readability is checked in the browser)
+PASS D01: top 31.6 km/h after 5 s; reverse reached -8.1 km/h after stop; drift at rest 0.014 m in 4 s
+PASS D02: FL compression peak 0.159 m, body roll peak 2.3°, settled 0.22 s after the rear wheel left the bump
+PASS D03: max left/right suspension difference 0.084 m, roll peak 3.2°, peak roll/pitch rate 0.11 rad/s (no snap to terrain normal)
+PASS D04 10°: high: climbs, low: climbs; released throttle rolls back 2.90 m in 3 s; handbrake holds (0.035 m creep in 3 s)
+PASS D04 18°: high: climbs, low: climbs; released throttle rolls back 9.02 m in 3 s; handbrake holds (0.000 m creep in 3 s)
+PASS D04 25°: high: stalls at 18.8 m up, low: climbs; released throttle rolls back 11.87 m in 3 s; handbrake holds (0.000 m creep in 3 s)
+PASS D05: same input for 6 s from rest: dirt 37.6 m, mud 22.0 m (59% of dirt)
+PASS D06: left wheels in mud, right on dirt, straight input: heading change 6.8°, peak yaw rate 0.07 rad/s (pulls gently, no snap)
+PASS D07 12°: low speed traverse: max body tilt 12.6°, stays upright
+PASS D07 30°: 30° traverse tilt 31.6°; with a full-lock turn min uprightness 0.05 (rolls over) — rollover risk comes from physics, no scripted flip
+PASS D08: shallow ford depth 0.25 m crossed; deep pool 1.25 m triggers the warning (> 0.70 m) and the 3 s recovery rule (deep-water timer fired at 78 m)
+PASS D09: candidates [tree:ok, blocked:中间有阻挡]; reeled 9.0 m in 12 s, peak tension 11.0 kN (cap 11), peak vertical speed 0.26 m/s; detached cleanly (speed 0.07 m/s); rise 0.27 m
+PASS D10: upside-down car (up -1.00) reset to the safe point: up 1.000, speed 0.07 m/s after 1.5 s (in-game: hold R 1 s, fade, progress kept)
+PASS D12 flat with turns: 20 s input replay: 30 fps 146.62 m, 60 fps 146.48 m, 120 fps 146.42 m (spread 0.14%)
+PASS D12 18° ramp climb: 20 s input replay: 30 fps 24.73 m, 60 fps 24.73 m, 120 fps 24.73 m (spread 0.00%)
+
+15/15 checks passed (D11 camera readability is checked in the browser)
+PASS D01: top 35.4 km/h after 5 s; reverse reached -8.6 km/h after stop; drift at rest 0.012 m in 4 s
+PASS D02: FL compression peak 0.161 m, body roll peak 2.1°, settled 0.22 s after the rear wheel left the bump
+PASS D03: max left/right suspension difference 0.077 m, roll peak 3.2°, peak roll/pitch rate 0.11 rad/s (no snap to terrain normal)
+PASS D04 10°: high: climbs, low: climbs; released throttle rolls back 3.19 m in 3 s; handbrake holds (0.035 m creep in 3 s)
+PASS D04 18°: high: climbs, low: climbs; released throttle rolls back 9.71 m in 3 s; handbrake holds (0.000 m creep in 3 s)
+PASS D04 25°: high: stalls at 28.2 m up, low: climbs; released throttle rolls back 12.45 m in 3 s; handbrake holds (0.000 m creep in 3 s)
+PASS D05: same input for 6 s from rest: dirt 41.8 m, mud 24.0 m (57% of dirt)
+PASS D06: left wheels in mud, right on dirt, straight input: heading change 6.4°, peak yaw rate 0.06 rad/s (pulls gently, no snap)
+PASS D07 12°: low speed traverse: max body tilt 12.7°, stays upright
+PASS D07 30°: 30° traverse tilt 31.8°; with a full-lock turn min uprightness 0.83 (recovers) — rollover risk comes from physics, no scripted flip
+PASS D08: shallow ford depth 0.25 m crossed; deep pool 1.00 m triggers the warning (> 0.48 m) and the 3 s recovery rule (deep-water timer fired at 78 m)
+PASS D09: candidates [tree:ok, blocked:中间有阻挡]; reeled 9.4 m in 12 s, peak tension 10.8 kN (cap 11), peak vertical speed 0.11 m/s; detached cleanly (speed 0.06 m/s); rise 0.32 m
+PASS D10: upside-down car (up -1.00) reset to the safe point: up 1.000, speed 0.07 m/s after 1.5 s (in-game: hold R 1 s, fade, progress kept)
+PASS D12 flat with turns: 20 s input replay: 30 fps 161.89 m, 60 fps 161.99 m, 120 fps 161.82 m (spread 0.11%)
+PASS D12 18° ramp climb: 20 s input replay: 30 fps 20.19 m, 60 fps 20.19 m, 120 fps 20.19 m (spread 0.00%)
+
+15/15 checks passed (D11 camera readability is checked in the browser)

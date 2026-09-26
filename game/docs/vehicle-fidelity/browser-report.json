@@ -1,0 +1,184 @@
+{
+  "capturedAt": "2026-09-26T03:45:14.763Z",
+  "viewport": {
+    "width": 1600,
+    "height": 1000
+  },
+  "method": "Local production build; real WebGL canvas captures and real 60 Hz physics during the park drive.",
+  "assets": {
+    "scout": {
+      "file": "assets/models/vehicle_scout.glb",
+      "sha256": "70cac110eb97dfd690b803e764d4c333c5716b5978e39f0dee8f0953c848e830"
+    },
+    "toyota": {
+      "file": "assets/models/vehicle_toyota.glb",
+      "sha256": "b824142f2e773b5d0199b037f952b9afd97345a16a7def156e3370f4b1c82286"
+    },
+    "ranger": {
+      "file": "assets/models/vehicle_ranger.glb",
+      "sha256": "3b1bfce54baaca3ffe0e201d305456431223c90def1491b117b5b33a9b019d25"
+    }
+  },
+  "vehicles": [
+    {
+      "id": "scout",
+      "rig": {
+        "fallback": false,
+        "independentSprings": 4,
+        "brakes": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "shocks": 4,
+        "glassOpacity": 0.24,
+        "nearNodes": true
+      },
+      "lod": "near → far → near passed",
+      "perf": {
+        "fps": 59.99999999999999,
+        "draws": 2031,
+        "tris": 0,
+        "frameMs": 16.700000000000728,
+        "frames": 120,
+        "meanMs": 16.666666666666668,
+        "p95Ms": 16.80000000000109
+      }
+    },
+    {
+      "id": "toyota",
+      "rig": {
+        "fallback": false,
+        "independentSprings": 4,
+        "brakes": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "shocks": 4,
+        "glassOpacity": 0.24,
+        "nearNodes": true
+      },
+      "lod": "near → far → near passed",
+      "perf": {
+        "fps": 60.00600060006002,
+        "draws": 2026,
+        "tris": 0,
+        "frameMs": 16.600000000000364,
+        "frames": 120,
+        "meanMs": 16.664999999999996,
+        "p95Ms": 16.799999999999272
+      }
+    },
+    {
+      "id": "ranger",
+      "rig": {
+        "fallback": false,
+        "independentSprings": 4,
+        "brakes": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "shocks": 4,
+        "glassOpacity": 0.24,
+        "nearNodes": true
+      },
+      "lod": "near → far → near passed",
+      "perf": {
+        "fps": 60.00300015000757,
+        "draws": 2046,
+        "tris": 0,
+        "frameMs": 16.69999999999709,
+        "frames": 120,
+        "meanMs": 16.665833333333314,
+        "p95Ms": 16.799999999999272
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "scout-front.png",
+      "sha256": "53263131aa9c8645f4db1259cc0ee2b33fdcd4bb28d30086ec6e5e5cf4e0a6d6"
+    },
+    {
+      "file": "scout-rear.png",
+      "sha256": "1d44b4064a517d345ec97e5d2d94a079cb44ae28e8aa5f6917049d2167a4c67b"
+    },
+    {
+      "file": "scout-wheel.png",
+      "sha256": "74250b57ab1a7e77a8cea6bda01ba28b2d6a73b58402d16ffb6006bb8e34252d"
+    },
+    {
+      "file": "scout-interior.png",
+      "sha256": "290e055dcba7ebdd286e6e16a618df2ff899b159b11223906ec960fa705c5749"
+    },
+    {
+      "file": "toyota-front.png",
+      "sha256": "24076fb8ef57bae4968d8b4a247b0f42b27fd773abdaf3fc921533395feb9ff8"
+    },
+    {
+      "file": "toyota-rear.png",
+      "sha256": "013877056a3bc477e15ea4f81865bbe1f993be121c6c89cd541c958e1742d5ca"
+    },
+    {
+      "file": "toyota-wheel.png",
+      "sha256": "7152f8624fd80f4768a6a76ad005d325afdb9c9762a4d0b02acc1df3741fc1b0"
+    },
+    {
+      "file": "toyota-interior.png",
+      "sha256": "803d4dcffcfbf79903e27378e4ac770cbd9c36618760101eddd7c9adc13b5322"
+    },
+    {
+      "file": "ranger-front.png",
+      "sha256": "f068a7838ee94d607542e05787583cb914be0b8cd43c75468417860e9dc22403"
+    },
+    {
+      "file": "ranger-rear.png",
+      "sha256": "a1e3a02db9d6e935c1b6c88744ad2a578f0d917cd7cdff77a53397a4e6e88d64"
+    },
+    {
+      "file": "ranger-wheel.png",
+      "sha256": "252232f9cd790645852248a32e5cc1ffedca4af0ccf1d938149cb245dba67631"
+    },
+    {
+      "file": "ranger-interior.png",
+      "sha256": "b01c108884bd3c8a05f9ca0319599b3a50e8a56f7ec0631ae1ec26dcc0a2b2ae"
+    },
+    {
+      "file": "toyota-night.png",
+      "sha256": "3faebf298c25e6af7d9c42c00da36d91c8dcf69d51ed5efbb09aa9e4a45e9f73"
+    },
+    {
+      "file": "toyota-mud.png",
+      "sha256": "030034de07be3858b8d7dce2e5f0762f0057339410717305eea5a22244b664cb"
+    },
+    {
+      "file": "toyota-articulation.png",
+      "sha256": "9ba1bf522881b80271ee474d09dce1b9241c42678b07e084309a9ba9b9a364b6"
+    }
+  ],
+  "errors": [],
+  "renderer": "ANGLE (NVIDIA, Vulkan 1.3.242 (NVIDIA NVIDIA L4 (0x000027B8)), NVIDIA)",
+  "drive": {
+    "samples": 735,
+    "maxAxleDifference": 0.2610156249999999,
+    "minUprightness": 0.9612556280148097,
+    "maxSpeedKmh": 4.3105882574956285,
+    "peakMorph": 0.5760265261627923
+  },
+  "photo": {
+    "distance": 2.668564973845177,
+    "focus": 3.0246001354545644,
+    "targetDistance": 3.0015460638184774
+  },
+  "compact": {
+    "width": 844,
+    "height": 390,
+    "horizontalOverflow": false
+  },
+  "passed": true
+}

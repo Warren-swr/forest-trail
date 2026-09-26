@@ -1,0 +1,167 @@
+{
+  "id": "toyota",
+  "fidelity": 3,
+  "style": "trail-v2-refinement/1",
+  "revision": "05-tailgate-finish",
+  "reference": "Toyota Land Cruiser FJ60",
+  "rigFile": "art/studies/toyota-trail/05-tailgate-finish/build-20260926-065414/rig.json",
+  "wheelBase": 2.73,
+  "trackX": 0.88,
+  "wheelRadius": 0.44,
+  "wheelWidth": 0.3,
+  "spring": {
+    "x": 0.47,
+    "top": 0.48,
+    "seat": 0.055,
+    "kind": "leaf",
+    "morphBump": 0.25,
+    "morphDroop": 0.2
+  },
+  "shock": {
+    "bottom": [
+      0.28,
+      0.035,
+      0.09
+    ],
+    "top": [
+      0.265,
+      0.535,
+      -0.32
+    ],
+    "barrelLength": 0.37
+  },
+  "driveshaft": {
+    "tcaseZ": 0.3,
+    "tcaseY": 0.05,
+    "pinionZ": 0.235,
+    "pinionY": 0.025
+  },
+  "lamps": {
+    "head": [
+      [
+        -0.6053,
+        0.652,
+        -2.053
+      ],
+      [
+        0.6053,
+        0.652,
+        -2.053
+      ]
+    ],
+    "fog": [
+      [
+        -0.76,
+        0.35,
+        -2.245
+      ],
+      [
+        -0.6,
+        0.35,
+        -2.245
+      ],
+      [
+        0.6,
+        0.35,
+        -2.245
+      ],
+      [
+        0.76,
+        0.35,
+        -2.245
+      ]
+    ],
+    "indicator": [
+      [
+        -0.7905,
+        0.645,
+        -2.032
+      ],
+      [
+        0.7905,
+        0.645,
+        -2.032
+      ]
+    ],
+    "tail": [
+      [
+        -0.814,
+        0.605,
+        2.184
+      ],
+      [
+        0.814,
+        0.605,
+        2.184
+      ]
+    ],
+    "brake": [
+      [
+        -0.814,
+        0.605,
+        2.184
+      ],
+      [
+        0.814,
+        0.605,
+        2.184
+      ]
+    ],
+    "reverse": [
+      [
+        -0.814,
+        0.481,
+        2.184
+      ],
+      [
+        0.814,
+        0.481,
+        2.184
+      ]
+    ],
+    "winch": [
+      [
+        0.0,
+        0.33,
+        -2.231
+      ]
+    ],
+    "hitch": [
+      [
+        0.0,
+        0.225,
+        2.32
+      ]
+    ]
+  },
+  "bodyBox": {
+    "min": [
+      -1.0965,
+      -0.168,
+      -2.284
+    ],
+    "max": [
+      1.0965,
+      2.06,
+      2.4959
+    ]
+  },
+  "lod": {
+    "near": 18,
+    "far": 23
+  },
+  "tris": {
+    "Body": 88742,
+    "Wheel": 20512,
+    "AxleFront": 2228,
+    "AxleRear": 1960,
+    "Spring": 1920,
+    "ShockBody": 512,
+    "ShockRod": 76,
+    "BrakeFront": 1736,
+    "BrakeRear": 2016,
+    "Driveshaft": 160,
+    "Body_LOD1": 39045,
+    "Wheel_LOD1": 1598
+  }
+}

@@ -12,6 +12,7 @@ import common as C
 from common import hexc, mix, ramp, smoothstep, bm_hull, bm_lathe, bm_cyl_between, bm_from, xform, mat_trs
 
 UP = Vector((0, 0, 1))
+TAU = math.tau
 GREY_D, GREY_L = hexc('#6F706A'), hexc('#8A8B83')
 MOSS, MOSS_D = hexc('#7D8D53'), hexc('#49694B')
 DIRT = hexc('#51483D')
@@ -88,6 +89,9 @@ def build_boulder(name, seed, size, n=34, sink_d=0.25, dissolve=4.0, top=0.85, m
     rng = random.Random(seed)
     mb = C.MeshBuilder(name, seed=seed)
     bm = sink(hull_rock(rng, rock_points(rng, n, size, top=top), dissolve, rough), sink_d)
+    # Small weathered bevels catch sunlight at tyre height without rounding the
+    # recognizable rock silhouette or changing its existing collision envelope.
+    C.bevel(bm, .012, 2)
     zmax = max(v.co.z for v in bm.verts)
     mb.add(bm, color_fn=rock_color_fn(rng, zmax, moss), shade='flat', jitter=0.03)
     return mb
@@ -187,22 +191,47 @@ def end_grain(mb, center, axis_dir, r, segs, rng, phase=0.0):
         bm = xform(bm_from(verts, faces), M)
         C.orient(bm, lambda f: d)
         mb.add(bm, color=col, shade='flat', jitter=0.04)
+    # Uneven concentric growth rings and radial drying checks, on the cut face.
+    for ring in range(1, 19):
+        radius = r * (.06 + ring * .044)
+        verts, faces = [], []
+        for i in range(65):
+            a = TAU * i / 64
+            rr = radius * (1 + .025 * math.sin(a * 3 + ring * .3))
+            for off in (-.0012, .0012):
+                verts.append(((rr + off) * math.cos(a), (rr + off) * math.sin(a), .0018))
+            if i:
+                faces.append([i * 2 - 2, i * 2, i * 2 + 1, i * 2 - 1])
+        bm = xform(bm_from(verts, faces), M)
+        C.orient(bm, lambda f: d)
+        mb.add(bm, color=mix(WOOD, BARK_D, .18), shade='flat')
+    for k in range(5):
+        a = rng.uniform(0, TAU)
+        r0 = r * rng.uniform(.32, .62)
+        points = [(r0 * math.cos(a), r0 * math.sin(a), .0022),
+                  (r * .87 * math.cos(a - .007), r * .87 * math.sin(a - .007), .0022),
+                  (r * .91 * math.cos(a + .008), r * .91 * math.sin(a + .008), .0022)]
+        bm = xform(bm_from(points, [[0, 1, 2]]), M)
+        C.orient(bm, lambda f: d)
+        mb.add(bm, color=BARK_D)
 
 
 def build_log():
     """Fallen log along X, 6 m long, 0.5 m diameter, resting on the ground (origin = base centre)."""
     rng = random.Random(123)
     mb = C.MeshBuilder('log', seed=123)
-    segs, r, L = 10, 0.25, 6.0
+    segs, r, L = 48, 0.25, 6.0
     prof = []
-    for k in range(7):
-        x = -L / 2 + L * k / 6
-        rr = r * (1.06 - 0.12 * k / 6) * rng.uniform(0.97, 1.03)
+    for k in range(25):
+        x = -L / 2 + L * k / 24
+        rr = r * (1.06 - 0.12 * k / 24) * rng.uniform(0.99, 1.01)
         prof.append((rr, x))
     bm = bm_lathe(prof, segs, 'X', phase=0.3)
     for v in bm.verts:                     # slight sag and bark irregularity
-        v.co.z += 0.03 * math.sin(v.co.x * 0.9) + rng.uniform(-0.012, 0.012)
-        v.co.y += rng.uniform(-0.012, 0.012)
+        a = math.atan2(v.co.z, v.co.y)
+        ridge = 1 + .04 * math.sin(a * 17 + v.co.x * .9) + .023 * math.sin(a * 31 - v.co.x * 2)
+        v.co.y *= ridge
+        v.co.z = v.co.z * ridge + .03 * math.sin(v.co.x * .9)
     bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
     bmesh.ops.translate(bm, vec=(0, 0, r - 0.03), verts=bm.verts)
     mb.add(bm, color_fn=bark_fn(rng, 0, 2 * r, 0.6), shade='auto', angle=40, jitter=0.04)
@@ -218,9 +247,14 @@ def build_log():
 def build_stump():
     rng = random.Random(321)
     mb = C.MeshBuilder('stump', seed=321)
-    segs, r, H = 12, 0.42, 0.62
+    segs, r, H = 48, 0.42, 0.62
     prof = [(r * 1.18, 0.0), (r * 1.04, 0.12), (r, 0.3), (r * 0.98, H)]
     bm = bm_lathe(prof, segs, 'Z', phase=0.1)
+    for v in bm.verts:
+        a = math.atan2(v.co.y, v.co.x)
+        ridge = 1 + .045 * math.sin(a * 17 + v.co.z * 1.6)
+        v.co.x *= ridge
+        v.co.y *= ridge
     top = [v for v in bm.verts if abs(v.co.z - H) < 1e-5]
     for v in top:                          # slanted saw cut
         v.co.z += 0.05 * v.co.x / r
@@ -258,6 +292,16 @@ def main():
         ob = mb.build(mats, vcolor=True, collection_obj=col)
         objs.append(ob)
         C.export_glb([ob], name + '.glb', vcolor=True)
+        low = bpy.data.objects.new(name + '_lod1', ob.data.copy())
+        col.objects.link(low)
+        mod = low.modifiers.new('Distance LOD', 'DECIMATE')
+        mod.ratio = .18 if name in ('log', 'stump') else .32
+        mod.use_collapse_triangulate = True
+        bpy.context.view_layer.objects.active = low
+        bpy.ops.object.modifier_apply(modifier=mod.name)
+        C.export_glb([low], name + '_lod1.glb', vcolor=True)
+        low.hide_render = True
+        stats[name + '_lod1'] = sum(len(p.vertices) - 2 for p in low.data.polygons)
     print('ROCKS TRIS', stats)
     C.setup_render()
     C.add_sun((50, 0, 150), 4.0)

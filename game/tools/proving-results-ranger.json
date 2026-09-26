@@ -2,12 +2,12 @@
   {
     "id": "D01",
     "pass": true,
-    "detail": "top 35.4 km/h after 5 s; reverse reached -8.6 km/h after stop; drift at rest 0.005 m in 4 s"
+    "detail": "top 35.4 km/h after 5 s; reverse reached -8.6 km/h after stop; drift at rest 0.012 m in 4 s"
   },
   {
     "id": "D02",
     "pass": true,
-    "detail": "FL compression peak 0.158 m, body roll peak 2.1°, settled 0.22 s after the rear wheel left the bump"
+    "detail": "FL compression peak 0.161 m, body roll peak 2.1°, settled 0.22 s after the rear wheel left the bump"
   },
   {
     "id": "D03",
@@ -27,7 +27,7 @@
   {
     "id": "D04 25°",
     "pass": true,
-    "detail": "high: stalls at 27.6 m up, low: climbs; released throttle rolls back 12.31 m in 3 s; handbrake holds (0.000 m creep in 3 s)"
+    "detail": "high: stalls at 28.2 m up, low: climbs; released throttle rolls back 12.45 m in 3 s; handbrake holds (0.000 m creep in 3 s)"
   },
   {
     "id": "D05",
@@ -37,17 +37,17 @@
   {
     "id": "D06",
     "pass": true,
-    "detail": "left wheels in mud, right on dirt, straight input: heading change 6.4°, peak yaw rate 0.07 rad/s (pulls gently, no snap)"
+    "detail": "left wheels in mud, right on dirt, straight input: heading change 6.4°, peak yaw rate 0.06 rad/s (pulls gently, no snap)"
   },
   {
     "id": "D07 12°",
     "pass": true,
-    "detail": "low speed traverse: max body tilt 12.8°, stays upright"
+    "detail": "low speed traverse: max body tilt 12.7°, stays upright"
   },
   {
     "id": "D07 30°",
     "pass": true,
-    "detail": "30° traverse tilt 31.9°; with a full-lock turn min uprightness 0.84 (recovers) — rollover risk comes from physics, no scripted flip"
+    "detail": "30° traverse tilt 31.8°; with a full-lock turn min uprightness 0.83 (recovers) — rollover risk comes from physics, no scripted flip"
   },
   {
     "id": "D08",
@@ -57,7 +57,7 @@
   {
     "id": "D09",
     "pass": true,
-    "detail": "candidates [tree:ok, blocked:中间有阻挡]; reeled 9.8 m in 12 s, peak tension 10.8 kN (cap 11), peak vertical speed 0.10 m/s; detached cleanly (speed 0.07 m/s); rise 0.32 m"
+    "detail": "candidates [tree:ok, blocked:中间有阻挡]; reeled 9.4 m in 12 s, peak tension 10.8 kN (cap 11), peak vertical speed 0.11 m/s; detached cleanly (speed 0.06 m/s); rise 0.32 m"
   },
   {
     "id": "D10",
@@ -67,11 +67,11 @@
   {
     "id": "D12 flat with turns",
     "pass": true,
-    "detail": "20 s input replay: 30 fps 160.87 m, 60 fps 160.72 m, 120 fps 160.58 m (spread 0.18%)"
+    "detail": "20 s input replay: 30 fps 161.89 m, 60 fps 161.99 m, 120 fps 161.82 m (spread 0.11%)"
   },
   {
     "id": "D12 18° ramp climb",
     "pass": true,
-    "detail": "20 s input replay: 30 fps 20.18 m, 60 fps 20.18 m, 120 fps 20.18 m (spread 0.00%)"
+    "detail": "20 s input replay: 30 fps 20.19 m, 60 fps 20.19 m, 120 fps 20.19 m (spread 0.00%)"
   }
 ]

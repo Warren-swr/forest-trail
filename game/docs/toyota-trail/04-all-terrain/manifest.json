@@ -1,0 +1,466 @@
+{
+  "schema": "toyota-all-terrain/1",
+  "createdAt": "2026-09-26T06:26:06.842940+00:00",
+  "revision": "04-all-terrain",
+  "selectedBuild": "art/studies/toyota-trail/04-all-terrain/build-20260926-061517",
+  "selectedBrowserProof": "docs/toyota-trail/04-all-terrain/20260926-proof-01",
+  "assetSha256": "eebd9d70d67dc1fa199c5769d8d647bab5a6d0759940bee34d9f3a3befcf2348",
+  "validation": {
+    "planarWindowPanes": 8,
+    "rigChecks": 9,
+    "provingChecks": 15,
+    "clearancePoses": 9,
+    "browser": true,
+    "comparisonPage": true,
+    "lap": {
+      "distanceM": 1667,
+      "routeLengthM": 1671,
+      "seconds": 326,
+      "resets": 0,
+      "minUprightness": 0.96
+    },
+    "previousMediaVerified": 42
+  },
+  "files": [
+    {
+      "path": "art/blender/vehicle_toyota_trail.blend",
+      "bytes": 2765150,
+      "sha256": "bff2c569ca384cf2cd6f81ebbab932d7c7d90052a634d3fd88ac569d0adbae61"
+    },
+    {
+      "path": "public/assets/models/vehicle_toyota_trail.glb",
+      "bytes": 4089772,
+      "sha256": "eebd9d70d67dc1fa199c5769d8d647bab5a6d0759940bee34d9f3a3befcf2348"
+    },
+    {
+      "path": "public/assets/models/vehicle_toyota_trail.json",
+      "bytes": 2334,
+      "sha256": "ccaec6309de0fe1f053d8e57576f86b78dea7dc94298079a05bb49332fab11ed"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8889,
+      "sha256": "945d70451f0a1743dd5ebc2f77986f4da21e06a6488bfce59b24a0f5e3b7095f"
+    },
+    {
+      "path": "art/ASSET_SPEC.md",
+      "bytes": 7022,
+      "sha256": "d18194c2e617ad68e3f7ec86eed94d15e1ab3e3afe9101f28e90b419fd981741"
+    },
+    {
+      "path": "art/asset-report.json",
+      "bytes": 81138,
+      "sha256": "03306d9c8072396c1613f6ee2d5237b28acdfa413c7255984c6c8fa93e61f116"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/after.blend",
+      "bytes": 2765150,
+      "sha256": "bff2c569ca384cf2cd6f81ebbab932d7c7d90052a634d3fd88ac569d0adbae61"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/after.glb",
+      "bytes": 4089772,
+      "sha256": "eebd9d70d67dc1fa199c5769d8d647bab5a6d0759940bee34d9f3a3befcf2348"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/after.json",
+      "bytes": 2334,
+      "sha256": "ccaec6309de0fe1f053d8e57576f86b78dea7dc94298079a05bb49332fab11ed"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/baseline.json",
+      "bytes": 2183,
+      "sha256": "d41dee839c9238b521417d1b290b5cac332856a5c250939f5251cdf10951e31e"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/before-browser.cjs",
+      "bytes": 12097,
+      "sha256": "46f29614c2978890cf90b269fd4d7d4d9e245ef43540e9b460c0a535f1bf3e28"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/before-check.py",
+      "bytes": 5447,
+      "sha256": "dd5a6d471397110061f013f5153410646c67111dce92ceacbdb467ac4e52c9ba"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/before-config.ts",
+      "bytes": 10102,
+      "sha256": "066486439cb7e72496c01d9a01cc14ac70302648a3c04743aebbc96d7ccad591"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/before-fidelity.py",
+      "bytes": 60456,
+      "sha256": "a2d12645c685fb51e9d64e2e4e62a94cd3d57e09c73ed1fdfc9e5a440136cbcd"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/before-proving.json",
+      "bytes": 2622,
+      "sha256": "d4dda649550fbbec48e01825927c3066fd5cfcc8b2b2f065c920b11a88089f06"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/before-rig.json",
+      "bytes": 1823,
+      "sha256": "3ab713a01a477cb302638012e00ce410aeb67a11985de87e5e075271b46aea9f"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/before-spec.json",
+      "bytes": 2574,
+      "sha256": "9247e6674dcac8582191f96a7fe620ac0bf1a1811777c5807933f02da3b8391d"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/before-view.ts",
+      "bytes": 18494,
+      "sha256": "fd574703cb4e16c148db38f9c6a0c05daa483d8b847e497bad99b8fc7ab5b4d7"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/before.blend",
+      "bytes": 2293368,
+      "sha256": "2b46e37f1549f1cefe32d3e9454c67317288f53927969eecd4fbb48a78c70cdb"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/before.glb",
+      "bytes": 3540708,
+      "sha256": "244eaa00ebf6ce8129e70ebb9fc2660e295200ee663c5f7ed24485666082e844"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/before.json",
+      "bytes": 2307,
+      "sha256": "8f1c5ca51b5d6cc0cbee303eef1acad99369d1c4a97ce637da75b43db190de76"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/before.py",
+      "bytes": 24639,
+      "sha256": "d4d6cbdfbc7cae1c3ec5d853b178b559164c16c98d08812ff601105c923cf669"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/browser-01.log",
+      "bytes": 437,
+      "sha256": "32c0285c77ec85f30d288a248138b1c552b68258d7346299737f9e87a21fd9c4"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/build-01.log",
+      "bytes": 2009,
+      "sha256": "3d89f7e14f34eda44d4b445d90bd5175384490d683b541d293aaafc21d70a447"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/build-02.log",
+      "bytes": 3979,
+      "sha256": "891b8951bb6990a3d42cdef5b5c7fc4c54a9f6b7f112024dce39fbf3b37014a0"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/build-03.log",
+      "bytes": 2527,
+      "sha256": "443dafc1e79c731d4badf5d1157b89e62674127d13ba4ecee53388259dbb239b"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/build-04.log",
+      "bytes": 3978,
+      "sha256": "546fe7198d20d493b446fa561ba5a31a99a07519e55f67143b52c8d5d41bc90e"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/build-20260926-061517/clearance.json",
+      "bytes": 193,
+      "sha256": "18167900d316321139c760c1da69dba53de2d35ae01f16c37dff5acf91c3236d"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/build-20260926-061517/generator.py",
+      "bytes": 26629,
+      "sha256": "06740da1da231e42d4de9e4af8fbbab447552d4a3639b1da4fa2bd6552506aa3"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/build-20260926-061517/rig.json",
+      "bytes": 456,
+      "sha256": "e95c1d0e1b75ddd6d8f452b1262641460d56af83602a4054263a014c847793e6"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/build-20260926-061517/study-front.png",
+      "bytes": 1428816,
+      "sha256": "16652092a1f76cec02423239f3275a23ad68440210151bd8961152ce90b3c1ce"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/build-20260926-061517/study-rear.png",
+      "bytes": 1419261,
+      "sha256": "151bfbdfb444637d895228d08ccb6c58fdc821db81e561c8a7ac89434b96035a"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/build-20260926-061517/study-side.png",
+      "bytes": 1392735,
+      "sha256": "1e72811b5fdc4528cc97756f8e060d060a88ad7c8465e6659e58da7bc5e8edf7"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/build-20260926-061517/study-under.png",
+      "bytes": 1444815,
+      "sha256": "1cb1827e2fc235b1db36277c8db405f7603a3af4643de95af6800557138b6928"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/geometry-01.json",
+      "bytes": 1431,
+      "sha256": "bdb8ae4135fe448ddc24e77ced748b5ab12441360818fb85802b58e123dc41c5"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/lap-01.log",
+      "bytes": 574,
+      "sha256": "604481e5555ecc20a05e464bf39bed9c0995f132f1ac98c97845d2d15fda5456"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/production-build-01.log",
+      "bytes": 1608,
+      "sha256": "6041bba10d73ab0ce64aba92216915988fce6e92c65a04300bb359500b0db9e4"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/production-build-02.log",
+      "bytes": 1608,
+      "sha256": "5fdaefc37dfd5fef3913f4512cf557def97d05406808de6ea4552319b317bfb7"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/proving-01.log",
+      "bytes": 1943,
+      "sha256": "0151edd2ff37b455a323e447e99363e4ed0e9060faaaec66f3c02fb0a2d56325"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/rig-01.log",
+      "bytes": 108,
+      "sha256": "03fc988a77045f85e3bf6761f79451c6c3aa58f645441f59a9ec4c75446870c3"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/rig-02.log",
+      "bytes": 108,
+      "sha256": "03fc988a77045f85e3bf6761f79451c6c3aa58f645441f59a9ec4c75446870c3"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/sources/art/blender/common.py",
+      "bytes": 18765,
+      "sha256": "2ebdbcae2758fd5f8a6d66e0a63d93def0cae5d172980e4aa0c8df0cc0e1ae70"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/sources/art/blender/reference/vehicle_toyota_v2.py",
+      "bytes": 37803,
+      "sha256": "a7cf4742af572ab567abcdae0b7bb2a0e209d680beccdd2dc4b096fe0b1edb4b"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/sources/art/blender/vehicle_check.py",
+      "bytes": 5520,
+      "sha256": "4f4660328e228f9e88575b0e890728c9c9556edffa2f663251bb0b9be73e47a5"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/sources/art/blender/vehicle_fidelity.py",
+      "bytes": 61615,
+      "sha256": "35a2e5670cbfb70cd612a409a7b30242b1366b6b57b8b69c62235664adc09620"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/sources/art/blender/vehicle_parts.py",
+      "bytes": 22761,
+      "sha256": "c9a11f755c21d96cd1c793413fa540be2427e83592461451e1ac8b00b98808ec"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/sources/art/blender/vehicle_toyota_trail.py",
+      "bytes": 26629,
+      "sha256": "06740da1da231e42d4de9e4af8fbbab447552d4a3639b1da4fa2bd6552506aa3"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/sources/src/game/config.ts",
+      "bytes": 10264,
+      "sha256": "99dfbf9c9ac6ad0a1cfc7f4a2c3e46315fc45b9b46ab3afb94b984fa22021a19"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/sources/src/game/physics/vehicle.ts",
+      "bytes": 25011,
+      "sha256": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/sources/src/game/render/vehicleView.ts",
+      "bytes": 18541,
+      "sha256": "fe347d9d82ab13176d8ada16e838209484d27ebd68ddbeea2c8ecbbf8087418c"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/sources/tools/toyota-geometry-check.py",
+      "bytes": 4905,
+      "sha256": "2a6348095b9996da02323b6a103b51b0725a9b7d9be028da7de3c2aa2d0b0970"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/sources/tools/toyota-study-browser.cjs",
+      "bytes": 13457,
+      "sha256": "6f4800c2949653769220b6e17741a43eb5803cb30071716dbd192c24d51c8342"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/sources/tools/toyota-suspension-study.ts",
+      "bytes": 3292,
+      "sha256": "271928dcfcdc0fae3c7604b7ebe121217fa767b02b5afda581bc07ecc1f059a9"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/sources/tools/vehicle-rig-test.ts",
+      "bytes": 7125,
+      "sha256": "56b9002b37353611221202a40452e4cb61d88de22bd41890ac19e8b1d5694f19"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/suspension-01.json",
+      "bytes": 22465,
+      "sha256": "55e35f2a8c93f4ee11e80ce4fe7968c5cca8293b2f08c1fc2c675aa0021c45f4"
+    },
+    {
+      "path": "art/studies/toyota-trail/04-all-terrain/suspension-01.log",
+      "bytes": 962,
+      "sha256": "cb30f5752023cfc48f2c98825f15ac20460f1506d7d6c68c6903033223fdab95"
+    },
+    {
+      "path": "docs/TOYOTA-ALL-TERRAIN.md",
+      "bytes": 4629,
+      "sha256": "767a6a0cec69ac0d811b7755dcd8b286fc351223550005c8153e3afd32ce2d63"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/browser-report.json",
+      "bytes": 9779,
+      "sha256": "e2710fa431f26e812d4f52f97873997ead5c69fe985a4084eac3ebd008649370"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/clearance.json",
+      "bytes": 193,
+      "sha256": "18167900d316321139c760c1da69dba53de2d35ae01f16c37dff5acf91c3236d"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/comparison-mobile.png",
+      "bytes": 361532,
+      "sha256": "6536b095033f0832233cd77e74998427589c0d139c5385cd6408bc95c2fcc6ec"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/geometry-check.json",
+      "bytes": 1431,
+      "sha256": "bdb8ae4135fe448ddc24e77ced748b5ab12441360818fb85802b58e123dc41c5"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/lap.log",
+      "bytes": 574,
+      "sha256": "604481e5555ecc20a05e464bf39bed9c0995f132f1ac98c97845d2d15fda5456"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/legacy-detail.png",
+      "bytes": 2786698,
+      "sha256": "3b18304b319b45811b1d0fec109b94f6f679fe302d4c0174396939b7182dc118"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/legacy-driving.png",
+      "bytes": 3084943,
+      "sha256": "bad5fd2c382536c53f081a36a5e4236f25be18c72ec22152bc520ebc3498268e"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/legacy-front.png",
+      "bytes": 3068929,
+      "sha256": "66c0c7fc77f971a9bf7e2a945f366bd7233daeac86f88c8ccbdbdf470a8eb9ff"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/legacy-hood.png",
+      "bytes": 2349325,
+      "sha256": "f5da09f2a968bc58446002d1f052ac1c6b26f5b30ce64bed3954521260b901a6"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/legacy-night.png",
+      "bytes": 2460232,
+      "sha256": "ff4ae1de649e88afcfdadd7a9c595be763d8d791332a9fda4ea23d3a3d46d894"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/legacy-pillar.png",
+      "bytes": 2061095,
+      "sha256": "42dc94a6d2fb3c6a75278c4d6bc3ce89b4c23b05274984475cce8f4f4a6e7651"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/legacy-rear.png",
+      "bytes": 2857222,
+      "sha256": "1a2abc2dca8842b6d44d6f740fda383419a2bb156305b79dae27c3c89098062d"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/legacy-side.png",
+      "bytes": 3081051,
+      "sha256": "d56762f5b6aed999d7098b203995911e4886a3d6705f36f1fd59d4861fdb1a81"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/legacy-wheel.png",
+      "bytes": 2005034,
+      "sha256": "aecbb0b1885d64884a9ff57c6cc8ed665c11a4506581a103d3a476130e9c89fc"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/page-check.json",
+      "bytes": 157,
+      "sha256": "484e751823fa3f70862c64403c8f344ccf8c51707288ef65433d65c4e23ecca0"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/proving.log",
+      "bytes": 1943,
+      "sha256": "0151edd2ff37b455a323e447e99363e4ed0e9060faaaec66f3c02fb0a2d56325"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/rig-results.json",
+      "bytes": 1824,
+      "sha256": "94212a5a5fd708ebb4b77d736125d93ba47b56d0bd30806bb5b430318e197f0f"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/sample-articulation.png",
+      "bytes": 2668877,
+      "sha256": "f84979c4c97b5ea34b3a6349db8e8becfe719068898ad5d5a8a82716fa45e88c"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/sample-detail.png",
+      "bytes": 2782010,
+      "sha256": "41895f3317de5dd4f177b379857189e117c51ab74a998b4f5fb48cec1dd924cd"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/sample-driving.png",
+      "bytes": 3084500,
+      "sha256": "9c743dd0f5624e981d5ba79e47b9c35abb1d68735f2f34e8551cbcd36f2e2642"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/sample-front.png",
+      "bytes": 3074186,
+      "sha256": "93cd026801c7572b679593b6cbc608e99c6043700426a31fac4631becf65415d"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/sample-hood.png",
+      "bytes": 2342786,
+      "sha256": "e49f01a73cc122c8b467c727bb059b57f797718c2404076547ac653186c17aa5"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/sample-night.png",
+      "bytes": 2442511,
+      "sha256": "b10293b1b85d66ccc951c4c872075a670b574c6f4ed7c8f2dabe2122b9cda535"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/sample-pillar.png",
+      "bytes": 2018155,
+      "sha256": "1c6ea8193ffbbd90d0990f8dd922a7f1a337f74660df5c809b9fb71e36f52293"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/sample-rear.png",
+      "bytes": 2850312,
+      "sha256": "73b5486c797ada979d611c63946e02490cdbf830f8653df30f4447962cbd3869"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/sample-side.png",
+      "bytes": 3087256,
+      "sha256": "2a929d3dd68f3f7ae4d77955999882de5cb751143c1a3711185faa9e2716eab0"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/sample-wheel.png",
+      "bytes": 2001070,
+      "sha256": "6cdbf25837c9ad8e7d48a0c6a170017a9aaee665f1cd607fbaadc0bb04b93c6c"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/suspension-study.json",
+      "bytes": 22465,
+      "sha256": "55e35f2a8c93f4ee11e80ce4fe7968c5cca8293b2f08c1fc2c675aa0021c45f4"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/suspension.mp4",
+      "bytes": 12165448,
+      "sha256": "4819cfaab6d58a83b34350f9f9308aa100604e7484e231c2c31b4b415bf790ca"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/20260926-proof-01/suspension.webm",
+      "bytes": 9910726,
+      "sha256": "55a5db9c923ce3968b7d10884e562470eaf65e901d9c85b1ef3d8759fbbe2495"
+    },
+    {
+      "path": "docs/toyota-trail/04-all-terrain/index.html",
+      "bytes": 7684,
+      "sha256": "a8a5a2563edc960b8e59fefadddcbc9d7404de5f9f1181fb02e0bc644aff7500"
+    }
+  ]
+}

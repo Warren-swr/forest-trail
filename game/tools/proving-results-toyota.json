@@ -2,52 +2,52 @@
   {
     "id": "D01",
     "pass": true,
-    "detail": "top 31.6 km/h after 5 s; reverse reached -8.1 km/h after stop; drift at rest 0.002 m in 4 s"
+    "detail": "top 31.6 km/h after 5 s; reverse reached -8.1 km/h after stop; drift at rest 0.011 m in 4 s"
   },
   {
     "id": "D02",
     "pass": true,
-    "detail": "FL compression peak 0.157 m, body roll peak 2.2°, settled 0.20 s after the rear wheel left the bump"
+    "detail": "FL compression peak 0.265 m, body roll peak 2.4°, settled 0.22 s after the rear wheel left the bump"
   },
   {
     "id": "D03",
     "pass": true,
-    "detail": "max left/right suspension difference 0.083 m, roll peak 3.1°, peak roll/pitch rate 0.10 rad/s (no snap to terrain normal)"
+    "detail": "max left/right suspension difference 0.085 m, roll peak 3.3°, peak roll/pitch rate 0.11 rad/s (no snap to terrain normal)"
   },
   {
     "id": "D04 10°",
     "pass": true,
-    "detail": "high: climbs, low: climbs; released throttle rolls back 2.90 m in 3 s; handbrake holds (0.035 m creep in 3 s)"
+    "detail": "high: climbs, low: climbs; released throttle rolls back 2.93 m in 3 s; handbrake holds (0.036 m creep in 3 s)"
   },
   {
     "id": "D04 18°",
     "pass": true,
-    "detail": "high: climbs, low: climbs; released throttle rolls back 9.02 m in 3 s; handbrake holds (0.000 m creep in 3 s)"
+    "detail": "high: climbs, low: climbs; released throttle rolls back 9.09 m in 3 s; handbrake holds (0.000 m creep in 3 s)"
   },
   {
     "id": "D04 25°",
     "pass": true,
-    "detail": "high: stalls at 18.8 m up, low: climbs; released throttle rolls back 11.73 m in 3 s; handbrake holds (0.000 m creep in 3 s)"
+    "detail": "high: stalls at 18.5 m up, low: climbs; released throttle rolls back 11.70 m in 3 s; handbrake holds (0.000 m creep in 3 s)"
   },
   {
     "id": "D05",
     "pass": true,
-    "detail": "same input for 6 s from rest: dirt 37.6 m, mud 22.0 m (59% of dirt)"
+    "detail": "same input for 6 s from rest: dirt 37.5 m, mud 21.9 m (59% of dirt)"
   },
   {
     "id": "D06",
     "pass": true,
-    "detail": "left wheels in mud, right on dirt, straight input: heading change 6.9°, peak yaw rate 0.06 rad/s (pulls gently, no snap)"
+    "detail": "left wheels in mud, right on dirt, straight input: heading change 7.1°, peak yaw rate 0.07 rad/s (pulls gently, no snap)"
   },
   {
     "id": "D07 12°",
     "pass": true,
-    "detail": "low speed traverse: max body tilt 12.7°, stays upright"
+    "detail": "low speed traverse: max body tilt 12.8°, stays upright"
   },
   {
     "id": "D07 30°",
     "pass": true,
-    "detail": "30° traverse tilt 31.7°; with a full-lock turn min uprightness -0.38 (rolls over) — rollover risk comes from physics, no scripted flip"
+    "detail": "30° traverse tilt 32.2°; with a full-lock turn min uprightness -0.35 (rolls over) — rollover risk comes from physics, no scripted flip"
   },
   {
     "id": "D08",
@@ -57,21 +57,21 @@
   {
     "id": "D09",
     "pass": true,
-    "detail": "candidates [tree:ok, blocked:中间有阻挡]; reeled 9.2 m in 12 s, peak tension 11.0 kN (cap 11), peak vertical speed 0.26 m/s; detached cleanly (speed 0.07 m/s); rise 0.28 m"
+    "detail": "candidates [tree:ok, blocked:中间有阻挡]; reeled 9.0 m in 12 s, peak tension 11.0 kN (cap 11), peak vertical speed 0.23 m/s; detached cleanly (speed 0.07 m/s); rise 0.27 m"
   },
   {
     "id": "D10",
     "pass": true,
-    "detail": "upside-down car (up -1.00) reset to the safe point: up 1.000, speed 0.07 m/s after 1.5 s (in-game: hold R 1 s, fade, progress kept)"
+    "detail": "upside-down car (up -1.00) reset to the safe point: up 1.000, speed 0.08 m/s after 1.5 s (in-game: hold R 1 s, fade, progress kept)"
   },
   {
     "id": "D12 flat with turns",
     "pass": true,
-    "detail": "20 s input replay: 30 fps 146.60 m, 60 fps 146.52 m, 120 fps 146.44 m (spread 0.11%)"
+    "detail": "20 s input replay: 30 fps 146.56 m, 60 fps 146.45 m, 120 fps 146.35 m (spread 0.14%)"
   },
   {
     "id": "D12 18° ramp climb",
     "pass": true,
-    "detail": "20 s input replay: 30 fps 24.73 m, 60 fps 24.73 m, 120 fps 24.73 m (spread 0.00%)"
+    "detail": "20 s input replay: 30 fps 24.54 m, 60 fps 24.54 m, 120 fps 24.54 m (spread 0.00%)"
   }
 ]

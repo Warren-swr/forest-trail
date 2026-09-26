@@ -1,0 +1,167 @@
+{
+  "id": "toyota",
+  "name": "Land Cruiser FJ60 · 远途旅行",
+  "short": "Land Cruiser",
+  "brand": "TOYOTA · FJ60",
+  "tagline": "经典四门旅行车，六缸扭矩与前后钢板弹簧，稳稳穿过浅溪和石滩",
+  "model": "vehicle_toyota_trail",
+  "bodyLength": 4.78,
+  "suspension": "leaf",
+  "paint": "sand",
+  "paints": [
+    "sand",
+    "white",
+    "red",
+    "pine"
+  ],
+  "mass": 1950,
+  "com": [
+    0,
+    0.24,
+    0.02
+  ],
+  "inertia": [
+    4200,
+    4400,
+    1000
+  ],
+  "wheelBase": 2.73,
+  "track": 1.76,
+  "wheelRadius": 0.44,
+  "wheelWidth": 0.3,
+  "wheelMass": 30,
+  "hardpointY": 0.32,
+  "restLength": 0.51,
+  "minLength": 0.13,
+  "springK": 26500,
+  "damperBump": 4200,
+  "damperRebound": 5900,
+  "bumpStopK": 300000,
+  "antiRollFront": 10000,
+  "antiRollRear": 6500,
+  "tyreLatK": 72000,
+  "tyreRelax": 0.75,
+  "tyreLatDamp": 2100,
+  "tyreLongK": 105000,
+  "rollResist": 0.025,
+  "highPeak": 6300,
+  "highMaxKmh": 34,
+  "lowPeak": 10500,
+  "lowMaxKmh": 11,
+  "reverseMaxKmh": 8.5,
+  "reversePeak": 8000,
+  "brakeMax": 6700,
+  "engineBrakeLow": 4100,
+  "engineBrakeHigh": 1300,
+  "spinMu": 0.8,
+  "mudDrag": 820,
+  "steerMaxLow": 30,
+  "steerMaxHigh": 13,
+  "steerSpeedKmh": 30,
+  "steerRate": 85,
+  "steerReturnRate": 130,
+  "throttleRise": 0.35,
+  "throttleFall": 0.18,
+  "waterWarnDepth": 0.7,
+  "waterFailDepth": 0.95,
+  "waterFailTime": 3,
+  "colliders": [
+    {
+      "half": [
+        0.95,
+        0.26,
+        1.35
+      ],
+      "at": [
+        0,
+        0.41,
+        0
+      ]
+    },
+    {
+      "half": [
+        1,
+        0.34,
+        0.22
+      ],
+      "at": [
+        0,
+        0.53,
+        -2.06
+      ]
+    },
+    {
+      "half": [
+        0.95,
+        0.36,
+        0.31
+      ],
+      "at": [
+        0,
+        0.54,
+        2.17
+      ]
+    },
+    {
+      "half": [
+        0.9,
+        0.26,
+        2.05
+      ],
+      "at": [
+        0,
+        0.62,
+        0.07
+      ]
+    },
+    {
+      "half": [
+        0.83,
+        0.29,
+        1.38
+      ],
+      "at": [
+        0,
+        1.17,
+        0.72
+      ],
+      "friction": 0.5
+    },
+    {
+      "half": [
+        0.82,
+        0.14,
+        1.35
+      ],
+      "at": [
+        0,
+        1.6,
+        0.66
+      ]
+    }
+  ],
+  "axleHalf": 0.53,
+  "winchFront": [
+    0,
+    0.33,
+    -2.231
+  ],
+  "hitchRear": [
+    0,
+    0.225,
+    2.32
+  ],
+  "engine": {
+    "idle": 700,
+    "max": 3300,
+    "cyl": 6,
+    "tone": 0.82
+  },
+  "ratings": {
+    "power": 0.85,
+    "speed": 0.65,
+    "grip": 0.7,
+    "comfort": 0.85,
+    "agility": 0.45
+  }
+}

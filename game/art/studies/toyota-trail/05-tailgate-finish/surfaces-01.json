@@ -1,0 +1,24 @@
+{
+  "model": "public/assets/models/vehicle_toyota_trail.glb",
+  "method": "Cross-material, same-facing axis-aligned triangles, <=10 micrometre plane gap, >0.1 mm2 overlapping area, outward BVH visibility ray.",
+  "meshes": [
+    {
+      "node": "Body",
+      "exposedOverlaps": 0,
+      "totalAreaM2": 0,
+      "overlaps": []
+    },
+    {
+      "node": "Body_LOD1",
+      "exposedOverlaps": 0,
+      "totalAreaM2": 0,
+      "overlaps": []
+    },
+    {
+      "node": "Wheel",
+      "exposedOverlaps": 0,
+      "totalAreaM2": 0,
+      "overlaps": []
+    }
+  ]
+}

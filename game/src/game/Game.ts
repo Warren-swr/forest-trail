@@ -2,7 +2,7 @@
 // interpolated rendering, camera and gameplay systems.
 import * as pc from 'playcanvas';
 import { Terrain } from './world/terrain';
-import { scatter, TREE_MODELS, UNDER_MODELS, ROCK_MODELS, GRASS_MODELS, HAS_LOD1, type ScatterResult } from './world/scatter';
+import { scatter, TREE_MODELS, UNDER_MODELS, ROCK_MODELS, ROCK_LOD1, GRASS_MODELS, HAS_LOD1, type ScatterResult } from './world/scatter';
 import { PROPS, WORLD_HALF } from './world/layout';
 import { Physics, initRapier } from './physics/physics';
 import { Vehicle } from './physics/vehicle';
@@ -128,7 +128,7 @@ export class Game {
       });
     }));
     for (const m of [...TREE_MODELS, ...UNDER_MODELS, ...GRASS_MODELS]) { names.add(m); if (HAS_LOD1.has(m)) names.add(`${m}_lod1`); }
-    for (const r of ROCK_MODELS) names.add(r);
+    for (const r of ROCK_MODELS) { names.add(r); if (ROCK_LOD1.has(r)) names.add(`${r}_lod1`); }
     for (const p of PROPS) names.add(p.model);
     for (const p of this.scatter.areas.placed) names.add(p.model);
     names.add('toolbox');
@@ -257,10 +257,10 @@ export class Game {
     );
     this.layers.push(
       new InstancedLayer(app, this.lib, sc.rocks, {
-        chunk: 60,
-        dist: [260],
-        castShadows: [true],
-        models: ROCK_MODELS.map((t) => [t]),
+        chunk: 45,
+        dist: [48, 260],
+        castShadows: [true, false],
+        models: ROCK_MODELS.map((t) => ROCK_LOD1.has(t) ? [t, `${t}_lod1`] : [t]),
         heightPad: 4,
       }, 'rocks'),
     );
@@ -338,6 +338,14 @@ export class Game {
     this.view.update(this.alpha);
     this.cam.update(this.vehicle, this.view.renderPos, dt, this.paused && this.cam.mode !== 'photo' ? null : inp);
     const cp = this.cam.entity.getPosition();
+    this.view.setDetail(cp);
+    if (this.cam.mode === 'photo' && this.cameraFrame?.dof.enabled) {
+      const focus = cp.distance(this.cam.target);
+      if (Math.abs(this.cameraFrame.dof.focusDistance - focus) > .025) {
+        this.cameraFrame.dof.focusDistance = focus;
+        this.cameraFrame.update();
+      }
+    }
     this.terrainRender.update(cp);
     for (const l of this.layers) l.update(cp);
     this.water.update(dt);

@@ -198,7 +198,9 @@ export async function startGame(canvas: HTMLCanvasElement) {
   game = g;
   try {
     const saved = loadSave().data;
-    await g.init((p, text) => store.set({ loading: p, loadingText: text }), saved.vehicle);
+    const requested = new URLSearchParams(location.search).get('vehicle');
+    const vehicle = requested && Object.hasOwn(VEHICLES, requested) ? requested as VehicleId : saved.vehicle;
+    await g.init((p, text) => store.set({ loading: p, loadingText: text }), vehicle);
   } catch (e) {
     console.error(e);
     store.set({ loadingText: `启动失败：${(e as Error).message}` });
@@ -221,6 +223,7 @@ export async function startGame(canvas: HTMLCanvasElement) {
   g.hooks.frame.push((dt) => director?.update(dt));
   {
     const sv = j.save;
+    sv.vehicle = g.vehicleId;
     const paint = sv.paints[g.vehicleId] ?? (VEHICLES[g.vehicleId].paints.includes(sv.paint) ? sv.paint : VEHICLES[g.vehicleId].paint);
     sv.paint = paint;
     g.view.setPaint(paint);

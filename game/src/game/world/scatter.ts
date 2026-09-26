@@ -13,6 +13,7 @@ export const GRASS_MODELS = ['grass_tuft', 'grass_tall', 'flowers_a', 'flowers_b
 /** models that ship a *_lod1 file */
 export const HAS_LOD1 = new Set<string>([...TREE_MODELS, 'bush_a', 'bush_b', 'fern', 'grass_tuft', 'grass_tall']);
 export const ROCK_MODELS = ['rock_a', 'rock_b', 'rock_c', 'rock_slab', 'rock_post', 'pebbles', 'log', 'stump', 'boulder_a', 'boulder_b', 'boulder_c', 'sandstone_a', 'sandstone_b', 'sandstone_c'] as const;
+export const ROCK_LOD1 = new Set<string>(ROCK_MODELS.slice(0, 8));
 
 export interface Instance {
   kind: number;

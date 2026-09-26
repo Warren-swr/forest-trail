@@ -102,15 +102,16 @@ export class FollowCamera {
       cam.lookAt(this.target);
       return;
     }
+    const photo = this.mode === 'photo';
     if (inp) {
-      if (inp.zoom) this.zoomDist = clamp(this.zoomDist + inp.zoom * 0.8, 4.5, 14);
+      if (inp.zoom) this.zoomDist = clamp(this.zoomDist + inp.zoom * 0.8, photo ? 2.6 : 4.5, photo ? 24 : 14);
       if (inp.lookActive) {
         this.orbitYaw = wrap(this.orbitYaw - inp.lookX * 1.0);
-        this.orbitPitch = clamp(this.orbitPitch + inp.lookY, -0.2, 0.9);
+        this.orbitPitch = clamp(this.orbitPitch + inp.lookY, photo ? -.52 : -.2, .9);
         this.lastLook = this.time;
       }
     }
-    const photo = this.mode === 'photo';
+    if (!photo) this.zoomDist = clamp(this.zoomDist, 4.5, 14);
     // auto recentre after 1.5 s without look input (not in photo/winch)
     if (!photo && !this.winchView && this.time - this.lastLook > 1.5) {
       const k = damp(1.6, dt);

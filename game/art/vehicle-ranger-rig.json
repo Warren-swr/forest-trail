@@ -1,0 +1,18 @@
+{
+  "id": "ranger",
+  "fidelity": 3,
+  "R": 0.36,
+  "W": 0.27,
+  "wheelbase": 2.8,
+  "track_x": 0.79,
+  "spring_x": 0.44,
+  "spring_top": 0.46,
+  "spring_seat": 0.055,
+  "pinion_y": 0.235,
+  "pinion_z": 0.025,
+  "tcase_y": 0.3,
+  "tcase_z": 0.05,
+  "bump": 0.23,
+  "droop": 0.13,
+  "lock": 38.6
+}

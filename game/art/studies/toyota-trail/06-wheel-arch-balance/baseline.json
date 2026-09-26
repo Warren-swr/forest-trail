@@ -1,0 +1,57 @@
+{
+  "revision": "06-wheel-arch-balance",
+  "previousRevision": "05-tailgate-finish",
+  "createdAt": "2026-09-26T07:57:05.594223+00:00",
+  "files": [
+    {
+      "source": "public/assets/models/vehicle_toyota_trail.glb",
+      "snapshot": "before.glb",
+      "sha256": "62c4540f71709c816b6a9b7611b3b5865bb6a2da7274236b3d5a8ea1192a8a1a"
+    },
+    {
+      "source": "public/assets/models/vehicle_toyota_trail.json",
+      "snapshot": "before.json",
+      "sha256": "58f42ded93fe1c824b71359c0d123573a8f00af85bdb710ae24cb052ad10247a"
+    },
+    {
+      "source": "art/blender/vehicle_toyota_trail.blend",
+      "snapshot": "before.blend",
+      "sha256": "dbe73b0875e3552d8f2c773fffc8a72b70c863e45961bf080d4a8f715cced22b"
+    },
+    {
+      "source": "art/blender/vehicle_toyota_trail.py",
+      "snapshot": "before.py",
+      "sha256": "18821c4cad75a440914dda46be7de2854bbeec1d394fe41502e0a4e94631153e"
+    },
+    {
+      "source": "src/game/config.ts",
+      "snapshot": "before-config.ts",
+      "sha256": "99dfbf9c9ac6ad0a1cfc7f4a2c3e46315fc45b9b46ab3afb94b984fa22021a19"
+    },
+    {
+      "source": "src/game/physics/vehicle.ts",
+      "snapshot": "before-physics.ts",
+      "sha256": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539"
+    },
+    {
+      "source": "tools/toyota-study-browser.cjs",
+      "snapshot": "before-browser.cjs",
+      "sha256": "36801b80d9629a09b7ed5d912ef4fef1a9198e89d3355e7ec4684fc5b26c1fd4"
+    },
+    {
+      "source": "tools/toyota-suspension-study.ts",
+      "snapshot": "before-suspension-study.ts",
+      "sha256": "271928dcfcdc0fae3c7604b7ebe121217fa767b02b5afda581bc07ecc1f059a9"
+    },
+    {
+      "source": "tools/proving-results-toyota.json",
+      "snapshot": "before-proving.json",
+      "sha256": "c26625c85554b6fef91e72fda541c03561bfac5cd6b235a407065e3e2ad27185"
+    },
+    {
+      "source": "tools/vehicle-rig-results.json",
+      "snapshot": "before-rig.json",
+      "sha256": "854d61fe6f9ff6b8aa3673a8af064d7901d02f20e6695fea4198d34fa2da5bcc"
+    }
+  ]
+}
