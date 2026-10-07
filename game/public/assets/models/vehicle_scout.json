@@ -3,7 +3,7 @@
   "fidelity": 3,
   "style": "published-release-refinement/1",
   "sourceRelease": "33439c37d453c87279797d7365d8874cff5b747a",
-  "revision": "03-release-refinement",
+  "revision": "04-reference-surfaces",
   "reference": "Land Rover Defender 90 · 300Tdi",
   "rigFile": "art/vehicle-scout-rig.json",
   "wheelBase": 2.5,
@@ -52,14 +52,14 @@
     ],
     "indicator": [
       [
-        -0.665,
-        0.425,
-        -1.836
+        -0.83,
+        0.751,
+        -1.849
       ],
       [
-        0.665,
-        0.425,
-        -1.836
+        0.83,
+        0.751,
+        -1.849
       ]
     ],
     "bar": [
@@ -87,49 +87,49 @@
     "tail": [
       [
         -0.78,
-        0.607,
-        1.878
+        0.63,
+        1.865
       ],
       [
         0.78,
-        0.607,
-        1.878
+        0.63,
+        1.865
       ]
     ],
     "brake": [
       [
         -0.78,
-        0.607,
-        1.878
+        0.63,
+        1.865
       ],
       [
         0.78,
-        0.607,
-        1.878
+        0.63,
+        1.865
       ]
     ],
     "rearIndicator": [
       [
         -0.78,
-        0.472,
-        1.846
+        0.508,
+        1.865
       ],
       [
         0.78,
-        0.472,
-        1.846
+        0.508,
+        1.865
       ]
     ],
     "reverse": [
       [
         -0.78,
         0.397,
-        1.878
+        1.865
       ],
       [
         0.78,
         0.397,
-        1.878
+        1.865
       ]
     ],
     "winch": [
@@ -174,8 +174,8 @@
     "far": 23
   },
   "tris": {
-    "Body": 115296,
-    "Wheel": 22512,
+    "Body": 135128,
+    "Wheel": 22992,
     "AxleFront": 1780,
     "AxleRear": 1512,
     "Spring": 4096,
@@ -185,7 +185,7 @@
     "BrakeRear": 2016,
     "Driveshaft": 160,
     "Wheel_LOD1": 2202,
-    "Body_LOD1": 46118
+    "Body_LOD1": 54051
   },
-  "build": "art/studies/trail-companions/03-release-refinement/scout/build-20260926-104517-590970"
+  "build": "build-20261007-042805-705795"
 }

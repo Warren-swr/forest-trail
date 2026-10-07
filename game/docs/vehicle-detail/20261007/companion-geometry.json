@@ -1,0 +1,191 @@
+{
+  "method": "Final exported GLB positions and morph targets; both active LODs are checked. Counts compare the published release to the current complete assembly; the release has no distance LOD. Tyre radii include tread blocks. Coil wire cross sections must retain their diameter throughout the deformation.",
+  "releaseCommit": "33439c37d453c87279797d7365d8874cff5b747a",
+  "vehicles": [
+    {
+      "id": "scout",
+      "windows": {
+        "Body": [
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 9.374761606992337e-08
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 3.7426483024361864e-08
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 9.726830449453308e-08
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 1.0710127186273648e-07
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 5.941408527818892e-08
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 1.1752397777037228e-07
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 1.0464403732798792e-07
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 1.0775061940643372e-07
+          }
+        ],
+        "Body_LOD1": [
+          {
+            "vertices": 34,
+            "maxPlaneDeviationM": 6.020206120905739e-08
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 3.722744836812293e-08
+          },
+          {
+            "vertices": 34,
+            "maxPlaneDeviationM": 5.772712062730202e-08
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 3.5696705147344274e-08
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 1.0827015147624186e-07
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 6.270187959294266e-08
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 3.788358383763599e-08
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 8.240217770627556e-08
+          }
+        ]
+      },
+      "tyreRadius": {
+        "Wheel": 0.42967494815348994,
+        "Wheel_LOD1": 0.4300000307742896
+      },
+      "rimRadius": {
+        "Wheel": 0.23900000967793558,
+        "Wheel_LOD1": 0.23900000967793558
+      },
+      "assembledTriangles": {
+        "before": {
+          "near": 30353,
+          "far": 30353
+        },
+        "after": {
+          "near": 256948,
+          "far": 92711
+        }
+      },
+      "damperLimits": [
+        {
+          "axleHeight": 0.24,
+          "eyeDistance": 0.47720540650751225,
+          "exposedRod": 0.06220540650751227
+        },
+        {
+          "axleHeight": -0.2,
+          "eyeDistance": 0.8144476655992086,
+          "exposedRod": 0.3994476655992086
+        }
+      ],
+      "coilWire": {
+        "rings": 257,
+        "diameterMin": 0.017999997237760027,
+        "diameterMax": 0.018000032695527735
+      },
+      "bytes": 5912280,
+      "releasedBytes": 981704
+    },
+    {
+      "id": "ranger",
+      "windows": {
+        "Body": [
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 4.970169596357879e-08
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 5.220609034274402e-08
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 7.717993993360297e-08
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 1.2359480230391723e-08
+          }
+        ],
+        "Body_LOD1": [
+          {
+            "vertices": 32,
+            "maxPlaneDeviationM": 3.95416006164828e-08
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 4.911672618623797e-08
+          },
+          {
+            "vertices": 32,
+            "maxPlaneDeviationM": 5.335868141231354e-08
+          },
+          {
+            "vertices": 36,
+            "maxPlaneDeviationM": 7.418633884287429e-09
+          }
+        ]
+      },
+      "tyreRadius": {
+        "Wheel": 0.41969118311286824,
+        "Wheel_LOD1": 0.4200000289852859
+      },
+      "rimRadius": {
+        "Wheel": 0.23900000967793558,
+        "Wheel_LOD1": 0.23900000967793558
+      },
+      "assembledTriangles": {
+        "before": {
+          "near": 23320,
+          "far": 23320
+        },
+        "after": {
+          "near": 240219,
+          "far": 81209
+        }
+      },
+      "damperLimits": [
+        {
+          "axleHeight": 0.23,
+          "eyeDistance": 0.5112240213448503,
+          "exposedRod": 0.10122402134485037
+        },
+        {
+          "axleHeight": -0.18,
+          "eyeDistance": 0.7405065833603371,
+          "exposedRod": 0.33050658336033717
+        }
+      ],
+      "coilWire": null,
+      "bytes": 5570308,
+      "releasedBytes": 706148
+    }
+  ],
+  "passed": true
+}

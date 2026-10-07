@@ -1,0 +1,77 @@
+[
+  {
+    "id": "D01",
+    "pass": true,
+    "detail": "top 29.4 km/h after 5 s; reverse reached -8.1 km/h after stop; drift at rest 0.012 m in 4 s"
+  },
+  {
+    "id": "D02",
+    "pass": true,
+    "detail": "FL compression peak 0.250 m, body roll peak 2.4°, settled 0.20 s after the rear wheel left the bump"
+  },
+  {
+    "id": "D03",
+    "pass": true,
+    "detail": "max left/right suspension difference 0.085 m, roll peak 3.2°, peak roll/pitch rate 0.10 rad/s (no snap to terrain normal)"
+  },
+  {
+    "id": "D04 10°",
+    "pass": true,
+    "detail": "high: climbs, low: climbs; released throttle rolls back 2.91 m in 3 s; handbrake holds (0.036 m creep in 3 s)"
+  },
+  {
+    "id": "D04 18°",
+    "pass": true,
+    "detail": "high: climbs, low: climbs; released throttle rolls back 9.03 m in 3 s; handbrake holds (0.000 m creep in 3 s)"
+  },
+  {
+    "id": "D04 25°",
+    "pass": true,
+    "detail": "high: stalls at 18.5 m up, low: climbs; released throttle rolls back 12.15 m in 3 s; handbrake holds (0.000 m creep in 3 s)"
+  },
+  {
+    "id": "D05",
+    "pass": true,
+    "detail": "same input for 6 s from rest: dirt 36.1 m, mud 22.3 m (62% of dirt)"
+  },
+  {
+    "id": "D06",
+    "pass": true,
+    "detail": "left wheels in mud, right on dirt, straight input: heading change 7.5°, peak yaw rate 0.08 rad/s (pulls gently, no snap)"
+  },
+  {
+    "id": "D07 12°",
+    "pass": true,
+    "detail": "low speed traverse: max body tilt 12.8°, stays upright"
+  },
+  {
+    "id": "D07 30°",
+    "pass": true,
+    "detail": "30° traverse tilt 32.0°; with a full-lock turn min uprightness -0.13 (rolls over) — rollover risk comes from physics, no scripted flip"
+  },
+  {
+    "id": "D08",
+    "pass": true,
+    "detail": "shallow ford depth 0.25 m crossed; deep pool 1.08 m triggers the warning (> 0.55 m) and the 3 s recovery rule (deep-water timer fired at 78 m)"
+  },
+  {
+    "id": "D09",
+    "pass": true,
+    "detail": "candidates [tree:ok, blocked:中间有阻挡]; reeled 8.8 m in 12 s, peak tension 10.9 kN (cap 11), peak vertical speed 0.28 m/s; detached cleanly (speed 0.07 m/s); rise 0.27 m"
+  },
+  {
+    "id": "D10",
+    "pass": true,
+    "detail": "upside-down car (up -1.00) reset to the safe point: up 1.000, speed 0.08 m/s after 1.5 s (in-game: hold R 1 s, fade, progress kept)"
+  },
+  {
+    "id": "D12 flat with turns",
+    "pass": true,
+    "detail": "20 s input replay: 30 fps 136.12 m, 60 fps 136.04 m, 120 fps 135.97 m (spread 0.11%)"
+  },
+  {
+    "id": "D12 18° ramp climb",
+    "pass": true,
+    "detail": "20 s input replay: 30 fps 22.93 m, 60 fps 22.93 m, 120 fps 22.93 m (spread 0.00%)"
+  }
+]

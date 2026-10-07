@@ -2,9 +2,9 @@
   "id": "toyota",
   "fidelity": 3,
   "style": "trail-v2-refinement/1",
-  "revision": "06-wheel-arch-balance",
+  "revision": "07-reference-surfaces",
   "reference": "Toyota Land Cruiser FJ60",
-  "rigFile": "art/studies/toyota-trail/06-wheel-arch-balance/build-20260926-080506/rig.json",
+  "rigFile": "art/vehicle-toyota-rig.json",
   "wheelBase": 2.73,
   "trackX": 0.88,
   "wheelRadius": 0.44,
@@ -151,8 +151,8 @@
     "far": 23
   },
   "tris": {
-    "Body": 88534,
-    "Wheel": 20512,
+    "Body": 108908,
+    "Wheel": 20992,
     "AxleFront": 2228,
     "AxleRear": 1960,
     "Spring": 1920,
@@ -161,7 +161,7 @@
     "BrakeFront": 1736,
     "BrakeRear": 2016,
     "Driveshaft": 160,
-    "Body_LOD1": 38953,
-    "Wheel_LOD1": 1598
+    "Body_LOD1": 47919,
+    "Wheel_LOD1": 1774
   }
 }

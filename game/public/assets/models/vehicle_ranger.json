@@ -3,7 +3,7 @@
   "fidelity": 3,
   "style": "published-release-refinement/1",
   "sourceRelease": "33439c37d453c87279797d7365d8874cff5b747a",
-  "revision": "03-release-refinement",
+  "revision": "04-reference-surfaces",
   "reference": "Toyota Hilux RN46 · 1979–1983",
   "rigFile": "art/vehicle-ranger-rig.json",
   "wheelBase": 2.62,
@@ -152,8 +152,8 @@
     "far": 23
   },
   "tris": {
-    "Body": 116931,
-    "Wheel": 22957,
+    "Body": 124427,
+    "Wheel": 23437,
     "AxleFront": 2228,
     "AxleRear": 1960,
     "Spring": 1920,
@@ -163,7 +163,7 @@
     "BrakeRear": 2016,
     "Driveshaft": 160,
     "Wheel_LOD1": 2349,
-    "Body_LOD1": 46771
+    "Body_LOD1": 49769
   },
-  "build": "art/studies/trail-companions/03-release-refinement/ranger/build-20260926-111618-061926"
+  "build": "build-20261007-042447-324969"
 }

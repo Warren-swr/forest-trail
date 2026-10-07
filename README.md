@@ -8,7 +8,7 @@
 
 游戏已实现三辆可选车辆、四轮悬挂与绞盘、昼夜与车灯、背景音乐、训练场计时、演示录制及本地存档。使用支持 WebGL2 的桌面浏览器，按 W/A/S/D 驾驶、M 打开地图、Esc 暂停；完整操作见 [game/README.md](game/README.md)。
 
-Scout 与 Kestrel 已基于上一版正式模型重新精修，保留整套探险装备，并对照实拍向 Toyota 样车对齐；建模、细节与悬挂调整见 [优化记录](game/docs/VEHICLE-TRAIL-COMPANIONS.md) 和 [实机前后对照](game/docs/trail-companions/index.html)。
+三车已完成原型细节精修：修正 FJ60 中央鼓起的机盖，重做 Defender 的独立机盖与圆灯、Hilux 的低机盖与分区格栅，并统一完善圆角窗框、车顶肩部和轮眉。见 [2026-10-07 修改与验证记录](game/docs/VEHICLE-DETAIL-20261007.md) 和 [三车实机前后对照](game/docs/vehicle-detail/20261007/index.html)。
 
 ## 本地运行
 

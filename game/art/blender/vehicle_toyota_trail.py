@@ -11,14 +11,18 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common as C
 import vehicle_parts as P
 import vehicle_fidelity as F
+import vehicle_surfaces as V
 
 MODULE = importlib.util.spec_from_file_location('toyota_v2', os.path.join(C.HERE, 'reference', 'vehicle_toyota_v2.py'))
 L = importlib.util.module_from_spec(MODULE)
 MODULE.loader.exec_module(L)
+L.tube_path = lambda mb, pts, r=.02, mat='Trim', segs=12: V.bent_tube(mb, pts, r, r * 2.4, mat, max(12, segs))
+L.tube = lambda mb, a, b, r=.016, mat='Trim', segs=12: F.tube(mb, a, b, r, mat, max(12, segs))
 
 MODEL = 'vehicle_toyota_trail'
-REVISION = '06-wheel-arch-balance'
-STUDY = os.path.join(C.ART, 'studies', 'toyota-trail', REVISION,
+REVISION = '07-reference-surfaces'
+STUDY = os.path.join(os.environ.get('FOREST_VEHICLE_BUILD_ROOT',
+                     os.path.join(C.ART, 'studies', 'toyota-trail')), REVISION,
                      'build-' + datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S'))
 COWL, HEADER = .74, .51
 NOSE_SCALE = .97
@@ -62,7 +66,7 @@ def materials():
 
 def wheel_base(mb, M, R, W, detailed):
     tmp = C.MeshBuilder('V2 tyre and hub')
-    P.add_wheel(tmp, segs=40 if detailed else 20, lugs=24 if detailed else 16,
+    P.add_wheel(tmp, segs=64 if detailed else 24, lugs=24 if detailed else 16,
                 style='steel', sidewall_lugs=16 if detailed else 0,
                 tread_bevel=.002 if detailed else 0)
     # Grow the sidewall above the bead, keeping the steel wheel and hub at their
@@ -155,7 +159,7 @@ def add_tub(mb):
     prof += [(FRONT - .05, .30), (FRONT, .36), (FRONT, BELT - .025),
              (FRONT - .025, BELT), (REAR + .025, BELT), (REAR, BELT - .025)]
     bm = C.bm_extrude_poly(prof, 1.80, axis='X')
-    C.bevel(bm, .022, 3)
+    C.bevel(bm, .030, 5)
     cuts = []
     for side in (-1, 1):
         for y, z0 in ((COWL - .022, .23), (-.15, .23), (-1.025, .645)):
@@ -225,30 +229,39 @@ def skin(mb, point, nx, ny, bottom, mat='Paint'):
 
 
 def hood_point(u, t):
-    # Broad two-way crown, two tapered pressings and a rolled-down leading edge.
-    # The pressings fade into the same sheet at both ends; no applied strips.
-    x = u * (.858 + .006 * math.sin(math.pi * t))
-    nose = C.smoothstep(.87, 1, t)
-    y = COWL + .014 + (FRONT - COWL - .005) * t + .017 * (1 - u * u) * nose
-    shoulder = max(0, 1 - u * u)
-    crown = (.021 + .038 * math.sin(math.pi * t) ** .8) * shoulder
-    fade = C.smoothstep(.05, .20, t) * (1 - C.smoothstep(.76, .94, t))
-    centre = .53 - .075 * t
-    bead = .018 * math.exp(-((abs(x) - centre) / .051) ** 2) * fade
-    z = BELT + .009 + .007 * math.sin(math.pi * t) + (crown + bead) * (1 - nose)
+    # FJ60: a broad, nearly planar pressing, NOT a longitudinal dome. Keep a
+    # gentle fall towards the grille and put the roll at the panel's perimeter.
+    # Two shallow recessed swages terminate within the sheet, as in the factory
+    # 60-series photographs; they are not raised strips on the bonnet.
+    x = u * (.790 - .018 * t - .008 * C.smoothstep(.94, 1, t))
+    nose = C.smoothstep(.92, 1, t)
+    y = COWL + .014 + (FRONT - COWL - .005) * t + .008 * (1 - u ** 8) * nose
+    shoulder = C.smoothstep(.76, 1, abs(u))
+    fade = C.smoothstep(.025, .12, t) * (1 - C.smoothstep(.82, .96, t))
+    crease = .0045 * math.exp(-((abs(x) - (.565 - .035 * t)) / .025) ** 2) * fade
+    z = BELT + .030 - .012 * t - .008 * shoulder - .004 * nose - crease
     return (nose_x(x, y), y, z)
 
 
 def cowl_point(u, t):
-    # The scuttle rises into the windshield and meets the bonnet crown.
+    # The scuttle meets the broad rear edge with the same small shoulder roll.
     x = u * .871
     y = COWL - .104 + .109 * t
-    z = BELT + .010 + .020 * (1 - u * u) + .005 * math.sin(math.pi * t)
+    z = BELT + .030 - .008 * C.smoothstep(.76, 1, abs(u))
     return (x, y, z)
 
 
 def add_hood(mb):
     skin(mb, hood_point, 80, 48, BELT - .006)
+    for side in (-1, 1):
+        def fender(u, t):
+            a = (u + 1) / 2
+            x, y, z = hood_point(side, t)
+            inner = abs(x) + .004
+            outer = abs(nose_x(.897, y))
+            return (side * (inner + (outer - inner) * a), y,
+                    z - .001 - .006 * C.smoothstep(.35, 1, a))
+        skin(mb, fender, 12, 48, BELT - .008)
     skin(mb, cowl_point, 48, 8, BELT - .009)
     # The narrow separation follows the cowl crown instead of crossing it as a
     # straight dark bar. The bonnet's closed edge supplies the side seam.
@@ -262,10 +275,11 @@ def add_hood(mb):
 
 
 def roof_point(u, t):
-    # A low roof with rounded shoulders, not the tall optional FJ62 roof.
-    x = .837 * u
+    # Low FJ60 roof: wide flat centre, rolled shoulders and radiused end corners.
+    edge = C.smoothstep(.93, 1, t) + 1 - C.smoothstep(0, .06, t)
+    x = (.837 - .014 * edge) * u
     y = -2.077 + (HEADER + 2.108) * t
-    z = ROOF + .024 + .052 * max(0, 1 - u * u) + .010 * math.sin(math.pi * t)
+    z = ROOF + .076 - .052 * C.smoothstep(.67, 1, abs(u)) - .009 * edge
     fade = C.smoothstep(.025, .10, t) * (1 - C.smoothstep(.90, .98, t))
     for rib in (-.53, -.27, .27, .53):
         z += .005 * math.exp(-((x - rib) / .017) ** 2) * fade
@@ -276,12 +290,13 @@ def add_greenhouse(mb):
     # Restore the first sample's straight inclined pillars and planar panes.
     # Keep the geometric tilt, with no bowing or shared nonlinear deformation.
     xb, xt, zb, zt = .885, .818, BELT, ROOF
-    stations = [(COWL, HEADER), (-.15, -.17), (-1.025, -1.04), (-2.10, -2.055)]
+    stations = [(COWL, HEADER), (-.15, -.17), (-1.025, -1.04), (-1.945, -1.925), (-2.10, -2.055)]
     vs = []
     for yb, yt in stations:
         vs += [(-xb, yb, zb), (xb, yb, zb), (xt, yt, zt), (-xt, yt, zt)]
-    fs = [[3, 2, 1, 0], [12, 13, 14, 15]]
-    for i in range(3):
+    end = (len(stations) - 1) * 4
+    fs = [[3, 2, 1, 0], [end, end + 1, end + 2, end + 3]]
+    for i in range(len(stations) - 1):
         a, b = i * 4, (i + 1) * 4
         fs += [[a + 1, b + 1, b + 2, a + 2], [a, a + 3, b + 3, b],
                [a + 3, a + 2, b + 2, b + 3], [a, b, b + 1, a + 1]]
@@ -289,16 +304,19 @@ def add_greenhouse(mb):
     bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
     bottom = [f for f in bm.faces if f.normal.z < -.9]
     edges = [e for e in bm.edges if not any(f in bottom for f in e.link_faces)]
-    bevel_faces = set(C.bevel(bm, .025, 3, edges).get('faces', []))
+    bevel_faces = set(C.bevel(bm, .031, 5, edges).get('faces', []))
     bm.normal_update()
-    wins = [f for f in bm.faces if f not in bevel_faces and abs(f.normal.z) < .5 and f.calc_area() > .05]
+    wins = [f for f in bm.faces if f not in bevel_faces and abs(f.normal.z) < .5 and f.calc_area() > .05
+            and (abs(f.normal.y) > .5 or f.calc_center_median().y > -1.945)]
     bmesh.ops.delete(bm, geom=[f for f in bm.faces if f.normal.z < -.9], context='FACES_ONLY')
-    bmesh.ops.inset_individual(bm, faces=wins, thickness=.035, depth=-.009)
-    seals = set(bmesh.ops.inset_individual(bm, faces=wins, thickness=.009, depth=-.003)['faces'])
-    windows = set(wins)
-    mb.add(bm, mat_fn=lambda f: 'Glass' if f in windows else 'Rubber' if f in seals else 'Paint', shade='auto', angle=32)
+    V.glazed_hull(mb, bm, wins, border=.025, radius=.051, chrome=True)
     skin(mb, roof_point, 80, 32, ROOF - .008, 'PaintAccent')
     for side in (-1, 1):
+        # The narrow rear quarter pillar carries the FJ60 cabin extractor.
+        for k in range(5):
+            z = 1.075 + .033 * k
+            x = side * (.885 - .067 * (z - BELT) / (ROOF - BELT) + .001)
+            F.box(mb, (x, -2.003, z), (.011, .074, .013), 'Trim', .004, 3)
         gutter = [(side * .843, -2.085 + (HEADER + 2.14) * t, ROOF + .018 + .010 * math.sin(math.pi * t)) for t in (i / 32 for i in range(33))]
         F.path(mb, gutter, .012, 'Paint', 8)
         # The front rack feet used to stand ahead of the sloped windscreen.
@@ -312,7 +330,10 @@ def add_greenhouse(mb):
         F.tube(mb, (b[0] - .15, b[1], b[2]), (b[0] + .15, b[1], b[2]), .008, 'Rubber', 8)
     # The front-door quarter light is a recognisable FJ60 cue.
     for side in (-1, 1):
-        F.tube(mb, (side * .875, .46, zb + .052), (side * .822, .39, zt - .044), .007, 'Paint', 8)
+        def quarter(z, y, offset=0):
+            return (side * (xb - (xb - xt) * (z - zb) / (zt - zb) - .006 + offset), y, z)
+        F.tube(mb, quarter(zb + .050, .46), quarter(zt - .060, .39), .008, 'Rubber', 12)
+        F.tube(mb, quarter(zb + .050, .46, .005), quarter(zt - .060, .39, .005), .003, 'Metal', 10)
 
 
 def add_front(mb):
@@ -329,7 +350,10 @@ def add_front(mb):
     for side in (-1, 1):
         x = side * .624 * NOSE_SCALE
         F.box(mb, (x, y + .033, z), (.281, .05, .30), 'Trim', .025, 3)
-        L.lamp_round(mb, x, z, y + .073, .101, 'Lamp', 'Metal', depth=.045, ring=.018, segs=32)
+        L.lamp_round(mb, x, z, y + .073, .101, 'Lamp', 'Metal', depth=.045, ring=.018, segs=48)
+        x0, x1 = sorted((side * .477 * NOSE_SCALE, side * .877 * NOSE_SCALE))
+        V.surround(mb, [(x0, y + .062, .459), (x1, y + .062, .459),
+                       (x1, y + .062, .837), (x0, y + .062, .837)], .027, .007)
         # Restrained lens fluting and three mounting tabs; no bright wire mesh.
         for k in range(-3, 4):
             dx = k * .023
@@ -340,6 +364,8 @@ def add_front(mb):
         F.box(mb, (nose_x(side * .896, 1.73), 1.73, .708), (.016, .083, .032), 'LampAmber', .004, 2)
     F.box(mb, (0, y + .065, .692), (.366, .025, .081), 'Trim', .004, 2)
     L.add_text(mb, 'TOYOTA', (0, y + .081, .692), .076, .0015, 'Decal', .0010)
+    V.surround(mb, [(-.515, y + .063, .462), (.515, y + .063, .462),
+                   (.515, y + .063, .834), (-.515, y + .063, .834)], .029, .006)
     # Painted leading edge meets the grille; no opening beneath the bonnet.
     F.box(mb, (0, y - .004, .865), (1.77 * NOSE_SCALE, .036, .026), 'Paint', .007, 2)
 
@@ -350,8 +376,9 @@ def add_flare(mb, side, yc, zr, zf):
     # Keep the inner opening and full-bump clearance while reducing visual mass.
     outer = arch(yc, r=ARCH_R + FLARE_WIDTH, zr=zr, zf=zf, steps=32)
     inner = arch(yc, r=ARCH_R, zr=zr, zf=zf, steps=32)
-    section = [(0, -.08), (0, 0), (.14, .06), (.58, .87), (.82, 1),
-               (1, .98), (1, .78), (1, None)]
+    section = [(0, -.08), (0, 0), (.09, .03), (.20, .15), (.38, .53),
+               (.58, .84), (.74, .97), (.86, 1), (.95, .98),
+               (1, .91), (1, .78), (1, None)]
     verts, faces = [], []
     n = len(section)
     for i, (a, b) in enumerate(zip(outer, inner)):
@@ -412,19 +439,21 @@ def add_sides(mb):
                 F.tube(mb, (side * .835 + dx, yc - .021, zz + height / 2 - .022),
                        (side * .835 + dx, yc - .025, zz + height / 2 - .022), .005, 'Metal', 6)
         # Small boxed mirror on one continuous arm, attached to the door frame.
-        F.path(mb, [(side * .905, .65, .876), (side * 1.025, .675, .967), (side * 1.065, .674, .989)], .012, 'Trim', 10)
+        V.bent_tube(mb, [(side * .905, .65, .876), (side * 1.025, .675, .967), (side * 1.065, .674, .989)], .012, .035)
         F.box(mb, (side * 1.07, .674, 1.005), (.053, .100, .166), 'Trim', .018, 3)
         F.box(mb, (side * 1.071, .620, 1.007), (.043, .004, .139), 'Glass', .011, 3)
         F.text(mb, 'LAND CRUISER', (nose_x(side * .905, 1.135), 1.135, .807), .025, 'right' if side > 0 else 'left', 'Metal')
     # Snorkel follows the revised A-pillar, with visible collars at the mounts.
     F.box(mb, (-.928, .974, .796), (.114, .228, .139), 'Trim', .023, 3)
-    F.path(mb, [(-.938, 1.0, .848), (-.937, .848, .913), (-.910, .700, 1.022),
-                (-.864, .518, 1.456), (-.864, .49, 1.566)], .043, 'Trim', 16)
+    V.bent_tube(mb, [(-.938, 1.0, .848), (-.937, .848, .913), (-.910, .700, 1.022),
+                    (-.864, .518, 1.456), (-.864, .49, 1.566)], .043, .095, segs=20)
     F.box(mb, (-.864, .489, 1.589), (.124, .157, .087), 'Trim', .027, 4)
     for z in (1.068, 1.348):
         y = .700 - (z - 1.022) / (.434 / .182)
         F.box(mb, (-.887, y, z), (.105, .027, .020), 'Metal', .004, 2)
-    F.tube(mb, (.81, 1.62, .894), (.809, 1.619, .920), .013, 'Rubber', 12)
+    for k in range(5):
+        F.box(mb, (-.908 + k * .022, .571, 1.589), (.008, .004, .045), 'Rubber', .002, 2)
+    F.tube(mb, (.81, 1.62, .881), (.809, 1.619, .920), .013, 'Rubber', 12)
     F.tube(mb, (.81, 1.62, .916), (.808, 1.618, .938), .008, 'Metal', 6)
     F.tube(mb, (.808, 1.618, .933), (.79, 1.60, 1.86), .004, 'Trim', 8)
 
@@ -599,7 +628,6 @@ def main():
         parts[o.name] = o
         tris[o.name] = sum(len(p.vertices) - 2 for p in o.data.polygons)
     bpy.context.view_layer.update()
-    C.export_glb(list(parts.values()), MODEL + '.glb', vcolor=False, morph=True)
     mn, mx = C.world_bbox([parts['Body']])
     lamps = dict(L.LAMPS)
     lamps['head'] = [(-.624 * NOSE_SCALE, FRONT + .073, .652), (.624 * NOSE_SCALE, FRONT + .073, .652)]
@@ -607,7 +635,7 @@ def main():
     lamps['tail'] = lamps['brake'] = [(x, REAR - .064, .605) for x in (-.814, .814)]
     lamps['reverse'] = [(x, REAR - .064, .481) for x in (-.814, .814)]
     info = dict(id='toyota', fidelity=3, style='trail-v2-refinement/1', revision=REVISION, reference='Toyota Land Cruiser FJ60',
-                rigFile=os.path.relpath(os.path.join(STUDY, 'rig.json'), C.GAME),
+                rigFile='art/vehicle-toyota-rig.json',
                 wheelBase=WB, trackX=TX, wheelRadius=R, wheelWidth=W,
                 spring=dict(x=S['spring_x'], top=S['spring_top'], seat=S['spring_seat'], kind='leaf', morphBump=.25, morphDroop=.20),
                 shock=SHOCK,
@@ -615,8 +643,6 @@ def main():
                 lamps={k: [P.g(p) for p in ps] for k, ps in lamps.items()},
                 bodyBox=dict(min=P.g((mn.x, mx.y, mn.z)), max=P.g((mx.x, mn.y, mx.z))),
                 lod=dict(near=18, far=23), tris=tris)
-    with open(os.path.join(C.MODELS, MODEL + '.json'), 'w') as f:
-        json.dump(info, f, indent=2)
     with open(os.path.join(STUDY, 'rig.json'), 'w') as f:
         json.dump(DIMS, f, indent=2)
     import vehicle_check
@@ -624,7 +650,13 @@ def main():
     with open(os.path.join(STUDY, 'clearance.json'), 'w') as f:
         json.dump(checks, f, indent=2)
     if any(checks.values()):
+        bpy.ops.wm.save_as_mainfile(filepath=os.path.join(STUDY, 'failed.blend'), compress=True)
         raise RuntimeError('Toyota Trail running-gear clearance failed; see ' + STUDY)
+    C.export_glb(list(parts.values()), MODEL + '.glb', vcolor=False, morph=True)
+    with open(os.path.join(C.MODELS, MODEL + '.json'), 'w') as f:
+        json.dump(info, f, indent=2)
+    with open(os.path.join(C.ART, 'vehicle-toyota-rig.json'), 'w') as f:
+        json.dump(DIMS, f, indent=2)
     print('TRAIL STUDY', json.dumps(tris), flush=True)
     if '--no-preview' not in sys.argv:
         previous = C.PREVIEWS

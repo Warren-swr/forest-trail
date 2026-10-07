@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Forest Trail · 三车细节对照</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f3f1e8; color: #233b30; font: 16px/1.6 system-ui, sans-serif; }
+  main { max-width: 1280px; margin: auto; padding: 44px 32px 60px; }
+  .eyebrow { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #68796a; }
+  h1 { font-size: clamp(25px, 4vw, 42px); font-weight: 600; line-height: 1.25; margin: 12px 0; }
+  p { margin: 8px 0 20px; }
+  a { color: #446b51; text-underline-offset: 3px; }
+  .intro { max-width: 780px; color: #607064; }
+  nav, .controls, .split-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+  nav { margin: 28px 0 18px; }
+  button, select { font: inherit; border: 1px solid #cbd1c5; background: #fafaf5; color: inherit; border-radius: 8px; padding: 9px 16px; cursor: pointer; }
+  button[aria-pressed="true"] { background: #244535; border-color: #244535; color: #faf9ee; }
+  button:hover, select:hover { border-color: #557c62; }
+  button:focus-visible, select:focus-visible, input:focus-visible { outline: 3px solid #ae6c38; outline-offset: 3px; }
+  .controls { justify-content: space-between; margin-bottom: 12px; }
+  #caption { margin: 0; font-size: 14px; max-width: 780px; color: #596e5f; }
+  .compare { position: relative; aspect-ratio: 8 / 5; overflow: hidden; background: #142a22; border-radius: 12px; --split: 50%; }
+  .compare img { position: absolute; width: 100%; height: 100%; object-fit: contain; }
+  #after { clip-path: inset(0 0 0 var(--split)); }
+  .divider { position: absolute; top: 0; bottom: 0; left: var(--split); width: 2px; background: #fffbe6; pointer-events: none; }
+  .tag { position: absolute; top: 18px; background: #163126db; color: #fffcef; padding: 5px 12px; font-size: 13px; border-radius: 6px; }
+  .old { left: 18px; } .new { right: 18px; }
+  .split-controls { margin: 14px 0 24px; }
+  .split-controls label { font-size: 13px; }
+  input[type="range"] { flex: 1; min-width: 140px; accent-color: #426a4d; cursor: ew-resize; }
+  .split-controls button { font-size: 13px; padding: 6px 10px; }
+  .views { display: grid; grid-template-columns: repeat(9, 1fr); gap: 8px; }
+  .views button { padding: 0; overflow: hidden; border-radius: 6px; font-size: 12px; }
+  .views img { width: 100%; display: block; aspect-ratio: 8 / 5; }
+  .views span { display: block; padding: 5px; }
+  .lineup { margin: 40px 0 24px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .lineup button { padding: 0; text-align: left; overflow: hidden; border: 0; background: #e6e9df; }
+  .lineup img { width: 100%; display: block; aspect-ratio: 8 / 5; }
+  .lineup strong { display: block; font-weight: 600; margin: 10px 16px 0; }
+  .lineup small { display: block; color: #5a6c5d; margin: 0 16px 14px; }
+  footer { border-top: 1px solid #ced4c7; padding-top: 20px; font-size: 13px; color: #68776a; }
+  footer p { margin-bottom: 8px; }
+  @media (max-width: 700px) {
+    main { padding: 24px 14px 36px; }
+    .views { grid-template-columns: repeat(3, 1fr); }
+    .lineup { grid-template-columns: 1fr; }
+    nav button { flex: 1; padding: 8px; font-size: 13px; }
+    .tag { top: 9px; padding: 3px 7px; font-size: 11px; }
+    .old { left: 9px; } .new { right: 9px; }
+    .controls { align-items: start; }
+    #caption { order: 2; }
+  }
+</style>
+<main>
+  <header>
+    <div class="eyebrow">Forest Trail · Vehicle detail study · 2026.10.07</div>
+    <h1>三种原型，同一片森林。</h1>
+    <p class="intro">从 FJ60 的机盖开始，重新处理三辆车的板件、窗角、轮眉与灯组。下方直接对比游戏画布：同一车辆姿态、相机、光照和涂装，拖动滑块检查具体变化。</p>
+  </header>
+  <nav aria-label="选择车辆">
+    <button type="button" data-car="toyota" aria-pressed="true">Toyota · FJ60</button>
+    <button type="button" data-car="scout" aria-pressed="false">Scout · Defender 90</button>
+    <button type="button" data-car="ranger" aria-pressed="false">Kestrel · Hilux RN46</button>
+  </nav>
+  <div class="controls">
+    <p id="caption" aria-live="polite"></p>
+    <label>观察角度 <select id="view" aria-label="观察角度"></select></label>
+  </div>
+  <div class="compare" id="compare">
+    <img id="before" src="toyota-before-hood.jpg" alt="FJ60 修改前机盖实景">
+    <img id="after" src="toyota-after-hood.jpg" alt="FJ60 当前机盖实景">
+    <div class="divider"></div>
+    <span class="tag old">修改前</span><span class="tag new">当前版本</span>
+  </div>
+  <div class="split-controls">
+    <label for="split">前后对照</label><input id="split" type="range" min="0" max="100" value="50" aria-label="修改前画面比例">
+    <button type="button" data-split="100">修改前</button>
+    <button type="button" data-split="50">各看一半</button>
+    <button type="button" data-split="0">当前版本</button>
+  </div>
+  <div class="views" id="views" aria-label="各角度当前画面"></div>
+  <section class="lineup" id="lineup" aria-label="三车总览">
+    <button type="button" data-car="toyota"><img src="toyota-after-front.jpg" alt="精修后的 Toyota FJ60" loading="lazy"><strong>Toyota FJ60</strong><small>宽平机盖 · 独立翼子板 · 圆角窗框</small></button>
+    <button type="button" data-car="scout"><img src="scout-after-front.jpg" alt="精修后的 Scout Defender 90" loading="lazy"><strong>Scout / Defender 90</strong><small>分离机盖与灯翼 · 圆形边灯与尾灯</small></button>
+    <button type="button" data-car="ranger"><img src="ranger-after-front.jpg" alt="精修后的 Kestrel Hilux RN46" loading="lazy"><strong>Kestrel / Hilux RN46</strong><small>低矮冲压机盖 · 四区格栅 · 圆顺驾驶室</small></button>
+  </section>
+  <footer>
+    <p>画面来自实际游戏，1600 × 1000，NVIDIA L4 / Vulkan。近景与远景模型、四轮悬挂、近远光、刹车与倒车灯均经过检查。</p>
+    <p>按实车的识别性构件与表面走势重建，保留游戏的改装轮胎、装备和底盘比例。照片未做相机标定，不将本次结果表述为原厂 CAD 或逐像素误差为零。</p>
+    <a href="../../VEHICLE-DETAIL-20261007.md">修改说明、参考来源与验证记录</a> · <a href="manifest.json">交付文件校验</a>
+  </footer>
+</main>
+<script>
+  const labels = { front: '整体', hood: '机盖', side: '侧面', rear: '后部', 'front-flat': '正面', pillar: '窗框', wheel: '轮拱', load: '装备', night: '夜景' };
+  const cars = {
+    toyota: { name: 'Toyota FJ60', caption: '机盖主面消除中央鼓包，保留浅冲压线；圆角玻璃、凹入密封条、后柱通风口与连续弯管。' },
+    scout: { name: 'Scout / Defender 90', caption: '机盖与两侧翼子板分离；铰链贴合面板，前后圆灯与独立灯翼恢复经典 Defender 的识别特征。' },
+    ranger: { name: 'Kestrel / Hilux RN46', caption: '机盖向车头缓降，双冲压线取代中央凸筋；四分区格栅、圆角驾驶室和更顺滑的轮眉。' },
+  };
+  const select = document.querySelector('#view'), split = document.querySelector('#split');
+  let car = 'toyota', view = 'hood';
+  for (const [value, text] of Object.entries(labels)) select.add(new Option(text, value));
+  const thumbs = document.querySelector('#views');
+  for (const [id, label] of Object.entries(labels)) {
+    const button = document.createElement('button'); button.type = 'button'; button.dataset.view = id;
+    const img = document.createElement('img'); img.loading = 'lazy';
+    const span = document.createElement('span'); span.textContent = label;
+    button.append(img, span); button.addEventListener('click', () => { view = id; update(); }); thumbs.append(button);
+  }
+  function update() {
+    for (const kind of ['before', 'after']) {
+      const img = document.getElementById(kind); img.src = `${car}-${kind}-${view}.jpg`;
+      img.alt = `${cars[car].name} ${kind === 'before' ? '修改前' : '当前版本'} ${labels[view]} 游戏实景`;
+    }
+    select.value = view; document.querySelector('#caption').textContent = cars[car].caption;
+    for (const b of document.querySelectorAll('nav [data-car]')) b.setAttribute('aria-pressed', String(b.dataset.car === car));
+    for (const b of thumbs.children) {
+      b.setAttribute('aria-pressed', String(b.dataset.view === view));
+      const img = b.querySelector('img'); img.src = `${car}-after-${b.dataset.view}.jpg`;
+      img.alt = `${cars[car].name} ${labels[b.dataset.view]}`;
+    }
+  }
+  for (const b of document.querySelectorAll('[data-car]')) b.addEventListener('click', () => { car = b.dataset.car; update(); });
+  select.addEventListener('change', () => { view = select.value; update(); });
+  function position(value) { split.value = value; document.querySelector('#compare').style.setProperty('--split', `${value}%`); }
+  split.addEventListener('input', () => position(split.value));
+  for (const b of document.querySelectorAll('[data-split]')) b.addEventListener('click', () => position(b.dataset.split));
+  update();
+</script>
+</html>

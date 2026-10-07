@@ -1,0 +1,380 @@
+{
+  "date": "2026-10-07",
+  "baselineCommit": "c6c74fbb24b63b7fa4f0da62d25e6a79115b46cc",
+  "rawRun": "/mnt/runs/forest-trail/vehicle-detail-20261007-040318",
+  "rawBrowser": "/mnt/runs/forest-trail/vehicle-detail-20261007-040318/browser/2026-10-07T04-28-18-871Z",
+  "assets": [
+    {
+      "id": "toyota",
+      "file": "public/assets/models/vehicle_toyota_trail.glb",
+      "sha256": "00362cc0a42d02a7bdbd2f67e9b0bb72bb6f284c353ebb59a7ad7ea019e3387f",
+      "bytes": 4940484,
+      "revision": "07-reference-surfaces",
+      "sidecarSha256": "337f94e7e78da954955929440c011f80bbf06053a4aedecfbb27571d69e755b2"
+    },
+    {
+      "id": "scout",
+      "file": "public/assets/models/vehicle_scout.glb",
+      "sha256": "7f510c4525557441d8683cd0391a45b565196ff172b5391df2b8cfbb7947ca66",
+      "bytes": 5912280,
+      "revision": "04-reference-surfaces",
+      "sidecarSha256": "3c6a6cf2534de6d8c38f191785039f4cb76364f25700c4ddeb2f8fee31f576df"
+    },
+    {
+      "id": "ranger",
+      "file": "public/assets/models/vehicle_ranger.glb",
+      "sha256": "0543d7244939aa21c4b0fc55c07a73b3df729a98bca416ab823afb9191aad5fb",
+      "bytes": 5570308,
+      "revision": "04-reference-surfaces",
+      "sidecarSha256": "df8ff3cb4a28a38d9085024c39030425d317be529284cce6b9a22e21cd0d9267"
+    }
+  ],
+  "unchangedRuntime": {
+    "game/src/game/config.ts": "fae4b9c7408ad36188ee5d11fe0f5e8150091e10087c039ad3d5bcfb063da1fd",
+    "game/src/game/physics/vehicle.ts": "3ac1b8552ad3f38db86201fd98b82000a9e29339e029f8de56e633261239d539",
+    "game/src/game/render/vehicleView.ts": "ad98b3a3045134cdafd5fadb7046e0ed74e71a1cea03344a6ff4f22d3f369cc6"
+  },
+  "files": [
+    {
+      "file": "browser-report.json",
+      "sha256": "971a9b5754b4e98e0c746d7b870f9f13d83a53f7a24266d1d3d531bda3fd8336",
+      "bytes": 29119
+    },
+    {
+      "file": "companion-geometry.json",
+      "sha256": "30e22a5aecd37e483abc6121957d9464932c13c11f11f1fe03a27a93c186d8ef",
+      "bytes": 5010
+    },
+    {
+      "file": "full-lap-toyota.txt",
+      "sha256": "78444777997852938964246e18590922a60ab1cddb0d50a89ec4773c133da6fb",
+      "bytes": 574
+    },
+    {
+      "file": "gallery-check.json",
+      "sha256": "357960d6baeb62d02757e1172512a513e9d2963c223e70fe7324971935476877",
+      "bytes": 174
+    },
+    {
+      "file": "index.html",
+      "sha256": "eb853ed81b442946adf743062db710ae54bf69540811f5153a7941470eacfe5a",
+      "bytes": 9237
+    },
+    {
+      "file": "lineup.jpg",
+      "sha256": "ca3d5f9c8b606d2ab739b1bbc88adf9df4f014ae38620adc3be1bc0279ddf7f7",
+      "bytes": 124690
+    },
+    {
+      "file": "proving-ranger.json",
+      "sha256": "569b15c09966979d861b6ae42cec86171483159d142e8534fbc17d02d23bae3c",
+      "bytes": 2622
+    },
+    {
+      "file": "proving-scout.json",
+      "sha256": "e67fe2f053c209c465973a5af46092ff22a617c14755c533d8561fe5866d1a39",
+      "bytes": 2624
+    },
+    {
+      "file": "proving-toyota.json",
+      "sha256": "ab33982fa74d25e187e43bc2c8c6955c60631b93f4801c19508faadaa58e97c3",
+      "bytes": 2624
+    },
+    {
+      "file": "ranger-after-distant.jpg",
+      "sha256": "ecae0a174b2579df996e89b21f340eb3312e40880d48301af9669d63d7b6a9df",
+      "bytes": 357093
+    },
+    {
+      "file": "ranger-after-front-flat.jpg",
+      "sha256": "bbae95d95f8d857e6401a95179f226e145bd516105b0275922e0949e5b852c78",
+      "bytes": 376721
+    },
+    {
+      "file": "ranger-after-front.jpg",
+      "sha256": "933e27edc247b77dd4d722be198c264307510131c82d2f7957b0998bce40b32f",
+      "bytes": 397426
+    },
+    {
+      "file": "ranger-after-hood.jpg",
+      "sha256": "8b4b2f85617e3203c162ea0ac9b003c32787000a22afedf6f691c195f1d75cff",
+      "bytes": 276253
+    },
+    {
+      "file": "ranger-after-load.jpg",
+      "sha256": "8b34a89e74dffffc30134b5cffd3cf27e7958250e8566a6dec8e58936c0f564d",
+      "bytes": 404696
+    },
+    {
+      "file": "ranger-after-night.jpg",
+      "sha256": "7b065845521c369870d53be4d9e7bc250823507828143f70743739eb6eae4b41",
+      "bytes": 323359
+    },
+    {
+      "file": "ranger-after-pillar.jpg",
+      "sha256": "8d345c1b4c212408164f5305c7c8ba9ca61a2269e068702a72786b9321c6c180",
+      "bytes": 318077
+    },
+    {
+      "file": "ranger-after-rear.jpg",
+      "sha256": "95495e3c7fa0ea0bcfdb37d82e9125e03a865ec67ea0ece0b7ad7f7f060cbbe1",
+      "bytes": 391968
+    },
+    {
+      "file": "ranger-after-side.jpg",
+      "sha256": "9078cfe82becc0a8dfee1e5814704d1b1d1de3ac8d2cbf5074c789ff53928586",
+      "bytes": 417198
+    },
+    {
+      "file": "ranger-after-wheel.jpg",
+      "sha256": "c2d2dc27d4143daf5c48ac79be36955f4523f46be94c76747db533e627d2965e",
+      "bytes": 236825
+    },
+    {
+      "file": "ranger-before-front-flat.jpg",
+      "sha256": "71b543d70a0a1a6ec4492d93861e3d5a3d7bb4fc5640e83f226e167a9faac928",
+      "bytes": 381309
+    },
+    {
+      "file": "ranger-before-front.jpg",
+      "sha256": "028c489687c8567a5724ae2057c32308228a3370bff076cb9555d15a7d23abe5",
+      "bytes": 400114
+    },
+    {
+      "file": "ranger-before-hood.jpg",
+      "sha256": "42e0c0b3d517cd4f17c8f15ca79ce92420201185102958be02402a841cce7dd8",
+      "bytes": 279142
+    },
+    {
+      "file": "ranger-before-load.jpg",
+      "sha256": "21267eb5b517d5128d05dc837e29b295bdc78bd1fd111dbd5b9dae72555431ae",
+      "bytes": 403088
+    },
+    {
+      "file": "ranger-before-night.jpg",
+      "sha256": "cce5f3100130e13c6ac16a35f9630d12c7a15c06e3e8f43df3d2398c2800b47a",
+      "bytes": 327004
+    },
+    {
+      "file": "ranger-before-pillar.jpg",
+      "sha256": "8895c5e6948ea89b575be55bc0106217f6d1c6fe08a3605d16253c1cae884b17",
+      "bytes": 313132
+    },
+    {
+      "file": "ranger-before-rear.jpg",
+      "sha256": "65d1c79d1f5ba6e3d03cad148610b1a8478795ed5c7dced72819f43f11ac112c",
+      "bytes": 391252
+    },
+    {
+      "file": "ranger-before-side.jpg",
+      "sha256": "89392f13fa645adcdc0268f08f222694eaabf981987d837ec342e2b8b50aa9dd",
+      "bytes": 417010
+    },
+    {
+      "file": "ranger-before-wheel.jpg",
+      "sha256": "6670d618aab60d1de9ccbe3f6e22e46edb61bf206f35b78ffefab8369e9958dc",
+      "bytes": 240330
+    },
+    {
+      "file": "rig-check.json",
+      "sha256": "4d70796c710042543f79593a2e3c0217cfb3b0e9e273c7ad3accd7fab76bed85",
+      "bytes": 1825
+    },
+    {
+      "file": "scout-after-distant.jpg",
+      "sha256": "d5ba161a95adb08642d4437b63096470851faee1f65c9e79d2a61502cc51a6e2",
+      "bytes": 348230
+    },
+    {
+      "file": "scout-after-front-flat.jpg",
+      "sha256": "8998410a34c096c1f53e0d2d2d6d552f4465ddf59bb2eae5753b1065780ad33d",
+      "bytes": 376813
+    },
+    {
+      "file": "scout-after-front.jpg",
+      "sha256": "fe9007d78e26a41625357f9320fef5c461ec676f5bc492ef8d6901d0f898f625",
+      "bytes": 389383
+    },
+    {
+      "file": "scout-after-hood.jpg",
+      "sha256": "013d87e207d12108f5e4a988f36d6cc881afa58fe4b08c822dc6265001156a85",
+      "bytes": 281996
+    },
+    {
+      "file": "scout-after-load.jpg",
+      "sha256": "fcc2dce39050ec960eaf1f9e582d74b830510161b71c9ba455d87af2fa3d1cd2",
+      "bytes": 359016
+    },
+    {
+      "file": "scout-after-night.jpg",
+      "sha256": "f3117f206cba632bf7d66a074c16f1ff4b1823e2f4be2aac33719034218417e9",
+      "bytes": 300378
+    },
+    {
+      "file": "scout-after-pillar.jpg",
+      "sha256": "704cc09dc4607a33307b9a81a0885da6f2cdb0a1f78396dd9aaa82f1effec27a",
+      "bytes": 262277
+    },
+    {
+      "file": "scout-after-rear.jpg",
+      "sha256": "be80917b09fb984c5b05caca24ddaee540014fed712adfd7961dadb0f984125b",
+      "bytes": 364735
+    },
+    {
+      "file": "scout-after-side.jpg",
+      "sha256": "63dbdf67cba39e544fff83a6a1afcc805e4657ce35f8b53be9f760688ea75a33",
+      "bytes": 413134
+    },
+    {
+      "file": "scout-after-wheel.jpg",
+      "sha256": "f0f3f980bc2b605fe516bc29455fc5500e55e7d8324008f9df1b1d49e453f9b2",
+      "bytes": 231470
+    },
+    {
+      "file": "scout-before-front-flat.jpg",
+      "sha256": "8343c69d56bc8f69d38f8ae1f210dea4909efe25f94cd5e45f7f25ceaa6afd23",
+      "bytes": 378813
+    },
+    {
+      "file": "scout-before-front.jpg",
+      "sha256": "b960dcb05d83b5f8915d1c781d50e01ee6d4a6c466d424104bd6f3e45054b610",
+      "bytes": 389695
+    },
+    {
+      "file": "scout-before-hood.jpg",
+      "sha256": "2daaf76883bfe9766fe59ccd3e465e485c607abf8020716a7fdad6ca6db9f6ee",
+      "bytes": 281738
+    },
+    {
+      "file": "scout-before-load.jpg",
+      "sha256": "0509ff3e822865689aad19f768556ae53d79306c2f13b8c6d80fdc919829177b",
+      "bytes": 358317
+    },
+    {
+      "file": "scout-before-night.jpg",
+      "sha256": "b5d44f97573f13e139fc15873c64fcc95b74386debaa95d41ae2fe9edf708f44",
+      "bytes": 301591
+    },
+    {
+      "file": "scout-before-pillar.jpg",
+      "sha256": "5aa27b09690bd177aaf5890a9f4a3167c3e2fcc4bc8d9c464f231b9d1bca6100",
+      "bytes": 257838
+    },
+    {
+      "file": "scout-before-rear.jpg",
+      "sha256": "eb2a5a082ce43826a576e1bb5407170fcf633abaec89d0e11d414e3645caf482",
+      "bytes": 364342
+    },
+    {
+      "file": "scout-before-side.jpg",
+      "sha256": "c25c70c6ffb967128a1a6383020cad72b4bd4f96ad6e81c8c94b498a9a4b7a47",
+      "bytes": 412502
+    },
+    {
+      "file": "scout-before-wheel.jpg",
+      "sha256": "872b57ab157562a79c8b28e3fb8d4475b999461328955e8b880dcb10e35e591d",
+      "bytes": 233683
+    },
+    {
+      "file": "surface-check.json",
+      "sha256": "0b701fc3cb0d7ecfc9241e79a688dd4208917fa4d2dfab9fc33276ef20268e46",
+      "bytes": 45607
+    },
+    {
+      "file": "toyota-after-distant.jpg",
+      "sha256": "68bbbca0172db888db0fef5c36fadbe831ceffd5704d880fe7be670dee4b795b",
+      "bytes": 347031
+    },
+    {
+      "file": "toyota-after-front-flat.jpg",
+      "sha256": "82b7a873107a9555b36b1e1d33e572bbc1030c4d5cdcbc371b517a348b892678",
+      "bytes": 371658
+    },
+    {
+      "file": "toyota-after-front.jpg",
+      "sha256": "6012d2a5a257be430baf5ae9f185172f27f563de5213574d9c5989fbe1087356",
+      "bytes": 389460
+    },
+    {
+      "file": "toyota-after-hood.jpg",
+      "sha256": "e32021dd7ff185daf822ecda4798658a8901f24b73cced739d1fe9b3737b2cff",
+      "bytes": 272237
+    },
+    {
+      "file": "toyota-after-load.jpg",
+      "sha256": "7cea0fddfae430edde9d22d744411f7dfdcb29967adb7bd839a398e4c902cd28",
+      "bytes": 364253
+    },
+    {
+      "file": "toyota-after-night.jpg",
+      "sha256": "38d59c39b4e31d540abac0401875efcac88eb21fb1e42933a341f596f04d0925",
+      "bytes": 296849
+    },
+    {
+      "file": "toyota-after-pillar.jpg",
+      "sha256": "f765d8ba379a7c41df610596c1f697b48fb726851170cf5e982cb8e7b7328798",
+      "bytes": 228366
+    },
+    {
+      "file": "toyota-after-rear.jpg",
+      "sha256": "785676b4c27a6b798185682b043a5bc23d03ccfd907f6af907bb17089117c029",
+      "bytes": 360476
+    },
+    {
+      "file": "toyota-after-side.jpg",
+      "sha256": "cff5593a1fc78b90b8088e20b8979a0c1370ede7339a1c7d68238cc8d74dd03f",
+      "bytes": 406996
+    },
+    {
+      "file": "toyota-after-wheel.jpg",
+      "sha256": "ff02b64eaecd1f02cb3159e6d8d3c9d3251ceaf6107f37b658e2b92685b446ba",
+      "bytes": 219250
+    },
+    {
+      "file": "toyota-before-front-flat.jpg",
+      "sha256": "8855655e2187e520f1ca22f200cbe3808af51591dfc2a30b4569bed06bd03570",
+      "bytes": 370891
+    },
+    {
+      "file": "toyota-before-front.jpg",
+      "sha256": "79f98113bcce706d1c2fe88d5493f44f3c163c4cb5f122a948f87a87e0ccf9cb",
+      "bytes": 388392
+    },
+    {
+      "file": "toyota-before-hood.jpg",
+      "sha256": "45fd292e45b664f9fe7dd380ed03b069e1a1a4605a7384d8521ccae15be5a1a2",
+      "bytes": 269576
+    },
+    {
+      "file": "toyota-before-load.jpg",
+      "sha256": "5d23b05c03bf4005508badcb40df858a51f27a39b880be0d3d56743e1e9c991a",
+      "bytes": 359932
+    },
+    {
+      "file": "toyota-before-night.jpg",
+      "sha256": "6428753fbc8b12d3ff09a9990e399b9742fc9aba4645b4f9e11ca63e4241e27a",
+      "bytes": 296026
+    },
+    {
+      "file": "toyota-before-pillar.jpg",
+      "sha256": "b969e592275e17e150ee30c2aab2ce41407e1b63da5dbd1623c3e9430fcdf1cd",
+      "bytes": 223509
+    },
+    {
+      "file": "toyota-before-rear.jpg",
+      "sha256": "0bfea47a0968be638e1e8b5de431aa57f9642355357397f24ba76f80e05d11c8",
+      "bytes": 359033
+    },
+    {
+      "file": "toyota-before-side.jpg",
+      "sha256": "cb9c66c8c1b1a1eb49c45f7cf7417d20f532f490cd235f8422b2365fefa8e3bd",
+      "bytes": 405817
+    },
+    {
+      "file": "toyota-before-wheel.jpg",
+      "sha256": "3454542fe8e7b0d3735ff7f7306fedc6e2f9457faecc0e5469e585a695514563",
+      "bytes": 219069
+    }
+  ],
+  "metadataNote": "The unused Scout rearIndicator mount was aligned with the circular amber lens after capture; GLBs and all rendered/physics parameters are identical to the captured build."
+}

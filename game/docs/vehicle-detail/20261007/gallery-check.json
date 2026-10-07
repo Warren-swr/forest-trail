@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "errors": [],
+  "cancelledImages": [],
+  "cars": 3,
+  "viewsPerCar": 9,
+  "sliderKeyboard": true,
+  "mobileWidth": 390,
+  "noHorizontalOverflow": true
+}

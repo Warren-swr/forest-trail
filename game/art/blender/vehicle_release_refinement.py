@@ -13,8 +13,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common as C
 import vehicle_parts as P
 import vehicle_fidelity as F
+import vehicle_surfaces as V
 
-REVISION = '03-release-refinement'
+REVISION = '04-reference-surfaces'
 RELEASE = '33439c37d453c87279797d7365d8874cff5b747a'
 SPECS = {
     'scout': dict(F.SPECS['scout'], wb=2.50, width=.89, front=1.80, rear=-1.82,
@@ -118,7 +119,7 @@ def wheel(mb, s, M=Matrix(), detailed=True):
     Both LODs retain open steel-wheel vents and the same contact envelope.
     """
     tmp = C.MeshBuilder('Tyre source')
-    P.add_wheel(tmp, segs=40 if detailed else 24, lugs=24 if detailed else 16,
+    P.add_wheel(tmp, segs=64 if detailed else 24, lugs=24 if detailed else 16,
                 sidewall_lugs=16 if detailed else 0, tread_bevel=.002 if detailed else 0)
     faces = [face for face, mat in zip(tmp.F, tmp.FM) if mat == 'Tire'
              and not all(abs(tmp.V[i].x - .0752) < .00001 for i in face)]
@@ -219,9 +220,11 @@ def flare(mb, s, side, yc, floor):
     # from its lateral coverage, so a wide tyre does not need a huge black band.
     width, r, zc = s['width'], s['arch_r'], s['arch_z']
     outer = 1.00 if s['spring'] == 'coil' else .995
-    section = [(width - .005, r + s['flare']), (outer - .044, r + s['flare']),
-               (outer - .006, r + .036), (outer + .008, r + .011),
-               (outer - .004, r - .001), (width - .008, r - .001)]
+    section = [(width - .005, r + s['flare']), (outer - .061, r + s['flare']),
+               (outer - .040, r + s['flare'] - .004), (outer - .020, r + .040),
+               (outer - .006, r + .029), (outer + .002, r + .019),
+               (outer + .004, r + .011), (outer, r + .004),
+               (outer - .011, r - .001), (width - .008, r - .001)]
     verts, faces, rings = [], [], []
     for x, radius in section:
         outline = SCOUT.arch_pts(yc, radius, zc, floor) if floor < zc else RANGER.arch_over(yc, radius, zc, floor)
@@ -242,8 +245,8 @@ def flare(mb, s, side, yc, floor):
         # The Hilux reference has painted pressed wings. Keep the release's
         # cream arch accent as a narrow outer lip, not a broad white shelf.
         bm.faces.ensure_lookup_table()
-        lip = {bm.faces[i] for i in range(2 * (count - 1), 4 * (count - 1))}
-        underside = {bm.faces[i] for i in range(4 * (count - 1), 5 * (count - 1))}
+        lip = {bm.faces[i] for i in range(4 * (count - 1), 8 * (count - 1))}
+        underside = {bm.faces[i] for i in range(8 * (count - 1), 9 * (count - 1))}
         mb.add(bm, mat_fn=lambda f: 'PaintAccent' if f in lip else 'Interior' if f in underside else 'Paint', shade='auto', angle=38)
     if s['spring'] == 'coil':
         for k in range(7):
@@ -254,25 +257,37 @@ def flare(mb, s, side, yc, floor):
 
 def hood_point(s, u, t):
     scout = s['spring'] == 'coil'
-    x = u * (.837 if scout else .770)
+    # The Defender bonnet is visibly separate from its wide, level wings. The
+    # early Hilux has a low full-length fall and paired swages, not a power bulge.
+    x = u * (.638 if scout else .716 - .013 * t)
     y = (.657 + 1.116 * t) if scout else (1.007 + 1.012 * t)
-    crown = (.014 + .026 * math.sin(math.pi * t) ** .8) * max(0, 1 - u * u)
     fade = C.smoothstep(.04, .16, t) * (1 - C.smoothstep(.82, .98, t))
-    bead = (.008 * math.exp(-((abs(x) - .49) / .055) ** 2) if scout
-            else .008 * math.exp(-(x / .10) ** 4)) * fade
-    z = s['belt'] + (.011 if scout else .009 - .057 * t) + crown + bead
-    z -= .009 * C.smoothstep(.89, 1, t) * (1 - u * u)
+    shoulder = C.smoothstep(.76 if scout else .68, 1, abs(u))
+    bead = (0 if scout else .005 * math.exp(-((abs(x) - (.46 - .035 * t)) / .023) ** 2)) * fade
+    z = s['belt'] + (.035 - .009 * t if scout else .027 - .057 * t)
+    z -= (.014 if scout else .015) * shoulder
+    z -= (.004 if scout else .008) * C.smoothstep(.92, 1, t)
+    z += bead
     return (x, y, z)
 
 
 def hood(mb, s):
     scout = s['spring'] == 'coil'
     skin(mb, lambda u, t: hood_point(s, u, t), 64, 40, .814 if scout else .741)
+    for side in (-1, 1):
+        def wing(u, t):
+            a = (u + 1) / 2
+            x, y, z = hood_point(s, side, t)
+            inside = abs(x) + .004
+            outside = s['width'] - .012
+            return (side * (inside + (outside - inside) * a), y,
+                    (.826 if scout else z - .001) - (.010 if scout else .002) * C.smoothstep(.58, 1, a))
+        skin(mb, wing, 16, 40, .806 if scout else .736)
     start, end = (.50, .650) if scout else (.925, 1.000)
     w = .853 if scout else .797
     def cowl(u, t):
-        return (u * w, start + (end - start) * t,
-                s['belt'] + .012 + .018 * (1 - u * u) + .003 * math.sin(math.pi * t))
+        z = s['belt'] + (.026 if scout else .027) - .011 * C.smoothstep(.70, 1, abs(u))
+        return (u * w, start + (end - start) * t, z)
     skin(mb, cowl, 40, 10, s['belt'] - .01)
     seam = [(x, y, z + .001) for x, y, z in (cowl(-1 + i / 24, 1) for i in range(49))]
     F.path(mb, seam, .002, 'PanelGap', 6)
@@ -282,17 +297,19 @@ def hood(mb, s):
             z = cowl(x / w, .50)[2]
             F.box(mb, (x, (start + end) / 2, z + .001), (.024, (end - start) * .54, .004), 'Trim', .002, 2)
         if scout:
-            # The old latch and hinge locations are retained, now with pivots,
-            # clamping plates and visible fasteners against the crowned bonnet.
+            # Clamps straddle the bonnet edge. Hinge pads sit on the actual
+            # pressing instead of hovering over the newly separated wings.
             F.box(mb, (side * .62, 1.775, .807), (.074, .027, .062), 'Metal', .006, 3)
             F.box(mb, (side * .62, 1.790, .793), (.020, .016, .086), 'Trim', .004, 2)
             F.tube(mb, (side * .62 - .039, 1.791, .820), (side * .62 + .039, 1.791, .820), .007, 'Metal', 12)
             for dx in (-.022, .022):
                 bolt(mb, (side * .62 + dx, 1.790, .791), (0, 1, 0), .004)
-            F.box(mb, (side * .62, .665, .849), (.136, .076, .009), 'Paint', .005, 3)
-            F.tube(mb, (side * .62 - .071, .668, .857), (side * .62 + .071, .668, .857), .010, 'Metal', 16)
+            x = side * .54
+            z = hood_point(s, x / .638, .01)[2]
+            F.box(mb, (x, .675, z + .004), (.110, .065, .008), 'Paint', .004, 3)
+            F.tube(mb, (x - .060, .666, z + .012), (x + .060, .666, z + .012), .008, 'Metal', 16)
             for dx in (-.044, .044):
-                bolt(mb, (side * .62 + dx, .643, .853), r=.004)
+                bolt(mb, (x + dx, .690, z + .008), r=.004)
         else:
             F.text(mb, '4WD', (side * .826, 1.61, .712), .040, 'right' if side > 0 else 'left', 'Metal')
 
@@ -306,7 +323,7 @@ def tub(mb, s):
         prof += SCOUT.arch_pts(1.25, s['arch_r'], s['arch_z'], .12)
         prof += [(1.791, .12), (1.80, .21), (1.80, .79), (1.775, .82), (-1.795, .82), (-1.82, .79)]
         bm = C.bm_extrude_poly(prof, 1.78, axis='X')
-        C.bevel(bm, .022, 3)
+        C.bevel(bm, .026, 5)
         bm = P.bm_boolean(bm, [C.bm_box_mm((-.20, -.74, .065), (.20, .74, .36))])
         bm.normal_update()
         mb.add(bm, mat_fn=lambda f: 'Interior' if abs(f.normal.x) < .5 and SCOUT.in_arch(f.calc_center_median()) and f.normal.z < .2
@@ -341,19 +358,19 @@ def greenhouse(mb, s):
     bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
     bottom = [f for f in bm.faces if f.normal.z < -.9]
     edges = [e for e in bm.edges if not any(f in bottom for f in e.link_faces)]
-    rounded = set(C.bevel(bm, .024 if scout else .033, 3, edges).get('faces', []))
+    rounded = set(C.bevel(bm, .025 if scout else .043, 5, edges).get('faces', []))
     bm.normal_update()
     windows = [f for f in bm.faces if f not in rounded and abs(f.normal.z) < .65 and f.calc_area() > .05
                and (scout or abs(f.normal.y) > .5 or f.calc_center_median().y > -.05)]
     bmesh.ops.delete(bm, geom=[f for f in bm.faces if f.normal.z < -.9], context='FACES_ONLY')
-    bmesh.ops.inset_individual(bm, faces=windows, thickness=.034, depth=-.006)
-    seals = set(bmesh.ops.inset_individual(bm, faces=windows, thickness=.010, depth=-.006)['faces'])
-    glass = set(windows)
-    mb.add(bm, mat_fn=lambda f: 'Glass' if f in glass else 'Rubber' if f in seals else 'Paint', shade='auto', angle=32)
+    V.glazed_hull(mb, bm, windows, border=.027 if scout else .025,
+                  radius=.031 if scout else .049, chrome=not scout)
     rear, front, width = (-1.80, .433, .839) if scout else (-.248, .631, .764)
     def roof_point(u, t):
-        x, y = width * u, rear + (front - rear) * t
-        z = zt + .028 + (.045 if scout else .031) * (1 - u * u) + .005 * math.sin(math.pi * t)
+        edge = C.smoothstep(.90, 1, t) + 1 - C.smoothstep(0, .10, t)
+        x, y = (width - .012 * edge) * u, rear + (front - rear) * t
+        z = zt + (.079 if scout else .062) - (.053 if scout else .038) * C.smoothstep(.65, 1, abs(u))
+        z -= .010 * edge
         fade = C.smoothstep(.03, .13, t) * (1 - C.smoothstep(.86, .98, t))
         for rib in (-.48, -.24, .24, .48):
             z += .004 * math.exp(-((x - rib) / .020) ** 2) * fade
@@ -379,9 +396,13 @@ def greenhouse(mb, s):
             F.tube(mb, quarter(.813, .674), quarter(1.231, .516), .009, 'Rubber', 12)
             F.tube(mb, quarter(.813, .674, .005), quarter(1.231, .516, .005), .004, 'Metal', 12)
             # Behind-door extractor vents are a distinctive early Hilux cue.
-            F.box(mb, (side * .790, -.145, 1.037), (.011, .115, .158), 'Trim', .012, 3)
+            vent = [quarter(.958, -.202, .010), quarter(.958, -.088, .010),
+                    quarter(1.116, -.088, .010), quarter(1.116, -.202, .010)]
+            F.panel(mb, vent if side > 0 else vent[::-1], 'Trim', .008, .006)
             for k in range(4):
-                F.box(mb, (side * .799, -.145, .990 + k * .030), (.006, .083, .006), 'Metal', .002, 2)
+                z = .990 + k * .030
+                F.box(mb, (side * (.80 - .065 * (z - .80) / .48 + .010), -.145, z),
+                      (.006, .083, .006), 'Metal', .002, 2)
 
 
 def road_mudflaps(mb, s):
@@ -497,8 +518,11 @@ def scout_rear(mb, s):
         return True
     retain(mb, SCOUT.add_rear, details)
     for side in (-1, 1):
-        tail_cluster(mb, side * .78, -1.82, .525, .120, .354,
-                     ((.607, .158, 'LampRear'), (.472, .065, 'LampAmber'), (.397, .060, 'LampReverse')))
+        # Classic Defender lamps are individual round units; the tall shared
+        # pickup cluster erased that distinction in the released Scout.
+        for z, radius, material in ((.630, .043, 'LampRear'), (.508, .039, 'LampAmber'),
+                                    (.397, .033, 'LampReverse')):
+            F.round_lamp(mb, side * .78, -1.849, z, radius, material, facing=-1, flute_mat=material)
     plate_light(mb, .47, -1.982, .309)
     for x in (.33, .61):
         bolt(mb, (x, -1.978, .254), (0, -1, 0), .004, 'Trim')
@@ -804,14 +828,27 @@ def ranger_rollbar(mb):
 
 def front(mb, s):
     if s['spring'] == 'coil':
-        def headlight(builder, x, z, y):
-            F.box(builder, (x, y + .006, z), (.277, .030, .279), 'Trim', .014, 3)
-            F.round_lamp(builder, x, y + .045, z, .098, 'Lamp', flute_mat='Lamp')
-            for dx in (-.113, .113):
-                for dz in (-.112, .112):
-                    bolt(builder, (x + dx, y + .025, z + dz), (0, 1, 0), .004)
-        SCOUT.headlight = headlight
-        retain(mb, SCOUT.add_front)
+        # Classic Defender face: inset central grille and two separate lamp
+        # wings, each with outboard round sidelights and amber indicators.
+        F.box(mb, (0, 1.808, .574), (.946, .028, .399), 'Trim', .015, 4)
+        for k in range(5):
+            F.box(mb, (0, 1.827, .422 + k * .071), (.869, .024, .013), 'Metal', .004, 3)
+        for x in (-.29, -.145, 0, .145, .29):
+            F.box(mb, (x, 1.815, .573), (.012, .010, .340), 'Rubber', .002, 2)
+        V.surround(mb, [(-.486, 1.835, .369), (.486, 1.835, .369),
+                       (.486, 1.835, .786), (-.486, 1.835, .786)], .020, .016, 'Paint')
+        F.box(mb, (.24, 1.843, .731), (.127, .009, .047), 'Badge', .017, 4)
+        F.text(mb, 'SCOUT', (.24, 1.850, .731), .026, 'front', 'Decal')
+        for side in (-1, 1):
+            x = side * .665
+            F.box(mb, (side * .692, 1.814, .604), (.375, .034, .382), 'Trim', .022, 5)
+            F.round_lamp(mb, x, 1.845, .60, .098, 'Lamp', flute_mat='Lamp')
+            for z, r, material in ((.751, .026, 'LampAmber'), (.669, .021, 'Lamp')):
+                F.round_lamp(mb, side * .830, 1.833, z, r, material, flute_mat=material)
+            for dx in (-.137, .137):
+                for z in (.441, .769):
+                    bolt(mb, (side * .692 + dx, 1.834, z), (0, 1, 0), .004)
+        retain(mb, SCOUT.add_front_bumper)
         # The complete released winch stays: refine its mounts, drum flanges,
         # electrical lead and recovery-shackle pins instead of hiding it away.
         for x in (-.30, .20):
@@ -828,13 +865,28 @@ def front(mb, s):
         # Narrow wing-top vents and a relief edge keep the front from becoming
         # a featureless box while respecting the release bonnet and grille.
         for side in (-1, 1):
-            for k in range(4):
-                F.box(mb, (side * .859, .905 + k * .052, .826), (.057, .019, .004), 'Trim', .003, 3)
+            F.box(mb, (side * .756, .93, .829), (.150, .249, .004), 'Trim', .019, 4)
+            for k in range(6):
+                F.box(mb, (side * .756, .834 + k * .038, .834), (.126, .008, .003), 'Rubber', .002, 2)
     else:
         def lens(builder, x, z, y, r, mat, facing=1, segs=16, bezel='Chrome'):
             F.round_lamp(builder, x, y + .021, z, r, mat, facing, flute_mat=mat)
         RANGER.lens = lens
-        retain(mb, RANGER.add_front)
+        # Retain the chrome bumper and amber lower lamps. Replace the generic
+        # slatted face with the four recessed grille bays of the early RN46.
+        retain(mb, RANGER.add_front, lambda bm, kw, lo, hi, i: not (lo.y > 2.01 and lo.z >= .339))
+        F.box(mb, (0, 2.064, .518), (1.526, .035, .327), 'Trim', .029, 5)
+        V.surround(mb, [(-.768, 2.086, .351), (.768, 2.086, .351),
+                       (.768, 2.086, .685), (-.768, 2.086, .685)], .033, .010)
+        for x in (-.321, -.107, .107, .321):
+            V.surround(mb, [(x - .091, 2.089, .395), (x + .091, 2.089, .395),
+                           (x + .091, 2.089, .641), (x - .091, 2.089, .641)], .020, .009, 'Rubber')
+            for z in (.453, .516, .579):
+                F.box(mb, (x, 2.089, z), (.166, .012, .009), 'Trim', .003, 2)
+        for side in (-1, 1):
+            F.round_lamp(mb, side * .62, 2.086, .52, .088, 'Lamp', flute_mat='Lamp')
+        F.box(mb, (.304, 2.099, .562), (.176, .008, .046), 'Trim', .008, 3)
+        F.text(mb, 'KESTREL', (.304, 2.105, .562), .025, 'front', 'Decal')
         for side in (-1, 1):
             for x in (side * .745, side * .495):
                 for z in (.414, .626):
@@ -888,7 +940,8 @@ def build_body(mb, s):
 def main(vid):
     C.reset_scene()
     s = SPECS[vid]
-    study = os.path.join(C.ART, 'studies', 'trail-companions', REVISION, vid,
+    study = os.path.join(os.environ.get('FOREST_VEHICLE_BUILD_ROOT',
+                         os.path.join(C.ART, 'studies', 'trail-companions')), REVISION, vid,
                          'build-' + datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S-%f'))
     os.makedirs(study, exist_ok=False)
     with open(__file__, 'rb') as source, open(os.path.join(study, 'generator.py'), 'wb') as snapshot:
@@ -971,8 +1024,10 @@ def main(vid):
     lamps = dict(SCOUT.LAMPS if vid == 'scout' else RANGER.LAMPS)
     if vid == 'scout':
         lamps['head'] = [(x, 1.861, .60) for x in (-.665, .665)]
-        lamps['tail'] = lamps['brake'] = [(x, -1.878, .607) for x in (-.78, .78)]
-        lamps['reverse'] = [(x, -1.878, .397) for x in (-.78, .78)]
+        lamps['indicator'] = [(x, 1.849, .751) for x in (-.830, .830)]
+        lamps['tail'] = lamps['brake'] = [(x, -1.865, .630) for x in (-.78, .78)]
+        lamps['rearIndicator'] = [(x, -1.865, .508) for x in (-.78, .78)]
+        lamps['reverse'] = [(x, -1.865, .397) for x in (-.78, .78)]
     else:
         lamps['head'] = [(x, 2.102, .52) for x in (-.62, .62)]
         lamps['bar'] = [(x, -.413, 1.48) for x in (-.32, .32)]
@@ -987,7 +1042,7 @@ def main(vid):
                 lamps={k: [P.g(p) for p in ps] for k, ps in lamps.items()},
                 lampSample=dict(tail=[.018, .018], reverse=[.018, .016]),
                 bodyBox=dict(min=P.g((mn.x, mx.y, mn.z)), max=P.g((mx.x, mn.y, mx.z))),
-                lod=dict(near=18, far=23), tris=tris, build=os.path.relpath(study, C.GAME))
+                lod=dict(near=18, far=23), tris=tris, build=os.path.basename(study))
     for file, data in ((os.path.join(C.MODELS, 'vehicle_' + vid + '.json'), info),
                        (os.path.join(C.ART, 'vehicle-' + vid + '-rig.json'), dims),
                        (os.path.join(study, 'rig.json'), dims)):

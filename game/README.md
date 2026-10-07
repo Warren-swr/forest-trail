@@ -25,9 +25,9 @@
   - **TOYOTA Land Cruiser FJ60：**圆灯四门旅行车，前后钢板弹簧，长轴、重、稳，带通气管。
   - **Kestrel 小皮卡：**以 1979 Hilux 为参考的早期四驱单排皮卡，独立冲压货斗和前后钢板弹簧，轻快灵活。
 
-  **Scout 与 Kestrel 已从上一版正式模型重新精修**：保留原有分段车窗、双色腰线、车顶灯与货架，以及油桶、脱困板、工具、行李和备胎等完整可见装备；对照真实 Defender / 1979 Hilux 照片，精修连续面板、开孔钢轮圈、灯具、支架与绑带，向 Toyota 样车对齐风格。胎径为 86 / 84 cm，正常悬挂行程为 38 / 35 cm；驾驶、完整环线、极限装配和实机检查通过。见 [精修说明](docs/VEHICLE-TRAIL-COMPANIONS.md) 和 [正式版对照、Toyota 样车与悬挂视频](docs/trail-companions/index.html)。
+  当前三车已完成 2026-10-07 原型细节精修：FJ60 修正中央鼓起的机盖，细化独立翼子板、窗框、车顶与后柱通风口；Scout 恢复 Defender 的分离机盖、灯翼和圆形前后灯组；Kestrel 重做早期 Hilux 的低机盖、四区格栅和驾驶室细节。三车统一采用圆角平窗、凹入密封条、顺滑轮眉与 64 段近景胎体，保留原有哑光材质及完整探险装备。见 [本轮修改与验证](docs/VEHICLE-DETAIL-20261007.md) 和 [三车实机前后对照](docs/vehicle-detail/20261007/index.html)。
 
-  **当前 Toyota 为旧版风格精修样车**：保留方正车身、深色车窗与车顶装备，轮胎直径 88 cm，正常悬挂行程 38 cm。本轮将轮眉带宽从 10 收窄到 5.5 cm，增加弹簧静载下沉，使车身降低约 5.9 cm，胎顶留白更紧凑；轮距与悬挂端点保持原值。尾灯修正、直柱、平窗和机盖曲面继续保留。近景完整装配约 19.3 万三角面，远景约 6.7 万。见 [本轮比例调整](docs/TOYOTA-ARCH-BALANCE.md) 和 [同机位对照](docs/toyota-trail/06-wheel-arch-balance/index.html)。[第一版样车](docs/TOYOTA-TRAIL-STUDY.md)与[上一轮三车记录](docs/VEHICLE-FIDELITY.md)留作历史参考。
+  轮胎直径为 Scout 86 / Toyota 88 / Kestrel 84 cm，正常悬挂行程为 38 / 38 / 35 cm。三车通过 45 项驾驶检查、27 种装配姿态、资产与真实浏览器检查；Toyota 完整林道零复位。近景装配约 25.7 / 21.5 / 24.0 万三角面，远景保留简化模型。[上一轮 Toyota 比例调整](docs/TOYOTA-ARCH-BALANCE.md) 与 [上一轮伙伴车精修](docs/VEHICLE-TRAIL-COMPANIONS.md) 保留为历史记录。
 - **近景环境与摄影：**风化岩石倒角、细分树皮、树桩年轮与裂纹，8 种环境模型增加距离 LOD。暂停菜单可近距离检视车辆，摄影焦点随镜头距离更新。
 - **昼夜与车灯：**
   - 天空是 GPU 程序化生成的，有太阳、云、星空和月亮；白天与夜晚之间平滑过渡。
@@ -104,8 +104,10 @@ docs/               方案文档、验证报告、开发计划、素材来源、
 ```bash
 npm run test:proving                # 三辆车依次跑驾驶验收 D01–D12（结果写入 tools/proving-results*.json）
 npm run test:rig                    # 最终 GLB、弹簧形变、胎肩接地和车桥碰撞体回归检查
-npm run test:toyota:browser         # 当前 Toyota 与修改前版本对照、悬挂录制；写入新目录（需 Playwright）
-npm run test:companions:browser     # Scout / Kestrel 同机位对照、灯光、LOD 与真实悬挂录制
+npm run test:surfaces -- <new.json> # 实际 GLB 机盖曲面与两级 LOD 圆角平窗检查
+npm run test:detail:browser        # 三车同机位对照、灯光、LOD 与实际驾驶；需 VEHICLE_DETAIL_RUN 和 Playwright
+npm run test:toyota:browser        # 同上，仅 Toyota
+npm run test:companions:browser    # 同上，仅 Scout / Kestrel
 npm run test:lap                    # 自动驾驶跑完整条环线；VEH=toyota|ranger 选车，FULL=1 加载全部静态碰撞体
 npx tsx tools/sim-test.ts park      # 自动驾驶跑完越野训练场（同样支持 VEH=...）
 npx tsx tools/sim-test.ts canyon    # 自动驾驶穿过赤岩峡谷和吊桥
@@ -122,14 +124,15 @@ npm run assets:companions            # 只重建 Scout / Kestrel，并检查完�
 - [docs/DESIGN.md](docs/DESIGN.md)：方案文档，记录所有实现取舍；第二版内容在第 13 节。
 - [docs/VERIFICATION.md](docs/VERIFICATION.md)：实际验证过程与结果、性能数据、剩余限制、截图索引。
 - [docs/CREDITS.md](docs/CREDITS.md)：背景音乐来源、许可证与署名。
-- [docs/TOYOTA-ARCH-BALANCE.md](docs/TOYOTA-ARCH-BALANCE.md)：当前 Toyota 的轮眉与车身姿态调整。
-- [docs/VEHICLE-TRAIL-COMPANIONS.md](docs/VEHICLE-TRAIL-COMPANIONS.md)：当前 Scout / Kestrel 的建模、细节与悬挂优化、对照媒体和复验命令。
+- [docs/VEHICLE-DETAIL-20261007.md](docs/VEHICLE-DETAIL-20261007.md)：当前三车原型细节、实际 GLB 检查、同机位对照和重建命令。
+- [docs/TOYOTA-ARCH-BALANCE.md](docs/TOYOTA-ARCH-BALANCE.md)：上一轮 Toyota 的轮眉与车身姿态调整。
+- [docs/VEHICLE-TRAIL-COMPANIONS.md](docs/VEHICLE-TRAIL-COMPANIONS.md)：上一轮 Scout / Kestrel 的建模、细节与悬挂优化记录。
 - [docs/TOYOTA-TAILGATE-FINISH.md](docs/TOYOTA-TAILGATE-FINISH.md)：第五轮尾灯闪烁修复与附件连接打磨记录。
 - [docs/TOYOTA-ALL-TERRAIN.md](docs/TOYOTA-ALL-TERRAIN.md)：第四轮大轮胎与悬挂调整记录。
 - [docs/TOYOTA-FLAT-GLAZING.md](docs/TOYOTA-FLAT-GLAZING.md)：第三轮直柱平窗与车头前段修整记录。
 - [docs/TOYOTA-CURVED-PANELS.md](docs/TOYOTA-CURVED-PANELS.md)：第二轮曲面版本的历史记录。
 - [docs/TOYOTA-TRAIL-STUDY.md](docs/TOYOTA-TRAIL-STUDY.md)：第一版 Toyota 样车、旧版来源与当时的实测结果。
 - [docs/VEHICLE-FIDELITY.md](docs/VEHICLE-FIDELITY.md)：上一轮三车精细版本的历史记录。
-- [样车悬挂实机演示](docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/suspension.mp4)：当前 Toyota 低档通过训练场交叉轴，检查降低静态姿态后的车身与悬挂运动。
+- [样车悬挂实机演示](docs/toyota-trail/06-wheel-arch-balance/20260926-proof-02/suspension.mp4)：上一轮 Toyota 低档通过训练场交叉轴的历史演示。
 
 除背景音乐外，所有模型、贴图和音效都是本项目原创（程序化生成）。
